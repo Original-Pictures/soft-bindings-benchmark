@@ -1,0 +1,56 @@
+# Main fingerprint-bench environment (Python 3.11). Exact resolved versions per host are
+# frozen into requirements-<host>.lock by bootstrap. laion_clap (pins numpy<2 but runs on
+# numpy 2) and the ISC21 extractor are installed with --no-deps by gpu/bootstrap_instance.sh;
+# videoseal from the pinned source tree with --no-deps (as in the 2026-09 watermark bench).
+torch==2.14.0
+torchvision==0.29.0
+torchaudio==2.11.0
+numpy==2.4.6
+scipy==1.17.1
+scikit-image==0.26.0
+opencv-contrib-python-headless==5.0.0.93
+pillow==12.3.0
+imagehash==4.3.2
+pdqhash==0.2.8
+PyWavelets==1.9.0
+iscc-core==1.4.0
+iscc-sdk==0.9.5
+iscc-sci==0.3.0  # onnxruntime-gpu below provides its runtime
+faiss-cpu==1.15.1
+kornia==0.8.3
+transformers==5.17.0
+open_clip_torch==3.3.0
+timm==1.0.30
+augly==1.0.0
+lpips==0.1.4
+onnxruntime-gpu
+onnx2torch
+soundfile==0.14.0
+soxr==1.1.0
+librosa==0.11.0
+av==18.1.0
+pandas
+matplotlib
+remotezip==0.12.6
+psutil
+loguru
+pytest
+# laion_clap runtime deps (installed --no-deps itself)
+ftfy
+braceexpand
+webdataset
+wget
+h5py
+progressbar
+scikit-learn
+# watermarks for the combination track (same pins as the 2026-09 watermark bench)
+trustmark==0.9.2
+audioseal==0.2.0
+omegaconf
+einops
+safetensors
+huggingface_hub
+# imported by videoseal's model-card loader (as in the 2026-09 watermark bench)
+pycocotools
+calflops
+tensorboard

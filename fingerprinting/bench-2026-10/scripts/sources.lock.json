@@ -1,0 +1,74 @@
+{
+  "ISC21-Descriptor-Track-1st": {
+    "commit": "228aad34ac5d5be77bf026dcda0a7b97d74da210",
+    "repo": "lyakaap/ISC21-Descriptor-Track-1st",
+    "spdx": "MIT",
+    "tarball_sha256": "197226fd085184bed0c11a0184b28101e06237d40027d2cd210ae44cf0063735"
+  },
+  "Olaf": {
+    "commit": "0bc6bac98cd028946513cdec04d56b0c3b052d4f",
+    "repo": "JorenSix/Olaf",
+    "spdx": "AGPL-3.0",
+    "tarball_sha256": "4b9d2807c4b7c7db5c9b9126d466bf63c0088fca88dcdc4accd1c9e8a682a2d2"
+  },
+  "ThreatExchange": {
+    "commit": "ec3671bafc70136c4178ac300b75281ee4c6a0c6",
+    "repo": "facebook/ThreatExchange",
+    "spdx": "NOASSERTION",
+    "tarball_sha256": "d7a145d31ce1ab75a2dd8c8483e1bf4a0bd3c680ef4d26d602dfb2195a17c8cd"
+  },
+  "audfprint": {
+    "commit": "cb03ba99feafd41b8874307f0f4e808a6ce34362",
+    "repo": "dpwe/audfprint",
+    "spdx": "MIT",
+    "tarball_sha256": "7fa07bada480cd0e65379780ce8b37facbce93bbacf7eb0b9486f017c7b8936e"
+  },
+  "audioseal": {
+    "commit": "e63a8a0e5cdf7bb797159c92ba15961557fe9bd2",
+    "repo": "facebookresearch/audioseal",
+    "spdx": "UNDETECTED (HTTPError)",
+    "tarball_sha256": "e91ba94fbd512517023612b705dcf3fb2881021bc5ed11b85ff40b279daaab49"
+  },
+  "blockhash-python": {
+    "commit": "f28b741a1f6bfff25763ae42dc2190051079998c",
+    "repo": "commonsmachinery/blockhash-python",
+    "spdx": "MIT",
+    "tarball_sha256": "6e8469140281640d069a26db35e211c92c448f46bcbc06f99d37a6827ec28205"
+  },
+  "dinohash": {
+    "commit": "16733e9a6a9e6b3c557c3eba5b8ac19cb12c7847",
+    "repo": "proteus-photos/dinohash-perceptual-hash",
+    "spdx": "UNDETECTED (HTTPError)",
+    "tarball_sha256": "35bc49646f96b357864ce051b5a2bac4b418ff0224fe2aaee3944c7dbf1fb4a6"
+  },
+  "iscc-core": {
+    "commit": "406e383fc08b8ed7d005b2713363d4f77571faa2",
+    "repo": "iscc/iscc-core",
+    "spdx": "Apache-2.0",
+    "tarball_sha256": "c2ad8574595cf4efa62ac0579af9be9f040867ca5fa52523db128acd266bc845"
+  },
+  "neural-audio-fp": {
+    "commit": "b724e512b7415699e3d942c2d2dbf8ca1a057a37",
+    "repo": "mimbres/neural-audio-fp",
+    "spdx": "MIT",
+    "tarball_sha256": "7a9ca958cc777f98e9feea6455d858e3f93074583537967a019ee3c66705f507"
+  },
+  "sscd-copy-detection": {
+    "commit": "95902662f2217a5f4aa45f2a3fc70a01dfd3b66a",
+    "repo": "facebookresearch/sscd-copy-detection",
+    "spdx": "MIT",
+    "tarball_sha256": "bfc69008a4dd6bf23f24751a05815cef77294e2ecd71702d43cf781516e6802a"
+  },
+  "trustmark": {
+    "commit": "2ecb73ad28d1a3f66ac9dc19e1b667711f14314f",
+    "repo": "adobe/trustmark",
+    "spdx": "NOASSERTION",
+    "tarball_sha256": "3fe05a0e7e4bb960a3c0cd3b6f25c2e6f5d2c0ec56709431286be71031530e90"
+  },
+  "videoseal": {
+    "commit": "870ca7fb33578b90f14c602016b6c2788096226e",
+    "repo": "facebookresearch/videoseal",
+    "spdx": "MIT",
+    "tarball_sha256": "8e69b463a2a1384a01b861881556c8d10d502182be7d4172817e4ba1ded192c1"
+  }
+}

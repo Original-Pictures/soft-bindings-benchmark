@@ -1,0 +1,25 @@
+\begin{table}[!t]
+\centering
+\footnotesize
+\caption{Sensitivity of the image operating points to the treatment of catalogue duplicates. \emph{Any}: the rule fixed in advance (a pair counts as a duplicate if PDQ, SSCD or DINOv2-B says so); \emph{two}: two of the three must agree; \emph{none}: no cleanup, so recoloured or re-mounted versions of a registered design count as false matches. R@1 changes by at most a few points; the calibrated TPR does not.}
+\label{tab:sens}
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{lcccccc}
+\toprule
+ & \multicolumn{2}{c}{Any (primary)} & \multicolumn{2}{c}{Two of three} & \multicolumn{2}{c}{None} \\
+Method & TPR$_{q,1\%}$ & TPR$_{p,10^{-7}}$ & TPR$_{q,1\%}$ & TPR$_{p,10^{-7}}$ & TPR$_{q,1\%}$ & TPR$_{p,10^{-7}}$ \\
+\midrule
+PDQ & 0.495 & 0.495 & 0.476 & 0.471 & 0.214 & 0.214 \\
+PDQ (dihedral) & 0.549 & 0.546 & 0.523 & 0.523 & 0.223 & 0.223 \\
+pHash-256 & 0.494 & 0.492 & 0.476 & 0.472 & 0.000 & 0.000 \\
+ISCC Image-256 & 0.466 & 0.458 & 0.448 & 0.448 & 0.211 & 0.000 \\
+DINOv2-S & 0.625 & 0.612 & 0.546 & 0.544 & 0.194 & 0.192 \\
+DINOv2-S LSH-256 & 0.538 & 0.519 & 0.462 & 0.462 & 0.174 & 0.174 \\
+DINOv2-B & 0.653 & 0.650 & 0.542 & 0.537 & 0.201 & 0.199 \\
+OpenCLIP B/32 & 0.401 & 0.356 & 0.365 & 0.344 & 0.185 & 0.170 \\
+SSCD R50\reftier & 0.725 & 0.712 & 0.601 & 0.512 & 0.236 & 0.217 \\
+ISC21 1st\reftier & 0.762 & 0.755 & 0.704 & 0.665 & 0.213 & 0.212 \\
+\bottomrule
+\end{tabular}
+
+\end{table}

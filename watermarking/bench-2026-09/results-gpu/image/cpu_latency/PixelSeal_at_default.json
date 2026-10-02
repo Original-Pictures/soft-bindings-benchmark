@@ -1,0 +1,31 @@
+{
+ "decode_ms_median": 170.23734100075671,
+ "embed_ms_per_mp_median": 1116.6619501563318,
+ "host": {
+  "cpu_model": "AMD EPYC 7R32",
+  "cuda": true,
+  "gpu": "NVIDIA A10G",
+  "machine": "x86_64",
+  "mps": false,
+  "platform": "Linux-7.0.0-1012-aws-x86_64-with-glibc2.39",
+  "processor": "x86_64",
+  "python": "3.11.16",
+  "torch": "2.14.0+cu130"
+ },
+ "meta": {
+  "code_licence": "MIT",
+  "deployable": true,
+  "family": "PixelSeal",
+  "name": "PixelSeal@default",
+  "nbits": 256,
+  "note": "",
+  "params": {
+   "card": "pixelseal",
+   "lowres_attenuation": true,
+   "scaling_w": null,
+   "scaling_w_effective": 0.2
+  },
+  "weights_licence": "MIT"
+ },
+ "threads": 4
+}

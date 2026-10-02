@@ -1,0 +1,20 @@
+\begin{table*}[!t]
+\centering
+\scriptsize
+\caption{Audio retrieval over all attacks, and Recall@1 under selected attacks. TPR$_{q,1\%}$: detection at the threshold set for a 1\% query-level false-match rate on the calibration negatives; FPR$_q$ (test): the rate that threshold actually gave on the held-out negatives. TPR$_{p,10^{-6}}$: the strictest pair-level target that 4053 calibration queries against 6350 references resolve; stricter targets are not reported. Intervals: 95\% bootstrap over sources.}
+\label{tab:fp-audio}
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{lccccccccc}
+\toprule
+Method & R@1 & $\mu$AP & TPR$_{q,1\%}$ & FPR$_{q}$ (test) & TPR$_{p,10^{-6}}$ & Music 10\,s exc. & Speech 10\,s exc. & Pitch +2 & Re-record \\
+\midrule
+Chromaprint & 0.805 & 0.817 & 0.704 \tiny[0.68, 0.72] & 0.016 \tiny[0.00, 0.04] & 0.688 \tiny[0.66, 0.71] & 1.000 & 1.000 & 0.006 & 0.451 \\
+audfprint & 0.851 & 0.851 & 0.660 \tiny[0.53, 0.74] & 0.008 \tiny[0.00, 0.03] & 0.599 \tiny[0.46, 0.72] & 0.982 & 1.000 & 0.071 & 0.852 \\
+ISCC Audio-64 & 0.662 & 0.581 & 0.409 \tiny[0.21, 0.41] & 0.017 \tiny[0.00, 0.03] & 0.212 \tiny[0.00, 0.41] & 0.247 & 0.657 & 0.004 & 0.183 \\
+ISCC Audio-256 & 0.749 & 0.658 & 0.454 \tiny[0.31, 0.51] & 0.019 \tiny[0.00, 0.04] & 0.321 \tiny[0.24, 0.47] & 0.555 & 0.882 & 0.006 & 0.342 \\
+CLAP & 0.707 & 0.446 & 0.386 \tiny[0.33, 0.45] & 0.017 \tiny[0.01, 0.04] & 0.328 \tiny[0.27, 0.41] & 0.957 & 0.725 & 0.910 & 0.228 \\
+NMFP\reftier & 0.905 & 0.937 & 0.862 \tiny[0.82, 0.88] & 0.018 \tiny[0.00, 0.04] & 0.846 \tiny[0.79, 0.88] & 1.000 & 1.000 & 0.057 & 1.000 \\
+\bottomrule
+\end{tabular}
+
+\end{table*}

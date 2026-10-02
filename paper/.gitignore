@@ -1,0 +1,10 @@
+# Build products (build.sh regenerates them)
+main.pdf
+main.log
+main.aux
+main.bbl
+main.blg
+main.out
+arxiv-submission.tar.gz
+.arxiv-check/
+scripts/__pycache__/

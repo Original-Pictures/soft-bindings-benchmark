@@ -1,0 +1,35 @@
+\begin{table*}[!t]
+\centering
+\footnotesize
+\caption{Image retrieval over all attacks (ABO; registry of registered originals and distractors). TPR counts a query only if its top-1 is the true asset and the score passes a threshold fixed on held-out calibration negatives: query-level FPR 1\% at this registry size, or pair-level FPR $10^{-7}$ (95\% interval from a bootstrap over sources, which redraws the calibration negatives and so the threshold). Hard: rate at which another photograph of a registered product binds to that product at the 1\% threshold.}
+\label{tab:fp-image}
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{lcccccc}
+\toprule
+Method & R@1 & $\mu$AP & TPR$_{q,1\%}$ & TPR$_{p,10^{-7}}$ & Hard FB & DISC21 $\mu$AP \\
+\midrule
+PDQ & 0.579 & 0.520 & 0.495 & 0.495 \tiny[0.48, 0.50] & 0.000 & 0.295 \\
+PDQ (dihedral) & 0.623 & 0.569 & 0.549 & 0.546 \tiny[0.54, 0.55] & 0.000 & 0.367 \\
+aHash & 0.503 & 0.189 & 0.000 & 0.000 \tiny[0.00, 0.00] & 0.000 & 0.027 \\
+dHash & 0.560 & 0.356 & 0.313 & 0.000 \tiny[0.00, 0.00] & 0.000 & 0.195 \\
+pHash & 0.563 & 0.469 & 0.373 & 0.373 \tiny[0.00, 0.38] & 0.000 & 0.240 \\
+pHash-256 & 0.589 & 0.520 & 0.494 & 0.492 \tiny[0.48, 0.50] & 0.001 & 0.302 \\
+wHash & 0.425 & 0.134 & 0.000 & 0.000 \tiny[0.00, 0.00] & 0.000 & 0.024 \\
+BlockMean & 0.562 & 0.338 & 0.337 & 0.000 \tiny[0.00, 0.00] & 0.001 & 0.069 \\
+Marr–Hildreth & 0.586 & 0.455 & 0.362 & 0.314 \tiny[0.28, 0.35] & 0.001 & 0.292 \\
+ColorMoment & 0.281 & 0.101 & 0.000 & 0.000 \tiny[0.00, 0.00] & 0.000 & 0.000 \\
+Blockhash & 0.560 & 0.250 & 0.000 & 0.000 \tiny[0.00, 0.00] & 0.000 & 0.182 \\
+ISCC Image-64 & 0.558 & 0.491 & 0.427 & 0.427 \tiny[0.31, 0.43] & 0.001 & 0.269 \\
+ISCC Image-256 & 0.561 & 0.507 & 0.466 & 0.458 \tiny[0.45, 0.47] & 0.001 & 0.292 \\
+DINOv2-S & 0.877 & 0.703 & 0.625 & 0.612 \tiny[0.60, 0.63] & 0.000 & 0.444 \\
+DINOv2-B & 0.872 & 0.703 & 0.653 & 0.650 \tiny[0.64, 0.66] & 0.003 & 0.460 \\
+DINOv2-S LSH-256 & 0.832 & 0.664 & 0.538 & 0.519 \tiny[0.50, 0.55] & 0.000 & 0.399 \\
+OpenCLIP B/32 & 0.864 & 0.657 & 0.401 & 0.356 \tiny[0.33, 0.40] & 0.002 & 0.234 \\
+SSCD R50\reftier & 0.929 & 0.763 & 0.725 & 0.712 \tiny[0.71, 0.73] & 0.007 & 0.795 \\
+SSCD RX101\reftier & 0.942 & 0.787 & 0.763 & 0.703 \tiny[0.69, 0.77] & 0.007 & 0.823 \\
+ISC21 1st\reftier & 0.919 & 0.815 & 0.762 & 0.755 \tiny[0.75, 0.77] & 0.004 & 0.917 \\
+DINOHash-96\reftier & 0.769 & 0.533 & 0.237 & 0.237 \tiny[0.23, 0.24] & 0.000 & 0.212 \\
+\bottomrule
+\end{tabular}
+
+\end{table*}

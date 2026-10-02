@@ -1,0 +1,22 @@
+\begin{table*}[!t]
+\centering
+\scriptsize
+\caption{Video retrieval over all attacks, and Recall@1 under selected attacks. TPR$_{q,1\%}$: detection at the threshold set for a 1\% query-level false-match rate on the calibration negatives; FPR$_q$ (test): the rate that threshold actually gave on the held-out negatives. TPR$_{p,10^{-4}}$: the strictest pair-level target that 500 calibration queries against 443 references resolve; stricter targets are not reported. Intervals: 95\% bootstrap over sources.}
+\label{tab:video}
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{lccccccccc}
+\toprule
+Method & R@1 & $\mu$AP & TPR$_{q,1\%}$ & FPR$_{q}$ (test) & TPR$_{p,10^{-4}}$ & Crop 50\% & PiP & Inserted & Screen rec. \\
+\midrule
+vPDQ & 0.628 & 0.617 & 0.577 \tiny[0.56, 0.59] & 0.032 \tiny[0.00, 0.08] & 0.609 \tiny[0.57, 0.62] & 0.000 & 0.000 & 0.342 & 0.000 \\
+TMK+PDQF & 0.778 & 0.723 & 0.631 \tiny[0.61, 0.66] & 0.066 \tiny[0.00, 0.16] & 0.635 \tiny[0.63, 0.70] & 0.017 & 0.000 & 0.583 & 0.992 \\
+ISCC Video-64 & 0.731 & 0.700 & 0.620 \tiny[0.61, 0.65] & 0.062 \tiny[0.00, 0.16] & 0.634 \tiny[0.62, 0.66] & 0.025 & 0.000 & 0.333 & 0.817 \\
+ISCC Video-256 & 0.801 & 0.749 & 0.652 \tiny[0.63, 0.67] & 0.068 \tiny[0.00, 0.17] & 0.664 \tiny[0.66, 0.69] & 0.108 & 0.008 & 0.575 & 0.958 \\
+DINOv2-S frames & 0.872 & 0.691 & 0.437 \tiny[0.41, 0.58] & 0.062 \tiny[0.01, 0.15] & 0.523 \tiny[0.45, 0.63] & 0.592 & 0.125 & 0.525 & 0.817 \\
+DINOv2-S mean & 0.947 & 0.831 & 0.547 \tiny[0.51, 0.73] & 0.032 \tiny[0.00, 0.16] & 0.653 \tiny[0.56, 0.77] & 0.917 & 0.200 & 0.958 & 0.950 \\
+SSCD frames\reftier & 0.921 & 0.806 & 0.502 \tiny[0.48, 0.56] & 0.032 \tiny[0.00, 0.10] & 0.535 \tiny[0.50, 0.69] & 0.917 & 0.067 & 0.658 & 0.983 \\
+SSCD mean\reftier & 0.958 & 0.893 & 0.543 \tiny[0.52, 0.78] & 0.036 \tiny[0.00, 0.14] & 0.697 \tiny[0.55, 0.83] & 0.983 & 0.108 & 0.950 & 0.992 \\
+\bottomrule
+\end{tabular}
+
+\end{table*}

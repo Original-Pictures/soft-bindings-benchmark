@@ -1,0 +1,30 @@
+{
+ "decode_ms_per_audio_s_median": 32.54712269990705,
+ "embed_ms_per_audio_s_median": 59.33425660005014,
+ "host": {
+  "cpu_model": "AMD EPYC 7R32",
+  "cuda": true,
+  "gpu": "NVIDIA A10G",
+  "machine": "x86_64",
+  "mps": false,
+  "platform": "Linux-7.0.0-1012-aws-x86_64-with-glibc2.39",
+  "processor": "x86_64",
+  "python": "3.11.16",
+  "torch": "2.14.0+cu130"
+ },
+ "meta": {
+  "code_licence": "MIT",
+  "deployable": true,
+  "family": "AudioSeal",
+  "name": "AudioSeal-streaming@1",
+  "nbits": 16,
+  "note": "streaming variant; blind detection at detected-frames >= 0.80",
+  "params": {
+   "alpha": 1.0,
+   "detect_frames_threshold": 0.8,
+   "variant": "streaming"
+  },
+  "weights_licence": "MIT (HF facebook/audioseal @3c19eba)"
+ },
+ "threads": 4
+}

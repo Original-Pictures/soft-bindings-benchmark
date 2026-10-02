@@ -1,0 +1,62 @@
+{
+  "InvisMark": {
+    "commit": "8d5ce55705ada1c2daf642c97f7ff3ae6dbd1825",
+    "repo": "microsoft/InvisMark",
+    "spdx": "MIT",
+    "tarball_sha256": "2a43abda0642276919b87feca5827b09c7f6563480b87069097d76fb178432a3"
+  },
+  "Perth": {
+    "commit": "ff1c8ac55a976971245cdd53c18d6131ca00d993",
+    "repo": "resemble-ai/Perth",
+    "spdx": "MIT",
+    "tarball_sha256": "00e89ff833f7efc1a0ae0ca3c5420ae108b9adbed9c0fb7b03750b854d30f149"
+  },
+  "RivaGAN": {
+    "commit": "efffa72a4ca46d4d5051f6970c96424c2cdab441",
+    "repo": "DAI-Lab/RivaGAN",
+    "spdx": "MIT",
+    "tarball_sha256": "e465c028624a34b3ff984c0e0b1d977d465ff11532ce68df2b21896c3b549ac1"
+  },
+  "audioseal": {
+    "commit": "e63a8a0e5cdf7bb797159c92ba15961557fe9bd2",
+    "repo": "facebookresearch/audioseal",
+    "spdx": "MIT",
+    "tarball_sha256": "e91ba94fbd512517023612b705dcf3fb2881021bc5ed11b85ff40b279daaab49"
+  },
+  "invisible-watermark": {
+    "commit": "68d0376d94a4701ed240af0841ec12e00676e325",
+    "repo": "ShieldMnt/invisible-watermark",
+    "spdx": "MIT",
+    "tarball_sha256": "4de29255f6a37279eda39e2919815d59d0f17bde5f6bc4d0d4d6528925b5537b"
+  },
+  "silentcipher": {
+    "commit": "c11afe0e2df73f1ac0f848e2903b8af36e6a0b10",
+    "repo": "sony/silentcipher",
+    "spdx": "MIT",
+    "tarball_sha256": "3f3e1f6bebe464d0063c97e1631fbe44045a35ddf2c86c307fb397d9f56f478a"
+  },
+  "trustmark": {
+    "commit": "2ecb73ad28d1a3f66ac9dc19e1b667711f14314f",
+    "repo": "adobe/trustmark",
+    "spdx": "NOASSERTION",
+    "tarball_sha256": "3fe05a0e7e4bb960a3c0cd3b6f25c2e6f5d2c0ec56709431286be71031530e90"
+  },
+  "videoseal": {
+    "commit": "870ca7fb33578b90f14c602016b6c2788096226e",
+    "repo": "facebookresearch/videoseal",
+    "spdx": "MIT",
+    "tarball_sha256": "8e69b463a2a1384a01b861881556c8d10d502182be7d4172817e4ba1ded192c1"
+  },
+  "watermark-anything": {
+    "commit": "2c08af04d037d5667c02f6ddebbda9ff04581c3e",
+    "repo": "facebookresearch/watermark-anything",
+    "spdx": "MIT",
+    "tarball_sha256": "8cea97816919ff89dc58720614f71058c48a0184f7b1d2e94a788141eb7a990d"
+  },
+  "wavmark": {
+    "commit": "6ab3bf7ce0679e5b5cfeff3a62e8df9cd2024b37",
+    "repo": "wavmark/wavmark",
+    "spdx": "MIT",
+    "tarball_sha256": "783e2902970322cd6e1249b8e1063196ae286ec8023b5b635f38cb8bafe503f7"
+  }
+}

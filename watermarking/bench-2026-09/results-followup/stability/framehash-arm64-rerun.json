@@ -1,0 +1,68 @@
+{
+ "host": {
+  "platform": "macOS-26.6.2-arm64-arm-64bit",
+  "machine": "arm64",
+  "processor": "arm",
+  "python": "3.11.16",
+  "torch": "2.14.0",
+  "cuda": false,
+  "mps": true,
+  "cpu_model": "Apple M5 Pro"
+ },
+ "av": "18.1.0",
+ "ffmpeg": [
+  9,
+  5,
+  102
+ ],
+ "files": {
+  "aspen_5s_sw0.4_crf18.mp4": {
+   "yuv420p_16f": "90f88d864f8cb227",
+   "rgb24_16f": "bfb705ea3cca870a"
+  },
+  "aspen_5s_sw0.4_crf22.mp4": {
+   "yuv420p_16f": "c0ac55c1b1143bd1",
+   "rgb24_16f": "e678e4d38d8f36d2"
+  },
+  "aspen_5s_sw1.1_crf18.mp4": {
+   "yuv420p_16f": "7b9495e4977c63f6",
+   "rgb24_16f": "ecc9b43847e377eb"
+  },
+  "aspen_5s_sw1.1_crf22.mp4": {
+   "yuv420p_16f": "38584a2d7231d0c4",
+   "rgb24_16f": "4c912dcd38606f6b"
+  },
+  "controlled_burn_5s_sw0.4_crf18.mp4": {
+   "yuv420p_16f": "dbefa82524d79a45",
+   "rgb24_16f": "91f3025f295a6672"
+  },
+  "controlled_burn_5s_sw0.4_crf22.mp4": {
+   "yuv420p_16f": "c3fdd102a258cd03",
+   "rgb24_16f": "bbf3d79a47512500"
+  },
+  "controlled_burn_5s_sw1.1_crf18.mp4": {
+   "yuv420p_16f": "4a1ad0a9c15223b3",
+   "rgb24_16f": "187af87ee7648db7"
+  },
+  "controlled_burn_5s_sw1.1_crf22.mp4": {
+   "yuv420p_16f": "dcce6bceffbf5bac",
+   "rgb24_16f": "5a733a27d656bc84"
+  },
+  "red_kayak_5s_sw0.4_crf18.mp4": {
+   "yuv420p_16f": "89381ade9547ce11",
+   "rgb24_16f": "97174674ad196659"
+  },
+  "red_kayak_5s_sw0.4_crf22.mp4": {
+   "yuv420p_16f": "c173e68aa6be3988",
+   "rgb24_16f": "95e254a9e5fa838d"
+  },
+  "red_kayak_5s_sw1.1_crf18.mp4": {
+   "yuv420p_16f": "76e33ea7053aca56",
+   "rgb24_16f": "63d1a126cdc8770e"
+  },
+  "red_kayak_5s_sw1.1_crf22.mp4": {
+   "yuv420p_16f": "664053a630468822",
+   "rgb24_16f": "f5a4f649fea69985"
+  }
+ }
+}

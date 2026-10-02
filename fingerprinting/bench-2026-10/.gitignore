@@ -1,0 +1,4 @@
+# Mac smoke-slice results (not evidence; see README)
+results/
+__pycache__/
+.pytest_cache/

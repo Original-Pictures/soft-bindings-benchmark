@@ -1,0 +1,40 @@
+\begin{table*}[!t]
+\centering
+\footnotesize
+\caption{Image watermarking on 85 images (24 Kodak, 25 DIV2K, 28 CLIC, 8 16-bit HDR). Means over images (FLIP: 60 images without DIV2K; CVVDP: 32 Kodak and HDR images); bit accuracy after JPEG at quality 75, pooled and on the worst content subset.}
+\label{tab:wm-image}
+\setlength{\tabcolsep}{3.4pt}
+\begin{tabular}{lcrrrrrrrrrrr}
+\toprule
+Configuration & Q & PSNR & SSIM & LPIPS & FLIP & CVVDP & \multicolumn{2}{c}{JPEG 75 bit acc.} & Blind & GPU & Cost & Comb. \\
+  &   & (dB)$\uparrow$ & $\uparrow$ & $\downarrow$ & $\downarrow$ & $\uparrow$ & pooled & worst set & FPR$\downarrow$ & (ms/MP) & (\$/k MP) & $\uparrow$ \\
+\midrule
+PixelSeal (0.15)\textsuperscript{\bestmark} & \checkmark & 48.3 & 0.9969 & \textbf{0.0012} & 0.024 & 9.93 & 0.988 & 0.980 & n/a & 9.13 & 0.0026 & \textbf{0.95} \\
+PixelSeal (0.2) & \checkmark & 45.9 & 0.9952 & 0.0020 & 0.030 & 9.88 & 0.998 & 0.996 & n/a & 9.13 & 0.0026 & 0.90 \\
+Video Seal (0.2)\textsuperscript{\costmark}\textsuperscript{\speedmark} & \checkmark & 44.8 & 0.9953 & 0.0021 & 0.034 & 9.82 & 0.997 & 0.996 & n/a & \textbf{8.79} & \textbf{0.0025} & 0.90 \\
+PixelSeal (0.4) & \checkmark & 40.1 & 0.9863 & 0.0077 & 0.051 & 9.57 & 0.999 & 0.999 & n/a & 9.13 & 0.0026 & 0.79 \\
+Video Seal (0.4) & \checkmark & 38.9 & 0.9856 & 0.0082 & 0.058 & 9.39 & 1.000 & 0.999 & n/a & \textbf{8.79} & \textbf{0.0025} & 0.79 \\
+WAM (1) & \checkmark & 45.3 & 0.9948 & 0.0099 & 0.043 & 9.97 & 0.994 & 0.990 & n/a & 19.1 & 0.0053 & 0.57 \\
+WAM (2) & \checkmark & 39.4 & 0.9852 & 0.0367 & 0.071 & 9.88 & \textbf{1.000} & \textbf{1.000} & n/a & 19.1 & 0.0053 & 0.51 \\
+TrustMark-P (0.8) & \checkmark & \textbf{50.5} & \textbf{0.9985} & 0.0017 & \textbf{0.022} & \textbf{9.98} & 0.977 & 0.952 & 0.021 & 45.1 & 0.013 & 0.43 \\
+TrustMark-P (1) & \checkmark & 49.4 & 0.9980 & 0.0024 & 0.024 & 9.97 & 0.990 & 0.977 & 0.021 & 45.1 & 0.013 & 0.43 \\
+TrustMark-P (1.5) & \checkmark & 46.8 & 0.9964 & 0.0049 & 0.029 & 9.93 & 0.998 & 0.995 & 0.021 & 45.1 & 0.013 & 0.41 \\
+TrustMark-B (1) & \checkmark & 41.0 & 0.9940 & 0.0029 & 0.043 & 9.45 & 0.999 & 0.997 & 0.038 & 55.7 & 0.013\textsuperscript{c} & 0.35 \\
+TrustMark-Q (1) & \checkmark & 42.1 & 0.9943 & 0.0027 & 0.040 & 9.48 & 0.999 & 0.999 & 0.026 & 63.5 & 0.014\textsuperscript{c} & 0.34 \\
+TrustMark-C (1) & \checkmark & 40.0 & 0.9926 & 0.0035 & 0.047 & 9.38 & 0.995 & 0.992 & 0.044 & 54.4 & 0.014\textsuperscript{c} & 0.34 \\
+TrustMark-Q (1.2) & \checkmark & 40.7 & 0.9925 & 0.0037 & 0.045 & 9.33 & 1.000 & 1.000 & 0.026 & 63.5 & 0.014\textsuperscript{c} & 0.33 \\
+TrustMark-Q (1.3) & \checkmark & 40.0 & 0.9914 & 0.0043 & 0.047 & 9.25 & 1.000 & 0.999 & 0.026 & 63.5 & 0.014\textsuperscript{c} & 0.33 \\
+TrustMark-Q (1.4) & \checkmark & 39.4 & 0.9904 & 0.0049 & 0.049 & 9.18 & 1.000 & 0.999 & 0.026 & 63.5 & 0.014\textsuperscript{c} & 0.32 \\
+TrustMark-Q (1.5) & \checkmark & 38.9 & 0.9893 & 0.0056 & 0.052 & 9.11 & 1.000 & 0.999 & 0.026 & 63.5 & 0.014\textsuperscript{c} & 0.32 \\
+DWT-DCT-SVD & \checkmark & 39.1 & 0.9782 & 0.0323 & 0.051 & 9.90 & 0.974 & 0.961 & n/a & 409 & 0.014\textsuperscript{c} & 0.20 \\
+PixelSeal (0.1) & -- & 51.6 & 0.9983 & 0.0006 & 0.016 & 9.97 & 0.907 & 0.863 & n/a & 9.13 & 0.0026 & -- \\
+Video Seal (0.1) & -- & 50.5 & 0.9985 & 0.0006 & 0.018 & 9.95 & 0.887 & 0.869 & n/a & 8.79 & 0.0025 & -- \\
+PixelSeal (0.125) & -- & 49.8 & 0.9976 & 0.0009 & 0.020 & 9.95 & 0.965 & 0.936 & n/a & 9.13 & 0.0026 & -- \\
+InvisMark\textsuperscript{\dag} & -- & 50.1 & 0.9963 & 0.0017 & 0.022 & 9.99 & 0.919 & 0.873 & n/a & 8.73 & 0.0024 & -- \\
+DWT-DCT & -- & 39.3 & 0.9673 & 0.0212 & 0.029 & 9.95 & 0.518 & 0.508 & n/a & 409 & 0.014\textsuperscript{c} & -- \\
+ChunkySeal (0.2) & -- & 44.4 & 0.9925 & 0.0090 & 0.048 & 9.84 & 0.934 & 0.789 & n/a & 50.4 & 0.014 & -- \\
+RivaGAN\textsuperscript{\dag} & -- & 40.5 & 0.9735 & 0.0643 & 0.077 & 9.85 & 0.996 & 0.988 & n/a & 5250 & 1.5 & -- \\
+\bottomrule
+\end{tabular}
+\par\vspace{2pt}\parbox{\linewidth}{\raggedright\scriptsize \costmark\ lowest cost, \speedmark\ fastest GPU embedding, \bestmark\ highest combined score, each among qualifying configurations (Q). Ties between strengths of one network are broken by quality. Bold: best qualifying value per column. \dag\ Code or weights lack an open licence; reported for reference and excluded from ranking. Blind FPR: share of unmarked decodes (four per image) on which the model's own detector fires, per decode; Table~\ref{tab:wm-fpr} gives it per source (n/a: no blind detector). Cost: estimated USD per 1{,}000 megapixels on the cheaper of GPU and CPU (\textsuperscript{c}: CPU cheaper). Latency is the median over the network's strength settings (Section~\ref{sec:wm-cost}).}
+\end{table*}

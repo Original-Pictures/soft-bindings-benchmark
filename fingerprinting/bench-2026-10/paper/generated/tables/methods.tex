@@ -1,0 +1,51 @@
+\begin{table*}[!t]
+\centering
+\scriptsize
+\caption{Methods, licences, stored size and extraction time. Bits: stored bits per registered asset (float descriptors count 32 bits per dimension; time-based systems report the mean over the registered items). Time: per image (1024 px), per second of audio or per 5\,s clip.}
+\label{tab:methods}
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{lllp{3.3cm}p{3.6cm}rr}
+\toprule
+Modality & Method & Class & Code licence & Weights / data & Bits & Time (ms) \\
+\midrule
+Image & PDQ & Perceptual hash & BSD (ThreatExchange); pdqhash binding  & n/a & 256 & 31 CPU \\
+ & PDQ (dihedral) & Perceptual hash & BSD (ThreatExchange); pdqhash binding  & n/a & 256 & 31 CPU \\
+ & aHash & Perceptual hash & BSD-2-Clause (imagehash) & n/a & 64.0 & 4.3 CPU \\
+ & dHash & Perceptual hash & BSD-2-Clause (imagehash) & n/a & 64.0 & 4.4 CPU \\
+ & pHash & Perceptual hash & BSD-2-Clause (imagehash) & n/a & 64.0 & 5.2 CPU \\
+ & pHash-256 & Perceptual hash & BSD-2-Clause (imagehash) & n/a & 256 & 5.6 CPU \\
+ & wHash & Perceptual hash & BSD-2-Clause (imagehash) & n/a & 64.0 & 63 CPU \\
+ & BlockMean & Perceptual hash & Apache-2.0 (opencv\_contrib) & n/a & 256 & 1.0 CPU \\
+ & Marr–Hildreth & Perceptual hash & Apache-2.0 (opencv\_contrib) & n/a & 576 & 5.5 CPU \\
+ & ColorMoment & Perceptual hash & Apache-2.0 (opencv\_contrib) & n/a & 1344 & 3.6 CPU \\
+ & Blockhash & Perceptual hash & MIT & n/a & 256 & 19 CPU \\
+ & ISCC Image-64 & ISCC (ISO 24138) & Apache-2.0 & n/a & 64.0 & 11 CPU \\
+ & ISCC Image-256 & ISCC (ISO 24138) & Apache-2.0 & n/a & 256 & 11 CPU \\
+ & DINOv2-S & General embedding & Apache-2.0 & Apache-2.0 (HF model card) & 12288 & 2.0 GPU \\
+ & DINOv2-B & General embedding & Apache-2.0 & Apache-2.0 (HF model card) & 24576 & 3.9 GPU \\
+ & DINOv2-S LSH-256 & General embedding & Apache-2.0 & Apache-2.0 (HF model card) & 256 & 1.7 GPU \\
+ & OpenCLIP B/32 & General embedding & MIT (open\_clip) & MIT (laion/CLIP-ViT-B-32-laion2B-s34B-b79K) & 16384 & 1.1 GPU \\
+ & SSCD R50\reftier & Copy-detection trained & MIT & none stated; trained on DISC21 (CC BY-NC 4.0 & 16384 & 2.7 GPU \\
+ & SSCD RX101\reftier & Copy-detection trained & MIT & none stated; trained on DISC21 (CC BY-NC 4.0 & 32768 & 4.6 GPU \\
+ & ISC21 1st\reftier & Copy-detection trained & MIT & MIT repo release; trained on DISC21 (CC BY-N & 8192 & 8.3 GPU \\
+ & DINOHash-96\reftier & Copy-detection trained & none (no LICENSE file) & none (no LICENSE file) & 96.0 & 3.6 GPU \\
+\addlinespace
+Audio & Chromaprint & Perceptual hash & MIT (chromaprint core; fpcalc binary l & n/a & 7072 & 2.0 CPU \\
+ & audfprint & Perceptual hash & MIT & n/a & 40397 & 1.4 CPU \\
+ & ISCC Audio-64 & ISCC (ISO 24138) & Apache-2.0 & n/a & 64.0 & 2.0 CPU \\
+ & ISCC Audio-256 & ISCC (ISO 24138) & Apache-2.0 & n/a & 256 & 2.0 CPU \\
+ & CLAP & General embedding & CC0-1.0 & CC0-1.0 (LAION-AI/CLAP release) & 16384 & 1.1 GPU \\
+ & NMFP\reftier & Copy-detection trained & GPL-3.0 & Zenodo 15719945 (licence as repo, GPL-3.0);  & 239108 & -- \\
+\addlinespace
+Video & vPDQ & Perceptual hash & BSD (ThreatExchange vpdq) & n/a & 1258 & 132 CPU \\
+ & TMK+PDQF & Perceptual hash & BSD (ThreatExchange tmk) & n/a & 2106752 & 51 CPU \\
+ & ISCC Video-64 & ISCC (ISO 24138) & Apache-2.0 & n/a & 64.0 & 54 CPU \\
+ & ISCC Video-256 & ISCC (ISO 24138) & Apache-2.0 & n/a & 256 & 54 CPU \\
+ & DINOv2-S frames & General embedding & Apache-2.0 & Apache-2.0 (HF model card) & 61440 & 136 GPU \\
+ & DINOv2-S mean & General embedding & Apache-2.0 & Apache-2.0 (HF model card) & 12288 & 136 GPU \\
+ & SSCD frames\reftier & Copy-detection trained & MIT & none stated; trained on DISC21 (CC BY-NC 4.0 & 81920 & 137 GPU \\
+ & SSCD mean\reftier & Copy-detection trained & MIT & none stated; trained on DISC21 (CC BY-NC 4.0 & 16384 & 137 GPU \\
+\bottomrule
+\end{tabular}
+\par\vspace{2pt}\parbox{\linewidth}{\raggedright\scriptsize \reftier~Reference tier: weights without a licence, trained on non-commercial data, or copyleft code; measured for comparison, not product-eligible.}
+\end{table*}

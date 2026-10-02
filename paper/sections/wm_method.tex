@@ -1,0 +1,100 @@
+Fig.~\ref{fig:wm-pipeline} summarises the protocol. Each configuration embeds a pseudo-random payload into every corpus item, the marked item is measured against the original, a fixed set of transformations is applied, and the decoder output is compared with the embedded payload. Unmarked items pass through the same decoders to measure false positives. All randomness is seeded, and payloads are derived from a hash of a fixed seed and the item index, so every configuration of a given payload size receives the same message for the same item.
+
+\begin{figure*}[!t]
+\centering
+\input{figures/wm_fig1_pipeline.tex}
+\caption{Benchmark protocol. Each of the \val{wm:count/image} image, \val{wm:count/audio} audio and \val{wm:count/video} video configurations embeds a seeded payload into every item. Quality is measured on the marked item; robustness on the decoder output after each transformation; false positives on unmarked items under the untouched condition and three benign transformations; latency and cost on a fixed GPU and CPU host. A configuration qualifies for ranking only if its licence, gate robustness and false-positive evidence all pass.}
+\label{fig:wm-pipeline}
+\end{figure*}
+
+\subsubsection{Methods Under Test}
+We selected watermarking methods that are distributed with trained weights and an inference implementation, and that target natural images, speech and music, or natural video. Table~\ref{tab:wm-models} lists them. For each method we recorded the licence of the code and, separately, of the weights, because the two differ in several projects. A configuration counts as \emph{open} only when both carry a licence that permits commercial use. Methods whose weights have no stated licence, or whose weight provenance we could not establish, were still measured and are reported as reference points, but they are excluded from every ranking. Several methods were excluded before measurement: VINE, whose code licence is non-commercial \cite{lu2025vine}; the WAM checkpoint trained on COCO, licensed CC BY-NC \cite{sander2025wam}; and DVMark, for which no weights are released \cite{luo2025dvmark}.
+
+Strength was varied where a method exposes a single scalar that scales the embedded residual: the TrustMark strength factor, the blending factor of the PixelSeal, Video Seal and WAM embedders, and the AudioSeal output scale. We kept each method's default and added settings on both sides of it. For PixelSeal we added two settings between 0.1 and the default 0.2 after an initial pass showed that the robustness threshold is crossed in that interval. All other hyperparameters were left at the values published with the weights.
+
+\begin{table}[!t]
+\centering
+\footnotesize
+\caption{Methods, payload sizes and licences.}
+\label{tab:wm-models}
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{llrll}
+\toprule
+Modality & Method & Bits & Code & Weights \\
+\midrule
+Image & TrustMark B, C, P, Q \cite{bui2025trustmark} & 100 & MIT & MIT \\
+Image & PixelSeal \cite{soucek2025pixelseal} & 256 & MIT & MIT \\
+Image, video & Video Seal 1.0 \cite{fernandez2024videoseal} & 256 & MIT & MIT \\
+Image, video & ChunkySeal \cite{petrov2025chunkyseal} & 1024 & MIT & MIT \\
+Image & WAM \cite{sander2025wam} & 32 & MIT & MIT$^{a}$ \\
+Image & DWT-DCT, DWT-DCT-SVD \cite{invisiblewatermark} & 64 & MIT & n/a \\
+Image & RivaGAN \cite{zhang2019rivagan} & 32 & MIT & unclear\textsuperscript{\dag} \\
+Image & InvisMark \cite{xu2025invismark} & 100 & MIT & none stated\textsuperscript{\dag} \\
+Audio & AudioSeal base, streaming \cite{sanroman2024audioseal} & 16 & MIT & MIT \\
+Audio & WavMark \cite{chen2023wavmark} & 16 & MIT & MIT \\
+Audio & SilentCipher \cite{singh2024silentcipher} & 40 & MIT & none stated\textsuperscript{\dag} \\
+Audio & Perth \cite{perth2025} & 0 & MIT & MIT \\
+\bottomrule
+\end{tabular}
+\par\vspace{2pt}\parbox{\linewidth}{\raggedright\scriptsize Bits: payload bits carried and compared. TrustMark transmits a 100-bit codeword; in the BCH\_5 mode used here it carries a 61-bit payload, 35 BCH parity bits and 4 version bits. Bit accuracy and the expected-payload test use the 100 transmitted bits; exact recovery compares the 61 decoded payload bits. $^{a}$The MIT-licensed checkpoint trained on SA-1B; the checkpoint trained on COCO is licensed CC BY-NC and was not used. \dag~Reported for reference only. Perth signals presence without a payload. Every checkpoint is pinned by SHA-256 in the lockfile kept with the scripts (Data and Code Availability).}
+\end{table}
+
+\subsubsection{Corpus}
+\emph{Images} (\val{wm:image/n_items} items): the 24 Kodak images \cite{kodak}, 25 DIV2K validation images \cite{agustsson2017div2k} at about 2K resolution, 28 CLIC 2020 professional validation images \cite{clic}, and 8 CC0 high-dynamic-range panoramas from Poly Haven \cite{polyhaven}, exposure-normalised to a median luminance of 0.18 and stored as 16-bit sRGB TIFF. DIV2K images are used for measurement only and are not redistributed. FLIP was computed on the 60 Kodak, CLIC and HDR images and ColorVideoVDP on the 32 Kodak and HDR images, because both are costly at DIV2K resolution; the other metrics use all 85 images.
+
+\emph{Audio} (\val{wm:audio/n_items} inputs from \val{wm:audio/n_sources} source clips): 40 LibriSpeech test-clean utterances from 40 different speakers \cite{panayotov2015librispeech} and 7 public-domain or CC BY music excerpts distributed with librosa \cite{mcfee2015librosa}, each resampled to 16, 44.1 and 48~kHz. One music excerpt failed in every configuration at all three rates; we treat a clip that fails for every method as a corpus defect and exclude it everywhere, leaving \val{wm:audio/n_sources} source clips (40 speech, 6 music) and 138 inputs, of which \val{wm:audio/n_speech} are speech and \val{wm:audio/n_music} music. The three renderings of a clip are not independent samples; Section~\ref{sec:wm-stats} explains how the statistics account for this.
+
+\emph{Video} (\val{wm:video/n_items} clips): the first 2.5~s of six 1080p sequences from the Xiph test-media collection \cite{xiphderf} (\emph{aspen}, \emph{controlled burn}, \emph{red kayak}, \emph{speed bag}, \emph{crowd run} and the \emph{Sintel} trailer), covering slow and fast motion, fine texture and synthetic content.
+
+\subsubsection{Transformations}
+Image transformations (\val{wm:count/transforms/image}): JPEG at quality 90, 75, 60 and 50; WebP at 80 and 60; bicubic downscaling to 0.75 and 0.5; centre crops retaining 90, 70 and 50\% of each side; Gaussian blur with $\sigma=1$; and brightness scaling by 0.8 and 1.2. Audio transformations (\val{wm:count/transforms/audio}): MP3 at 320, 128 and 64~kb/s; AAC at 256, 128 and 64~kb/s; resampling round trips through 22.05 and 8~kHz; gain of $-6$~dB; and additive white noise at 30~dB SNR. Codec round trips are aligned to the original by cross-correlation before decoding, so that encoder delay does not register as watermark loss. A verifier that holds only the received file cannot do this, so a follow-up experiment decoded the same round trips without alignment (Section~\ref{sec:wm-res-audio}). Video transformations (\val{wm:count/transforms/video}): H.264 at CRF 18, 22, 23 and 28; H.265 at CRF 23 and 28; and H.264 at CRF 23 after 0.5 downscaling or a 75\% centre crop. Marked video is stored losslessly (FFV1, 4:4:4) before each transformation, so the transformation is the only lossy step.
+
+One transformation per modality serves as the \emph{gate}: JPEG 75 for images, MP3 at 128~kb/s for audio and H.264 at CRF 23 for video. These are common default settings in sharing pipelines, and a watermark that does not survive them is of little use for provenance.
+
+\subsubsection{Perceptual Quality}
+Image quality was measured with PSNR, SSIM \cite{wang2004ssim}, MS-SSIM \cite{wang2003msssim}, LPIPS \cite{zhang2018lpips}, FLIP \cite{andersson2020flip} and ColorVideoVDP \cite{mantiuk2024cvvdp}. We use FLIP as the primary image metric because it models the visibility of differences when flipping between two images, which is the viewing condition under which an embedded pattern is most likely to be noticed. Audio quality was measured with SNR, SI-SNR \cite{leroux2019sdr}, wideband PESQ \cite{itu2007p8622}, STOI \cite{taal2011stoi}, the absolute change in integrated loudness following ITU-R BS.1770 \cite{itu2023bs1770}, and a log-spectral difference. PESQ is primary. It was designed and validated for speech, so the primary PESQ value is the mean over the \val{wm:audio/n_speech} speech inputs only; PESQ on the \val{wm:audio/n_music} music inputs is reported separately and not used for ranking. Video quality was measured with PSNR, SSIM, LPIPS and FLIP averaged over frames, and with VMAF \cite{rassool2017vmaf}, which is primary.
+
+\subsubsection{Robustness}
+Robustness is the fraction of payload bits recovered correctly after a transformation (bit accuracy), averaged over items. Because a verifier acts on a decision rather than on a bit rate, we also report two payload-level rates (Table~\ref{tab:wm-exact}): \emph{exact recovery}, the share of items whose decoded payload equals the embedded one, after BCH decoding of its 61-bit payload for TrustMark (the only method with an error-correcting layer) and with every bit correct for the others; and the share of items that pass the expected-payload test of Section~\ref{sec:wm-fp-method} ($\geq k$ of $n$ bits). For video, decoder logits are averaged over all frames of a clip before thresholding, which is the aggregation the Video Seal and PixelSeal decoders are designed for. We report the pooled mean and the mean on the worst content subset (image corpus, audio source and sample rate, or video clip), because a pooled mean can hide systematic failure on one kind of content.
+
+\subsubsection{False Positives}
+\label{sec:wm-fp-method}
+We distinguish two decision rules. A \emph{blind} detector uses only the model's own output: TrustMark's error-correcting decoder reports whether a valid codeword was found, and the audio models expose a detection score, which we threshold at 0.8 for AudioSeal (whose score is the fraction of audio frames classified as watermarked) and at 0.5 for the others. An \emph{expected-payload} test instead declares a watermark when at least $k$ of $n$ decoded bits equal the payload the verifier expects. Under the null hypothesis that unmarked content yields independent fair bits, the per-key false-match probability is
+\begin{equation}
+P_{\mathrm{FM}}(k,n) = \sum_{i=k}^{n}\binom{n}{i}2^{-n},
+\end{equation}
+and we set $k$ to the smallest value with $P_{\mathrm{FM}}\le 10^{-6}$. For 16-bit payloads no such $k$ exists, since even an exact match has probability $2^{-16}\approx1.5\times10^{-5}$; for these methods only the blind detector can be tested.
+
+False-positive trials run each decoder on the unmarked corpus under no transformation and three benign ones (JPEG 75, 0.5 downscale and 70\% crop for images; the untouched signal, MP3 at 128~kb/s and a 22.05~kHz round trip for audio; and, for video, the H.264 CRF~18 encode of each unmarked clip). A verifier checks one fixed expected payload, the one recorded for the asset; comparing each decode with the item's own payload is that check. We also compare each decode with 50 unrelated payloads (200 for video), one fixed list shared by all items. These comparisons test whether decoded bits agree with payloads the content was never marked with, conditional on the decodes we have; they reuse the same decodes and therefore add no independent media, and we report them as counts and as the largest number of matching bits observed, not as additional trials. The transformed copies of one item, and the three renderings of one audio clip, share their source, so observed rates and their exact Clopper-Pearson intervals \cite{clopper1934} use the unmarked source as the trial unit: \val{wm:fpr/image/PixelSeal/own_src_n} images, \val{wm:fpr/audio/WavMark/blind_src_n} audio clips and \val{wm:fpr/video/PixelSeal/own_src_n} video clips. All intervals are two-sided at 95\%. We also plot the distribution of matching bits against the binomial null.
+
+A configuration's false-positive evidence is \emph{analytic} when an expected-payload test with $P_{\mathrm{FM}}\le10^{-6}$ exists and no unmarked trial reached $k$, and \emph{observed} when no such test exists but the blind detector produced no false detection. Our target is a rate of at most $10^{-3}$. Table~\ref{tab:wm-fpr} keeps the two kinds of evidence apart: the theoretical $P_{\mathrm{FM}}$ of each expected-payload test, and the observed counts with their source-level 95\% upper bounds. Analytic evidence meets the target by construction, provided unmarked content decodes to bits that are independent of the expected payload; the match distributions in Section~\ref{sec:wm-res-fpr} are consistent with that assumption but cannot prove it. Observation alone does not establish the target for any configuration: with no false positive, the upper bound falls below $10^{-3}$ only after \val{wm:fpr/sources_for_1e-3} independent sources, far more than our corpus holds.
+
+\subsubsection{Latency and Cost}
+\label{sec:wm-cost}
+Embedding latency was measured on an AWS g5.xlarge instance (NVIDIA A10G, 24~GB; AMD EPYC 7R32, 4 vCPU; PyTorch 2.14, CUDA 13.0) as the median over all corpus items, excluding the first item of each run (which includes lazy initialisation), with device synchronisation before and after each call. We report milliseconds per megapixel for images and video frames, and milliseconds of compute per second of audio. CPU latency was measured on the same host with four threads, as the median over four images (Kodak and DIV2K) or audio items after one warm-up item. Model loading time is excluded.
+
+Strength only scales the residual that the network adds, so settings of one network perform identical computation. Repeated settings nevertheless differed by up to about 20\% in measured latency, which is timing noise. We therefore assign each configuration the median latency of its network, and treat differences between networks of less than about 10\% as unresolved.
+
+Cost is an estimate of on-demand compute price per unit of media:
+\begin{equation}
+C = \frac{t \cdot U}{3.6\times10^{6}}\, p,
+\end{equation}
+where $t$ is the latency in milliseconds per unit, $U$ the number of units (1{,}000 megapixels, or 1{,}000 hours of audio expressed in seconds), and $p$ the hourly price: \$\val{wm:price/gpu} for g5.xlarge and \$\val{wm:price/cpu} for m6a.xlarge, a 4-vCPU instance of the same processor family, both us-east-1 on-demand Linux prices effective \val{wm:price/date} and retrieved from the AWS Price List API. Each configuration is costed on the cheaper of the two. The estimate assumes a fully utilised instance and excludes decoding, storage, data transfer and idle capacity; it is intended for comparing methods, not for budgeting a deployment.
+
+\subsubsection{Qualification and Combined Score}
+A configuration \emph{qualifies} when (i) its code and weights are openly licensed, (ii) gate bit accuracy is at least 0.95 both pooled and on the worst subset, and (iii) its false-positive evidence is analytic or observed. The best-cost, best-speed and best-combined configurations in each table are chosen among qualifying configurations only: a fast method whose mark does not survive the gate transformation is not a usable operating point.
+
+The combined score summarises four criteria as ratios to the best qualifying configuration, so that each lies in $(0,1]$ and equals 1 for the best:
+\begin{align}
+r_q &= \begin{cases} F^{*}/F & \text{image (FLIP } F\text{)}\\ (P-1)/(P^{*}-1) & \text{audio (PESQ } P\text{)} \\ V/V^{*} & \text{video (VMAF } V\text{)}\end{cases}\nonumber\\
+r_b &= (a-0.5)/(a^{*}-0.5),\quad r_t = t^{*}/t,\quad r_c = C^{*}/C,\nonumber\\
+S &= \exp\Big(\sum_{j} w_j \ln r_j\Big),\quad \sum_j w_j = 1,
+\end{align}
+where $a$ is worst-subset gate bit accuracy (0.5 is chance) and starred quantities are the best qualifying values. With equal weights, $S$ is the geometric mean of the four ratios, which rewards balance and penalises a configuration that is poor on any one criterion. Because speed and cost are strongly correlated, we also report a quality-weighted variant ($w_q=0.5$, $w_b=0.2$, $w_t=w_c=0.15$) and note where the two disagree.
+
+\subsubsection{Statistics}
+\label{sec:wm-stats}
+The experimental unit is the source: an image, a video clip, or an audio clip together with its three sample-rate renderings. Means are over items, and their percentile bootstrap 95\% intervals come from 10{,}000 resamples of sources, so that the three renderings of an audio clip are drawn together and the intervals reflect \val{wm:audio/n_sources} independent audio sources rather than 138 inputs (Table~\ref{tab:wm-ci} in the Appendix). Planned comparisons between the leading configurations use two-sided Wilcoxon signed-rank tests on per-source differences \cite{wilcoxon1945}, averaging the renderings of an audio clip first, with Holm adjustment over the family of five tests \cite{holm1979}. Video results rest on six clips and are therefore descriptive; we do not claim significance for video differences.
+
+\subsubsection{Cross-Device Determinism}
+To test whether decoding is reproducible across hardware, we decoded the same compressed files on the benchmark host (x86-64, Linux) and on an Apple M-series machine (arm64, macOS), each with one and four CPU threads and with its accelerator (CUDA or MPS). Files were twelve Video Seal-marked clips (three clips, strengths 0.4 and 1.1, CRF 18 and 22) and one TrustMark-Q-marked image after JPEG 75. For each file we recorded the largest logit difference within one host and across hosts, the number of flipped bits, and whether decoded frames were byte-identical across hosts before and after conversion from YUV to RGB. To separate the colour conversion from the network, each host then converted the first \val{wm:rgb/nframes} frames of every clip to RGB once and saved the arrays, and both hosts decoded both hosts' arrays with the same TorchScript detector (a 2$\times$2 design: input host by decoding host). Both hosts used PyAV \val{wm:rgb/av} with libswscale \val{wm:rgb/swscale}.

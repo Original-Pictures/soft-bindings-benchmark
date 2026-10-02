@@ -1,0 +1,19 @@
+\begin{table*}[!t]
+\centering
+\footnotesize
+\caption{Planned paired comparisons (two-sided Wilcoxon signed-rank on per-source values, Holm-adjusted over the five tests). Audio inputs of one clip are averaged first, so $n$ counts clips; audio PESQ is on speech.}
+\label{tab:wm-tests}
+\setlength{\tabcolsep}{3.4pt}
+\begin{tabular}{lllrrrr}
+\toprule
+Modality & A & B & Metric & $n$ & median(A$-$B) & $p_{\mathrm{Holm}}$ \\
+\midrule
+Image & PixelSeal (0.15) & TrustMark-P (0.8) & FLIP & 60 & 0.0019 & 0.062 \\
+Image & PixelSeal (0.15) & Video Seal (0.2) & FLIP & 60 & -0.0099 & $<$0.001 \\
+Image & PixelSeal (0.15) & TrustMark-Q (1.2) & FLIP & 60 & -0.0212 & $<$0.001 \\
+Audio & AudioSeal base (1) & AudioSeal streaming (0.5) & PESQ (speech) & 40 & -0.1072 & $<$0.001 \\
+Video & PixelSeal (0.4) & Video Seal (0.4) & VMAF & 6 & 3.6629 & 0.062 \\
+\bottomrule
+\end{tabular}
+\par\vspace{2pt}\parbox{\linewidth}{\raggedright\scriptsize Negative FLIP differences favour A; positive PESQ and VMAF differences favour A.}
+\end{table*}

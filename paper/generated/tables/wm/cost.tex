@@ -1,0 +1,35 @@
+\begin{table*}[!t]
+\centering
+\footnotesize
+\caption{Embedding cost and speed per network. Unit: one megapixel (image, video) or one second of audio. Cost in USD per 1{,}000 units for image and video, and per 1{,}000 hours for audio, at on-demand prices (g5.xlarge \$1.006/h, m6a.xlarge \$0.1728/h, us-east-1, effective 2026-09-01).}
+\label{tab:wm-cost}
+\setlength{\tabcolsep}{3.4pt}
+\begin{tabular}{llrlrrrrl}
+\toprule
+Modality & Network & Configs & Any Q & GPU (ms/unit) & CPU (ms/unit) & GPU \$ & CPU \$ & Cheaper \\
+\midrule
+Image & InvisMark\textsuperscript{\dag} & 1 & no & 8.73 & -- & 0.0024 & -- & GPU \\
+Image & Video Seal\textsuperscript{\costmark}\textsuperscript{\speedmark} & 3 & yes & 8.79 & 544 & 0.0025 & 0.026 & GPU \\
+Image & PixelSeal\textsuperscript{\bestmark} & 5 & yes & 9.13 & 1104 & 0.0026 & 0.053 & GPU \\
+Image & WAM & 2 & yes & 19.1 & 361 & 0.0053 & 0.017 & GPU \\
+Image & TrustMark-P & 3 & yes & 45.1 & 273 & 0.013 & 0.013 & GPU \\
+Image & TrustMark-B & 1 & yes & 55.7 & 278 & 0.016 & 0.013 & CPU \\
+Image & TrustMark-Q & 5 & yes & 63.5 & 283 & 0.018 & 0.014 & CPU \\
+Image & TrustMark-C & 1 & yes & 54.4 & 283 & 0.015 & 0.014 & CPU \\
+Image & ChunkySeal & 1 & no & 50.4 & 19069 & 0.014 & 0.92 & GPU \\
+Image & DWT-DCT & 2 & yes & 409 & 296 & 0.11 & 0.014 & CPU \\
+Image & RivaGAN\textsuperscript{\dag} & 1 & no & 5250 & -- & 1.5 & -- & GPU \\
+\midrule
+Audio & Perth & 1 & no & 1.59 & 7.72 & 1.6 & 1.3 & CPU \\
+Audio & AudioSeal base\textsuperscript{\costmark}\textsuperscript{\speedmark}\textsuperscript{\bestmark} & 1 & yes & 4.90 & 60.8 & 4.9 & 10 & GPU \\
+Audio & AudioSeal streaming & 3 & yes & 5.83 & 59.3 & 5.9 & 10 & GPU \\
+Audio & SilentCipher\textsuperscript{\dag} & 1 & no & 7.09 & 437 & 7.1 & 75 & GPU \\
+Audio & WavMark & 1 & yes & 33.5 & -- & 34 & -- & GPU \\
+\midrule
+Video & PixelSeal\textsuperscript{\costmark}\textsuperscript{\speedmark}\textsuperscript{\bestmark} & 2 & yes & 15.4 & -- & 0.0043 & -- & GPU \\
+Video & Video Seal & 4 & yes & 16.3 & -- & 0.0045 & -- & GPU \\
+Video & ChunkySeal & 1 & no & 23.7 & -- & 0.0066 & -- & GPU \\
+\bottomrule
+\end{tabular}
+\par\vspace{2pt}\parbox{\linewidth}{\raggedright\scriptsize Latency is the median over the network's strength settings. \textsuperscript{i}~CPU latency measured on another strength of the same network. Costs exclude I/O, storage, model loading and idle capacity. \costmark\ lowest cost, \speedmark\ fastest GPU embedding, \bestmark\ highest combined score, each among qualifying configurations (Q). Ties between strengths of one network are broken by quality..}
+\end{table*}

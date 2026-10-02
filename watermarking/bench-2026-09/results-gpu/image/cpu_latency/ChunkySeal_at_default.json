@@ -1,0 +1,31 @@
+{
+ "decode_ms_median": 11077.81272650027,
+ "embed_ms_per_mp_median": 19069.41035874089,
+ "host": {
+  "cpu_model": "AMD EPYC 7R32",
+  "cuda": true,
+  "gpu": "NVIDIA A10G",
+  "machine": "x86_64",
+  "mps": false,
+  "platform": "Linux-7.0.0-1012-aws-x86_64-with-glibc2.39",
+  "processor": "x86_64",
+  "python": "3.11.16",
+  "torch": "2.14.0+cu130"
+ },
+ "meta": {
+  "code_licence": "MIT",
+  "deployable": true,
+  "family": "ChunkySeal",
+  "name": "ChunkySeal@default",
+  "nbits": 1024,
+  "note": "",
+  "params": {
+   "card": "chunkyseal",
+   "lowres_attenuation": true,
+   "scaling_w": null,
+   "scaling_w_effective": 0.2
+  },
+  "weights_licence": "MIT"
+ },
+ "threads": 4
+}

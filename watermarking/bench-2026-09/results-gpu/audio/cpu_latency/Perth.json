@@ -1,0 +1,29 @@
+{
+ "decode_ms_per_audio_s_median": 9.625836099803564,
+ "embed_ms_per_audio_s_median": 7.724415799748385,
+ "host": {
+  "cpu_model": "AMD EPYC 7R32",
+  "cuda": true,
+  "gpu": "NVIDIA A10G",
+  "machine": "x86_64",
+  "mps": false,
+  "platform": "Linux-7.0.0-1012-aws-x86_64-with-glibc2.39",
+  "processor": "x86_64",
+  "python": "3.11.16",
+  "torch": "2.14.0+cu130"
+ },
+ "meta": {
+  "code_licence": "MIT",
+  "deployable": true,
+  "family": "Perth",
+  "name": "Perth",
+  "nbits": 0,
+  "note": "presence-only (no payload); resamples the whole signal to 32 kHz internally",
+  "params": {
+   "internal_sr": 32000,
+   "model": "perth_net_250000 implicit"
+  },
+  "weights_licence": "MIT (bundled in resemble-ai/Perth; no separate weight licence)"
+ },
+ "threads": 4
+}

@@ -1,0 +1,101 @@
+\documentclass[11pt,letterpaper]{article}
+
+% arXiv preprint. Compiles with pdfLaTeX (arXiv's default engine for PDF/PNG figures)
+% and with XeTeX; no engine-specific packages.
+\usepackage[T1]{fontenc}
+\usepackage{newtxtext}
+\usepackage[scaled=0.92]{helvet}
+\usepackage{newtxmath}
+\usepackage[margin=1in]{geometry}
+\usepackage{microtype}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{booktabs}
+\usepackage{xcolor}
+\usepackage[numbers,sort&compress]{natbib}
+\usepackage[font=small,labelfont=bf,labelsep=period]{caption}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta,positioning,fit,calc}
+\usepackage[colorlinks=true,linkcolor={blue!50!black},citecolor={blue!50!black},urlcolor={blue!50!black}]{hyperref}
+
+\graphicspath{{figures/}}
+\input{generated/numbers.tex}
+
+% Table glyphs. Watermark tables: best cost, best speed, best combined score.
+\newcommand{\costmark}{\ensuremath{\mathsf{C}}}
+\newcommand{\speedmark}{\ensuremath{\mathsf{S}}}
+\newcommand{\bestmark}{\ensuremath{\star}}
+% Fingerprint tables: reference-tier (not product-eligible) methods.
+\newcommand{\reftier}{\ensuremath{^{\dagger}}}
+
+\setlength{\parskip}{0pt}
+
+\title{\Large\textbf{Watermarks and Fingerprints as Soft Bindings for Content Provenance:}\\[2pt] \large\textbf{An Open-Licence Benchmark for Images, Audio and Video}}
+\author{Seyedmahdi Kazempourradi\thanks{Corresponding author: \href{mailto:mahdi@originalpictures.com}{\texttt{mahdi@originalpictures.com}}} \and Ramtin Mojtahedi \and Behrang Mohseni\\[4pt]
+\normalsize Original Pictures Technologies, Inc., Delaware, USA}
+\date{October 2026}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+\input{sections/abstract.tex}
+\end{abstract}
+
+\noindent\textbf{Keywords:} content provenance, C2PA, soft binding, invisible watermarking, content fingerprinting, copy detection, false positives, robustness, benchmark.
+
+\section{Introduction}
+\label{sec:introduction}
+\input{sections/intro.tex}
+
+\input{sections/related.tex}
+
+\input{sections/design.tex}
+
+\section{Watermark Results}
+\label{sec:wm-results}
+\input{sections/wm_results_lead.tex}
+\input{sections/wm_results.tex}
+
+\section{Fingerprint Results}
+\label{sec:fp-results}
+\input{sections/fp_results_lead.tex}
+\input{sections/fp_results.tex}
+
+\section{Watermarks and Fingerprints Together}
+\label{sec:together}
+\input{sections/together_lead.tex}
+\input{sections/fp_results_wm.tex}
+
+\input{sections/discussion.tex}
+
+\input{sections/conclusion.tex}
+
+\section*{Data and Code Availability}
+\input{sections/availability.tex}
+
+\section*{Competing Interests}
+The authors are employed by Original Pictures Technologies, Inc., which develops content-provenance software. The company did not develop any of the evaluated watermarking or fingerprinting methods, holds no licence or commercial relationship with the authors of those methods, and did not constrain the choice of methods or the reporting of results.
+
+\section*{Use of Generative AI}
+\input{sections/acknowledgment.tex}
+
+\bibliographystyle{unsrtnat}
+\bibliography{refs}
+
+\clearpage
+\appendix
+\section{Supplementary Tables}
+\label{app:tables}
+% Keep supplementary tables after their section heading.
+\begingroup
+\let\supplementarytable\table
+\renewcommand{\table}[1][]{\supplementarytable[H]}
+\renewenvironment{table*}[1][]{\supplementarytable[H]}{\endtable}
+\input{generated/tables/wm/ci.tex}
+\input{generated/tables/fp/ci.tex}
+\clearpage
+\endgroup
+
+\end{document}

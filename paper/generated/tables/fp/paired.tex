@@ -1,0 +1,22 @@
+\begin{table}[!t]
+\centering
+\footnotesize
+\caption{Planned paired comparisons on the same image queries at pair-level FPR $10^{-7}$. The unit is the registered source with all its transformed queries: $p_{\mathrm{Holm}}$ from a sign-flip test on per-source differences in detections (Holm-adjusted over the eight comparisons); the interval of the TPR difference is a bootstrap over sources that also redraws the calibration negatives.}
+\label{tab:fp-paired}
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{llcccrr}
+\toprule
+A & B & TPR$_A$ & TPR$_B$ & A$-$B [95\% CI] & sources & $p_{\mathrm{Holm}}$ \\
+\midrule
+SSCD R50 & DINOv2-S & 0.712 & 0.612 & 0.100 \tiny[0.084, 0.115] & 2{,}000 & $<10^{-3}$ \\
+DINOv2-S & DINOv2-S LSH-256 & 0.612 & 0.519 & 0.093 \tiny[0.066, 0.106] & 2{,}000 & $<10^{-3}$ \\
+PDQ & ISCC Image-64 & 0.495 & 0.427 & 0.068 \tiny[0.058, 0.175] & 2{,}000 & $<10^{-3}$ \\
+PDQ & PDQ (dihedral) & 0.495 & 0.546 & -0.051 \tiny[-0.055, -0.050] & 2{,}000 & $<10^{-3}$ \\
+ISCC Image-64 & ISCC Image-256 & 0.427 & 0.458 & -0.032 \tiny[-0.136, -0.020] & 2{,}000 & $<10^{-3}$ \\
+SSCD R50 & ISC21 1st & 0.712 & 0.755 & -0.043 \tiny[-0.056, -0.029] & 2{,}000 & $<10^{-3}$ \\
+DINOv2-S & OpenCLIP B/32 & 0.612 & 0.356 & 0.256 \tiny[0.220, 0.286] & 2{,}000 & $<10^{-3}$ \\
+pHash & PDQ & 0.373 & 0.495 & -0.121 \tiny[-0.497, -0.112] & 2{,}000 & $<10^{-3}$ \\
+\bottomrule
+\end{tabular}
+
+\end{table}

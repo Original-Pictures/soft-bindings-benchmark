@@ -1,0 +1,39 @@
+% Benchmark protocol schematic (Fig. 1). Drawn in TikZ so text matches the document.
+\begin{tikzpicture}[
+  font=\sffamily\footnotesize,
+  box/.style={draw=black!70, line width=0.5pt, rounded corners=1.5pt, align=center, minimum height=9mm,
+              text width=30mm, inner xsep=2pt, fill=white},
+  data/.style={box, fill=black!5},
+  metric/.style={box, draw=none, fill=blue!8, minimum height=10mm, text width=33mm},
+  arr/.style={-{Stealth[length=1.8mm]}, line width=0.5pt, draw=black!70},
+  lab/.style={font=\sffamily\scriptsize, text=black!60},
+]
+% lane 1: registration
+\node[data] (reg) at (0,0) {Registered assets\\\scriptsize images, audio, video};
+\node[box] (wm) at (3.85,0) {Optional watermark\\\scriptsize TrustMark, AudioSeal,\\[-2pt]\scriptsize Video Seal};
+\node[box] (fp) at (7.7,0) {Fingerprint\\\scriptsize \val{fp:count/methods} methods};
+\node[data] (idx) at (11.55,0) {Registry index\\\scriptsize assets + distractors};
+\draw[arr] (reg) -- (wm);
+\draw[arr] (wm) -- (fp);
+\draw[arr] (fp) -- (idx);
+\node[lab, anchor=south] at (5.775,0.72) {registration};
+
+% lane 2: queries
+\node[data] (neg) at (0,-1.9) {Never-registered\\\scriptsize media (negatives)};
+\node[box] (att) at (3.85,-1.9) {Transform or edit\\\scriptsize \val{fp:count/attacks} attacks, 6 edits};
+\node[box] (qfp) at (7.7,-1.9) {Fingerprint\\\scriptsize query};
+\node[box] (srch) at (11.55,-1.9) {Exact search\\\scriptsize top-50, threshold};
+\draw[arr] (reg.south east) -- node[lab, right, pos=0.45, inner sep=3pt] {positives} (att.north west);
+\draw[arr] (neg) -- node[lab, below, inner sep=2pt] {negatives} (att);
+\draw[arr] (att) -- (qfp);
+\draw[arr] (qfp) -- (srch);
+\draw[arr] (idx) -- (srch);
+\node[lab, anchor=north] at (5.775,-2.55) {queries};
+
+% lane 3: what is measured
+\node[metric] (m1) at (0,-3.75) {\textbf{Robustness}\\\scriptsize R@1, $\mu$AP, TPR at calibrated FPR};
+\node[metric] (m2) at (3.85,-3.75) {\textbf{Localization}\\\scriptsize edited region; time offset};
+\node[metric] (m3) at (7.7,-3.75) {\textbf{Security}\\\scriptsize evasion, forgery, inversion};
+\node[metric] (m4) at (11.55,-3.75) {\textbf{Complementarity}\\\scriptsize watermark key vs.\ fingerprint};
+\draw[densely dashed, black!50, line width=0.5pt] ($(m1.north west)+(-0.1,0.18)$) -- ($(m4.north east)+(0.1,0.18)$);
+\end{tikzpicture}

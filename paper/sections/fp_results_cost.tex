@@ -1,0 +1,10 @@
+\paragraph{Determinism across hosts.} A registry compares a fingerprint computed at signing time with one computed at lookup time, possibly on different hardware. We fingerprinted the same \val{fp:stab/n} PNG files (100 registered originals and their JPEG-75 copies, byte-identical on both hosts) on the AMD EPYC and NVIDIA A10G host and on an Apple M5 Pro laptop (Fig.~\ref{fig:fp-stability}). PDQ, the imagehash DCT and difference hashes, BlockMean, Blockhash and the ISCC codes were bit-identical on every image, and the float descriptors agreed to $1-\cos \le$ \val{fp:stab/SSCD-large/cosmax}. Two classical hashes were not deterministic: the Marr--Hildreth hash differed on \val{fp:stab/MarrHildreth/differ/pct}\% of images by up to \val{fp:stab/MarrHildreth/bitsmax} of its 576 bits, enough to push \val{fp:stab/MarrHildreth/below} of the \val{fp:stab/n} self-comparisons below its own match threshold, and wHash differed on \val{fp:stab/wHash-64/differ/pct}\% by up to \val{fp:stab/wHash-64/bitsmax} of 64 bits. Both depend on floating-point filtering whose result differs between processor architectures; a service that fingerprints on one platform and verifies on another should avoid them or pin the implementation.
+
+\input{sections/fp_results_latency.tex}
+
+\begin{figure}[!t]
+\centering
+\includegraphics[width=\columnwidth]{fp_fig13_stability}
+\caption{Share of binary image codes that differ between an x86/A10G host and an arm64/M5 Pro laptop on byte-identical inputs. Float descriptors differ only in rounding ($1-\cos \le 2\times10^{-4}$).}
+\label{fig:fp-stability}
+\end{figure}

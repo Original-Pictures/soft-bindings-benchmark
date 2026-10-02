@@ -1,0 +1,40 @@
+\begin{table*}[!t]
+\centering
+\scriptsize
+\caption{False positives on unmarked content. Theoretical: the per-key false-match probability $P_{\mathrm{FM}}$ of an expected-payload test that requires $k$ of $n$ bits to match, if unmarked content decodes to independent fair bits. Own payload: false matches against the payload recorded for the item, the check a verifier makes. Random payloads: the same decodes compared with unrelated payloads, which tests agreement with payloads the content was never marked with, conditional on these decodes. Blind detector: false detections of the model's own detector.}
+\label{tab:fpr}
+\setlength{\tabcolsep}{3.4pt}
+\begin{tabular}{lrrrrrrrrrrl}
+\toprule
+Network & \multicolumn{2}{c}{Theoretical} & \multicolumn{3}{c}{Own payload} & \multicolumn{2}{c}{Random payloads} & \multicolumn{3}{c}{Blind detector} & Evidence \\
+\cmidrule(lr){2-3}\cmidrule(lr){4-6}\cmidrule(lr){7-8}\cmidrule(lr){9-11}
+  & $k/n$ & $P_{\mathrm{FM}}$ & trials & sources & 95\% upper & trials & max & trials & sources & 95\% upper &   \\
+\midrule
+\multicolumn{12}{l}{\emph{Image}} \\
+ChunkySeal & 589/1024 & $8.3\times10^{-7}$ & 0/340 & 0/85 & 0.042 & 0/17000 & 566 & \multicolumn{3}{c}{none} & analytic \\
+InvisMark\textsuperscript{\dag} & 74/100 & $8.3\times10^{-7}$ & 0/340 & 0/85 & 0.042 & 0/17000 & 70 & \multicolumn{3}{c}{none} & analytic \\
+PixelSeal & 167/256 & $6.2\times10^{-7}$ & 0/340 & 0/85 & 0.042 & 0/17000 & 158 & \multicolumn{3}{c}{none} & analytic \\
+RivaGAN\textsuperscript{\dag} & 30/32 & $1.2\times10^{-7}$ & 0/240 & 0/60 & 0.060 & 0/12000 & 26 & \multicolumn{3}{c}{none} & analytic \\
+TrustMark-B & 74/100 & $8.3\times10^{-7}$ & 0/340 & 0/85 & 0.042 & 0/17000 & 71 & 13/340 & 10/85 & 0.21 & analytic \\
+TrustMark-C & 74/100 & $8.3\times10^{-7}$ & 0/340 & 0/85 & 0.042 & 0/17000 & 69 & 15/340 & 13/85 & 0.25 & analytic \\
+TrustMark-P & 74/100 & $8.3\times10^{-7}$ & 0/340 & 0/85 & 0.042 & 0/17000 & 69 & 7/340 & 5/85 & 0.13 & analytic \\
+TrustMark-Q & 74/100 & $8.3\times10^{-7}$ & 0/340 & 0/85 & 0.042 & 0/17000 & 69 & 9/340 & 8/85 & 0.18 & analytic \\
+Video Seal & 167/256 & $6.2\times10^{-7}$ & 0/340 & 0/85 & 0.042 & 0/17000 & 161 & \multicolumn{3}{c}{none} & analytic \\
+WAM & 30/32 & $1.2\times10^{-7}$ & 0/340 & 0/85 & 0.042 & 0/17000 & 26 & \multicolumn{3}{c}{none} & analytic \\
+DWT-DCT & 51/64 & $9.4\times10^{-7}$ & 0/340 & 0/85 & 0.042 & 0/17000 & 46 & \multicolumn{3}{c}{none} & analytic \\
+\midrule
+\multicolumn{12}{l}{\emph{Audio}} \\
+AudioSeal base & \multicolumn{2}{c}{none (16 bits)} & \multicolumn{5}{c}{--} & 0/414 & 0/46 & 0.077 & observed \\
+AudioSeal streaming & \multicolumn{2}{c}{none (16 bits)} & \multicolumn{5}{c}{--} & 0/414 & 0/46 & 0.077 & observed \\
+Perth & \multicolumn{2}{c}{no payload} & \multicolumn{5}{c}{--} & 18/414 & 2/46 & 0.15 & fails \\
+SilentCipher\textsuperscript{\dag} & 35/40 & $6.9\times10^{-7}$ & 0/414 & 0/46 & 0.077 & 0/20700 & 31 & 1/414 & 1/46 & 0.12 & analytic \\
+WavMark & \multicolumn{2}{c}{none (16 bits)} & \multicolumn{5}{c}{--} & 0/414 & 0/46 & 0.077 & observed \\
+\midrule
+\multicolumn{12}{l}{\emph{Video}} \\
+ChunkySeal & 589/1024 & $8.3\times10^{-7}$ & 0/6 & 0/6 & 0.46 & 0/1200 & 566 & \multicolumn{3}{c}{none} & analytic \\
+PixelSeal & 167/256 & $6.2\times10^{-7}$ & 0/6 & 0/6 & 0.46 & 0/1200 & 150 & \multicolumn{3}{c}{none} & analytic \\
+Video Seal & 167/256 & $6.2\times10^{-7}$ & 0/6 & 0/6 & 0.46 & 0/1200 & 154 & \multicolumn{3}{c}{none} & analytic \\
+\bottomrule
+\end{tabular}
+\par\vspace{2pt}\parbox{\linewidth}{\raggedright\scriptsize Trials are unmarked items with no transform and under three benign ones (images and audio), or the H.264 CRF 18 encode of each unmarked clip (video); strength settings of one network share the detector, so each network appears once. Sources: unmarked source items with at least one false match or detection, over all sources (an audio source is one clip rendered at three sample rates). 95\% upper: upper endpoint of the two-sided exact Clopper-Pearson 95\% interval with the source as the trial unit. Random payloads: false matches over comparisons, using one fixed list of 50 payloads (200 for video) for every item; max: the largest number of matching bits in any own- or random-payload comparison, to be read against $k$. Analytic: an expected-payload test with $P_{\mathrm{FM}}\leq10^{-6}$ exists and no unmarked trial reached $k$. Observed: no such test exists at this payload size, and the evidence is the blind detector's. None ($n$ bits): even an exact match of all $n$ bits has probability $2^{-n}>10^{-6}$.}
+\end{table*}

@@ -1,0 +1,12 @@
+# LaTeX intermediates and Python caches (paper/build.sh regenerates the paper outputs)
+*.aux
+*.log
+*.blg
+*.out
+*.toc
+.arxiv-check*/
+__pycache__/
+*.pyc
+.venv/
+.pytest_cache/
+.DS_Store

@@ -1,0 +1,16 @@
+{
+ "error": "AssertionError()",
+ "meta": {
+  "code_licence": "MIT",
+  "deployable": true,
+  "family": "WavMark",
+  "name": "WavMark",
+  "nbits": 16,
+  "note": "16 kHz model; 1 s segments",
+  "params": {
+   "pattern_bits": 16,
+   "payload_bits": 16
+  },
+  "weights_licence": "MIT (HF M4869/WavMark)"
+ }
+}

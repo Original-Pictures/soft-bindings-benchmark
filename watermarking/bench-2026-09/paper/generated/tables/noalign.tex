@@ -1,0 +1,20 @@
+\begin{table*}[!t]
+\centering
+\footnotesize
+\caption{Audio decoding after codec round trips with and without alignment to the original. Pub.: the published bit accuracy (Table~\ref{tab:audio}, aligned, benchmark host). Al./Un.: re-run on one host, decoded after cross-correlation alignment to the original (the benchmark protocol) or from the codec output cut to the original length with no offset search. All: the six MP3 and AAC settings pooled; exact: all payload bits correct.}
+\label{tab:noalign}
+\setlength{\tabcolsep}{3.4pt}
+\begin{tabular}{lrrrrrrrrrr}
+\toprule
+ & \multicolumn{3}{c}{MP3 128k bit acc.} & \multicolumn{3}{c}{AAC 64k bit acc.} & \multicolumn{2}{c}{All codecs bit acc.} & \multicolumn{2}{c}{All codecs exact} \\
+Configuration & Pub. & Al. & Un. & Pub. & Al. & Un. & Al. & Un. & Al. & Un. \\
+\midrule
+AudioSeal base (1) & 0.997 & 0.997 & 0.999 & 0.998 & 0.998 & 0.999 & 0.997 & 0.999 & 0.978 & 0.986 \\
+AudioSeal streaming (0.5) & 0.996 & 0.996 & 1.000 & 0.996 & 0.995 & 0.998 & 0.996 & 0.999 & 0.983 & 0.990 \\
+AudioSeal streaming (1.1) & 0.996 & 0.997 & 1.000 & 0.997 & 0.996 & 1.000 & 0.997 & 1.000 & 0.993 & 1.000 \\
+AudioSeal streaming (1) & 0.997 & 0.997 & 1.000 & 0.995 & 0.995 & 1.000 & 0.997 & 1.000 & 0.993 & 1.000 \\
+WavMark & 1.000 & 1.000 & 1.000 & 1.000 & 1.000 & 1.000 & 1.000 & 1.000 & 1.000 & 1.000 \\
+\bottomrule
+\end{tabular}
+\par\vspace{2pt}\parbox{\linewidth}{\raggedright\scriptsize Re-run on Apple M5 Pro with the speech inputs byte-identical to the benchmark corpus; the music inputs were re-decoded from the same source files by a different FFmpeg build (same content, different bytes). Perth carries no payload and is omitted.}
+\end{table*}

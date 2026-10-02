@@ -1,0 +1,2448 @@
+{
+ "audio": [
+  {
+   "licence": "CC BY 4.0",
+   "path": "audio/speech16k/1089-134691-0016.wav",
+   "set": "speech",
+   "sha256": "cf86b1c683f667e2654a73dab0b72d218e8ea7beefb49786a4095bb7c3a207d0",
+   "source": "LibriSpeech test-clean",
+   "sr": 16000
+  },
+  {
+   "licence": "CC BY 4.0",
+   "path": "audio/speech16k/1188-133604-0019.wav",
+   "set": "speech",
+   "sha256": "2110770541f6cd534efc02517634cd4ee2921092e7b53540a51574fc7486f665",
+   "source": "LibriSpeech test-clean",
+   "sr": 16000
+  },
+  {
+   "licence": "CC BY 4.0",
+   "path": "audio/speech16k/121-121726-0000.wav",
+   "set": "speech",
+   "sha256": "3b046c957d3014ff744d589229e81112366a4912c59deaf00b8e816621db120f",
+   "source": "LibriSpeech test-clean",
+   "sr": 16000
+  },
+  {
+   "licence": "CC BY 4.0",
+   "path": "audio/speech16k/1221-135767-0022.wav",
+   "set": "speech",
+   "sha256": "97a5bfee22bb5a331b2a2832ec772c8480bc576ddc9856e331e54e847c523310",
+   "source": "LibriSpeech test-clean",
+   "sr": 16000
+  },
+  {
+   "licence": "CC BY 4.0",
+   "path": "audio/speech16k/1284-1181-0008.wav",
+   "set": "speech",
+   "sha256": "1dadf4c022c815070826c4412aedd671ddd1d277f1f87c393633a25f30121180",
+   "source": "LibriSpeech test-clean",
+   "sr": 16000
+  },
+  {
+   "licence": "CC BY 4.0",
+   "path": "audio/speech16k/1320-122617-0003.wav",
+   "set": "speech",
+   "sha256": "b3441360742f4a1b3ae938fe7dc666aa0b9ff6214f766edb4c23d916f691e3b9",
+   "source": "LibriSpeech test-clean",
+   "sr": 16000
+  },
+  {
+   "licence": "CC BY 4.0",
+   "path": "audio/speech16k/1580-141083-0001.wav",
+   "set": "speech",
+   "sha256": "d13ba2b405ae87621d984ff8665fa49817dc97768c04c418ac5effb9baca626e",
+   "source": "LibriSpeech test-clean",
+   "sr": 16000
+  },
+  {
+   "licence": "CC BY 4.0",
+   "path": "audio/speech16k/1995-1836-0008.wav",
+   "set": "speech",
+   "sha256": "03abedabb701f3705d5c278ead15cad781d650da57b24468b762c80b50437526",
+   "source": "LibriSpeech test-clean",
+   "sr": 16000
+  },
+  {
+   "licence": "CC BY 4.0",
+   "path": "audio/speech16k/2094-142345-0059.wav",
+   "set": "speech",
+   "sha256": "56ce5dab8411323625eef132b8a5411c99d2fbc6b3a73c6c0666a1a13e4b1b52",
+   "source": "LibriSpeech test-clean",
+   "sr": 16000
+  },
+  {
+   "licence": "CC BY 4.0",
+   "path": "audio/speech16k/2300-131720-0037.wav",
+   "set": "speech",
+   "sha256": "6274c33dc91db429bcb1bdb0380ec70d96064ec5beb754a726ef0792d873f3c1",
+   "source": "LibriSpeech test-clean",
+   "sr": 16000
+  },
+  {
+   "licence": "CC BY 4.0",
+   "path": "audio/speech16k/237-134500-0000.wav",
+   "set": "speech",
+   "sha256": "a80c1c1f7b5647534947ed69cc9715191f7d58f402448d6cc8cbb78bec7ad152",
+   "source": "LibriSpeech test-clean",
+   "sr": 16000
+  },
+  {
+   "licence": "CC BY 4.0",
+   "path": "audio/speech16k/260-123440-0004.wav",
+   "set": "speech",
+   "sha256": "8ffb8074ef3779daf799430a67e6f6b2fb6da6d8d4dfd19875e666c73aa29d6e",
+   "source": "LibriSpeech test-clean",
+   "sr": 16000
+  },
+  {
+   "licence": "CC BY 4.0",
+   "path": "audio/speech16k/2830-3980-0055.wav",
+   "set": "speech",
+   "sha256": "a7ea5315cd46f3f482c7bc61654da712cddc3f0fff9cb69c5a480a424d37b944",
+   "source": "LibriSpeech test-clean",
+   "sr": 16000
+  },
+  {
+   "licence": "CC BY 4.0",
+   "path": "audio/speech16k/2961-960-0012.wav",
+   "set": "speech",
+   "sha256": "c4fd0f3992f50c96317955ec56c678267f844489c1240e6ea2f2e6b3832d0b7d",
+   "source": "LibriSpeech test-clean",
+   "sr": 16000
+  },
+  {
+   "licence": "CC BY 4.0",
+   "path": "audio/speech16k/3570-5694-0021.wav",
+   "set": "speech",
+   "sha256": "684f4eecf72c4b5fd0f464c72a48745144fe084959c79235f714119fea695519",
+   "source": "LibriSpeech test-clean",
+   "sr": 16000
+  },
+  {
+   "licence": "CC BY 4.0",
+   "path": "audio/speech16k/3575-170457-0023.wav",
+   "set": "speech",
+   "sha256": "8029dcfe9486135ff441d80cf466ba5729ac8fb7ad0187ba8f32b75a7383ef38",
+   "source": "LibriSpeech test-clean",
+   "sr": 16000
+  },
+  {
+   "licence": "CC BY 4.0",
+   "path": "audio/speech16k/3729-6852-0002.wav",
+   "set": "speech",
+   "sha256": "8cbca70d965aab750131e10e02600d97f24e129c77390f68524ba795c04f3a89",
+   "source": "LibriSpeech test-clean",
+   "sr": 16000
+  },
+  {
+   "licence": "CC BY 4.0",
+   "path": "audio/speech16k/4077-13754-0010.wav",
+   "set": "speech",
+   "sha256": "1a1aa38c11a312bee72a2d2efdcbd6f0c57cf2fb00a7ef3fa9eacc753557bdd1",
+   "source": "LibriSpeech test-clean",
+   "sr": 16000
+  },
+  {
+   "licence": "CC BY 4.0",
+   "path": "audio/speech16k/4446-2271-0001.wav",
+   "set": "speech",
+   "sha256": "3f73174bead6c4b93a9c39a366673365aa2e81112c84214a4e9f5076d2371b5d",
+   "source": "LibriSpeech test-clean",
+   "sr": 16000
+  },
+  {
+   "licence": "CC BY 4.0",
+   "path": "audio/speech16k/4507-16021-0025.wav",
+   "set": "speech",
+   "sha256": "0c0461cbf8c77299a9443fba3260386fe9b5fd915c9feb165b831f00e0181d69",
+   "source": "LibriSpeech test-clean",
+   "sr": 16000
+  },
+  {
+   "licence": "CC BY 4.0",
+   "path": "audio/speech16k/4970-29095-0016.wav",
+   "set": "speech",
+   "sha256": "08c7da87377d2eb4fbb37b778796a63606f0dea3f9c384c0856c78d96a618109",
+   "source": "LibriSpeech test-clean",
+   "sr": 16000
+  },
+  {
+   "licence": "CC BY 4.0",
+   "path": "audio/speech16k/4992-41797-0001.wav",
+   "set": "speech",
+   "sha256": "0fc9102cffc9152b8ffc827d4d43f67edc93517baf76f371f7a6d91010883f4b",
+   "source": "LibriSpeech test-clean",
+   "sr": 16000
+  },
+  {
+   "licence": "CC BY 4.0",
+   "path": "audio/speech16k/5105-28241-0001.wav",
+   "set": "speech",
+   "sha256": "77324a276abee6b4525010122225a5f484e7dee614ed8a9a9f3143febdffbba8",
+   "source": "LibriSpeech test-clean",
+   "sr": 16000
+  },
+  {
+   "licence": "CC BY 4.0",
+   "path": "audio/speech16k/5142-36377-0008.wav",
+   "set": "speech",
+   "sha256": "243522f38d418aa33314dd389c9854d7927d612110564c9fe789bb257bc13ac8",
+   "source": "LibriSpeech test-clean",
+   "sr": 16000
+  },
+  {
+   "licence": "CC BY 4.0",
+   "path": "audio/speech16k/5639-40744-0032.wav",
+   "set": "speech",
+   "sha256": "44b0faf95b321c080ead323a4b3c7b0f06e554975539cd22e87cd787ce6f1624",
+   "source": "LibriSpeech test-clean",
+   "sr": 16000
+  },
+  {
+   "licence": "CC BY 4.0",
+   "path": "audio/speech16k/5683-32865-0008.wav",
+   "set": "speech",
+   "sha256": "2922547b361f9bf975cf2ec8e8b93d6c4426bb758791eb3cb2c435402bc80fa0",
+   "source": "LibriSpeech test-clean",
+   "sr": 16000
+  },
+  {
+   "licence": "CC BY 4.0",
+   "path": "audio/speech16k/61-70968-0011.wav",
+   "set": "speech",
+   "sha256": "ac0ec71479cc2cd204cf3caead4a7929d15fdd20d7eb08c9b35310c3ac5b0e88",
+   "source": "LibriSpeech test-clean",
+   "sr": 16000
+  },
+  {
+   "licence": "CC BY 4.0",
+   "path": "audio/speech16k/672-122797-0038.wav",
+   "set": "speech",
+   "sha256": "a61a85ae7d245bdf6079be1dabe52a41da0322de4beef73197d4ca3cc9cb0366",
+   "source": "LibriSpeech test-clean",
+   "sr": 16000
+  },
+  {
+   "licence": "CC BY 4.0",
+   "path": "audio/speech16k/6829-68769-0034.wav",
+   "set": "speech",
+   "sha256": "c54fe76c8d7e4332218c4a37ba122a92066fb5899eb671634d8a08763e037f58",
+   "source": "LibriSpeech test-clean",
+   "sr": 16000
+  },
+  {
+   "licence": "CC BY 4.0",
+   "path": "audio/speech16k/6930-75918-0005.wav",
+   "set": "speech",
+   "sha256": "083977bbb11e1665a5bfbb5b9c6c224a65bfb3bd321af0befd70e08241c5b59f",
+   "source": "LibriSpeech test-clean",
+   "sr": 16000
+  },
+  {
+   "licence": "CC BY 4.0",
+   "path": "audio/speech16k/7021-79759-0005.wav",
+   "set": "speech",
+   "sha256": "f26ecc69fc19cbac83be82622c2be3ce725e428ea8bcec6b7dd250058c4ae37d",
+   "source": "LibriSpeech test-clean",
+   "sr": 16000
+  },
+  {
+   "licence": "CC BY 4.0",
+   "path": "audio/speech16k/7127-75947-0040.wav",
+   "set": "speech",
+   "sha256": "d0e9219d0302a11e76879398e7e775189141464a6fd43ef8ac952cd6a7958a0a",
+   "source": "LibriSpeech test-clean",
+   "sr": 16000
+  },
+  {
+   "licence": "CC BY 4.0",
+   "path": "audio/speech16k/7176-92135-0018.wav",
+   "set": "speech",
+   "sha256": "8d6ddf736461abad6ee601d5f9ca4c755037423b7f682e39f9418486b6d6f376",
+   "source": "LibriSpeech test-clean",
+   "sr": 16000
+  },
+  {
+   "licence": "CC BY 4.0",
+   "path": "audio/speech16k/7729-102255-0045.wav",
+   "set": "speech",
+   "sha256": "8c720b6537f8b9264bd4aebf79e4bef205671aff094502a576ebe418bb27afd2",
+   "source": "LibriSpeech test-clean",
+   "sr": 16000
+  },
+  {
+   "licence": "CC BY 4.0",
+   "path": "audio/speech16k/8224-274384-0011.wav",
+   "set": "speech",
+   "sha256": "fbf82ad4fbc0da4886d1816bb365113a7c70878861537a30c829e19bb2ae8345",
+   "source": "LibriSpeech test-clean",
+   "sr": 16000
+  },
+  {
+   "licence": "CC BY 4.0",
+   "path": "audio/speech16k/8230-279154-0015.wav",
+   "set": "speech",
+   "sha256": "e9ef6088a18c556b66d8f2991f11b1270dbd68b9260b1b1beace95286b4b818f",
+   "source": "LibriSpeech test-clean",
+   "sr": 16000
+  },
+  {
+   "licence": "CC BY 4.0",
+   "path": "audio/speech16k/8455-210777-0069.wav",
+   "set": "speech",
+   "sha256": "d7e93f95ad7682fd739edd5f87ced26438307742294e59281b0eb0c590472be1",
+   "source": "LibriSpeech test-clean",
+   "sr": 16000
+  },
+  {
+   "licence": "CC BY 4.0",
+   "path": "audio/speech16k/8463-287645-0003.wav",
+   "set": "speech",
+   "sha256": "75a5c9fe7bdc0e9638d64316f05079c6c43b2697fbd1bbd3b03a22d69a867fcf",
+   "source": "LibriSpeech test-clean",
+   "sr": 16000
+  },
+  {
+   "licence": "CC BY 4.0",
+   "path": "audio/speech16k/8555-292519-0005.wav",
+   "set": "speech",
+   "sha256": "94ce71b2563151a74e5ef138ede4c0ca12f7bb7d5039e9a82c1e58302093769a",
+   "source": "LibriSpeech test-clean",
+   "sr": 16000
+  },
+  {
+   "licence": "CC BY 4.0",
+   "path": "audio/speech16k/908-157963-0020.wav",
+   "set": "speech",
+   "sha256": "c835f8101116c838492ae7b32851e4ecbeba2573337b67c610e7da156a012cf2",
+   "source": "LibriSpeech test-clean",
+   "sr": 16000
+  },
+  {
+   "licence": "Vibe Ace by Kevin MacLeod is licensed under a Creative Commons Attribution License.",
+   "path": "audio/music44k/Kevin_MacLeod_-_Vibe_Ace.wav",
+   "set": "music",
+   "sha256": "3eca6f85d54f7f71b6ad46532ba0f7afbf8e79596632f805925393e642f8a822",
+   "source": "librosa/data Kevin_MacLeod_-_Vibe_Ace",
+   "sr": 44100
+  },
+  {
+   "licence": "P. I. Tchaikovsky: Dance of the Sugar Plum Fairy by Kevin MacLeod is licensed under a Creative Commons Attribution License.",
+   "path": "audio/music44k/Kevin_MacLeod_-_P_I_Tchaikovsky_Dance_of_the_Sugar_Plum_Fairy.wav",
+   "set": "music",
+   "sha256": "7587f748143e75204f934280c4d00045eb4eae899f0394ca994b4ba16ce3a52f",
+   "source": "librosa/data Kevin_MacLeod_-_P_I_Tchaikovsky_Dance_of_the_Sugar_Plum_Fairy",
+   "sr": 44100
+  },
+  {
+   "licence": "Hungarian Dance number 5 by Johannes Brahms / US Army Strings is in the Public Domain.",
+   "path": "audio/music44k/Hungarian_Dance_number_5_-_Allegro_in_F_sharp_minor_(string_orchestra).wav",
+   "set": "music",
+   "sha256": "0c36f0ba58a3f1a75b62995a492498466eef86810a045a13aed6b97d3837ce86",
+   "source": "librosa/data Hungarian_Dance_number_5_-_Allegro_in_F_sharp_minor_(string_orchestra)",
+   "sr": 44100
+  },
+  {
+   "licence": "CC-BY https://creativecommons.org/licenses/by/3.0/",
+   "path": "audio/music44k/sorohanro_-_solo-trumpet-06.wav",
+   "set": "music",
+   "sha256": "d025a6da483a4d97b313050ac9d7976662507ce4ba8f44faa5c0ca8786883475",
+   "source": "librosa/data sorohanro_-_solo-trumpet-06",
+   "sr": 44100
+  },
+  {
+   "licence": "Let's Go Fishin' by Karissa Hobbs is licensed under a Creative Commons Attribution License.",
+   "path": "audio/music44k/Karissa_Hobbs_-_Lets_Go_Fishin.wav",
+   "set": "music",
+   "sha256": "bb8c4cc323beb2c17b317a56350b5d0011aa3c84bfa36a6a370c9f67b35e8320",
+   "source": "librosa/data Karissa_Hobbs_-_Lets_Go_Fishin",
+   "sr": 44100
+  },
+  {
+   "licence": "CC-BY 4.0: https://creativecommons.org/licenses/by/4.0/",
+   "path": "audio/music44k/drese-midi.wav",
+   "set": "music",
+   "sha256": "ac8edc3d448d5958a1bad17ef55313c4725db6082aa7943e744b1c51c02245cf",
+   "source": "librosa/data drese-midi",
+   "sr": 44100
+  },
+  {
+   "licence": "Public domain, https://www.nps.gov/aboutus/disclaimer.htm",
+   "path": "audio/music44k/glacier-bay-humpback.wav",
+   "set": "music",
+   "sha256": "e897f1b5d826921ebbd0e1603b685c573844e818cae72bfad0c89b3187657ae8",
+   "source": "librosa/data glacier-bay-humpback",
+   "sr": 44100
+  },
+  {
+   "derived_from": "audio/music44k/Kevin_MacLeod_-_Vibe_Ace.wav",
+   "licence": "Vibe Ace by Kevin MacLeod is licensed under a Creative Commons Attribution License.",
+   "path": "audio/music_16000/Kevin_MacLeod_-_Vibe_Ace.wav",
+   "set": "music",
+   "sha256": "459252886d16006b2cc9da927f0545a071c79d33c261a80eecfdbbf729f45db9",
+   "source": "librosa/data Kevin_MacLeod_-_Vibe_Ace",
+   "sr": 16000
+  },
+  {
+   "derived_from": "audio/music44k/Kevin_MacLeod_-_P_I_Tchaikovsky_Dance_of_the_Sugar_Plum_Fairy.wav",
+   "licence": "P. I. Tchaikovsky: Dance of the Sugar Plum Fairy by Kevin MacLeod is licensed under a Creative Commons Attribution License.",
+   "path": "audio/music_16000/Kevin_MacLeod_-_P_I_Tchaikovsky_Dance_of_the_Sugar_Plum_Fairy.wav",
+   "set": "music",
+   "sha256": "ad8ada1d66ea2cdb1180b3ce6fa63c75c7d40bb25a222ae7e2bc8433def1ff4e",
+   "source": "librosa/data Kevin_MacLeod_-_P_I_Tchaikovsky_Dance_of_the_Sugar_Plum_Fairy",
+   "sr": 16000
+  },
+  {
+   "derived_from": "audio/music44k/Hungarian_Dance_number_5_-_Allegro_in_F_sharp_minor_(string_orchestra).wav",
+   "licence": "Hungarian Dance number 5 by Johannes Brahms / US Army Strings is in the Public Domain.",
+   "path": "audio/music_16000/Hungarian_Dance_number_5_-_Allegro_in_F_sharp_minor_(string_orchestra).wav",
+   "set": "music",
+   "sha256": "aa88fc9f15741588f40d223e1c87f9a2d56c2e93644eee27dd9f86d1885c8c4e",
+   "source": "librosa/data Hungarian_Dance_number_5_-_Allegro_in_F_sharp_minor_(string_orchestra)",
+   "sr": 16000
+  },
+  {
+   "derived_from": "audio/music44k/sorohanro_-_solo-trumpet-06.wav",
+   "licence": "CC-BY https://creativecommons.org/licenses/by/3.0/",
+   "path": "audio/music_16000/sorohanro_-_solo-trumpet-06.wav",
+   "set": "music",
+   "sha256": "817ab97d81d22d3078d8b970ff467bbe616cf8e4323ee750d82577352f7381c9",
+   "source": "librosa/data sorohanro_-_solo-trumpet-06",
+   "sr": 16000
+  },
+  {
+   "derived_from": "audio/music44k/Karissa_Hobbs_-_Lets_Go_Fishin.wav",
+   "licence": "Let's Go Fishin' by Karissa Hobbs is licensed under a Creative Commons Attribution License.",
+   "path": "audio/music_16000/Karissa_Hobbs_-_Lets_Go_Fishin.wav",
+   "set": "music",
+   "sha256": "f87748c89cdb8045ba3825a96686a614bf3368ed250555d71f09ad72a856d00e",
+   "source": "librosa/data Karissa_Hobbs_-_Lets_Go_Fishin",
+   "sr": 16000
+  },
+  {
+   "derived_from": "audio/music44k/drese-midi.wav",
+   "licence": "CC-BY 4.0: https://creativecommons.org/licenses/by/4.0/",
+   "path": "audio/music_16000/drese-midi.wav",
+   "set": "music",
+   "sha256": "18bacd6828eba0147be4a2977940eca44d3ed3583bd3a874afba28dc6bb900c2",
+   "source": "librosa/data drese-midi",
+   "sr": 16000
+  },
+  {
+   "derived_from": "audio/music44k/glacier-bay-humpback.wav",
+   "licence": "Public domain, https://www.nps.gov/aboutus/disclaimer.htm",
+   "path": "audio/music_16000/glacier-bay-humpback.wav",
+   "set": "music",
+   "sha256": "6455306576640b4e969ef87b18a13a7d4f1e3fcdbbbd83e7e2d6fdca922d9a73",
+   "source": "librosa/data glacier-bay-humpback",
+   "sr": 16000
+  },
+  {
+   "derived_from": "audio/speech16k/1089-134691-0016.wav",
+   "licence": "CC BY 4.0",
+   "path": "audio/speech_44100/1089-134691-0016.wav",
+   "set": "speech",
+   "sha256": "0ea9d1072fd81319b5ee03667cb065f65ab2669f1619df663b3a946b883d36d9",
+   "source": "LibriSpeech test-clean",
+   "sr": 44100
+  },
+  {
+   "derived_from": "audio/speech16k/1188-133604-0019.wav",
+   "licence": "CC BY 4.0",
+   "path": "audio/speech_44100/1188-133604-0019.wav",
+   "set": "speech",
+   "sha256": "f97d60d3554c8272efbe6fb0d119299aa48e6f8419f2958c59d503c2e78b89c5",
+   "source": "LibriSpeech test-clean",
+   "sr": 44100
+  },
+  {
+   "derived_from": "audio/speech16k/121-121726-0000.wav",
+   "licence": "CC BY 4.0",
+   "path": "audio/speech_44100/121-121726-0000.wav",
+   "set": "speech",
+   "sha256": "b43ea0c544a313ec518c48dd3bfded0c0430b99e9e6ff481c3b4723ba0cf2f43",
+   "source": "LibriSpeech test-clean",
+   "sr": 44100
+  },
+  {
+   "derived_from": "audio/speech16k/1221-135767-0022.wav",
+   "licence": "CC BY 4.0",
+   "path": "audio/speech_44100/1221-135767-0022.wav",
+   "set": "speech",
+   "sha256": "c7026b064e63b1817381022cd165b927da8ddb57563c967bace7e5a148ca4123",
+   "source": "LibriSpeech test-clean",
+   "sr": 44100
+  },
+  {
+   "derived_from": "audio/speech16k/1284-1181-0008.wav",
+   "licence": "CC BY 4.0",
+   "path": "audio/speech_44100/1284-1181-0008.wav",
+   "set": "speech",
+   "sha256": "ccb61d6d920a25237f7ded08008539aa367e103661d4c8f743decd5fbd827302",
+   "source": "LibriSpeech test-clean",
+   "sr": 44100
+  },
+  {
+   "derived_from": "audio/speech16k/1320-122617-0003.wav",
+   "licence": "CC BY 4.0",
+   "path": "audio/speech_44100/1320-122617-0003.wav",
+   "set": "speech",
+   "sha256": "d8f742912114fdb9138d1a69962e5576963409a4e7ae10edc26d64769de883e7",
+   "source": "LibriSpeech test-clean",
+   "sr": 44100
+  },
+  {
+   "derived_from": "audio/speech16k/1580-141083-0001.wav",
+   "licence": "CC BY 4.0",
+   "path": "audio/speech_44100/1580-141083-0001.wav",
+   "set": "speech",
+   "sha256": "80cf3b8cb1e4ae99ae215751138fc9e0b93cafbcb71969320de581ff32f26d75",
+   "source": "LibriSpeech test-clean",
+   "sr": 44100
+  },
+  {
+   "derived_from": "audio/speech16k/1995-1836-0008.wav",
+   "licence": "CC BY 4.0",
+   "path": "audio/speech_44100/1995-1836-0008.wav",
+   "set": "speech",
+   "sha256": "9f94f35b4687f413ef5fd213a0e49ae3701dd96bcb461cc0bb61abf962f794e9",
+   "source": "LibriSpeech test-clean",
+   "sr": 44100
+  },
+  {
+   "derived_from": "audio/speech16k/2094-142345-0059.wav",
+   "licence": "CC BY 4.0",
+   "path": "audio/speech_44100/2094-142345-0059.wav",
+   "set": "speech",
+   "sha256": "5a3ec4ea2894a94ebb6b1661148024456501fc95fb86239d3d85e5b210766a44",
+   "source": "LibriSpeech test-clean",
+   "sr": 44100
+  },
+  {
+   "derived_from": "audio/speech16k/2300-131720-0037.wav",
+   "licence": "CC BY 4.0",
+   "path": "audio/speech_44100/2300-131720-0037.wav",
+   "set": "speech",
+   "sha256": "7630b09157115c55b87cee22eb43a304040e9165b641c9872c7a26a30d46efa5",
+   "source": "LibriSpeech test-clean",
+   "sr": 44100
+  },
+  {
+   "derived_from": "audio/speech16k/237-134500-0000.wav",
+   "licence": "CC BY 4.0",
+   "path": "audio/speech_44100/237-134500-0000.wav",
+   "set": "speech",
+   "sha256": "035fd919295914ac78ec7a1a8ea9207e49e1d31393334874f2974e5ba3831106",
+   "source": "LibriSpeech test-clean",
+   "sr": 44100
+  },
+  {
+   "derived_from": "audio/speech16k/260-123440-0004.wav",
+   "licence": "CC BY 4.0",
+   "path": "audio/speech_44100/260-123440-0004.wav",
+   "set": "speech",
+   "sha256": "e09398925cd5b730c8c21711d8438cd5332a4d4d714ecce67e17e8a39ebb57f7",
+   "source": "LibriSpeech test-clean",
+   "sr": 44100
+  },
+  {
+   "derived_from": "audio/speech16k/2830-3980-0055.wav",
+   "licence": "CC BY 4.0",
+   "path": "audio/speech_44100/2830-3980-0055.wav",
+   "set": "speech",
+   "sha256": "0ce45aeb321b633ae44cfa67d450662679297e049eefd6d0a436e8d2cf3aa121",
+   "source": "LibriSpeech test-clean",
+   "sr": 44100
+  },
+  {
+   "derived_from": "audio/speech16k/2961-960-0012.wav",
+   "licence": "CC BY 4.0",
+   "path": "audio/speech_44100/2961-960-0012.wav",
+   "set": "speech",
+   "sha256": "1f9e11db8ac7519f8bc75fbbbf7b6632aed8e21b71d327fa0fd85d2aa7873a19",
+   "source": "LibriSpeech test-clean",
+   "sr": 44100
+  },
+  {
+   "derived_from": "audio/speech16k/3570-5694-0021.wav",
+   "licence": "CC BY 4.0",
+   "path": "audio/speech_44100/3570-5694-0021.wav",
+   "set": "speech",
+   "sha256": "f6538ee17287bc5be72a5e558ed06bed0b5f2d18261047ed6b7c7249d9df51fb",
+   "source": "LibriSpeech test-clean",
+   "sr": 44100
+  },
+  {
+   "derived_from": "audio/speech16k/3575-170457-0023.wav",
+   "licence": "CC BY 4.0",
+   "path": "audio/speech_44100/3575-170457-0023.wav",
+   "set": "speech",
+   "sha256": "22c9145e7dec0e40a304a679a1cbb2dc7f282fb07cd844f312b5c5f47b4de883",
+   "source": "LibriSpeech test-clean",
+   "sr": 44100
+  },
+  {
+   "derived_from": "audio/speech16k/3729-6852-0002.wav",
+   "licence": "CC BY 4.0",
+   "path": "audio/speech_44100/3729-6852-0002.wav",
+   "set": "speech",
+   "sha256": "545e0f17f0b48e9b1790c01e8c227f5eb197c309dc0ee25aa0a4e0f7aca7b5f2",
+   "source": "LibriSpeech test-clean",
+   "sr": 44100
+  },
+  {
+   "derived_from": "audio/speech16k/4077-13754-0010.wav",
+   "licence": "CC BY 4.0",
+   "path": "audio/speech_44100/4077-13754-0010.wav",
+   "set": "speech",
+   "sha256": "ef17970e3c3ca0bc773d6101574c0067044e78ad6d933bda64908d79943359d6",
+   "source": "LibriSpeech test-clean",
+   "sr": 44100
+  },
+  {
+   "derived_from": "audio/speech16k/4446-2271-0001.wav",
+   "licence": "CC BY 4.0",
+   "path": "audio/speech_44100/4446-2271-0001.wav",
+   "set": "speech",
+   "sha256": "b9554e1842cc468cf7d31d69cdcb0001f41be0741efbe92aaa2766d8b9d33722",
+   "source": "LibriSpeech test-clean",
+   "sr": 44100
+  },
+  {
+   "derived_from": "audio/speech16k/4507-16021-0025.wav",
+   "licence": "CC BY 4.0",
+   "path": "audio/speech_44100/4507-16021-0025.wav",
+   "set": "speech",
+   "sha256": "ba58a6f055bae1053cede2100f210431136eeafe02cd13ed0edff8a40710f38a",
+   "source": "LibriSpeech test-clean",
+   "sr": 44100
+  },
+  {
+   "derived_from": "audio/speech16k/4970-29095-0016.wav",
+   "licence": "CC BY 4.0",
+   "path": "audio/speech_44100/4970-29095-0016.wav",
+   "set": "speech",
+   "sha256": "e45b1b19fd93d24ef29804ae10ba2d18e96d804a1fd85c0c680b8e00afe68927",
+   "source": "LibriSpeech test-clean",
+   "sr": 44100
+  },
+  {
+   "derived_from": "audio/speech16k/4992-41797-0001.wav",
+   "licence": "CC BY 4.0",
+   "path": "audio/speech_44100/4992-41797-0001.wav",
+   "set": "speech",
+   "sha256": "dfeccba2c4490cda8625567f8c5030cd6a017bed19bec3273f50b2081cf605d1",
+   "source": "LibriSpeech test-clean",
+   "sr": 44100
+  },
+  {
+   "derived_from": "audio/speech16k/5105-28241-0001.wav",
+   "licence": "CC BY 4.0",
+   "path": "audio/speech_44100/5105-28241-0001.wav",
+   "set": "speech",
+   "sha256": "ff77f4ea38c2138d00a9f31d5e7da249e70c1b93945b27005eda47f504af88c8",
+   "source": "LibriSpeech test-clean",
+   "sr": 44100
+  },
+  {
+   "derived_from": "audio/speech16k/5142-36377-0008.wav",
+   "licence": "CC BY 4.0",
+   "path": "audio/speech_44100/5142-36377-0008.wav",
+   "set": "speech",
+   "sha256": "1fd6aa8bc3e11e8ce41e07336846bcf133d42e9326265c32c88ec8ea3282fd9d",
+   "source": "LibriSpeech test-clean",
+   "sr": 44100
+  },
+  {
+   "derived_from": "audio/speech16k/5639-40744-0032.wav",
+   "licence": "CC BY 4.0",
+   "path": "audio/speech_44100/5639-40744-0032.wav",
+   "set": "speech",
+   "sha256": "95adba820c8e2fe568ced609125b70feda09b4914220c5dcc3e1b9c4fac85457",
+   "source": "LibriSpeech test-clean",
+   "sr": 44100
+  },
+  {
+   "derived_from": "audio/speech16k/5683-32865-0008.wav",
+   "licence": "CC BY 4.0",
+   "path": "audio/speech_44100/5683-32865-0008.wav",
+   "set": "speech",
+   "sha256": "16e030bf2729cc743b6aa847432d7ed06f967603dd2d164fbfc7a3584d3c0884",
+   "source": "LibriSpeech test-clean",
+   "sr": 44100
+  },
+  {
+   "derived_from": "audio/speech16k/61-70968-0011.wav",
+   "licence": "CC BY 4.0",
+   "path": "audio/speech_44100/61-70968-0011.wav",
+   "set": "speech",
+   "sha256": "477e10c7ab1ba5e9ee984722b73862d2bd76c652568972e1d3f41c07238e800d",
+   "source": "LibriSpeech test-clean",
+   "sr": 44100
+  },
+  {
+   "derived_from": "audio/speech16k/672-122797-0038.wav",
+   "licence": "CC BY 4.0",
+   "path": "audio/speech_44100/672-122797-0038.wav",
+   "set": "speech",
+   "sha256": "4f198cbd24e2f6d78415278c2d9526a17255a93d5e16ff876715a17d110294d7",
+   "source": "LibriSpeech test-clean",
+   "sr": 44100
+  },
+  {
+   "derived_from": "audio/speech16k/6829-68769-0034.wav",
+   "licence": "CC BY 4.0",
+   "path": "audio/speech_44100/6829-68769-0034.wav",
+   "set": "speech",
+   "sha256": "0d6fef373fa555416446059d6189378c9fb8b27bfff1e63d72a3326f4e9710f0",
+   "source": "LibriSpeech test-clean",
+   "sr": 44100
+  },
+  {
+   "derived_from": "audio/speech16k/6930-75918-0005.wav",
+   "licence": "CC BY 4.0",
+   "path": "audio/speech_44100/6930-75918-0005.wav",
+   "set": "speech",
+   "sha256": "e7d26e325f484e834211607dd555b6c30b9e2eb70a98f421c4d014f4d6c7f830",
+   "source": "LibriSpeech test-clean",
+   "sr": 44100
+  },
+  {
+   "derived_from": "audio/speech16k/7021-79759-0005.wav",
+   "licence": "CC BY 4.0",
+   "path": "audio/speech_44100/7021-79759-0005.wav",
+   "set": "speech",
+   "sha256": "a31ec92c9ed4ed32f4a8f7360f5de11a8d2b0a65a3e0392efa859819b2360c8b",
+   "source": "LibriSpeech test-clean",
+   "sr": 44100
+  },
+  {
+   "derived_from": "audio/speech16k/7127-75947-0040.wav",
+   "licence": "CC BY 4.0",
+   "path": "audio/speech_44100/7127-75947-0040.wav",
+   "set": "speech",
+   "sha256": "a1c16cf40c8820d1a2679646c004616fb6fceb5e4f1a58562c813441dd848223",
+   "source": "LibriSpeech test-clean",
+   "sr": 44100
+  },
+  {
+   "derived_from": "audio/speech16k/7176-92135-0018.wav",
+   "licence": "CC BY 4.0",
+   "path": "audio/speech_44100/7176-92135-0018.wav",
+   "set": "speech",
+   "sha256": "f8f0e93b3109418f386da184d35ff12be08f5a7cd3b1e18bde3f1f063f5711e8",
+   "source": "LibriSpeech test-clean",
+   "sr": 44100
+  },
+  {
+   "derived_from": "audio/speech16k/7729-102255-0045.wav",
+   "licence": "CC BY 4.0",
+   "path": "audio/speech_44100/7729-102255-0045.wav",
+   "set": "speech",
+   "sha256": "5040cb6ce2a2d13cc1469a7a95d55add01af31eabd7bf853bd23b07de418e5e2",
+   "source": "LibriSpeech test-clean",
+   "sr": 44100
+  },
+  {
+   "derived_from": "audio/speech16k/8224-274384-0011.wav",
+   "licence": "CC BY 4.0",
+   "path": "audio/speech_44100/8224-274384-0011.wav",
+   "set": "speech",
+   "sha256": "cf2894a861ef3b7ce8791d3729f4aa1ee7edb7f1459a1726803791961a6d09c2",
+   "source": "LibriSpeech test-clean",
+   "sr": 44100
+  },
+  {
+   "derived_from": "audio/speech16k/8230-279154-0015.wav",
+   "licence": "CC BY 4.0",
+   "path": "audio/speech_44100/8230-279154-0015.wav",
+   "set": "speech",
+   "sha256": "b6c2b3f17ae51af4d585ee98a138240b76bf9392dd26cdf3bc1ebe39e9e4ee01",
+   "source": "LibriSpeech test-clean",
+   "sr": 44100
+  },
+  {
+   "derived_from": "audio/speech16k/8455-210777-0069.wav",
+   "licence": "CC BY 4.0",
+   "path": "audio/speech_44100/8455-210777-0069.wav",
+   "set": "speech",
+   "sha256": "160c6bfeb87fdaa233841466710fdc58d991d6dc9e59a3d8f1f0e379acaddde1",
+   "source": "LibriSpeech test-clean",
+   "sr": 44100
+  },
+  {
+   "derived_from": "audio/speech16k/8463-287645-0003.wav",
+   "licence": "CC BY 4.0",
+   "path": "audio/speech_44100/8463-287645-0003.wav",
+   "set": "speech",
+   "sha256": "9fb593a3912c0d43f155b4022b7ad335e8dd67718bd7357b7b4f3201537f99af",
+   "source": "LibriSpeech test-clean",
+   "sr": 44100
+  },
+  {
+   "derived_from": "audio/speech16k/8555-292519-0005.wav",
+   "licence": "CC BY 4.0",
+   "path": "audio/speech_44100/8555-292519-0005.wav",
+   "set": "speech",
+   "sha256": "b8c48e245b047c8a8dd0aa6cb595c95f73d8c904bbf70dfce55f4a4d078b4e20",
+   "source": "LibriSpeech test-clean",
+   "sr": 44100
+  },
+  {
+   "derived_from": "audio/speech16k/908-157963-0020.wav",
+   "licence": "CC BY 4.0",
+   "path": "audio/speech_44100/908-157963-0020.wav",
+   "set": "speech",
+   "sha256": "be3c53efdc12248c5ebfd0840d04feb2f779fb149521e439dfc44889725aff22",
+   "source": "LibriSpeech test-clean",
+   "sr": 44100
+  },
+  {
+   "derived_from": "audio/speech16k/1089-134691-0016.wav",
+   "licence": "CC BY 4.0",
+   "path": "audio/speech_48000/1089-134691-0016.wav",
+   "set": "speech",
+   "sha256": "0f0b9ed70eb2c6d94496fb25926121b4584da66db986875f4187a0d038cc5e4c",
+   "source": "LibriSpeech test-clean",
+   "sr": 48000
+  },
+  {
+   "derived_from": "audio/speech16k/1188-133604-0019.wav",
+   "licence": "CC BY 4.0",
+   "path": "audio/speech_48000/1188-133604-0019.wav",
+   "set": "speech",
+   "sha256": "c34a6bbbbb18b31076683bf2347187777922b249a350b9e469ca1eaa1835dd39",
+   "source": "LibriSpeech test-clean",
+   "sr": 48000
+  },
+  {
+   "derived_from": "audio/speech16k/121-121726-0000.wav",
+   "licence": "CC BY 4.0",
+   "path": "audio/speech_48000/121-121726-0000.wav",
+   "set": "speech",
+   "sha256": "12403ef31fda86e20497a1b6ba26c9ab853afa58c20612335b6d794d3fc736cc",
+   "source": "LibriSpeech test-clean",
+   "sr": 48000
+  },
+  {
+   "derived_from": "audio/speech16k/1221-135767-0022.wav",
+   "licence": "CC BY 4.0",
+   "path": "audio/speech_48000/1221-135767-0022.wav",
+   "set": "speech",
+   "sha256": "5385e0a353a9c60c282c7baf84c382a02b34fd9163ad6dc945be3e75c1aecccd",
+   "source": "LibriSpeech test-clean",
+   "sr": 48000
+  },
+  {
+   "derived_from": "audio/speech16k/1284-1181-0008.wav",
+   "licence": "CC BY 4.0",
+   "path": "audio/speech_48000/1284-1181-0008.wav",
+   "set": "speech",
+   "sha256": "3cc042e5279ce3d2aed59a6a9c3c382560ed1675a1e357a4835f73164b427103",
+   "source": "LibriSpeech test-clean",
+   "sr": 48000
+  },
+  {
+   "derived_from": "audio/speech16k/1320-122617-0003.wav",
+   "licence": "CC BY 4.0",
+   "path": "audio/speech_48000/1320-122617-0003.wav",
+   "set": "speech",
+   "sha256": "7e4d7e738a048a600de760cdb2385207d6fb294ab46a24b25a6c53ead17c81ed",
+   "source": "LibriSpeech test-clean",
+   "sr": 48000
+  },
+  {
+   "derived_from": "audio/speech16k/1580-141083-0001.wav",
+   "licence": "CC BY 4.0",
+   "path": "audio/speech_48000/1580-141083-0001.wav",
+   "set": "speech",
+   "sha256": "34b94dafb09c60da12e157af6293b1f343d365356e12d3e697ab4efd90a1f516",
+   "source": "LibriSpeech test-clean",
+   "sr": 48000
+  },
+  {
+   "derived_from": "audio/speech16k/1995-1836-0008.wav",
+   "licence": "CC BY 4.0",
+   "path": "audio/speech_48000/1995-1836-0008.wav",
+   "set": "speech",
+   "sha256": "585ef07129b45986f1d03f7efbed7852046bd61585bdb525159b8610ca7830c6",
+   "source": "LibriSpeech test-clean",
+   "sr": 48000
+  },
+  {
+   "derived_from": "audio/speech16k/2094-142345-0059.wav",
+   "licence": "CC BY 4.0",
+   "path": "audio/speech_48000/2094-142345-0059.wav",
+   "set": "speech",
+   "sha256": "16304c8a17cb3299cd0f590f2155cf349dd4afdc63aadb213f3fe650012d4218",
+   "source": "LibriSpeech test-clean",
+   "sr": 48000
+  },
+  {
+   "derived_from": "audio/speech16k/2300-131720-0037.wav",
+   "licence": "CC BY 4.0",
+   "path": "audio/speech_48000/2300-131720-0037.wav",
+   "set": "speech",
+   "sha256": "6ee76dcebd18b99a6b17aa7bf7f55ffbca6d2bc795fe3c656462643d81cde6dc",
+   "source": "LibriSpeech test-clean",
+   "sr": 48000
+  },
+  {
+   "derived_from": "audio/speech16k/237-134500-0000.wav",
+   "licence": "CC BY 4.0",
+   "path": "audio/speech_48000/237-134500-0000.wav",
+   "set": "speech",
+   "sha256": "47d8917f0205fc40d5aa1feb0dbab9149fc748e0cdaf932cc9ed0f85d521f175",
+   "source": "LibriSpeech test-clean",
+   "sr": 48000
+  },
+  {
+   "derived_from": "audio/speech16k/260-123440-0004.wav",
+   "licence": "CC BY 4.0",
+   "path": "audio/speech_48000/260-123440-0004.wav",
+   "set": "speech",
+   "sha256": "abe48223dbe835123c85e8d8fc59b26746de7111b1dde69f0f7d1efaf48cb840",
+   "source": "LibriSpeech test-clean",
+   "sr": 48000
+  },
+  {
+   "derived_from": "audio/speech16k/2830-3980-0055.wav",
+   "licence": "CC BY 4.0",
+   "path": "audio/speech_48000/2830-3980-0055.wav",
+   "set": "speech",
+   "sha256": "20b9e8113e4c0d3f7649c48f3b52847b98276fd445059f990e6833c643edadd2",
+   "source": "LibriSpeech test-clean",
+   "sr": 48000
+  },
+  {
+   "derived_from": "audio/speech16k/2961-960-0012.wav",
+   "licence": "CC BY 4.0",
+   "path": "audio/speech_48000/2961-960-0012.wav",
+   "set": "speech",
+   "sha256": "8353a0e89ce15f702e290c2f7db885c988418180e5e2ed1840e381c3834026f0",
+   "source": "LibriSpeech test-clean",
+   "sr": 48000
+  },
+  {
+   "derived_from": "audio/speech16k/3570-5694-0021.wav",
+   "licence": "CC BY 4.0",
+   "path": "audio/speech_48000/3570-5694-0021.wav",
+   "set": "speech",
+   "sha256": "b2f3d9897cb8b88f52d7e13bbf22519fa7fbf5a48bbcccbf75c77a1de9eac096",
+   "source": "LibriSpeech test-clean",
+   "sr": 48000
+  },
+  {
+   "derived_from": "audio/speech16k/3575-170457-0023.wav",
+   "licence": "CC BY 4.0",
+   "path": "audio/speech_48000/3575-170457-0023.wav",
+   "set": "speech",
+   "sha256": "7bf9f0df7397c5155232646f081d978a66f3a5a4e282a35a1dd27746b724ba3e",
+   "source": "LibriSpeech test-clean",
+   "sr": 48000
+  },
+  {
+   "derived_from": "audio/speech16k/3729-6852-0002.wav",
+   "licence": "CC BY 4.0",
+   "path": "audio/speech_48000/3729-6852-0002.wav",
+   "set": "speech",
+   "sha256": "6020b26eef25027ff16ea7dd26f715ca5ae204fe8f3c0cca5ec9c3b342653ca3",
+   "source": "LibriSpeech test-clean",
+   "sr": 48000
+  },
+  {
+   "derived_from": "audio/speech16k/4077-13754-0010.wav",
+   "licence": "CC BY 4.0",
+   "path": "audio/speech_48000/4077-13754-0010.wav",
+   "set": "speech",
+   "sha256": "c503c29383df83f6fa8c11f1dcc84888ec4563e022da5a4453f3877094b0bafa",
+   "source": "LibriSpeech test-clean",
+   "sr": 48000
+  },
+  {
+   "derived_from": "audio/speech16k/4446-2271-0001.wav",
+   "licence": "CC BY 4.0",
+   "path": "audio/speech_48000/4446-2271-0001.wav",
+   "set": "speech",
+   "sha256": "8e46a9578119c4c4e7e4501140c726ea5dd5dfc4d4ebbb9586e196dd143c2ed9",
+   "source": "LibriSpeech test-clean",
+   "sr": 48000
+  },
+  {
+   "derived_from": "audio/speech16k/4507-16021-0025.wav",
+   "licence": "CC BY 4.0",
+   "path": "audio/speech_48000/4507-16021-0025.wav",
+   "set": "speech",
+   "sha256": "ae0f29d8ccc21226f1ad5a2c5588f81659455cdc2d055b727e627f020f35a926",
+   "source": "LibriSpeech test-clean",
+   "sr": 48000
+  },
+  {
+   "derived_from": "audio/speech16k/4970-29095-0016.wav",
+   "licence": "CC BY 4.0",
+   "path": "audio/speech_48000/4970-29095-0016.wav",
+   "set": "speech",
+   "sha256": "f172b4817c973c5db6eed9bce6a15f4a9551fcafd66dc5ac1bfa467a7cda72ca",
+   "source": "LibriSpeech test-clean",
+   "sr": 48000
+  },
+  {
+   "derived_from": "audio/speech16k/4992-41797-0001.wav",
+   "licence": "CC BY 4.0",
+   "path": "audio/speech_48000/4992-41797-0001.wav",
+   "set": "speech",
+   "sha256": "0f05cec8544ed2750f40c0fe84b292eac5c205c02cca6823b00c197b8896ecdc",
+   "source": "LibriSpeech test-clean",
+   "sr": 48000
+  },
+  {
+   "derived_from": "audio/speech16k/5105-28241-0001.wav",
+   "licence": "CC BY 4.0",
+   "path": "audio/speech_48000/5105-28241-0001.wav",
+   "set": "speech",
+   "sha256": "607d86fe4b204f213edd64f91e18436f03a71c98f4ca6617b70054a7cd8c46fc",
+   "source": "LibriSpeech test-clean",
+   "sr": 48000
+  },
+  {
+   "derived_from": "audio/speech16k/5142-36377-0008.wav",
+   "licence": "CC BY 4.0",
+   "path": "audio/speech_48000/5142-36377-0008.wav",
+   "set": "speech",
+   "sha256": "9774defc82e97a5e469f550a3b3b5156f4a37acf6b873795ea5b444c43c8d98c",
+   "source": "LibriSpeech test-clean",
+   "sr": 48000
+  },
+  {
+   "derived_from": "audio/speech16k/5639-40744-0032.wav",
+   "licence": "CC BY 4.0",
+   "path": "audio/speech_48000/5639-40744-0032.wav",
+   "set": "speech",
+   "sha256": "62d7cd1fe2a29f444dea5f07e98158ae92c04b9e28b09f5dcc2ef6b9c561058d",
+   "source": "LibriSpeech test-clean",
+   "sr": 48000
+  },
+  {
+   "derived_from": "audio/speech16k/5683-32865-0008.wav",
+   "licence": "CC BY 4.0",
+   "path": "audio/speech_48000/5683-32865-0008.wav",
+   "set": "speech",
+   "sha256": "c81ee4559699eb8faa271bab6cde097d76f9639ee7aadae3e264e6fa178450f6",
+   "source": "LibriSpeech test-clean",
+   "sr": 48000
+  },
+  {
+   "derived_from": "audio/speech16k/61-70968-0011.wav",
+   "licence": "CC BY 4.0",
+   "path": "audio/speech_48000/61-70968-0011.wav",
+   "set": "speech",
+   "sha256": "09f88d214e5ebc9ae4031251a2e8bd11d040d8a415fdd093fbf805dfa0db23f7",
+   "source": "LibriSpeech test-clean",
+   "sr": 48000
+  },
+  {
+   "derived_from": "audio/speech16k/672-122797-0038.wav",
+   "licence": "CC BY 4.0",
+   "path": "audio/speech_48000/672-122797-0038.wav",
+   "set": "speech",
+   "sha256": "0264691693516386149d78347a962f2812a5c0e24ec49b27a16ff759d952a82f",
+   "source": "LibriSpeech test-clean",
+   "sr": 48000
+  },
+  {
+   "derived_from": "audio/speech16k/6829-68769-0034.wav",
+   "licence": "CC BY 4.0",
+   "path": "audio/speech_48000/6829-68769-0034.wav",
+   "set": "speech",
+   "sha256": "d50ce02fbdbe93d3be1120c4a7320cc2f5fa3aa83f225af18ea3e166267965b3",
+   "source": "LibriSpeech test-clean",
+   "sr": 48000
+  },
+  {
+   "derived_from": "audio/speech16k/6930-75918-0005.wav",
+   "licence": "CC BY 4.0",
+   "path": "audio/speech_48000/6930-75918-0005.wav",
+   "set": "speech",
+   "sha256": "f5bbe0d2b9905eb6829fd453924adbda9427c8519c3946bdf120307d0b21f9dc",
+   "source": "LibriSpeech test-clean",
+   "sr": 48000
+  },
+  {
+   "derived_from": "audio/speech16k/7021-79759-0005.wav",
+   "licence": "CC BY 4.0",
+   "path": "audio/speech_48000/7021-79759-0005.wav",
+   "set": "speech",
+   "sha256": "46c06352206f82f5bac9b98c3ec9f1cbf01d067bc0fd6887b7bfdfa457fe988e",
+   "source": "LibriSpeech test-clean",
+   "sr": 48000
+  },
+  {
+   "derived_from": "audio/speech16k/7127-75947-0040.wav",
+   "licence": "CC BY 4.0",
+   "path": "audio/speech_48000/7127-75947-0040.wav",
+   "set": "speech",
+   "sha256": "6bfccaf4182da13133039c7dddf84f76aace279fe92694b1611861f8312b35c4",
+   "source": "LibriSpeech test-clean",
+   "sr": 48000
+  },
+  {
+   "derived_from": "audio/speech16k/7176-92135-0018.wav",
+   "licence": "CC BY 4.0",
+   "path": "audio/speech_48000/7176-92135-0018.wav",
+   "set": "speech",
+   "sha256": "21d283c2a04f8a4dce90be6c2f9a49256a8d2c1029a11006ea7cec725360e67a",
+   "source": "LibriSpeech test-clean",
+   "sr": 48000
+  },
+  {
+   "derived_from": "audio/speech16k/7729-102255-0045.wav",
+   "licence": "CC BY 4.0",
+   "path": "audio/speech_48000/7729-102255-0045.wav",
+   "set": "speech",
+   "sha256": "5a745febb2e48688ae647d494053917ee84131376d53a777db19b40a4b6b5707",
+   "source": "LibriSpeech test-clean",
+   "sr": 48000
+  },
+  {
+   "derived_from": "audio/speech16k/8224-274384-0011.wav",
+   "licence": "CC BY 4.0",
+   "path": "audio/speech_48000/8224-274384-0011.wav",
+   "set": "speech",
+   "sha256": "dbd91b414ac180fac31bb5921a65a09b4089f3a095e2c9139da106282eb84376",
+   "source": "LibriSpeech test-clean",
+   "sr": 48000
+  },
+  {
+   "derived_from": "audio/speech16k/8230-279154-0015.wav",
+   "licence": "CC BY 4.0",
+   "path": "audio/speech_48000/8230-279154-0015.wav",
+   "set": "speech",
+   "sha256": "4d8e4a762ad0c705c040773cd1597ccd44c4fccc03a18d1db08921c9b80a004d",
+   "source": "LibriSpeech test-clean",
+   "sr": 48000
+  },
+  {
+   "derived_from": "audio/speech16k/8455-210777-0069.wav",
+   "licence": "CC BY 4.0",
+   "path": "audio/speech_48000/8455-210777-0069.wav",
+   "set": "speech",
+   "sha256": "dbb2e94b11af67e9200b0972a2ed1fb48294c529ce9b5b4edf1a2c030c972b45",
+   "source": "LibriSpeech test-clean",
+   "sr": 48000
+  },
+  {
+   "derived_from": "audio/speech16k/8463-287645-0003.wav",
+   "licence": "CC BY 4.0",
+   "path": "audio/speech_48000/8463-287645-0003.wav",
+   "set": "speech",
+   "sha256": "689998f5ea96e83e157560230ebed0f99a2580c58a9c655312abdf9d6a098af4",
+   "source": "LibriSpeech test-clean",
+   "sr": 48000
+  },
+  {
+   "derived_from": "audio/speech16k/8555-292519-0005.wav",
+   "licence": "CC BY 4.0",
+   "path": "audio/speech_48000/8555-292519-0005.wav",
+   "set": "speech",
+   "sha256": "73c6d9c320eb384552e1e9a1d005a1d9a14fa23fe34fcb4231e2168c52363f36",
+   "source": "LibriSpeech test-clean",
+   "sr": 48000
+  },
+  {
+   "derived_from": "audio/speech16k/908-157963-0020.wav",
+   "licence": "CC BY 4.0",
+   "path": "audio/speech_48000/908-157963-0020.wav",
+   "set": "speech",
+   "sha256": "95d84f68d1b3242805eb86c9ddfd2bde0437a87d0e76b2bdf63c5de92ed2c4be",
+   "source": "LibriSpeech test-clean",
+   "sr": 48000
+  },
+  {
+   "derived_from": "audio/music44k/Kevin_MacLeod_-_Vibe_Ace.wav",
+   "licence": "Vibe Ace by Kevin MacLeod is licensed under a Creative Commons Attribution License.",
+   "path": "audio/music_48000/Kevin_MacLeod_-_Vibe_Ace.wav",
+   "set": "music",
+   "sha256": "a749c5eff9a0a3ecbac489e0603420591e63f3b58164688f518d86e8f7b7ef33",
+   "source": "librosa/data Kevin_MacLeod_-_Vibe_Ace",
+   "sr": 48000
+  },
+  {
+   "derived_from": "audio/music44k/Kevin_MacLeod_-_P_I_Tchaikovsky_Dance_of_the_Sugar_Plum_Fairy.wav",
+   "licence": "P. I. Tchaikovsky: Dance of the Sugar Plum Fairy by Kevin MacLeod is licensed under a Creative Commons Attribution License.",
+   "path": "audio/music_48000/Kevin_MacLeod_-_P_I_Tchaikovsky_Dance_of_the_Sugar_Plum_Fairy.wav",
+   "set": "music",
+   "sha256": "209b5931c85d9a51fb4d0c51e79010b3cabb768267944945ea1fcf1530ae9af3",
+   "source": "librosa/data Kevin_MacLeod_-_P_I_Tchaikovsky_Dance_of_the_Sugar_Plum_Fairy",
+   "sr": 48000
+  },
+  {
+   "derived_from": "audio/music44k/Hungarian_Dance_number_5_-_Allegro_in_F_sharp_minor_(string_orchestra).wav",
+   "licence": "Hungarian Dance number 5 by Johannes Brahms / US Army Strings is in the Public Domain.",
+   "path": "audio/music_48000/Hungarian_Dance_number_5_-_Allegro_in_F_sharp_minor_(string_orchestra).wav",
+   "set": "music",
+   "sha256": "991ccbaca37c0f226139d87ee14fbe694cc3b4e8a4048a943f4cecee2d8c344f",
+   "source": "librosa/data Hungarian_Dance_number_5_-_Allegro_in_F_sharp_minor_(string_orchestra)",
+   "sr": 48000
+  },
+  {
+   "derived_from": "audio/music44k/sorohanro_-_solo-trumpet-06.wav",
+   "licence": "CC-BY https://creativecommons.org/licenses/by/3.0/",
+   "path": "audio/music_48000/sorohanro_-_solo-trumpet-06.wav",
+   "set": "music",
+   "sha256": "e8a6ed0e9bee26eaec0bd87679473c37d1a56647ce7d1ea0377a6d1ec3010ad1",
+   "source": "librosa/data sorohanro_-_solo-trumpet-06",
+   "sr": 48000
+  },
+  {
+   "derived_from": "audio/music44k/Karissa_Hobbs_-_Lets_Go_Fishin.wav",
+   "licence": "Let's Go Fishin' by Karissa Hobbs is licensed under a Creative Commons Attribution License.",
+   "path": "audio/music_48000/Karissa_Hobbs_-_Lets_Go_Fishin.wav",
+   "set": "music",
+   "sha256": "bd42517727527748c9c4174bb67611440948d63f8ea5ef8fd60df55d80299afe",
+   "source": "librosa/data Karissa_Hobbs_-_Lets_Go_Fishin",
+   "sr": 48000
+  },
+  {
+   "derived_from": "audio/music44k/drese-midi.wav",
+   "licence": "CC-BY 4.0: https://creativecommons.org/licenses/by/4.0/",
+   "path": "audio/music_48000/drese-midi.wav",
+   "set": "music",
+   "sha256": "17d7281002633850205c8806ce1d07e0285ab1999fc12d877baad21644365799",
+   "source": "librosa/data drese-midi",
+   "sr": 48000
+  },
+  {
+   "derived_from": "audio/music44k/glacier-bay-humpback.wav",
+   "licence": "Public domain, https://www.nps.gov/aboutus/disclaimer.htm",
+   "path": "audio/music_48000/glacier-bay-humpback.wav",
+   "set": "music",
+   "sha256": "36f9fc8b08227c5cf6c134c463a17a8af8e20c4dcf3401d1fa73f537da047504",
+   "source": "librosa/data glacier-bay-humpback",
+   "sr": 48000
+  }
+ ],
+ "image": [
+  {
+   "licence": "Kodak suite, released for unrestricted usage",
+   "path": "image/kodak/kodim01.png",
+   "set": "kodak",
+   "sha256": "a56e27cbf5f843c048b6af1d6e090760e9c92fadba88b7dee0205918a37523bd",
+   "source": "https://r0k.us/graphics/kodak/kodak/kodim01.png"
+  },
+  {
+   "licence": "Kodak suite, released for unrestricted usage",
+   "path": "image/kodak/kodim02.png",
+   "set": "kodak",
+   "sha256": "4f4b74a79237e311d72cad958237b5f7088d8bce1c82305ebefe1a70e3022dfd",
+   "source": "https://r0k.us/graphics/kodak/kodak/kodim02.png"
+  },
+  {
+   "licence": "Kodak suite, released for unrestricted usage",
+   "path": "image/kodak/kodim03.png",
+   "set": "kodak",
+   "sha256": "e25ca1ff2f0c0cb5fdfd5f9b0a0bb21ac4c3de3c84a67f35b09a85d3306249db",
+   "source": "https://r0k.us/graphics/kodak/kodak/kodim03.png"
+  },
+  {
+   "licence": "Kodak suite, released for unrestricted usage",
+   "path": "image/kodak/kodim04.png",
+   "set": "kodak",
+   "sha256": "e3b946107c5d3441c022f678d0c3caf1e224d81b1604ba840a4f88e562de61aa",
+   "source": "https://r0k.us/graphics/kodak/kodak/kodim04.png"
+  },
+  {
+   "licence": "Kodak suite, released for unrestricted usage",
+   "path": "image/kodak/kodim05.png",
+   "set": "kodak",
+   "sha256": "10349e963c5c813d327852f82c1795fa4148d69fedffc4c589bee458e3ac3d53",
+   "source": "https://r0k.us/graphics/kodak/kodak/kodim05.png"
+  },
+  {
+   "licence": "Kodak suite, released for unrestricted usage",
+   "path": "image/kodak/kodim06.png",
+   "set": "kodak",
+   "sha256": "363510303b715d4cbc384e1ce227e466b613a09e1b71ae985882bf8e7fbd9b18",
+   "source": "https://r0k.us/graphics/kodak/kodak/kodim06.png"
+  },
+  {
+   "licence": "Kodak suite, released for unrestricted usage",
+   "path": "image/kodak/kodim07.png",
+   "set": "kodak",
+   "sha256": "b77d3f006f42414bb242222e0482e750c0fb9e5ee8d4bed2f6f11c5605fe54a4",
+   "source": "https://r0k.us/graphics/kodak/kodak/kodim07.png"
+  },
+  {
+   "licence": "Kodak suite, released for unrestricted usage",
+   "path": "image/kodak/kodim08.png",
+   "set": "kodak",
+   "sha256": "ba23983c76b4832ee0e8af0592664756841a16779acd69f792e268fb6d13d6e7",
+   "source": "https://r0k.us/graphics/kodak/kodak/kodim08.png"
+  },
+  {
+   "licence": "Kodak suite, released for unrestricted usage",
+   "path": "image/kodak/kodim09.png",
+   "set": "kodak",
+   "sha256": "6a4361c2fc194feb4edaa9f9a4a0620fb9943e460ac7fdf037fb0f6dd6607a7d",
+   "source": "https://r0k.us/graphics/kodak/kodak/kodim09.png"
+  },
+  {
+   "licence": "Kodak suite, released for unrestricted usage",
+   "path": "image/kodak/kodim10.png",
+   "set": "kodak",
+   "sha256": "9dfb70f5867c29ff9ed6313683f19b3d867849e40fbc0c4c54a4a89df341cf23",
+   "source": "https://r0k.us/graphics/kodak/kodak/kodim10.png"
+  },
+  {
+   "licence": "Kodak suite, released for unrestricted usage",
+   "path": "image/kodak/kodim11.png",
+   "set": "kodak",
+   "sha256": "7936814b58b5387fce2e4e2488b4ec830dadd95fa9520f358ddb30990b50f2b6",
+   "source": "https://r0k.us/graphics/kodak/kodak/kodim11.png"
+  },
+  {
+   "licence": "Kodak suite, released for unrestricted usage",
+   "path": "image/kodak/kodim12.png",
+   "set": "kodak",
+   "sha256": "d78c37c2f04f23761ed2367dd77e2db584ddd4c3950833fecf89f199a8126980",
+   "source": "https://r0k.us/graphics/kodak/kodak/kodim12.png"
+  },
+  {
+   "licence": "Kodak suite, released for unrestricted usage",
+   "path": "image/kodak/kodim13.png",
+   "set": "kodak",
+   "sha256": "bc34a3ce58dea09dce1704c997171602de90cb34d0c8503a988b77f473d39b08",
+   "source": "https://r0k.us/graphics/kodak/kodak/kodim13.png"
+  },
+  {
+   "licence": "Kodak suite, released for unrestricted usage",
+   "path": "image/kodak/kodim14.png",
+   "set": "kodak",
+   "sha256": "55a94550ff18f3246c4074fd32b77b0c74447c26b6ad274d564d999c0450ba6e",
+   "source": "https://r0k.us/graphics/kodak/kodak/kodim14.png"
+  },
+  {
+   "licence": "Kodak suite, released for unrestricted usage",
+   "path": "image/kodak/kodim15.png",
+   "set": "kodak",
+   "sha256": "7538cbb80cb9103606c48b806eae57d56c885c7f90b9b3be70a41160f9cbb683",
+   "source": "https://r0k.us/graphics/kodak/kodak/kodim15.png"
+  },
+  {
+   "licence": "Kodak suite, released for unrestricted usage",
+   "path": "image/kodak/kodim16.png",
+   "set": "kodak",
+   "sha256": "a89c7268ccd4718ba424a99fc4643c572cf692ca6eae887185ceb4e9f11d2e54",
+   "source": "https://r0k.us/graphics/kodak/kodak/kodim16.png"
+  },
+  {
+   "licence": "Kodak suite, released for unrestricted usage",
+   "path": "image/kodak/kodim17.png",
+   "set": "kodak",
+   "sha256": "37afcc89fbdcb76d9518e04b2fc011027e2f4cd14b3b2f83cefd721641a47c5b",
+   "source": "https://r0k.us/graphics/kodak/kodak/kodim17.png"
+  },
+  {
+   "licence": "Kodak suite, released for unrestricted usage",
+   "path": "image/kodak/kodim18.png",
+   "set": "kodak",
+   "sha256": "1a9258c365988961d87a0598725b609139c303ad48a5aad6c503c3b1a87849aa",
+   "source": "https://r0k.us/graphics/kodak/kodak/kodim18.png"
+  },
+  {
+   "licence": "Kodak suite, released for unrestricted usage",
+   "path": "image/kodak/kodim19.png",
+   "set": "kodak",
+   "sha256": "b7450b264b1b0a411390d8931b112c27905a992520fc90569dc4b920aa32bbdc",
+   "source": "https://r0k.us/graphics/kodak/kodak/kodim19.png"
+  },
+  {
+   "licence": "Kodak suite, released for unrestricted usage",
+   "path": "image/kodak/kodim20.png",
+   "set": "kodak",
+   "sha256": "3b46c71e3b92a563820ba32936be8330c586c41f938efd94be938386aae4328a",
+   "source": "https://r0k.us/graphics/kodak/kodak/kodim20.png"
+  },
+  {
+   "licence": "Kodak suite, released for unrestricted usage",
+   "path": "image/kodak/kodim21.png",
+   "set": "kodak",
+   "sha256": "ac958597c82073f6bb65129c68f72b651db5b9efd82e11547d07350214bc268b",
+   "source": "https://r0k.us/graphics/kodak/kodak/kodim21.png"
+  },
+  {
+   "licence": "Kodak suite, released for unrestricted usage",
+   "path": "image/kodak/kodim22.png",
+   "set": "kodak",
+   "sha256": "1cee58eb1f2d9c7ebb254d208a03c783ce6cf2c4d8c2cf45e235dd23b4ce1b29",
+   "source": "https://r0k.us/graphics/kodak/kodak/kodim22.png"
+  },
+  {
+   "licence": "Kodak suite, released for unrestricted usage",
+   "path": "image/kodak/kodim23.png",
+   "set": "kodak",
+   "sha256": "e3111a2fd4da24af15d6459ef9eacfe54106b38e27b4a21821b75c3f5d2d5baf",
+   "source": "https://r0k.us/graphics/kodak/kodak/kodim23.png"
+  },
+  {
+   "licence": "Kodak suite, released for unrestricted usage",
+   "path": "image/kodak/kodim24.png",
+   "set": "kodak",
+   "sha256": "1071c68372cc5a01435c2c225a5cf7d4bb803846ec08bb6b3d6721b156d7cb96",
+   "source": "https://r0k.us/graphics/kodak/kodak/kodim24.png"
+  },
+  {
+   "licence": "Unsplash licence (CLIC)",
+   "path": "image/clic/alberto-montalesi-176097.png",
+   "set": "clic",
+   "sha256": "a420533b06d04d4c5052a2b93c3e6080ab441865c0eb24347d951e810e7f4882",
+   "source": "CLIC 2020 professional_valid"
+  },
+  {
+   "licence": "Unsplash licence (CLIC)",
+   "path": "image/clic/alejandro-escamilla-6.png",
+   "set": "clic",
+   "sha256": "9be685bf7c0a48b55cb8bc7dd35bd63fa4954944d8dbabe1efe6d7ee92f5e1ca",
+   "source": "CLIC 2020 professional_valid"
+  },
+  {
+   "licence": "Unsplash licence (CLIC)",
+   "path": "image/clic/ales-krivec-15949.png",
+   "set": "clic",
+   "sha256": "124feb56d7fe3d4b53eb0eb87957b91f2f6185115b24c00554e99511d442c13e",
+   "source": "CLIC 2020 professional_valid"
+  },
+  {
+   "licence": "Unsplash licence (CLIC)",
+   "path": "image/clic/alexander-shustov-73.png",
+   "set": "clic",
+   "sha256": "0e02abbd66f589dd3cf32dfa4cc39fda5f04f5315332b86b27e23d066476e677",
+   "source": "CLIC 2020 professional_valid"
+  },
+  {
+   "licence": "Unsplash licence (CLIC)",
+   "path": "image/clic/allef-vinicius-109434.png",
+   "set": "clic",
+   "sha256": "ace56cc5ab4a605e5b01a2a90cbad2fecb3090738e5a0bb8786740e24ddd46de",
+   "source": "CLIC 2020 professional_valid"
+  },
+  {
+   "licence": "Unsplash licence (CLIC)",
+   "path": "image/clic/amy-zhang-15940.png",
+   "set": "clic",
+   "sha256": "a33da2acf22c94f83856e795bdc91f1c08b95275b7893c1a77ee7f56b644bce2",
+   "source": "CLIC 2020 professional_valid"
+  },
+  {
+   "licence": "Unsplash licence (CLIC)",
+   "path": "image/clic/andrew-ruiz-376.png",
+   "set": "clic",
+   "sha256": "fa6a620064b2c9451fac4ca4bdcf00295bffe0bc82979f5fae7abaaa9bdf2812",
+   "source": "CLIC 2020 professional_valid"
+  },
+  {
+   "licence": "Unsplash licence (CLIC)",
+   "path": "image/clic/benjamin-sloth-lindgreen-705.png",
+   "set": "clic",
+   "sha256": "670a3c78bc82789f95e4d46e5f73f5432e8a0f8537c362c1248d749ea989d73d",
+   "source": "CLIC 2020 professional_valid"
+  },
+  {
+   "licence": "Unsplash licence (CLIC)",
+   "path": "image/clic/casey-fyfe-999.png",
+   "set": "clic",
+   "sha256": "dffb8056780c1acce33e6f08ca5197d573362c6dad98c35c6e2c19efc154efdf",
+   "source": "CLIC 2020 professional_valid"
+  },
+  {
+   "licence": "Unsplash licence (CLIC)",
+   "path": "image/clic/clem-onojeghuo-33741.png",
+   "set": "clic",
+   "sha256": "eadc4679b1a6662a42d4213fe6e5922d9ada897afe7f6466dda350a0e412c97a",
+   "source": "CLIC 2020 professional_valid"
+  },
+  {
+   "licence": "Unsplash licence (CLIC)",
+   "path": "image/clic/daniel-robert-405.png",
+   "set": "clic",
+   "sha256": "8cdfcf1fdec42592bf35d506006b301c1553bd7dcc37f800fa4e9040467faad9",
+   "source": "CLIC 2020 professional_valid"
+  },
+  {
+   "licence": "Unsplash licence (CLIC)",
+   "path": "image/clic/davide-ragusa-716.png",
+   "set": "clic",
+   "sha256": "0ff2ac0468c93dc27a8bdadfbd60405a2a648fdf12c8c71d146700e4c3ff6c06",
+   "source": "CLIC 2020 professional_valid"
+  },
+  {
+   "licence": "Unsplash licence (CLIC)",
+   "path": "image/clic/dogancan-ozturan-395.png",
+   "set": "clic",
+   "sha256": "4adb31af67d8143429340013c64b083f0b7a5fc219ec5d21304f4e87b2bb8b28",
+   "source": "CLIC 2020 professional_valid"
+  },
+  {
+   "licence": "Unsplash licence (CLIC)",
+   "path": "image/clic/felix-russell-saw-140699.png",
+   "set": "clic",
+   "sha256": "bd60b033817e1eee9ad2fef12445d903d167a577e7832c0e6d25b8676515f2ac",
+   "source": "CLIC 2020 professional_valid"
+  },
+  {
+   "licence": "Unsplash licence (CLIC)",
+   "path": "image/clic/gian-reto-tarnutzer-45212.png",
+   "set": "clic",
+   "sha256": "f1368c5904dda6ad0ea6a0968e1f455064290d624744723533dd9e93689e532c",
+   "source": "CLIC 2020 professional_valid"
+  },
+  {
+   "licence": "Unsplash licence (CLIC)",
+   "path": "image/clic/jared-erondu-21325.png",
+   "set": "clic",
+   "sha256": "5a241642973a6be08e1a407ea21f10bf6fbab7915cc5dc1ff6e68ee0c178cf0b",
+   "source": "CLIC 2020 professional_valid"
+  },
+  {
+   "licence": "Unsplash licence (CLIC)",
+   "path": "image/clic/jason-briscoe-149782.png",
+   "set": "clic",
+   "sha256": "2114abc66efd0e1d196995edaa9df03eb80370bda92003ceacb10c2bc4b73e69",
+   "source": "CLIC 2020 professional_valid"
+  },
+  {
+   "licence": "Unsplash licence (CLIC)",
+   "path": "image/clic/jeremy-cai-1174.png",
+   "set": "clic",
+   "sha256": "bdf9508c13c1e70f0e727176ef52035be1638c5827237fe0fb18919b7c048821",
+   "source": "CLIC 2020 professional_valid"
+  },
+  {
+   "licence": "Unsplash licence (CLIC)",
+   "path": "image/clic/juskteez-vu-1041.png",
+   "set": "clic",
+   "sha256": "4edde2170e30a9c4b13a61c253f7207c1997e2e8c78ed72c78a116236ef579eb",
+   "source": "CLIC 2020 professional_valid"
+  },
+  {
+   "licence": "Unsplash licence (CLIC)",
+   "path": "image/clic/kazuend-28556.png",
+   "set": "clic",
+   "sha256": "2e33c59f966c074df6b8d3f75cc13d16d74b1be3f8ad6963c20f2c799bce32a1",
+   "source": "CLIC 2020 professional_valid"
+  },
+  {
+   "licence": "Unsplash licence (CLIC)",
+   "path": "image/clic/lobostudio-hamburg-75377.png",
+   "set": "clic",
+   "sha256": "02af14dc4d1bba8968064fe57b8e3b5bd1b19cb54b8bf8d222f310f5d3520ec6",
+   "source": "CLIC 2020 professional_valid"
+  },
+  {
+   "licence": "Unsplash licence (CLIC)",
+   "path": "image/clic/martin-wessely-211.png",
+   "set": "clic",
+   "sha256": "8c4791c5cb645198b3b12a884d33dac544a33763e1da0f59b86101c2af32e015",
+   "source": "CLIC 2020 professional_valid"
+  },
+  {
+   "licence": "Unsplash licence (CLIC)",
+   "path": "image/clic/martyn-seddon-220.png",
+   "set": "clic",
+   "sha256": "e6b7f57d316da84bd45eda2649e600eec4e8c903af18d48319a068b34cc3d9cc",
+   "source": "CLIC 2020 professional_valid"
+  },
+  {
+   "licence": "Unsplash licence (CLIC)",
+   "path": "image/clic/michael-durana-82941.png",
+   "set": "clic",
+   "sha256": "7a9ad3ffd2a85fcb0cb6da024c8779eda76ded233137dd20d24a1b2540411460",
+   "source": "CLIC 2020 professional_valid"
+  },
+  {
+   "licence": "Unsplash licence (CLIC)",
+   "path": "image/clic/mullermarc-184.png",
+   "set": "clic",
+   "sha256": "9d7122af54918cd9b300444aa021a4825336b20e0a93c13d7b72a3d602025349",
+   "source": "CLIC 2020 professional_valid"
+  },
+  {
+   "licence": "Unsplash licence (CLIC)",
+   "path": "image/clic/nomao-saeki-33553.png",
+   "set": "clic",
+   "sha256": "a54f6c700580db71d75bae9298298b6315f8f51b6a474dcc0ab447e497eb17ff",
+   "source": "CLIC 2020 professional_valid"
+  },
+  {
+   "licence": "Unsplash licence (CLIC)",
+   "path": "image/clic/paul-itkin-46101.png",
+   "set": "clic",
+   "sha256": "f0a5cd1ea476b19e101f190212e9031dcbe956f44fac7d15fab24f243923a658",
+   "source": "CLIC 2020 professional_valid"
+  },
+  {
+   "licence": "Unsplash licence (CLIC)",
+   "path": "image/clic/philipp-reiner-207.png",
+   "set": "clic",
+   "sha256": "6bcd35982a9d17b0b927526efe4987587fa11c94859d8fb5ff2bdd810e47c98f",
+   "source": "CLIC 2020 professional_valid"
+  },
+  {
+   "licence": "DIV2K: academic research only; internal measurement, not redistributed",
+   "path": "image/div2k/0801.png",
+   "set": "div2k",
+   "sha256": "ab5cf6a1cac2d1c2d0792dbd274fd2e53e42118ab6537771a825fd87aa28a60c",
+   "source": "DIV2K_valid_HR"
+  },
+  {
+   "licence": "DIV2K: academic research only; internal measurement, not redistributed",
+   "path": "image/div2k/0802.png",
+   "set": "div2k",
+   "sha256": "4ad6f3ca8bf740192042978121f05ec493ddbe5a3da5584eaf0d9699c25ee431",
+   "source": "DIV2K_valid_HR"
+  },
+  {
+   "licence": "DIV2K: academic research only; internal measurement, not redistributed",
+   "path": "image/div2k/0803.png",
+   "set": "div2k",
+   "sha256": "4b0148a9a1ff877ad9f76e65736a50cc36e10822b5d8ccd2abb2988ff4e1782b",
+   "source": "DIV2K_valid_HR"
+  },
+  {
+   "licence": "DIV2K: academic research only; internal measurement, not redistributed",
+   "path": "image/div2k/0804.png",
+   "set": "div2k",
+   "sha256": "16b5fdbe808b868bed0be32f235208a1716d44e271a37b79cbc77ab53d2f6bdb",
+   "source": "DIV2K_valid_HR"
+  },
+  {
+   "licence": "DIV2K: academic research only; internal measurement, not redistributed",
+   "path": "image/div2k/0805.png",
+   "set": "div2k",
+   "sha256": "e28d56feee10c2e2663f347dda574fff736894dba37341d37b91bac2ecd863b2",
+   "source": "DIV2K_valid_HR"
+  },
+  {
+   "licence": "DIV2K: academic research only; internal measurement, not redistributed",
+   "path": "image/div2k/0806.png",
+   "set": "div2k",
+   "sha256": "36720ddd59f8b3eed28f8981e12e6e2d680bfa78b9d25f33ec4152013652c713",
+   "source": "DIV2K_valid_HR"
+  },
+  {
+   "licence": "DIV2K: academic research only; internal measurement, not redistributed",
+   "path": "image/div2k/0807.png",
+   "set": "div2k",
+   "sha256": "4a2493d918862f703f783dc675bacbae5bd7698aa58f81ddb8bb71cf39ac173a",
+   "source": "DIV2K_valid_HR"
+  },
+  {
+   "licence": "DIV2K: academic research only; internal measurement, not redistributed",
+   "path": "image/div2k/0808.png",
+   "set": "div2k",
+   "sha256": "956528ab3e0fadad1ed8ce93f93a30bf9f58c36ffa9dd775e2ad362ffdcf5ace",
+   "source": "DIV2K_valid_HR"
+  },
+  {
+   "licence": "DIV2K: academic research only; internal measurement, not redistributed",
+   "path": "image/div2k/0809.png",
+   "set": "div2k",
+   "sha256": "a0b094da02bcaeabea1976fb939c87366d437bdda1a796fbc3f4700fb5e7bbed",
+   "source": "DIV2K_valid_HR"
+  },
+  {
+   "licence": "DIV2K: academic research only; internal measurement, not redistributed",
+   "path": "image/div2k/0810.png",
+   "set": "div2k",
+   "sha256": "6940c660b97d2c5f1113101c3e6360d1d6886743c5796cad52224b8076b903f8",
+   "source": "DIV2K_valid_HR"
+  },
+  {
+   "licence": "DIV2K: academic research only; internal measurement, not redistributed",
+   "path": "image/div2k/0811.png",
+   "set": "div2k",
+   "sha256": "7016bcf4112049162da604772c810bed4f5983af52e07d23755ac2c3475fe8ad",
+   "source": "DIV2K_valid_HR"
+  },
+  {
+   "licence": "DIV2K: academic research only; internal measurement, not redistributed",
+   "path": "image/div2k/0812.png",
+   "set": "div2k",
+   "sha256": "49e45b8922872b44ece90db047756f3a5356612bb6ee30bdc23df2bd208ec861",
+   "source": "DIV2K_valid_HR"
+  },
+  {
+   "licence": "DIV2K: academic research only; internal measurement, not redistributed",
+   "path": "image/div2k/0813.png",
+   "set": "div2k",
+   "sha256": "71c06a2c36979345c99c887e7bd6aebfd0bd1648d93b7bd15f56c65e1291b37e",
+   "source": "DIV2K_valid_HR"
+  },
+  {
+   "licence": "DIV2K: academic research only; internal measurement, not redistributed",
+   "path": "image/div2k/0814.png",
+   "set": "div2k",
+   "sha256": "2fec903d11d2a79070268a4316c100f8314eaadd8f8a65cce152f14826f04876",
+   "source": "DIV2K_valid_HR"
+  },
+  {
+   "licence": "DIV2K: academic research only; internal measurement, not redistributed",
+   "path": "image/div2k/0815.png",
+   "set": "div2k",
+   "sha256": "c8f278e51f2bc9be7a696935b7e386eb4adafde24572d8ecdd4edf8adf4b4108",
+   "source": "DIV2K_valid_HR"
+  },
+  {
+   "licence": "DIV2K: academic research only; internal measurement, not redistributed",
+   "path": "image/div2k/0816.png",
+   "set": "div2k",
+   "sha256": "87b7b2a666c92efdb24eadf67bc0c68bce5560ee89bd0532f50f94d8cf88b434",
+   "source": "DIV2K_valid_HR"
+  },
+  {
+   "licence": "DIV2K: academic research only; internal measurement, not redistributed",
+   "path": "image/div2k/0817.png",
+   "set": "div2k",
+   "sha256": "fdb28a6df3408758cc6d87563a157081c22d1325ea6d8034405ce45abcfc3879",
+   "source": "DIV2K_valid_HR"
+  },
+  {
+   "licence": "DIV2K: academic research only; internal measurement, not redistributed",
+   "path": "image/div2k/0818.png",
+   "set": "div2k",
+   "sha256": "8679d88891d7e8491fd61abded2c6864d90f5c1817b300f5d5796d05bb11488f",
+   "source": "DIV2K_valid_HR"
+  },
+  {
+   "licence": "DIV2K: academic research only; internal measurement, not redistributed",
+   "path": "image/div2k/0819.png",
+   "set": "div2k",
+   "sha256": "fcbc6cb7e7cdb717e94d8c8eaf659d6b2bfa513aa133c0d2c4a8e2aa96092529",
+   "source": "DIV2K_valid_HR"
+  },
+  {
+   "licence": "DIV2K: academic research only; internal measurement, not redistributed",
+   "path": "image/div2k/0820.png",
+   "set": "div2k",
+   "sha256": "2617cfc25dd5442cc017bd17aa24ecae4751b1e5ed6013e8adddb727617bcd5b",
+   "source": "DIV2K_valid_HR"
+  },
+  {
+   "licence": "DIV2K: academic research only; internal measurement, not redistributed",
+   "path": "image/div2k/0821.png",
+   "set": "div2k",
+   "sha256": "0eb14dfcb1d21cb5d3437dc5135c458154cd7fabed8147fbdc415d3ef671c14b",
+   "source": "DIV2K_valid_HR"
+  },
+  {
+   "licence": "DIV2K: academic research only; internal measurement, not redistributed",
+   "path": "image/div2k/0822.png",
+   "set": "div2k",
+   "sha256": "a1d308fd62adecb1ea8b0fa8d0c687c92d3cf0d3358e598c8b97aca1b9cf8ad0",
+   "source": "DIV2K_valid_HR"
+  },
+  {
+   "licence": "DIV2K: academic research only; internal measurement, not redistributed",
+   "path": "image/div2k/0823.png",
+   "set": "div2k",
+   "sha256": "8db26bddf2ac9975e5227be3eb1180f6377145eee5dca1e421100014cbd7ef6e",
+   "source": "DIV2K_valid_HR"
+  },
+  {
+   "licence": "DIV2K: academic research only; internal measurement, not redistributed",
+   "path": "image/div2k/0824.png",
+   "set": "div2k",
+   "sha256": "484316545f6b08655d30faa1bc5f29eb6821d049b62bb528319b504790c188e2",
+   "source": "DIV2K_valid_HR"
+  },
+  {
+   "licence": "DIV2K: academic research only; internal measurement, not redistributed",
+   "path": "image/div2k/0825.png",
+   "set": "div2k",
+   "sha256": "0db87d6f7d6cf3a12fc384d8232c337fe0f509f2518845166c1033e22169115d",
+   "source": "DIV2K_valid_HR"
+  },
+  {
+   "licence": "DIV2K: academic research only; internal measurement, not redistributed",
+   "path": "image/div2k/0826.png",
+   "set": "div2k",
+   "sha256": "b0f675a14e8fe9f2ec0b705bee98d75f8a22478eafdc1a0a0afc0f820bc5ab4d",
+   "source": "DIV2K_valid_HR"
+  },
+  {
+   "licence": "DIV2K: academic research only; internal measurement, not redistributed",
+   "path": "image/div2k/0827.png",
+   "set": "div2k",
+   "sha256": "e8cfa94ed77a021b63da63406940de3a830fe1217e752b5929d50602a1aaa407",
+   "source": "DIV2K_valid_HR"
+  },
+  {
+   "licence": "DIV2K: academic research only; internal measurement, not redistributed",
+   "path": "image/div2k/0828.png",
+   "set": "div2k",
+   "sha256": "a62013e252fa503920f54b9b1eff9babd501c742d2c82c97d7c22394493ffa12",
+   "source": "DIV2K_valid_HR"
+  },
+  {
+   "licence": "DIV2K: academic research only; internal measurement, not redistributed",
+   "path": "image/div2k/0829.png",
+   "set": "div2k",
+   "sha256": "de81c82e13d499226fd96505b6a72f59b6b8506c03ff0b6d06b6393d066f68a4",
+   "source": "DIV2K_valid_HR"
+  },
+  {
+   "licence": "DIV2K: academic research only; internal measurement, not redistributed",
+   "path": "image/div2k/0830.png",
+   "set": "div2k",
+   "sha256": "4eb18566ab01447a06daf0314a3711aa78cea5ca0eaa47cfedafbceeb6dd0a3e",
+   "source": "DIV2K_valid_HR"
+  },
+  {
+   "licence": "DIV2K: academic research only; internal measurement, not redistributed",
+   "path": "image/div2k/0831.png",
+   "set": "div2k",
+   "sha256": "343c5d2665d9c5efd7a5444e72d383f63d96bac35902ed088c9a3ee88e0d4ed2",
+   "source": "DIV2K_valid_HR"
+  },
+  {
+   "licence": "DIV2K: academic research only; internal measurement, not redistributed",
+   "path": "image/div2k/0832.png",
+   "set": "div2k",
+   "sha256": "5c609d644b5924900e82dbecadfb85497b77d6cfad52a0c4c7e43a83f9868c33",
+   "source": "DIV2K_valid_HR"
+  },
+  {
+   "licence": "DIV2K: academic research only; internal measurement, not redistributed",
+   "path": "image/div2k/0833.png",
+   "set": "div2k",
+   "sha256": "2e9668b3a318284ec90c9bbdd940317ecd2f7b95314e68c48c94d2380fad679a",
+   "source": "DIV2K_valid_HR"
+  },
+  {
+   "licence": "DIV2K: academic research only; internal measurement, not redistributed",
+   "path": "image/div2k/0834.png",
+   "set": "div2k",
+   "sha256": "4d2621a246e4a771754aa0052b91d79dbebfe866d9dbd8200e3c68e038a3de88",
+   "source": "DIV2K_valid_HR"
+  },
+  {
+   "licence": "DIV2K: academic research only; internal measurement, not redistributed",
+   "path": "image/div2k/0835.png",
+   "set": "div2k",
+   "sha256": "263cfd9c7d2eee15b29250e6d0dc366ed680feb222de3f8c2fb5c6bd304608e4",
+   "source": "DIV2K_valid_HR"
+  },
+  {
+   "licence": "DIV2K: academic research only; internal measurement, not redistributed",
+   "path": "image/div2k/0836.png",
+   "set": "div2k",
+   "sha256": "d056c4afc22367640c8ec7a1b84c06eaa7405e29363f0e75ea824e15aec149d0",
+   "source": "DIV2K_valid_HR"
+  },
+  {
+   "licence": "DIV2K: academic research only; internal measurement, not redistributed",
+   "path": "image/div2k/0837.png",
+   "set": "div2k",
+   "sha256": "4618bd32e1d1a2ef0f4ad3f6b941e3745a97371fd300dad3c5c4c9013caec8db",
+   "source": "DIV2K_valid_HR"
+  },
+  {
+   "licence": "DIV2K: academic research only; internal measurement, not redistributed",
+   "path": "image/div2k/0838.png",
+   "set": "div2k",
+   "sha256": "01e42bb5efb35d97a9931fc421f793e3c12d0922a3df288bbfd148b6a82a145b",
+   "source": "DIV2K_valid_HR"
+  },
+  {
+   "licence": "DIV2K: academic research only; internal measurement, not redistributed",
+   "path": "image/div2k/0839.png",
+   "set": "div2k",
+   "sha256": "818abf16ba0aacc3fb6737c5ddd7c2188ca7321b6b28b7f4ba1898627387dee7",
+   "source": "DIV2K_valid_HR"
+  },
+  {
+   "licence": "DIV2K: academic research only; internal measurement, not redistributed",
+   "path": "image/div2k/0840.png",
+   "set": "div2k",
+   "sha256": "e023c2b2628b7d897d69150baa40be6ceda9fe0e45a0d51348011c6a47b44d86",
+   "source": "DIV2K_valid_HR"
+  },
+  {
+   "licence": "DIV2K: academic research only; internal measurement, not redistributed",
+   "path": "image/div2k/0841.png",
+   "set": "div2k",
+   "sha256": "0f46093cd84e7ee037d1ded8680f2f39583af5dadac0da580a3911ed482de285",
+   "source": "DIV2K_valid_HR"
+  },
+  {
+   "licence": "DIV2K: academic research only; internal measurement, not redistributed",
+   "path": "image/div2k/0842.png",
+   "set": "div2k",
+   "sha256": "c6ec845abfd696fcf5f39beadb8632ecc56ac8416318a9dbb27c4c4d294aa592",
+   "source": "DIV2K_valid_HR"
+  },
+  {
+   "licence": "DIV2K: academic research only; internal measurement, not redistributed",
+   "path": "image/div2k/0843.png",
+   "set": "div2k",
+   "sha256": "3ef88e17c711156a52ef8c7385f01b364ade64bb0d90938debfc4b454e0d1e06",
+   "source": "DIV2K_valid_HR"
+  },
+  {
+   "licence": "DIV2K: academic research only; internal measurement, not redistributed",
+   "path": "image/div2k/0844.png",
+   "set": "div2k",
+   "sha256": "93da0f98885573c518891c5eb6004818436ae36cf1ed894cfef853e131d9d86d",
+   "source": "DIV2K_valid_HR"
+  },
+  {
+   "licence": "DIV2K: academic research only; internal measurement, not redistributed",
+   "path": "image/div2k/0845.png",
+   "set": "div2k",
+   "sha256": "35416e153d4ffd1f83df1502dca371db2059e818b72c1e3a95fb9a9266b59172",
+   "source": "DIV2K_valid_HR"
+  },
+  {
+   "licence": "DIV2K: academic research only; internal measurement, not redistributed",
+   "path": "image/div2k/0846.png",
+   "set": "div2k",
+   "sha256": "eaef63b3b0889ea99559e1e959240393505d9f6d4d5cb7f6a90729b024b4ffb4",
+   "source": "DIV2K_valid_HR"
+  },
+  {
+   "licence": "DIV2K: academic research only; internal measurement, not redistributed",
+   "path": "image/div2k/0847.png",
+   "set": "div2k",
+   "sha256": "ce39eab49b45fc08177556f7c9ae0d0e928e283fb3cd471bddf0fbf17db8ca73",
+   "source": "DIV2K_valid_HR"
+  },
+  {
+   "licence": "DIV2K: academic research only; internal measurement, not redistributed",
+   "path": "image/div2k/0848.png",
+   "set": "div2k",
+   "sha256": "4a8f2f4eee348242b17eb7ee72aad9c1c1fe870a1d414db4704819fede40b660",
+   "source": "DIV2K_valid_HR"
+  },
+  {
+   "licence": "DIV2K: academic research only; internal measurement, not redistributed",
+   "path": "image/div2k/0849.png",
+   "set": "div2k",
+   "sha256": "1d576e20f4720050d0b7af5295b323c342a5284ed75a8ce3bae6e0cb46c89eb6",
+   "source": "DIV2K_valid_HR"
+  },
+  {
+   "licence": "DIV2K: academic research only; internal measurement, not redistributed",
+   "path": "image/div2k/0850.png",
+   "set": "div2k",
+   "sha256": "1d026bda033ce6fa0db97aa3ec120f3609663f4d0aaf2f9d8e677fdbe235ab03",
+   "source": "DIV2K_valid_HR"
+  },
+  {
+   "licence": "DIV2K: academic research only; internal measurement, not redistributed",
+   "path": "image/div2k/0851.png",
+   "set": "div2k",
+   "sha256": "1c4bc95887a3c06f9690fec153d5548ec52039c8ba83da749f2b5f6e0d2ecf33",
+   "source": "DIV2K_valid_HR"
+  },
+  {
+   "licence": "DIV2K: academic research only; internal measurement, not redistributed",
+   "path": "image/div2k/0852.png",
+   "set": "div2k",
+   "sha256": "47f4db4100055a954606d789dfe183612ea7e196a06b2e7bc4bd39c3522628ee",
+   "source": "DIV2K_valid_HR"
+  },
+  {
+   "licence": "DIV2K: academic research only; internal measurement, not redistributed",
+   "path": "image/div2k/0853.png",
+   "set": "div2k",
+   "sha256": "854189ea5c2a325324500c6cf7168e0b78d30b09606eb5a59f938a5ae69139fe",
+   "source": "DIV2K_valid_HR"
+  },
+  {
+   "licence": "DIV2K: academic research only; internal measurement, not redistributed",
+   "path": "image/div2k/0854.png",
+   "set": "div2k",
+   "sha256": "f77817c7a5d940baf174efa61d2fbf40354a08ade7a151e155ce62bd2481eca8",
+   "source": "DIV2K_valid_HR"
+  },
+  {
+   "licence": "DIV2K: academic research only; internal measurement, not redistributed",
+   "path": "image/div2k/0855.png",
+   "set": "div2k",
+   "sha256": "86001004f1eb6a1e182bb2ed3c23093d2656690a61091b2822af1c9124a40141",
+   "source": "DIV2K_valid_HR"
+  },
+  {
+   "licence": "DIV2K: academic research only; internal measurement, not redistributed",
+   "path": "image/div2k/0856.png",
+   "set": "div2k",
+   "sha256": "cf845f85d9f65570938a15f56fe9de749619f9bee35533944f46bba94f0ff77b",
+   "source": "DIV2K_valid_HR"
+  },
+  {
+   "licence": "DIV2K: academic research only; internal measurement, not redistributed",
+   "path": "image/div2k/0857.png",
+   "set": "div2k",
+   "sha256": "4fafd48e2926f530129290c9f843490dcbf7809c8505c123a5f18ec2a5005611",
+   "source": "DIV2K_valid_HR"
+  },
+  {
+   "licence": "DIV2K: academic research only; internal measurement, not redistributed",
+   "path": "image/div2k/0858.png",
+   "set": "div2k",
+   "sha256": "428049494acf4dadf08c5bd62c8711ac258af5fa0f008b5fb389a4fffca96c58",
+   "source": "DIV2K_valid_HR"
+  },
+  {
+   "licence": "DIV2K: academic research only; internal measurement, not redistributed",
+   "path": "image/div2k/0859.png",
+   "set": "div2k",
+   "sha256": "3ada872de7c5def1d408920385db278b1ff3a5a0cfcab83105a789ff540a1827",
+   "source": "DIV2K_valid_HR"
+  },
+  {
+   "licence": "DIV2K: academic research only; internal measurement, not redistributed",
+   "path": "image/div2k/0860.png",
+   "set": "div2k",
+   "sha256": "eac29d623ecfab9e2299c04b49e5da3f282a576eb7f9107d0b88076c972ac3ef",
+   "source": "DIV2K_valid_HR"
+  },
+  {
+   "licence": "DIV2K: academic research only; internal measurement, not redistributed",
+   "path": "image/div2k/0861.png",
+   "set": "div2k",
+   "sha256": "c6fe192a3f1b702948e99c483f04edfb362d2d218082a12457a5b0f09219ffc6",
+   "source": "DIV2K_valid_HR"
+  },
+  {
+   "licence": "DIV2K: academic research only; internal measurement, not redistributed",
+   "path": "image/div2k/0862.png",
+   "set": "div2k",
+   "sha256": "31a02d7392ee9dadd4b8a2c1b5b9d670943135d0d40e85d4178ab77923c75548",
+   "source": "DIV2K_valid_HR"
+  },
+  {
+   "licence": "DIV2K: academic research only; internal measurement, not redistributed",
+   "path": "image/div2k/0863.png",
+   "set": "div2k",
+   "sha256": "5e98cca0fbeb2e649fa36a41a06240ce4ec4b05aa23859da13797f8ded0d5c1f",
+   "source": "DIV2K_valid_HR"
+  },
+  {
+   "licence": "DIV2K: academic research only; internal measurement, not redistributed",
+   "path": "image/div2k/0864.png",
+   "set": "div2k",
+   "sha256": "ca9811dd5910f947ee4dc75f709dcffe17bb7811ca562a0e4bcdefc781eadd76",
+   "source": "DIV2K_valid_HR"
+  },
+  {
+   "licence": "DIV2K: academic research only; internal measurement, not redistributed",
+   "path": "image/div2k/0865.png",
+   "set": "div2k",
+   "sha256": "46ced1e049fce5a0381c3dc7d7276d058f78a7a7dab5cd88ef7a224cbf51fdb1",
+   "source": "DIV2K_valid_HR"
+  },
+  {
+   "licence": "DIV2K: academic research only; internal measurement, not redistributed",
+   "path": "image/div2k/0866.png",
+   "set": "div2k",
+   "sha256": "7fc232b9294ea4e6f32bdacc26f314efc067ee0359c5ff1a7000ec61c8da8511",
+   "source": "DIV2K_valid_HR"
+  },
+  {
+   "licence": "DIV2K: academic research only; internal measurement, not redistributed",
+   "path": "image/div2k/0867.png",
+   "set": "div2k",
+   "sha256": "e3c2ee14a108f50479db683e3a6adc3682374eba236f64c74397fdb55a17b264",
+   "source": "DIV2K_valid_HR"
+  },
+  {
+   "licence": "DIV2K: academic research only; internal measurement, not redistributed",
+   "path": "image/div2k/0868.png",
+   "set": "div2k",
+   "sha256": "ba7de4237fa7cbdc2fff31f35015711909e501230e7c2f3f01f4e8dcf7a23c95",
+   "source": "DIV2K_valid_HR"
+  },
+  {
+   "licence": "DIV2K: academic research only; internal measurement, not redistributed",
+   "path": "image/div2k/0869.png",
+   "set": "div2k",
+   "sha256": "68a693195536fc94bc34ce7ff0e041990916fed73164a7c2dce00098a178ac75",
+   "source": "DIV2K_valid_HR"
+  },
+  {
+   "licence": "DIV2K: academic research only; internal measurement, not redistributed",
+   "path": "image/div2k/0870.png",
+   "set": "div2k",
+   "sha256": "f03f496bb0f21d53012723782bfdbcbbde66115c45c35aa7d83373c304a9c041",
+   "source": "DIV2K_valid_HR"
+  },
+  {
+   "licence": "DIV2K: academic research only; internal measurement, not redistributed",
+   "path": "image/div2k/0871.png",
+   "set": "div2k",
+   "sha256": "777df9ed736ff3ccc73388e90de36e131c002dfac64767f3b8ebccdd2cd5f058",
+   "source": "DIV2K_valid_HR"
+  },
+  {
+   "licence": "DIV2K: academic research only; internal measurement, not redistributed",
+   "path": "image/div2k/0872.png",
+   "set": "div2k",
+   "sha256": "028ca10affee013698c7f15068fe4813a9d7b2c24f2bd40dac68305774a5577a",
+   "source": "DIV2K_valid_HR"
+  },
+  {
+   "licence": "DIV2K: academic research only; internal measurement, not redistributed",
+   "path": "image/div2k/0873.png",
+   "set": "div2k",
+   "sha256": "3fcb2ae160dd255180854eaf54051c40cd205421367d0352144bb7490bc9afb1",
+   "source": "DIV2K_valid_HR"
+  },
+  {
+   "licence": "DIV2K: academic research only; internal measurement, not redistributed",
+   "path": "image/div2k/0874.png",
+   "set": "div2k",
+   "sha256": "11cb511247d70d84adad5557a720254e5f73e3786dbcd399c6053a1982ce1784",
+   "source": "DIV2K_valid_HR"
+  },
+  {
+   "licence": "DIV2K: academic research only; internal measurement, not redistributed",
+   "path": "image/div2k/0875.png",
+   "set": "div2k",
+   "sha256": "3c4859b59635fe7fcd6ec182c798eb3af44a2eafb6e8b891df3db62d0da3c5e2",
+   "source": "DIV2K_valid_HR"
+  },
+  {
+   "licence": "DIV2K: academic research only; internal measurement, not redistributed",
+   "path": "image/div2k/0876.png",
+   "set": "div2k",
+   "sha256": "9d5a819847876bb0061bf1fd42b8bd97e8aef89d1f5fb09b1669b7e9546a25f1",
+   "source": "DIV2K_valid_HR"
+  },
+  {
+   "licence": "DIV2K: academic research only; internal measurement, not redistributed",
+   "path": "image/div2k/0877.png",
+   "set": "div2k",
+   "sha256": "4e0fb583729accf7b93e07b2b81ce8d919f6490cee2d1f90db90b60095a59165",
+   "source": "DIV2K_valid_HR"
+  },
+  {
+   "licence": "DIV2K: academic research only; internal measurement, not redistributed",
+   "path": "image/div2k/0878.png",
+   "set": "div2k",
+   "sha256": "e1aff248577bc04ddeba4f48a62aff421ca06450a703e4a450dd401e1efd9546",
+   "source": "DIV2K_valid_HR"
+  },
+  {
+   "licence": "DIV2K: academic research only; internal measurement, not redistributed",
+   "path": "image/div2k/0879.png",
+   "set": "div2k",
+   "sha256": "ad5eb9637c891994c00f44358cf0a5238f642b8796b5cacaa8b59ba8bb51553a",
+   "source": "DIV2K_valid_HR"
+  },
+  {
+   "licence": "DIV2K: academic research only; internal measurement, not redistributed",
+   "path": "image/div2k/0880.png",
+   "set": "div2k",
+   "sha256": "db5773c6e460824c5132c23917492fda7acd370c87e9ae6293a0103fee2b642d",
+   "source": "DIV2K_valid_HR"
+  },
+  {
+   "licence": "DIV2K: academic research only; internal measurement, not redistributed",
+   "path": "image/div2k/0881.png",
+   "set": "div2k",
+   "sha256": "d2fba016ee3cee2395b677524d7ae2b2f6750cea1a6df4edc41f2977bd5d1b7c",
+   "source": "DIV2K_valid_HR"
+  },
+  {
+   "licence": "DIV2K: academic research only; internal measurement, not redistributed",
+   "path": "image/div2k/0882.png",
+   "set": "div2k",
+   "sha256": "573345fb42061a43fe8f1c0b3b9faf57cdd77189782a4d89b78c31e421f19115",
+   "source": "DIV2K_valid_HR"
+  },
+  {
+   "licence": "DIV2K: academic research only; internal measurement, not redistributed",
+   "path": "image/div2k/0883.png",
+   "set": "div2k",
+   "sha256": "3355621b3d834c320a66879e6cd23988df29f504f6cdecd22f1984b432a7e55a",
+   "source": "DIV2K_valid_HR"
+  },
+  {
+   "licence": "DIV2K: academic research only; internal measurement, not redistributed",
+   "path": "image/div2k/0884.png",
+   "set": "div2k",
+   "sha256": "06a928200ad757ff2422ecd2e12986bb90e3bf6b64c6062e5d31f864cdc992bc",
+   "source": "DIV2K_valid_HR"
+  },
+  {
+   "licence": "DIV2K: academic research only; internal measurement, not redistributed",
+   "path": "image/div2k/0885.png",
+   "set": "div2k",
+   "sha256": "36f1c2b8af6d898354506ef3f78d386156cf1c1f1397c165a84e74cf6484d800",
+   "source": "DIV2K_valid_HR"
+  },
+  {
+   "licence": "DIV2K: academic research only; internal measurement, not redistributed",
+   "path": "image/div2k/0886.png",
+   "set": "div2k",
+   "sha256": "26af6bcdeea90b9900a021bf20a0550d9a1e107c59b4f05c96e8bccf0ab35db8",
+   "source": "DIV2K_valid_HR"
+  },
+  {
+   "licence": "DIV2K: academic research only; internal measurement, not redistributed",
+   "path": "image/div2k/0887.png",
+   "set": "div2k",
+   "sha256": "a0a893c9417fcd04067bf254512801f92ae7c795b686e05f7389853c9fb78b11",
+   "source": "DIV2K_valid_HR"
+  },
+  {
+   "licence": "DIV2K: academic research only; internal measurement, not redistributed",
+   "path": "image/div2k/0888.png",
+   "set": "div2k",
+   "sha256": "82a8d193f4eb0819ad3e48c048d13860d0b8f34d6fafc9b626e304294db3ba12",
+   "source": "DIV2K_valid_HR"
+  },
+  {
+   "licence": "DIV2K: academic research only; internal measurement, not redistributed",
+   "path": "image/div2k/0889.png",
+   "set": "div2k",
+   "sha256": "a8f73c42065e3193c4deb883dcb3bc432a3f838e9be5bacea708ee39eb2c6e04",
+   "source": "DIV2K_valid_HR"
+  },
+  {
+   "licence": "DIV2K: academic research only; internal measurement, not redistributed",
+   "path": "image/div2k/0890.png",
+   "set": "div2k",
+   "sha256": "67069da53af2b4f5237030631b0b5e087b8014d7b0f59917d96924aca1ab433c",
+   "source": "DIV2K_valid_HR"
+  },
+  {
+   "licence": "DIV2K: academic research only; internal measurement, not redistributed",
+   "path": "image/div2k/0891.png",
+   "set": "div2k",
+   "sha256": "8e36e76f3675831c87b2e645e70ef33513b898dc09beb20b0bdcc61cc6d63bed",
+   "source": "DIV2K_valid_HR"
+  },
+  {
+   "licence": "DIV2K: academic research only; internal measurement, not redistributed",
+   "path": "image/div2k/0892.png",
+   "set": "div2k",
+   "sha256": "7fb05e491f00963e64b53a0f3f7a3d1af51f1434e7fd4898d4b84c479e1f66f9",
+   "source": "DIV2K_valid_HR"
+  },
+  {
+   "licence": "DIV2K: academic research only; internal measurement, not redistributed",
+   "path": "image/div2k/0893.png",
+   "set": "div2k",
+   "sha256": "cdcef3c0f0dd65da7ca0c4e75b672dd1f87f778740cb42d675bcb13dc1b3c307",
+   "source": "DIV2K_valid_HR"
+  },
+  {
+   "licence": "DIV2K: academic research only; internal measurement, not redistributed",
+   "path": "image/div2k/0894.png",
+   "set": "div2k",
+   "sha256": "f412ff02984a0de7acc7e1209d02f8dcaa18ac76008fa260cf7c355e4a77976c",
+   "source": "DIV2K_valid_HR"
+  },
+  {
+   "licence": "DIV2K: academic research only; internal measurement, not redistributed",
+   "path": "image/div2k/0895.png",
+   "set": "div2k",
+   "sha256": "a1c0888648fed4eb909c6e7f5f5db220ae98861294ebfdfa14b2c72567e96b2b",
+   "source": "DIV2K_valid_HR"
+  },
+  {
+   "licence": "DIV2K: academic research only; internal measurement, not redistributed",
+   "path": "image/div2k/0896.png",
+   "set": "div2k",
+   "sha256": "367c698aa344cea6e790239f04bae168ef204ae771f6ea05285e5255fad2f84f",
+   "source": "DIV2K_valid_HR"
+  },
+  {
+   "licence": "DIV2K: academic research only; internal measurement, not redistributed",
+   "path": "image/div2k/0897.png",
+   "set": "div2k",
+   "sha256": "dca63f56dba4a2a2c6b920c4b0406c6c6459d8f7ffb0d20322f51fbbc8f14b38",
+   "source": "DIV2K_valid_HR"
+  },
+  {
+   "licence": "DIV2K: academic research only; internal measurement, not redistributed",
+   "path": "image/div2k/0898.png",
+   "set": "div2k",
+   "sha256": "4cd6696b8e59615ceacff729181dd9b0cc5ea936ea9a57e089bb1fe4fe87c347",
+   "source": "DIV2K_valid_HR"
+  },
+  {
+   "licence": "DIV2K: academic research only; internal measurement, not redistributed",
+   "path": "image/div2k/0899.png",
+   "set": "div2k",
+   "sha256": "77e25eca6c3828abbea8f7fcf360d9be7f496513aa9ec08ff3f2e3a9c272e60e",
+   "source": "DIV2K_valid_HR"
+  },
+  {
+   "licence": "DIV2K: academic research only; internal measurement, not redistributed",
+   "path": "image/div2k/0900.png",
+   "set": "div2k",
+   "sha256": "06717f2a8f5d21fcec9a9229a7ecaab44dec0343406a59464382f5c4fdea3023",
+   "source": "DIV2K_valid_HR"
+  },
+  {
+   "bits": 16,
+   "licence": "Poly Haven CC0",
+   "path": "image/hdr16/venice_sunset.tif",
+   "set": "hdr16",
+   "sha256": "f28be9c4ceb78930c53a98ef2d3cc710aa7d53d5a99c5859caa2573399fdc0af",
+   "source": "https://dl.polyhaven.org/file/ph-assets/HDRIs/hdr/2k/venice_sunset_2k.hdr"
+  },
+  {
+   "bits": 16,
+   "licence": "Poly Haven CC0",
+   "path": "image/hdr16/studio_small_09.tif",
+   "set": "hdr16",
+   "sha256": "56294cbdd7e40c8929284788ecb15acb6988d748994de6d6e042df8c00530264",
+   "source": "https://dl.polyhaven.org/file/ph-assets/HDRIs/hdr/2k/studio_small_09_2k.hdr"
+  },
+  {
+   "bits": 16,
+   "licence": "Poly Haven CC0",
+   "path": "image/hdr16/kloppenheim_06.tif",
+   "set": "hdr16",
+   "sha256": "440cb42151e09b9dc41c57425efa83760400beb17aa330d4e69ef0812eae8308",
+   "source": "https://dl.polyhaven.org/file/ph-assets/HDRIs/hdr/2k/kloppenheim_06_2k.hdr"
+  },
+  {
+   "bits": 16,
+   "licence": "Poly Haven CC0",
+   "path": "image/hdr16/abandoned_parking.tif",
+   "set": "hdr16",
+   "sha256": "6cdb87c220d1d134ef48bb90e9a9df7789d3a0c2d7390f5a9113b552511fb5ab",
+   "source": "https://dl.polyhaven.org/file/ph-assets/HDRIs/hdr/2k/abandoned_parking_2k.hdr"
+  },
+  {
+   "bits": 16,
+   "licence": "Poly Haven CC0",
+   "path": "image/hdr16/rosendal_plains_2.tif",
+   "set": "hdr16",
+   "sha256": "be679d1d074d77be7a425e4e4fd8bcc38823765f34c5ddefd4f43e53c1148006",
+   "source": "https://dl.polyhaven.org/file/ph-assets/HDRIs/hdr/2k/rosendal_plains_2_2k.hdr"
+  },
+  {
+   "bits": 16,
+   "licence": "Poly Haven CC0",
+   "path": "image/hdr16/moonless_golf.tif",
+   "set": "hdr16",
+   "sha256": "42f058d7cbec190bc5af841d68fcd43dfbc5de98f008b575e2bae85a4364f6b2",
+   "source": "https://dl.polyhaven.org/file/ph-assets/HDRIs/hdr/2k/moonless_golf_2k.hdr"
+  },
+  {
+   "bits": 16,
+   "licence": "Poly Haven CC0",
+   "path": "image/hdr16/brown_photostudio_02.tif",
+   "set": "hdr16",
+   "sha256": "1d0502586fd4fd6e138715b0dcaf022b3f46ed47b596f5dcc1cf1d11197677e4",
+   "source": "https://dl.polyhaven.org/file/ph-assets/HDRIs/hdr/2k/brown_photostudio_02_2k.hdr"
+  },
+  {
+   "bits": 16,
+   "licence": "Poly Haven CC0",
+   "path": "image/hdr16/spruit_sunrise.tif",
+   "set": "hdr16",
+   "sha256": "6a2d759a1d2acffe1a3193285970d63a22afcdeaa5f3923a557e7b7210470a73",
+   "source": "https://dl.polyhaven.org/file/ph-assets/HDRIs/hdr/2k/spruit_sunrise_2k.hdr"
+  }
+ ],
+ "video": [
+  {
+   "fps": 30,
+   "licence": "NTIA/ITS VQEG HDTV source (US Government work)",
+   "path": "video/aspen_5s.mkv",
+   "seconds": 5,
+   "set": "video",
+   "sha256": "7fd4e1f97e36f39c600d1105cb44b454a17787aa4bb8fefb2c073971d5598c71",
+   "source": "https://media.xiph.org/video/derf/y4m/aspen_1080p.y4m"
+  },
+  {
+   "fps": 30,
+   "licence": "NTIA/ITS VQEG HDTV source (US Government work)",
+   "path": "video/controlled_burn_5s.mkv",
+   "seconds": 5,
+   "set": "video",
+   "sha256": "1e63e60e765238e0aff91c436a8ebfa16df944abf43fc3f5b1d762ee8e551775",
+   "source": "https://media.xiph.org/video/derf/y4m/controlled_burn_1080p.y4m"
+  },
+  {
+   "fps": 30,
+   "licence": "NTIA/ITS VQEG HDTV source (US Government work)",
+   "path": "video/red_kayak_5s.mkv",
+   "seconds": 5,
+   "set": "video",
+   "sha256": "97aefdf70d656af0b9fbb1fad711fd214d428b556ff746cf83711fe625b1c36d",
+   "source": "https://media.xiph.org/video/derf/y4m/red_kayak_1080p.y4m"
+  },
+  {
+   "fps": 30,
+   "licence": "NTIA/ITS VQEG HDTV source (US Government work)",
+   "path": "video/rush_field_cuts_5s.mkv",
+   "seconds": 5,
+   "set": "video",
+   "sha256": "baefa4c23fa73a159317baf03d9676854d387575244b2cda3187617c1cc89ce1",
+   "source": "https://media.xiph.org/video/derf/y4m/rush_field_cuts_1080p.y4m"
+  },
+  {
+   "fps": 30,
+   "licence": "NTIA/ITS VQEG HDTV source (US Government work)",
+   "path": "video/snow_mnt_5s.mkv",
+   "seconds": 5,
+   "set": "video",
+   "sha256": "18e2c92db2a86cd6ba4acfa70a41f5f0fb73c1fa83b16cd27df4308081bd7050",
+   "source": "https://media.xiph.org/video/derf/y4m/snow_mnt_1080p.y4m"
+  },
+  {
+   "fps": 30,
+   "licence": "NTIA/ITS VQEG HDTV source (US Government work)",
+   "path": "video/speed_bag_5s.mkv",
+   "seconds": 5,
+   "set": "video",
+   "sha256": "0f33cbb60b20b226a996465ba973d1909738f006201a385002a13260e1511d72",
+   "source": "https://media.xiph.org/video/derf/y4m/speed_bag_1080p.y4m"
+  },
+  {
+   "fps": 30,
+   "licence": "NTIA/ITS VQEG HDTV source (US Government work)",
+   "path": "video/touchdown_pass_5s.mkv",
+   "seconds": 5,
+   "set": "video",
+   "sha256": "fd52b5614a028825b2842031849f283a04e68603a3cb359529936a4153e1cb27",
+   "source": "https://media.xiph.org/video/derf/y4m/touchdown_pass_1080p.y4m"
+  },
+  {
+   "fps": 30,
+   "licence": "NTIA/ITS VQEG HDTV source (US Government work)",
+   "path": "video/west_wind_easy_5s.mkv",
+   "seconds": 5,
+   "set": "video",
+   "sha256": "b40e47adc0d912ab2d1dac2a13d197f017fbcc1a98bcb2179f056bda77074318",
+   "source": "https://media.xiph.org/video/derf/y4m/west_wind_easy_1080p.y4m"
+  },
+  {
+   "fps": 24,
+   "licence": "Blender Foundation, CC BY 3.0",
+   "path": "video/sintel_trailer_5s.mkv",
+   "seconds": 5,
+   "set": "video",
+   "sha256": "ffe1006c1363828d326127c75617d40b4411257d2f8051276cd5823c0a7ef1ee",
+   "source": "https://media.xiph.org/video/derf/y4m/sintel_trailer_2k_1080p24.y4m"
+  },
+  {
+   "fps": 50,
+   "licence": "SVT MultiFormat test sequence (research test use)",
+   "path": "video/crowd_run_5s.mkv",
+   "seconds": 5,
+   "set": "video",
+   "sha256": "d023eee02c7578fd6b9d314cf8bf726138e800e8fb62a1e04c659b3cb85ca458",
+   "source": "https://media.xiph.org/video/derf/y4m/crowd_run_1080p50.y4m"
+  }
+ ]
+}

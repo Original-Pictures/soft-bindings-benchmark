@@ -1,0 +1,28 @@
+\begin{table*}[!t]
+\centering
+\footnotesize
+\caption{Cross-device determinism of watermark decoding. $\Delta\ell$: difference in detector logits between decodes of the same file.}
+\label{tab:wm-stability}
+\setlength{\tabcolsep}{3.4pt}
+\begin{tabular}{lrrrrcc}
+\toprule
+Decoded file & Same host & x86-64 vs arm64 & Bit flips & Bit strings & YUV equal & RGB equal \\
+  & max $|\Delta\ell|$ & max $|\Delta\ell|$ &   & distinct &   &   \\
+\midrule
+aspen, strength 0.4, CRF 18 & 0.00096 & 0.459 & 0 & 1 & yes & no \\
+aspen, strength 0.4, CRF 22 & 0.00090 & 0.889 & 0 & 1 & yes & no \\
+aspen, strength 1.1, CRF 18 & 0.00068 & 0.346 & 2 & 2 & yes & no \\
+aspen, strength 1.1, CRF 22 & 0.00076 & 0.440 & 0 & 1 & yes & no \\
+controlled burn, strength 0.4, CRF 18 & 0.0016 & 0.306 & 0 & 1 & yes & no \\
+controlled burn, strength 0.4, CRF 22 & 0.0017 & 0.284 & 0 & 1 & yes & no \\
+controlled burn, strength 1.1, CRF 18 & 0.0014 & 0.206 & 1 & 2 & yes & no \\
+controlled burn, strength 1.1, CRF 22 & 0.0015 & 0.289 & 0 & 1 & yes & no \\
+red kayak, strength 0.4, CRF 18 & 0.00034 & 0.069 & 0 & 1 & yes & no \\
+red kayak, strength 0.4, CRF 22 & 0.00035 & 0.085 & 0 & 1 & yes & no \\
+red kayak, strength 1.1, CRF 18 & 0.00036 & 0.067 & 0 & 1 & yes & no \\
+red kayak, strength 1.1, CRF 22 & 0.00034 & 0.064 & 0 & 1 & yes & no \\
+TrustMark-Q, image after JPEG 75 & 0.070 & 0.070 & 0 & 1 & -- & -- \\
+\bottomrule
+\end{tabular}
+\par\vspace{2pt}\parbox{\linewidth}{\raggedright\scriptsize Same host: CPU (1 and 4 threads), CUDA or MPS on one machine. Across hosts: AMD EPYC (x86-64, Linux) vs Apple M-series (arm64, macOS). YUV/RGB equal: whether decoded frames are byte-identical across hosts before and after the YUV to RGB conversion.}
+\end{table*}

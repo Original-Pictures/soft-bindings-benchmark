@@ -1,0 +1,21 @@
+\begin{table}[!t]
+\centering
+\footnotesize
+\caption{Localization of partial edits against the registered original (oracle retrieval; evaluation half of the sources). F1 at the threshold fixed for a 1\% pixel false-positive rate on unedited, post-processed originals; best F1 chooses the threshold per map with hindsight.}
+\label{tab:fp-loc}
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{lcccccc}
+\toprule
+ & \multicolumn{3}{c}{SIFT + RANSAC} & \multicolumn{3}{c}{DISK + LightGlue} \\
+Map & AUC & F1 & best F1 & AUC & F1 & best F1 \\
+\midrule
+Pixel difference & 0.944 & 0.75 & 0.83 & 0.942 & 0.72 & 0.82 \\
+SSIM & 0.927 & 0.57 & 0.74 & 0.924 & 0.59 & 0.71 \\
+LPIPS & 0.975 & 0.64 & 0.79 & 0.973 & 0.61 & 0.78 \\
+DINOv2 patches & 0.958 & 0.53 & 0.70 & 0.952 & 0.52 & 0.69 \\
+PDQ tiles & 0.866 & 0.04 & 0.50 & 0.866 & 0.02 & 0.49 \\
+Fused & 0.967 & 0.65 & 0.81 & 0.965 & 0.69 & 0.79 \\
+\bottomrule
+\end{tabular}
+
+\end{table}

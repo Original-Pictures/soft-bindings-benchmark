@@ -1,0 +1,54 @@
+\begin{table*}[!t]
+\centering
+\footnotesize
+\caption{Exact payload recovery. Bit acc.: share of payload bits recovered at the gate transformation (JPEG 75, MP3 128~kb/s, H.264 CRF 23). Exact: share of items whose decoded payload equals the embedded one, at the gate and averaged over all transformations. For TrustMark exact recovery is after BCH decoding; no other method has an error-correcting layer, so exact recovery requires every bit. $\geq k$: share of items whose decoded bits match the embedded payload in at least $k$ of $n$ positions, the expected-payload decision of Table~\ref{tab:wm-fpr} (-- where no such $k$ exists).}
+\label{tab:wm-exact}
+\setlength{\tabcolsep}{3.4pt}
+\begin{tabular}{llrlrrrr}
+\toprule
+Modality & Configuration & Bits & ECC & Bit acc. & $\geq k$ (gate) & Exact (gate) & Exact (mean) \\
+\midrule
+Image & PixelSeal (0.15) & 256 & none & 0.988 & 1.000 & 0.318 & 0.254 \\
+Image & PixelSeal (0.2) & 256 & none & 0.998 & 1.000 & 0.765 & 0.590 \\
+Image & Video Seal (0.2) & 256 & none & 0.997 & 1.000 & 0.659 & 0.506 \\
+Image & PixelSeal (0.4) & 256 & none & 0.999 & 1.000 & 0.871 & 0.771 \\
+Image & Video Seal (0.4) & 256 & none & 1.000 & 1.000 & 0.906 & 0.745 \\
+Image & WAM (1) & 32 & none & 0.994 & 0.976 & 0.918 & 0.828 \\
+Image & WAM (2) & 32 & none & 1.000 & 1.000 & 1.000 & 0.964 \\
+Image & TrustMark-P (0.8) & 100 & BCH\_5 & 0.977 & 1.000 & 0.847 & 0.721 \\
+Image & TrustMark-P (1) & 100 & BCH\_5 & 0.990 & 1.000 & 0.976 & 0.794 \\
+Image & TrustMark-P (1.5) & 100 & BCH\_5 & 0.998 & 1.000 & 1.000 & 0.841 \\
+Image & TrustMark-B (1) & 100 & BCH\_5 & 0.999 & 1.000 & 1.000 & 0.855 \\
+Image & TrustMark-Q (1) & 100 & BCH\_5 & 0.999 & 1.000 & 1.000 & 0.852 \\
+Image & TrustMark-C (1) & 100 & BCH\_5 & 0.995 & 1.000 & 1.000 & 0.848 \\
+Image & TrustMark-Q (1.2) & 100 & BCH\_5 & 1.000 & 1.000 & 1.000 & 0.854 \\
+Image & TrustMark-Q (1.3) & 100 & BCH\_5 & 1.000 & 1.000 & 1.000 & 0.854 \\
+Image & TrustMark-Q (1.4) & 100 & BCH\_5 & 1.000 & 1.000 & 1.000 & 0.854 \\
+Image & TrustMark-Q (1.5) & 100 & BCH\_5 & 1.000 & 1.000 & 1.000 & 0.855 \\
+Image & DWT-DCT-SVD & 64 & none & 0.974 & 0.953 & 0.576 & 0.280 \\
+Image & ChunkySeal (0.2) & 1024 & none & 0.934 & 0.941 & 0.035 & 0.134 \\
+Image & DWT-DCT & 64 & none & 0.518 & 0.012 & 0.000 & 0.142 \\
+Image & InvisMark\textsuperscript{\dag} & 100 & none & 0.919 & 1.000 & 0.000 & 0.007 \\
+Image & PixelSeal (0.1) & 256 & none & 0.907 & 0.988 & 0.024 & 0.016 \\
+Image & PixelSeal (0.125) & 256 & none & 0.965 & 0.988 & 0.106 & 0.095 \\
+Image & RivaGAN\textsuperscript{\dag} & 32 & none & 0.996 & 1.000 & 0.900 & 0.788 \\
+Image & Video Seal (0.1) & 256 & none & 0.887 & 1.000 & 0.000 & 0.000 \\
+\midrule
+Audio & AudioSeal base (1) & 16 & none & 0.997 & -- & 0.978 & 0.980 \\
+Audio & AudioSeal streaming (0.5) & 16 & none & 0.996 & -- & 0.986 & 0.842 \\
+Audio & AudioSeal streaming (1) & 16 & none & 0.997 & -- & 0.993 & 0.894 \\
+Audio & AudioSeal streaming (1.1) & 16 & none & 0.996 & -- & 0.993 & 0.894 \\
+Audio & WavMark & 16 & none & 1.000 & -- & 1.000 & 0.993 \\
+Audio & SilentCipher 44.1k\textsuperscript{\dag} & 40 & none & 1.000 & 1.000 & 1.000 & 0.841 \\
+\midrule
+Video & PixelSeal (0.4) & 256 & none & 0.999 & 1.000 & 0.833 & 0.771 \\
+Video & Video Seal (0.4) & 256 & none & 1.000 & 1.000 & 1.000 & 0.875 \\
+Video & Video Seal (0.7) & 256 & none & 0.997 & 1.000 & 0.500 & 0.458 \\
+Video & ChunkySeal (0.2) & 1024 & none & 0.891 & 1.000 & 0.000 & 0.021 \\
+Video & PixelSeal (0.2) & 256 & none & 0.984 & 1.000 & 0.667 & 0.583 \\
+Video & Video Seal (0.2) & 256 & none & 0.986 & 1.000 & 0.667 & 0.500 \\
+Video & Video Seal (1.1) & 256 & none & 0.954 & 1.000 & 0.000 & 0.000 \\
+\bottomrule
+\end{tabular}
+\par\vspace{2pt}\parbox{\linewidth}{\raggedright\scriptsize Bits: transmitted bits. TrustMark's 100-bit BCH\_5 codeword carries a 61-bit payload; bit accuracy and $\geq k$ use the 100 transmitted bits, and exact recovery compares the 61 decoded payload bits. Perth carries no payload and is omitted. \dag\ Not openly licensed.}
+\end{table*}

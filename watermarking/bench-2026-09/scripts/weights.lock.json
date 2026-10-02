@@ -1,0 +1,194 @@
+{
+  "audioseal_det_base": {
+    "bytes": 34667641,
+    "licence": "MIT",
+    "licence_source": "same",
+    "path": "audioseal/detector_base.pth",
+    "sha256": "8a78e8a83584113523e161fc599fcab10fd0e94c04d2eb9d2fa1e9ec91ab69d9",
+    "url": "https://huggingface.co/facebook/audioseal/resolve/3c19eba53390776cf2cc9ed5f6c9ac67ce72ecba/detector_base.pth"
+  },
+  "audioseal_det_streaming": {
+    "bytes": 34668361,
+    "licence": "MIT",
+    "licence_source": "same",
+    "path": "audioseal/detector_streaming.pth",
+    "sha256": "b78b017411b661d77b1e37402b00af6ce5319bfba9a69590489c8bcd0e657e4c",
+    "url": "https://huggingface.co/facebook/audioseal/resolve/3c19eba53390776cf2cc9ed5f6c9ac67ce72ecba/detector_streaming.pth"
+  },
+  "audioseal_gen_base": {
+    "bytes": 58805980,
+    "licence": "MIT",
+    "licence_source": "same",
+    "path": "audioseal/generator_base.pth",
+    "sha256": "7a845b5fbe9364a63a3909d8ab3fe064d13a76ae4c2e983573e08c69b7b51748",
+    "url": "https://huggingface.co/facebook/audioseal/resolve/3c19eba53390776cf2cc9ed5f6c9ac67ce72ecba/generator_base.pth"
+  },
+  "audioseal_gen_streaming": {
+    "bytes": 58805126,
+    "licence": "MIT",
+    "licence_source": "HF facebook/audioseal license: mit (since 2024-04-02)",
+    "path": "audioseal/generator_streaming.pth",
+    "sha256": "f5eb3076c1748940578993edd18ecd4fbdbc387fe7613a77f420af921d83eb74",
+    "url": "https://huggingface.co/facebook/audioseal/resolve/3c19eba53390776cf2cc9ed5f6c9ac67ce72ecba/generator_streaming.pth"
+  },
+  "invismark_ckpt_zip": {
+    "bytes": 1136752437,
+    "licence": "NONE STATED",
+    "licence_source": "no licence file in share; repo MIT covers code only",
+    "path": "invismark/ckpt_paper.zip",
+    "sha256": "5d9665eb5c2376f18d100333d8a3860d9c2be6605e02db7fceacfcc329b86a2b",
+    "url": "https://1drv.ms/f/c/7882afab383c8474/Ei_Lasu5CrpHsrNIkYRLenYBmx662VSAovq5hD8r-NsB5A (OneDrive, anonymous browser download; no API)"
+  },
+  "invismark_paper_ckpt": {
+    "bytes": 1233910734,
+    "licence": "NONE STATED",
+    "licence_source": "same",
+    "path": "invismark/paper.ckpt",
+    "sha256": "409f4259a88865ccc0cb75884810e6a6435a8235050333c1b04c8d539a54d9bb",
+    "url": "inside ckpt_paper.zip"
+  },
+  "pixelseal": {
+    "bytes": 1237429197,
+    "licence": "MIT",
+    "licence_source": "same",
+    "path": "videoseal/pixelseal.pth",
+    "sha256": "0c5665cff20eb6ce1b5aaa7d91c19dafb418bfee32d02dd3344e4ed60d9d75bd",
+    "url": "https://dl.fbaipublicfiles.com/videoseal/pixelseal/checkpoint.pth"
+  },
+  "silentcipher_models": {
+    "bytes": 64389731,
+    "licence": "UNSTATED",
+    "licence_source": "GitHub release asset of MIT repo; HF Sony/SilentCipher card has no licence field",
+    "path": "silentcipher/Models.tar.gz",
+    "sha256": "cd2beaa9824102c4bae5fe9de7b737cda2682b109ab5f2375a72f3303172af78",
+    "url": "https://github.com/sony/silentcipher/releases/download/release/Models.tar.gz"
+  },
+  "trustmark_decoder_B": {
+    "bytes": 47649788,
+    "licence": "MIT",
+    "licence_source": "adobe/trustmark README: MIT covers code and downloaded model files",
+    "path": "trustmark/decoder_B.ckpt",
+    "sha256": "e3cab2862b7eeff22ddba0a25a230d6da79d9ecf8775e76340ac9ee0931152ed",
+    "url": "https://cai-watermark.adobe.net/watermarking/trustmark-models/decoder_B.ckpt"
+  },
+  "trustmark_decoder_C": {
+    "bytes": 22520762,
+    "licence": "MIT",
+    "licence_source": "adobe/trustmark README: MIT covers code and downloaded model files",
+    "path": "trustmark/decoder_C.ckpt",
+    "sha256": "ede8305d71b569a3a1c11cf51a76a7729a7ec2bc00e74b9a5d617458763b3a42",
+    "url": "https://cai-watermark.adobe.net/watermarking/trustmark-models/decoder_C.ckpt"
+  },
+  "trustmark_decoder_P": {
+    "bytes": 47647180,
+    "licence": "MIT",
+    "licence_source": "adobe/trustmark README: MIT covers code and downloaded model files",
+    "path": "trustmark/decoder_P.ckpt",
+    "sha256": "f5f1d570c889c5908c6e4a28c07dc90cf33990ebaf24037254ebe0b8849b1bdc",
+    "url": "https://cai-watermark.adobe.net/watermarking/trustmark-models/decoder_P.ckpt"
+  },
+  "trustmark_decoder_Q": {
+    "bytes": 47652460,
+    "licence": "MIT",
+    "licence_source": "adobe/trustmark README: MIT covers code and downloaded model files",
+    "path": "trustmark/decoder_Q.ckpt",
+    "sha256": "e3d9cea5406a26590735719f8f15cb10802b11852ae69047eaf4cf17214df781",
+    "url": "https://cai-watermark.adobe.net/watermarking/trustmark-models/decoder_Q.ckpt"
+  },
+  "trustmark_encoder_B": {
+    "bytes": 17301658,
+    "licence": "MIT",
+    "licence_source": "adobe/trustmark README: MIT covers code and downloaded model files",
+    "path": "trustmark/encoder_B.ckpt",
+    "sha256": "0bbdff257500879803ed0b931cfa3ba9819af971cb3384c2a369e20c57f92b49",
+    "url": "https://cai-watermark.adobe.net/watermarking/trustmark-models/encoder_B.ckpt"
+  },
+  "trustmark_encoder_C": {
+    "bytes": 17301658,
+    "licence": "MIT",
+    "licence_source": "adobe/trustmark README: MIT covers code and downloaded model files",
+    "path": "trustmark/encoder_C.ckpt",
+    "sha256": "2eeeaf02178976f04d0996280466a22e53418fee8d7c063990b1a039aec0a50b",
+    "url": "https://cai-watermark.adobe.net/watermarking/trustmark-models/encoder_C.ckpt"
+  },
+  "trustmark_encoder_P": {
+    "bytes": 17301306,
+    "licence": "MIT",
+    "licence_source": "adobe/trustmark README: MIT covers code and downloaded model files",
+    "path": "trustmark/encoder_P.ckpt",
+    "sha256": "659d427f72d16eea4e8fbda175ae72e3a78830dc6cf44b63642a5a4b28a2b4e2",
+    "url": "https://cai-watermark.adobe.net/watermarking/trustmark-models/encoder_P.ckpt"
+  },
+  "trustmark_encoder_Q": {
+    "bytes": 17302074,
+    "licence": "MIT",
+    "licence_source": "adobe/trustmark README: MIT covers code and downloaded model files",
+    "path": "trustmark/encoder_Q.ckpt",
+    "sha256": "dc382c3f6b4fd568b27d6fbb763d6ffc2d2587126d84afe9d5ee95b4c5d99826",
+    "url": "https://cai-watermark.adobe.net/watermarking/trustmark-models/encoder_Q.ckpt"
+  },
+  "trustmark_yaml_B": {
+    "bytes": 2009,
+    "licence": "MIT",
+    "licence_source": "same",
+    "path": "trustmark/trustmark_B.yaml",
+    "sha256": "43f37103f92efa8bd6b1c5902bb537cc12a981dc699fca19d9bb7de8c62d03d9",
+    "url": "https://cai-watermark.adobe.net/watermarking/trustmark-models/trustmark_B.yaml"
+  },
+  "trustmark_yaml_C": {
+    "bytes": 2047,
+    "licence": "MIT",
+    "licence_source": "same",
+    "path": "trustmark/trustmark_C.yaml",
+    "sha256": "cf38887be05093c23c874ba999d38a70e1fbd2c67b18d388a64bc6446be661d2",
+    "url": "https://cai-watermark.adobe.net/watermarking/trustmark-models/trustmark_C.yaml"
+  },
+  "trustmark_yaml_P": {
+    "bytes": 2009,
+    "licence": "MIT",
+    "licence_source": "same",
+    "path": "trustmark/trustmark_P.yaml",
+    "sha256": "43f37103f92efa8bd6b1c5902bb537cc12a981dc699fca19d9bb7de8c62d03d9",
+    "url": "https://cai-watermark.adobe.net/watermarking/trustmark-models/trustmark_P.yaml"
+  },
+  "trustmark_yaml_Q": {
+    "bytes": 2009,
+    "licence": "MIT",
+    "licence_source": "same",
+    "path": "trustmark/trustmark_Q.yaml",
+    "sha256": "43f37103f92efa8bd6b1c5902bb537cc12a981dc699fca19d9bb7de8c62d03d9",
+    "url": "https://cai-watermark.adobe.net/watermarking/trustmark-models/trustmark_Q.yaml"
+  },
+  "videoseal_1.0_jit": {
+    "bytes": 228524815,
+    "licence": "MIT",
+    "licence_source": "same; TorchScript artefact (sha pinned here)",
+    "path": "videoseal/y_256b_img.jit",
+    "sha256": "5c7a4581c36fc6090aafdcfb3999123bae5172a4847f22e2da4e7fd1a39d1e1b",
+    "url": "https://dl.fbaipublicfiles.com/videoseal/y_256b_img.jit"
+  },
+  "videoseal_1.0_pth": {
+    "bytes": 228351471,
+    "licence": "MIT",
+    "licence_source": "facebookresearch/videoseal README: all models MIT",
+    "path": "videoseal/y_256b_img.pth",
+    "sha256": "3d2ff2523d2a89e3532c6dfdcf693098799326e9b3e74c185e815e9baa8340a3",
+    "url": "https://dl.fbaipublicfiles.com/videoseal/y_256b_img.pth"
+  },
+  "wam_mit": {
+    "bytes": 377825938,
+    "licence": "MIT",
+    "licence_source": "facebookresearch/watermark-anything README + HF card (SA-1B weights)",
+    "path": "wam/wam_mit.pth",
+    "sha256": "90ef232384e023bd63245eb0c131abd69d2afc7b8f17a71ccedceb542bf009e2",
+    "url": "https://dl.fbaipublicfiles.com/watermark_anything/wam_mit.pth"
+  },
+  "wavmark": {
+    "bytes": 10019039,
+    "licence": "MIT",
+    "licence_source": "HF M4869/WavMark license: mit",
+    "path": "wavmark/wavmark.model.pkl",
+    "sha256": "7a3d873d115c2c644685fb4cf109bdb299718296b88c871d3cf1c8e4cbc13144",
+    "url": "https://huggingface.co/M4869/WavMark/resolve/main/step59000_snr39.99_pesq4.35_BERP_none0.30_mean1.81_std1.81.model.pkl"
+  }
+}

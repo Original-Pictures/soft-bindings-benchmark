@@ -1,0 +1,105 @@
+\subsection{Image Retrieval}
+\label{sec:fp-res-image}
+Table~\ref{tab:fp-image} summarises the image track and Fig.~\ref{fig:fp-image-heatmap} breaks Recall@1 down by transformation. Three groups separate clearly. The copy-detection descriptors trained on DISC21 lead: at the headline operating point (pair-level FPR $10^{-7}$) the ISC21 winner detects \val{fp:image/ISC21-1st/TPR@pair@1e-07/pct}\% of attacked queries and SSCD-R50 \val{fp:image/SSCD-mixup/TPR@pair@1e-07/pct}\%. The best product-eligible methods are the general-purpose DINOv2 embeddings, at \val{fp:image/DINOv2-B/TPR@pair@1e-07/pct}\% (DINOv2-B) and \val{fp:image/DINOv2-S/TPR@pair@1e-07/pct}\% (DINOv2-S), and the perceptual hashes follow, led by PDQ with dihedral matching at \val{fp:image/PDQ-dihedral/TPR@pair@1e-07/pct}\% and plain PDQ at \val{fp:image/PDQ/TPR@pair@1e-07/pct}\%. The ISCC Image-Code reaches \val{fp:image/ISCC-Image-64/TPR@pair@1e-07/pct}\% at its default 64 bits and \val{fp:image/ISCC-Image-256/TPR@pair@1e-07/pct}\% at 256 bits. All paired differences in Table~\ref{tab:fp-paired} are significant after Holm correction.
+
+\begin{figure*}[!t]
+\centering
+\includegraphics[width=\textwidth]{fp_fig2_image_heatmap}
+\caption{Recall@1 of every image method under every transformation, on the ABO registry of \val{fp:count/image/nref} images. Rows are grouped by family (compression, scaling, cropping, geometry, photometric, overlay, chains). Method names are coloured by class; \dag~marks reference-tier methods.}
+\label{fig:fp-image-heatmap}
+\end{figure*}
+
+\input{generated/tables/fp/image.tex}
+
+\paragraph{Where each class fails.} The heatmap explains the ranking. Every method, hash or learned, survives compression, rescaling and photometric changes almost perfectly. The hashes fail on geometry: a centred crop keeping 70\% of each side drops PDQ to \val{fp:image/PDQ/att/crop70/pct}\% Recall@1 and the ISCC Image-Code to \val{fp:image/ISCC-Image-64/att/crop70/pct}\%, while DINOv2-S keeps \val{fp:image/DINOv2-S/att/crop70/pct}\% and SSCD \val{fp:image/SSCD-mixup/att/crop70/pct}\%. A 15-degree rotation removes the hashes almost entirely (PDQ \val{fp:image/PDQ/att/rot15/pct}\%). PDQ's dihedral matching recovers flips and 90-degree rotations at no cost in precision (Table~\ref{tab:fp-paired}), which is why it leads the hashes. Two robustness properties are specific to ISCC: its uniform-border trim makes it the only hash that survives 25\% padding (\val{fp:image/ISCC-Image-64/att/pad25/pct}\%), while its $32\times32$ greyscale DCT is, apart from ColorMoment, the hash most affected by additive noise (\val{fp:image/ISCC-Image-64/att/noise0.05/pct}\% against \val{fp:image/PDQ/att/noise0.05/pct}\% for PDQ). Overlays are the hardest family for everyone: when the image is placed onto a screenshot template or onto another photograph at half size, the best method retrieves \val{fp:image/ISC21-1st/att/background0.5/pct}\% of the background overlays (ISC21) and \val{fp:image/ISC21-1st/att/screenshot/pct}\% of the screenshots, the best product-eligible one \val{fp:image/DINOv2-S/att/background0.5/pct}\% and \val{fp:image/DINOv2-S/att/screenshot/pct}\%, and every hash none. Such queries contain the registered image only as a region, and a single global descriptor cannot match it. Fig.~\ref{fig:fp-image-families}a shows the crop curve and Fig.~\ref{fig:fp-image-families}b the per-family means.
+
+\begin{figure}[!t]
+\centering
+\includegraphics[width=\columnwidth]{fp_fig4_image_families}
+\caption{(a) Recall@1 against the share of each side kept by a centred crop. (b) Mean Recall@1 over each transformation family for eight representative methods.}
+\label{fig:fp-image-families}
+\end{figure}
+
+\paragraph{Size, speed and generalisation.} Fig.~\ref{fig:fp-image-tradeoffs} relates detection at the headline operating point to storage and extraction time. The keyed 256-bit projection of DINOv2-S keeps \val{fp:image/DINOv2-S-LSH256/TPR@pair@1e-07/pct}\% detection in 256 bits, against \val{fp:image/DINOv2-S/TPR@pair@1e-07/pct}\% for the 12\,288-bit float descriptor it is derived from. At PDQ's size it detects slightly fewer queries than dihedral PDQ at the strict threshold (\val{fp:image/PDQ-dihedral/TPR@pair@1e-07/pct}\%) but ranks the original first far more often (Recall@1 \val{fp:image/DINOv2-S-LSH256/R@1/pct}\% against \val{fp:image/PDQ-dihedral/R@1/pct}\%), because it survives crops and rotations. Panel~c shows that the ranking on ABO agrees with the ranking on our DISC21 subset, but that DISC21 separates the DISC21-trained descriptors far more sharply: SSCD and ISC21 reach $\mu$AP \val{fp:image/SSCD-mixup/disc} and \val{fp:image/ISC21-1st/disc} there, against \val{fp:image/DINOv2-S/disc} for DINOv2-S. DISC21's queries use the same augmentation library these models were trained with, and its references are photographs rather than product shots, so literature numbers on DISC21 overstate the gap on other content.
+
+\begin{figure*}[!t]
+\centering
+\includegraphics[width=\textwidth]{fp_fig3_image_tradeoffs}
+\caption{(a) Detection at pair-level FPR $10^{-7}$ against stored size per asset. (b) Against extraction time per 1024-pixel image (learned methods on one A10G GPU in batches of 64, hashes on one CPU thread; measured on an idle host). (c) $\mu$AP on ABO against $\mu$AP on the DISC21 subset.}
+\label{fig:fp-image-tradeoffs}
+\end{figure*}
+
+\input{generated/tables/fp/paired.tex}
+
+\subsection{False Matches, Variants and Registry Scale}
+\label{sec:fp-res-fpr}
+Thresholds fixed on the calibration negatives held out of sample: at the query-level 1\% threshold the held-out never-registered queries matched at rates between \val{fp:image/fprq/min}\% and \val{fp:image/fprq/max}\% across methods (Table~\ref{tab:fp-ci}). Fig.~\ref{fig:fp-scores}a shows why the learned descriptors can be operated at a strict threshold: their score to the true asset is well separated from the best score of a never-registered query, whereas for the hashes the two distributions meet near the threshold. Short codes also run out of resolution: at pair-level FPR $10^{-8}$ the 64-bit pHash and ISCC codes would need a Hamming distance below zero, so no threshold exists and their detection is \val{fp:image/pHash-64/TPR@pair@1e-08} and \val{fp:image/ISCC-Image-64/TPR@pair@1e-08}.
+
+\begin{figure*}[!t]
+\centering
+\includegraphics[width=\textwidth]{fp_fig5_scores}
+\caption{(a) Score distributions: best score of a never-registered query (grey) and score of an attacked query to its true asset (colour), pooled over all transformations; dashed line: threshold at pair-level FPR $10^{-7}$. (b) Rate at which another photograph of a registered product binds to that product at the 1\% threshold.}
+\label{fig:fp-scores}
+\end{figure*}
+
+\paragraph{Different photographs of the same product.} A provenance registry must not bind a second photograph of a product to the manifest of the first. On \val{fp:dedup/n_hard} hard negatives the hashes almost never did, and the learned descriptors rarely did at the 1\% threshold: the highest rate was SSCD's \val{fp:image/SSCD-mixup/hard/pct}\% (Fig.~\ref{fig:fp-scores}b). Recoloured or re-mounted versions of the \emph{same} photograph are another matter. The \val{fp:dedup/n_hard_near_duplicate} hard negatives that our duplicate rule marked as variants bound to the registered image in most cases for the learned descriptors (e.g. 139 of 216 for SSCD-R50 and 96 for DINOv2-S) and rarely for the hashes (31 for PDQ, 3 for pHash).
+
+\paragraph{Catalogue variants dominate the false-match budget.} ABO, like any real catalogue, reuses a design across products: the same artwork on phone cases of different models, the same ring with another stone. Table~\ref{tab:fp-sens} repeats the image evaluation with two other treatments of such variants. R@1 barely moves, but the calibrated operating points move a great deal: with no cleanup detection at the 1\% threshold falls to between \val{fp:sens/none/DINOv2-S-LSH256/TPR@query@0.01} and \val{fp:sens/none/SSCD-mixup/TPR@query@0.01} for every method (and to zero for pHash-256, which can then no longer set a threshold), because the threshold must then exclude near-copies of registered designs that are, in this benchmark, labelled as different assets. The choice of method matters less than whether the registry groups variants of one design under one asset.
+
+\input{generated/tables/fp/sensitivity.tex}
+
+\paragraph{Registry scale.} For $N$ registered assets and average pair-level false-match probability $p$, the expected number of false matches per negative query is $Np$ (Fig.~\ref{fig:fp-det}b). This count differs from the probability that a query has at least one false match, which is bounded above by $\min(1,Np)$. Detection falls as the target tightens (Fig.~\ref{fig:fp-det}a): from $10^{-7}$ to $10^{-8}$ SSCD-R50 loses \val{fp:image/SSCD-mixup/TPR@pair@1e-07/pct}\,$\to$\,\val{fp:image/SSCD-mixup/TPR@pair@1e-08/pct}\% and DINOv2-S \val{fp:image/DINOv2-S/TPR@pair@1e-07/pct}\,$\to$\,\val{fp:image/DINOv2-S/TPR@pair@1e-08/pct}\%. For a registry of ten million assets, an actual average per-reference false-match probability at most $10^{-9}$ for the relevant query population would bound the query-level false-match probability by 1\%. That operating point is below the empirically resolved range of this benchmark.
+
+\paragraph{Does geometric verification close the gap?} A natural remedy is a second stage that checks the retrieved candidate against the stored original. We tested it on every positive and negative image query: the top-1 candidate of DINOv2-S or PDQ is accepted only if SIFT with RANSAC finds at least $k$ geometric inliers between the query and the registered image, with both the retrieval threshold and $k$ fixed on the calibration negatives (Table~\ref{tab:fp-verify}). For the evaluated DINOv2-S and PDQ pipelines, no detection improvement from verification was observed under a matched calibration false-binding constraint. With $k$ chosen so that the calibration false bindings do not exceed those of DINOv2-S alone at pair-level $10^{-7}$, the two-stage rule detected \val{fp:verify/DINOv2-S/query@0.01/k_match/tpr} of attacked queries against \val{fp:verify/DINOv2-S/one/tpr} for retrieval alone, and starting from the looser pair-level $10^{-4}$ threshold it detected only \val{fp:verify/DINOv2-S/pair@0.0001/k_match/tpr}. With the localization track's fixed $k=12$ it removed about four in ten held-out false bindings (\val{fp:verify/DINOv2-S/one/fp}$\,\to\,$\val{fp:verify/DINOv2-S/query@0.01/k12/fp} of \val{fp:verify/n_test}) at a cost of under a point of detection (\val{fp:verify/DINOv2-S/query@0.01/k12/tpr}), and PDQ behaved alike (\val{fp:verify/PDQ/one/fp}$\,\to\,$\val{fp:verify/PDQ/query@0.01/k12/fp}). Eliminating the remaining false bindings on the calibration set required hundreds of inliers (\val{fp:verify/DINOv2-S/query@0.01/k_zero/k} for DINOv2-S) and left \val{fp:verify/DINOv2-S/query@0.01/k_zero/tpr} detection. The false bindings that survive retrieval are, in large part, near-copies of registered designs, the catalogue variants of the sensitivity analysis, and they agree with the registered image geometrically as well as globally: a local-feature check confirms that two images share content, not that they are the same asset.
+
+\input{generated/tables/fp/verify.tex}
+
+\begin{figure*}[!t]
+\centering
+\includegraphics[width=\textwidth]{fp_fig12_operating_points}
+\caption{(a) Detection of attacked image queries against the pair-level false-positive rate at which the threshold is set. (b) Expected number of false matches per query as a function of registry size for fixed pair-level rates.}
+\label{fig:fp-det}
+\end{figure*}
+
+\subsection{Audio}
+\label{sec:fp-res-audio}
+\input{sections/fp_results_audio.tex}
+
+\subsection{Video}
+\label{sec:fp-res-video}
+Fig.~\ref{fig:fp-video} and Table~\ref{tab:fp-video} report the video track. The \val{fp:count/video/neg_cal} calibration queries come from \val{fp:video/cal_sources} negative clips against \val{fp:count/video/nref} references, which resolves pair-level targets down to $10^{-4}$ but not below; Table~\ref{tab:fp-video} therefore reports the query-level 1\% threshold and the pair-level $10^{-4}$ target, and no stricter one. The query-level threshold did not deliver 1\% out of sample: on the held-out negatives it let through between \val{fp:video/fprq/min}\% and \val{fp:video/fprq/max}\% of never-registered queries, depending on the method. The threshold sits just above the sixth-highest of 500 calibration scores, so that five pass, and those queries are \val{fp:video/q_per_source} versions (the original and its transformations) of each of \val{fp:video/cal_sources} clips from a few films, whose clips resemble each other. The effective sample is the number of source clips, so the 1\% point is estimated imprecisely: the source-level 95\% intervals of the held-out rate reach up to \val{fp:video/fprq/cihi}\%. We report every video detection rate next to the false-match rate its threshold actually produced, and treat the video operating points as indicative. Frame-level learned descriptors are the most robust: SSCD and DINOv2-S reach Recall@1 of \val{fp:video/SSCD-mixup-mean/R@1/pct}\% and \val{fp:video/DINOv2-S-mean/R@1/pct}\% when their per-frame descriptors are averaged over the clip, and they are the only methods that survive 50\% crops, rotations and flips. Averaging, however, is also why their calibrated detection is lower than their Recall@1 suggests (\val{fp:video/SSCD-mixup-mean/TPR@query@0.01/pct}\% and \val{fp:video/DINOv2-S-mean/TPR@query@0.01/pct}\%): clips from the same film average to similar vectors, which raises the threshold. The ISCC Video-Code and TMK+PDQF are less robust but detect more at the 1\% threshold (\val{fp:video/ISCC-Video-256/TPR@query@0.01/pct}\% and \val{fp:video/TMK+PDQF/TPR@query@0.01/pct}\%), at the price of more held-out false matches (\val{fp:video/ISCC-Video-256/FPRq@query@0.01/pct}\% and \val{fp:video/TMK+PDQF/FPRq@query@0.01/pct}\%, against \val{fp:video/SSCD-mixup-mean/FPRq@query@0.01/pct}\% and \val{fp:video/DINOv2-S-mean/FPRq@query@0.01/pct}\% for the averaged learned descriptors); with 20 calibration clips these differences in false-match rate are within the intervals of Table~\ref{tab:fp-video}. Picture-in-picture defeats every method, as the overlay attacks did for images.
+
+\begin{figure*}[!t]
+\centering
+\includegraphics[width=\textwidth]{fp_fig7_video}
+\caption{(a) Recall@1 of each video method under each transformation (\val{fp:corpus/video/reg} registered clips, \val{fp:count/video/nref} in the index). (b) Detection against the pair-level false-positive rate; unresolved targets are omitted.}
+\label{fig:fp-video}
+\end{figure*}
+
+\input{generated/tables/fp/video.tex}
+
+\subsection{Partial Edits and Localization}
+\label{sec:fp-res-edits}
+Partial edits cost the global descriptors little in ranking but much in calibrated detection. SSCD-R50 still ranks the original first for \val{fp:editret/SSCD-mixup/R@1}\ of the \val{fp:edit/n_edits} edited images and DINOv2-S for \val{fp:editret/DINOv2-S/R@1}, while PDQ does for \val{fp:editret/PDQ/R@1} and the ISCC Image-Code for \val{fp:editret/ISCC-Image-64/R@1}. At the 1\% threshold, however, an edit covering a quarter of the image leaves SSCD's score above threshold in only \val{fp:editret/SSCD-mixup/query@0.01/area/0.25} of cases, against \val{fp:editret/SSCD-mixup/query@0.01/area/0.01} for 1\% edits (Fig.~\ref{fig:fp-loc}c). A fingerprint that tolerates an edit well enough to find the original is, by design, not a tamper detector.
+
+Once the original is found, the edit can be localized against it (Table~\ref{tab:fp-loc}, Fig.~\ref{fig:fp-loc}). Table~\ref{tab:fp-loc} is an oracle measurement: each edited query is compared with its true registered original, whether or not a fingerprint would have retrieved it. SIFT alignment succeeded for \val{fp:loc/sift/aligned}\% of the evaluated edits and DISK+LightGlue for \val{fp:loc/lightglue/aligned}\%. The simplest map, a blurred pixel difference after alignment, gave the best F1 at the calibrated 1\% pixel false-positive rate (\val{fp:loc/sift/pixel/f1} with SIFT), and LPIPS the highest AUC (\val{fp:loc/sift/lpips/auc}); the fused map was the most robust to the 90\% crop, which LightGlue aligns better than SIFT (fused F1 \val{fp:loc/lightglue/fused/post/crop90/f1} against \val{fp:loc/sift/fused/post/crop90/f1}). Text replacement and recolouring were the easiest edits (pixel F1 \val{fp:loc/sift/pixel/type/textreplace/f1} and \val{fp:loc/sift/pixel/type/recolor/f1}) and learned inpainting the hardest (\val{fp:loc/sift/pixel/type/inpaint-lama/f1}), because a good inpainting of a textureless background changes few pixels. PDQ computed per tile could not localize at all at a 1\% false-positive rate (F1 \val{fp:loc/sift/pdq/f1}): JPEG re-encoding alone flips tile hashes. End to end, the original must first be retrieved. Counting an edit whose original a fingerprint does not rank first as a localization failure, the SIFT pixel-difference F1 over the \val{fp:loc/e2e/sift/n} evaluated edits falls from \val{fp:loc/sift/pixel/f1} (oracle) to \val{fp:loc/e2e/sift/SSCD-mixup/pixel/f1} with SSCD-R50 retrieval, \val{fp:loc/e2e/sift/DINOv2-S/pixel/f1} with DINOv2-S, \val{fp:loc/e2e/sift/PDQ/pixel/f1} with PDQ and \val{fp:loc/e2e/sift/ISCC-Image-64/pixel/f1} with the ISCC Image-Code, which ranked the original first for \val{fp:loc/e2e/sift/SSCD-mixup/retrieved}, \val{fp:loc/e2e/sift/DINOv2-S/retrieved}, \val{fp:loc/e2e/sift/PDQ/retrieved} and \val{fp:loc/e2e/sift/ISCC-Image-64/retrieved}\% of them. These figures use top-1 retrieval without a threshold; requiring the calibrated threshold as well lowers them further, by the gap between Recall@1 and TPR for edited queries reported above.
+
+\input{generated/tables/fp/localization.tex}
+
+\begin{figure*}[!t]
+\centering
+\includegraphics[width=\textwidth]{fp_fig8_localization}
+\caption{(a) Examples of each edit type: registered original, edited query, ground-truth region, and three difference maps after SIFT alignment. (b) Pixel F1 at the calibrated threshold against the edited area, per map. (c) Share of edited queries whose original is retrieved above the query-level 1\% threshold, against edited area, for the eight representative methods of Fig.~\ref{fig:fp-image-families}.}
+\label{fig:fp-loc}
+\end{figure*}
+
+For time-based media, localization means finding where a query sits in the registered item. Chromaprint recovered the offset of 10\,s and 5\,s excerpts and of re-recordings within 0.5\,s in \val{fp:tloc/audio/chromaprint/_all/within05}\% of cases (median error \val{fp:tloc/audio/chromaprint/_all/median_ms}\,ms) and audfprint in \val{fp:tloc/audio/audfprint/_all/within05}\% (median \val{fp:tloc/audio/audfprint/_all/median_ms}\,ms); its failures are mostly queries it did not match at all. For video, frame-level SSCD and DINOv2-S placed every 2.5\,s excerpt within 1\,s of its true position, and recovered the inserted interval of the insertion attack with a mean interval IoU of \val{fp:tloc/video/SSCD-mixup/insert/iou} and \val{fp:tloc/video/DINOv2-S/insert/iou}.
+
+\subsection{Security}
+\label{sec:fp-res-security}
+\input{sections/fp_results_security.tex}
+
+
+\subsection{Determinism and Cost}
+\label{sec:fp-res-cost}
+\input{sections/fp_results_cost.tex}

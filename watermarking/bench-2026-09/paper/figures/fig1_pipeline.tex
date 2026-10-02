@@ -1,0 +1,49 @@
+% Benchmark protocol schematic (Fig. 1). Drawn in TikZ so text matches the document.
+\begin{tikzpicture}[
+  font=\sffamily\footnotesize,
+  node distance=4.5mm and 5mm,
+  box/.style={draw=black!70, line width=0.5pt, rounded corners=1.5pt, align=center, minimum height=9mm,
+              inner xsep=2.5pt, fill=white},
+  data/.style={box, fill=black!5},
+  metric/.style={box, draw=none, fill=blue!8, text width=26mm, minimum height=8mm},
+  arr/.style={-{Stealth[length=1.8mm]}, line width=0.5pt, draw=black!70},
+  lab/.style={font=\sffamily\scriptsize, text=black!65, align=center},
+]
+% Top row: marked path
+\node[data] (src) {Public corpus\\\scriptsize SHA-256 pinned};
+\node[box, right=of src] (emb) {Embed\\\scriptsize seeded payload};
+\node[data, right=of emb] (marked) {Marked item};
+\node[box, right=of marked] (att) {Transform\\\scriptsize \val{count/transforms} settings};
+\node[box, right=of att] (dec) {Decode};
+\node[box, right=of dec] (cmp) {Compare with\\\scriptsize expected payload};
+
+\draw[arr] (src) -- (emb);
+\draw[arr] (emb) -- (marked);
+\draw[arr] (marked) -- (att);
+\draw[arr] (att) -- (dec);
+\draw[arr] (dec) -- (cmp);
+
+% Bottom row: unmarked path for false positives
+\node[box, below=9mm of att] (att0) {Benign transform\\\scriptsize or none};
+\node[box, right=of att0] (dec0) {Decode};
+\node[box, right=of dec0] (fp) {Blind detection;\\\scriptsize match vs.\ $k$ of $n$};
+\draw[arr] (src.south) |- (att0.west);
+\draw[arr] (att0) -- (dec0);
+\draw[arr] (dec0) -- (fp);
+\node[lab, anchor=south west] at ($(src.south |- att0.west)+(1.5mm,0.6mm)$) {unmarked items};
+
+% Measurements
+\node[metric, above=6mm of marked] (mq) {\textbf{Quality}\\\scriptsize FLIP, LPIPS, PESQ, VMAF};
+\node[metric, above=6mm of cmp] (mr) {\textbf{Robustness}\\\scriptsize bit accuracy, worst subset};
+\node[metric, below=6mm of fp] (mf) {\textbf{False positives}\\\scriptsize exact 95\% intervals};
+\node[metric, above=6mm of emb, xshift=-16mm] (mt) {\textbf{Latency, cost}\\\scriptsize GPU and CPU host};
+\draw[arr, densely dashed] (marked) -- (mq);
+\draw[arr, densely dashed] (cmp) -- (mr);
+\draw[arr, densely dashed] (fp) -- (mf);
+\draw[arr, densely dashed] (emb.north) -- ++(0,2.5mm) -| (mt.south);
+
+% Qualification
+\node[box, fill=black!85, text=white, draw=none, left=10mm of mf, text width=44mm] (q)
+  {\textbf{Qualification}\\\scriptsize open licence, gate bit accuracy $\ge 0.95$\\\scriptsize (pooled and worst subset), false-positive evidence};
+\draw[arr] (mf) -- (q);
+\end{tikzpicture}

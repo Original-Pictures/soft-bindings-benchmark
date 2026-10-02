@@ -1,0 +1,179 @@
+{
+ "audio": {
+  "CLAP": {
+   "device": "cuda",
+   "ms_per_item": 34.421790937472,
+   "ms_per_media_second": 1.1478462754428167
+  },
+  "Chromaprint": {
+   "device": "cpu",
+   "ms_per_item": 59.48215721866745,
+   "ms_per_media_second": 1.9835217970725911
+  },
+  "ISCC-Audio-256": {
+   "device": "cpu",
+   "ms_per_item": 60.85163220313916,
+   "ms_per_media_second": 2.0291889955949878
+  },
+  "ISCC-Audio-64": {
+   "device": "cpu",
+   "ms_per_item": 60.000169609452314,
+   "ms_per_media_second": 2.000795697622267
+  },
+  "audfprint": {
+   "device": "cpu",
+   "ms_per_item": 41.13279923444679,
+   "ms_per_media_second": 1.3716349182865728
+  }
+ },
+ "host": {
+  "cpu_model": "AMD EPYC 7R32",
+  "cuda": true,
+  "gpu": "NVIDIA A10G",
+  "machine": "x86_64",
+  "mps": false,
+  "platform": "Linux-7.0.0-1013-aws-x86_64-with-glibc2.39",
+  "processor": "x86_64",
+  "python": "3.11.16",
+  "torch": "2.14.0+cu130"
+ },
+ "image": {
+  "BlockMean": {
+   "device": "cpu",
+   "items": 256,
+   "ms_per_item": 1.0338578515529662
+  },
+  "Blockhash-256": {
+   "device": "cpu",
+   "items": 256,
+   "ms_per_item": 19.073201347652002
+  },
+  "ColorMoment": {
+   "device": "cpu",
+   "items": 256,
+   "ms_per_item": 3.602952429673678
+  },
+  "DINOHash-96": {
+   "device": "cuda",
+   "items": 256,
+   "ms_per_item": 3.6265905117147668
+  },
+  "DINOv2-B": {
+   "device": "cuda",
+   "items": 256,
+   "ms_per_item": 3.8990588749925337
+  },
+  "DINOv2-S": {
+   "device": "cuda",
+   "items": 256,
+   "ms_per_item": 1.9750991367288862
+  },
+  "DINOv2-S-LSH256": {
+   "device": "cuda",
+   "items": 256,
+   "ms_per_item": 1.6593421211155146
+  },
+  "ISC21-1st": {
+   "device": "cuda",
+   "items": 256,
+   "ms_per_item": 8.33979143749275
+  },
+  "ISCC-Image-256": {
+   "device": "cpu",
+   "items": 256,
+   "ms_per_item": 11.239110007835507
+  },
+  "ISCC-Image-64": {
+   "device": "cpu",
+   "items": 256,
+   "ms_per_item": 11.198164195320714
+  },
+  "MarrHildreth": {
+   "device": "cpu",
+   "items": 256,
+   "ms_per_item": 5.489467175777918
+  },
+  "OpenCLIP-B32": {
+   "device": "cuda",
+   "items": 256,
+   "ms_per_item": 1.1013408281144166
+  },
+  "PDQ": {
+   "device": "cpu",
+   "items": 256,
+   "ms_per_item": 30.690681753895888
+  },
+  "PDQ-dihedral": {
+   "device": "cpu",
+   "items": 256,
+   "ms_per_item": 30.69369318751569
+  },
+  "SSCD-large": {
+   "device": "cuda",
+   "items": 256,
+   "ms_per_item": 4.626759171884487
+  },
+  "SSCD-mixup": {
+   "device": "cuda",
+   "items": 256,
+   "ms_per_item": 2.65079517578215
+  },
+  "aHash-64": {
+   "device": "cpu",
+   "items": 256,
+   "ms_per_item": 4.325111746084076
+  },
+  "dHash-64": {
+   "device": "cpu",
+   "items": 256,
+   "ms_per_item": 4.389017410147744
+  },
+  "pHash-256": {
+   "device": "cpu",
+   "items": 256,
+   "ms_per_item": 5.592319906241983
+  },
+  "pHash-64": {
+   "device": "cpu",
+   "items": 256,
+   "ms_per_item": 5.1592281015757635
+  },
+  "wHash-64": {
+   "device": "cpu",
+   "items": 256,
+   "ms_per_item": 63.11229828514797
+  }
+ },
+ "video": {
+  "DINOv2-S-seq": {
+   "device": "cuda",
+   "ms_per_item": 682.4951079374841,
+   "ms_per_media_second": 136.49902158749683
+  },
+  "ISCC-Video-256": {
+   "device": "cpu",
+   "ms_per_item": 270.08475865613946,
+   "ms_per_media_second": 54.01695173122789
+  },
+  "ISCC-Video-64": {
+   "device": "cpu",
+   "ms_per_item": 269.25486024993006,
+   "ms_per_media_second": 53.85097204998601
+  },
+  "SSCD-mixup-seq": {
+   "device": "cuda",
+   "ms_per_item": 686.098093187411,
+   "ms_per_media_second": 137.2196186374822
+  },
+  "TMK+PDQF": {
+   "device": "cpu",
+   "ms_per_item": 256.92587693765745,
+   "ms_per_media_second": 51.38517538753149
+  },
+  "vPDQ": {
+   "device": "cpu",
+   "ms_per_item": 659.5536320623978,
+   "ms_per_media_second": 131.91072641247956
+  }
+ }
+}

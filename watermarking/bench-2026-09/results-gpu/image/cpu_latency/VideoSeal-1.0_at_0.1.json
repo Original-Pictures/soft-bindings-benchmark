@@ -1,0 +1,31 @@
+{
+ "decode_ms_median": 167.34365500087733,
+ "embed_ms_per_mp_median": 545.815631488318,
+ "host": {
+  "cpu_model": "AMD EPYC 7R32",
+  "cuda": true,
+  "gpu": "NVIDIA A10G",
+  "machine": "x86_64",
+  "mps": false,
+  "platform": "Linux-7.0.0-1012-aws-x86_64-with-glibc2.39",
+  "processor": "x86_64",
+  "python": "3.11.16",
+  "torch": "2.14.0+cu130"
+ },
+ "meta": {
+  "code_licence": "MIT",
+  "deployable": true,
+  "family": "VideoSeal-1.0",
+  "name": "VideoSeal-1.0@0.1",
+  "nbits": 256,
+  "note": "Video Seal y_256b_img; image mode here",
+  "params": {
+   "card": "videoseal_1.0",
+   "lowres_attenuation": true,
+   "scaling_w": 0.1,
+   "scaling_w_effective": 0.1
+  },
+  "weights_licence": "MIT"
+ },
+ "threads": 4
+}

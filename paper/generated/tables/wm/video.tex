@@ -1,0 +1,22 @@
+\begin{table*}[!t]
+\centering
+\footnotesize
+\caption{Video watermarking on six 2.5-s 1080p clips. Bit accuracy after H.264 at CRF 23, pooled and on the worst clip.}
+\label{tab:wm-video}
+\setlength{\tabcolsep}{3.4pt}
+\begin{tabular}{lcrrrrrrrrrrr}
+\toprule
+Configuration & Q & PSNR & SSIM & LPIPS & FLIP & VMAF & \multicolumn{2}{c}{H.264 CRF 23 bit acc.} & GPU & fps & Cost & Comb. \\
+  &   & (dB)$\uparrow$ & $\uparrow$ & $\downarrow$ & $\downarrow$ & $\uparrow$ & pooled & worst clip & (ms/MP) & 1080p & (\$/k MP) & $\uparrow$ \\
+\midrule
+PixelSeal (0.4)\textsuperscript{\costmark}\textsuperscript{\speedmark}\textsuperscript{\bestmark} & \checkmark & 40.1 & 0.9674 & \textbf{0.0130} & \textbf{0.054} & \textbf{86.0} & 0.999 & 0.992 & \textbf{15.4} & 31.3 & \textbf{0.0043} & \textbf{1.00} \\
+Video Seal (0.4) & \checkmark & \textbf{40.3} & \textbf{0.9886} & 0.0131 & 0.055 & 82.1 & \textbf{1.000} & \textbf{1.000} & 16.3 & 29.7 & 0.0045 & 0.96 \\
+Video Seal (0.7) & \checkmark & 35.5 & 0.9710 & 0.0361 & 0.083 & 66.6 & 0.997 & 0.992 & 16.3 & 29.7 & 0.0045 & 0.91 \\
+ChunkySeal (0.2) & -- & 44.5 & 0.9734 & 0.0151 & 0.048 & 96.4 & 0.891 & 0.652 & 23.7 & 20.4 & 0.0066 & -- \\
+PixelSeal (0.2) & -- & 46.0 & 0.9869 & 0.0035 & 0.031 & 95.5 & 0.984 & 0.949 & 15.4 & 31.3 & 0.0043 & -- \\
+Video Seal (0.2) & -- & 46.2 & 0.9964 & 0.0035 & 0.032 & 94.0 & 0.986 & 0.922 & 16.3 & 29.7 & 0.0045 & -- \\
+Video Seal (1.1) & -- & 31.6 & 0.9403 & 0.0781 & 0.116 & 54.6 & 0.954 & 0.902 & 16.3 & 29.7 & 0.0045 & -- \\
+\bottomrule
+\end{tabular}
+\par\vspace{2pt}\parbox{\linewidth}{\raggedright\scriptsize \costmark\ lowest cost, \speedmark\ fastest GPU embedding, \bestmark\ highest combined score, each among qualifying configurations (Q). Ties between strengths of one network are broken by quality. Bold: best qualifying value per column. \dag\ Code or weights lack an open licence; reported for reference and excluded from ranking. fps: embedding throughput for 1080p frames on one A10G. Cost: estimated USD per 1{,}000 megapixels of 1080p video (GPU only; no CPU run).}
+\end{table*}

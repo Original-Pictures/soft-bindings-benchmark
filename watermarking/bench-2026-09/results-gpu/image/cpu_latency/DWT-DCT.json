@@ -1,0 +1,28 @@
+{
+ "decode_ms_median": 157.94514499975776,
+ "embed_ms_per_mp_median": 129.3831317167651,
+ "host": {
+  "cpu_model": "AMD EPYC 7R32",
+  "cuda": true,
+  "gpu": "NVIDIA A10G",
+  "machine": "x86_64",
+  "mps": false,
+  "platform": "Linux-7.0.0-1012-aws-x86_64-with-glibc2.39",
+  "processor": "x86_64",
+  "python": "3.11.16",
+  "torch": "2.14.0+cu130"
+ },
+ "meta": {
+  "code_licence": "MIT",
+  "deployable": true,
+  "family": "invisible-watermark",
+  "name": "DWT-DCT",
+  "nbits": 64,
+  "note": "",
+  "params": {
+   "method": "dwtDct"
+  },
+  "weights_licence": "n/a (classical)"
+ },
+ "threads": 4
+}

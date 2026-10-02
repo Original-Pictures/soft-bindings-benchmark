@@ -1,0 +1,28 @@
+{
+ "decode_ms_per_audio_s_median": 815.6958655999915,
+ "embed_ms_per_audio_s_median": 436.8646902999899,
+ "host": {
+  "cpu_model": "AMD EPYC 7R32",
+  "cuda": true,
+  "gpu": "NVIDIA A10G",
+  "machine": "x86_64",
+  "mps": false,
+  "platform": "Linux-7.0.0-1012-aws-x86_64-with-glibc2.39",
+  "processor": "x86_64",
+  "python": "3.10.21",
+  "torch": "2.0.1+cu117"
+ },
+ "meta": {
+  "code_licence": "MIT",
+  "deployable": false,
+  "family": "SilentCipher",
+  "name": "SilentCipher-44.1k",
+  "nbits": 40,
+  "note": "reference only - not deployable until Sony states a weight licence",
+  "params": {
+   "model_type": "44.1k"
+  },
+  "weights_licence": "UNSTATED (GitHub release asset / HF card has no licence field)"
+ },
+ "threads": 4
+}

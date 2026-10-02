@@ -1,0 +1,29 @@
+{
+ "decode_ms_median": 597.5765874991339,
+ "embed_ms_per_mp_median": 360.9195423536137,
+ "host": {
+  "cpu_model": "AMD EPYC 7R32",
+  "cuda": true,
+  "gpu": "NVIDIA A10G",
+  "machine": "x86_64",
+  "mps": false,
+  "platform": "Linux-7.0.0-1012-aws-x86_64-with-glibc2.39",
+  "processor": "x86_64",
+  "python": "3.11.16",
+  "torch": "2.14.0+cu130"
+ },
+ "meta": {
+  "code_licence": "MIT",
+  "deployable": true,
+  "family": "WAM",
+  "name": "WAM-MIT@1",
+  "nbits": 32,
+  "note": "",
+  "params": {
+   "scaling_w": 1.0,
+   "scaling_w_effective": 1.0
+  },
+  "weights_licence": "MIT (wam_mit.pth, SA-1B); COCO weights CC-BY-NC excluded"
+ },
+ "threads": 4
+}

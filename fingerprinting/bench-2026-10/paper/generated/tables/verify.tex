@@ -1,0 +1,29 @@
+\begin{table}[!t]
+\centering
+\footnotesize
+\caption{Second-stage verification of image matches. The top-1 candidate is accepted only if its retrieval score passes a threshold and SIFT+RANSAC finds at least $k$ geometric inliers between the query and the stored original. Both thresholds are fixed on the calibration negatives: matched, the smallest $k$ whose calibration false bindings do not exceed those of retrieval alone at pair-level $10^{-7}$; zero cal., the smallest $k$ no calibration negative reaches; and the localization track's $k=12$. FB: false bindings among the 26{,}820 held-out never-registered queries. TPR interval: bootstrap over sources.}
+\label{tab:verify}
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{llrccc}
+\toprule
+Method & Retrieval threshold & $k$ & TPR & FB & FB rate \\
+\midrule
+DINOv2-S & pair $10^{-7}$ & -- & 0.612 & 180 & 0.0067 \\
+ & query 1\% & 9 (matched) & 0.609 \tiny[0.60, 0.61] & 124 & 0.0046 \\
+ & query 1\% & 12 ($k=12$) & 0.604 \tiny[0.60, 0.61] & 104 & 0.0039 \\
+ & query 1\% & 278 (zero cal.) & 0.206 \tiny[0.20, 0.22] & 0 & 0.0000 \\
+ & pair $10^{-4}$ & 266 (matched) & 0.268 \tiny[0.25, 0.28] & 146 & 0.0054 \\
+ & pair $10^{-4}$ & 12 ($k=12$) & 0.793 \tiny[0.79, 0.80] & 4{,}390 & 0.1637 \\
+ & pair $10^{-4}$ & 1119 (zero cal.) & 0.023 \tiny[0.02, 0.03] & 0 & 0.0000 \\
+\addlinespace
+PDQ & pair $10^{-7}$ & -- & 0.495 & 267 & 0.0100 \\
+ & query 1\% & 0 (matched) & 0.495 \tiny[0.49, 0.50] & 267 & 0.0100 \\
+ & query 1\% & 12 ($k=12$) & 0.481 \tiny[0.48, 0.48] & 134 & 0.0050 \\
+ & query 1\% & 644 (zero cal.) & 0.065 \tiny[0.06, 0.07] & 0 & 0.0000 \\
+ & pair $10^{-4}$ & 167 (matched) & 0.299 \tiny[0.29, 0.31] & 212 & 0.0079 \\
+ & pair $10^{-4}$ & 12 ($k=12$) & 0.559 \tiny[0.56, 0.56] & 2{,}565 & 0.0956 \\
+ & pair $10^{-4}$ & 684 (zero cal.) & 0.066 \tiny[0.06, 0.07] & 0 & 0.0000 \\
+\bottomrule
+\end{tabular}
+
+\end{table}

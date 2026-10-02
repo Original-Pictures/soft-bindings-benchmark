@@ -1,0 +1,143 @@
+\input{generated/tables/wm/image.tex}
+
+\begin{figure*}[!t]
+\centering
+\includegraphics[width=\textwidth]{wm_fig2_image_tradeoffs.pdf}
+\caption{Image watermarking trade-offs. (a) Perceptual error (FLIP, lower is better) against bit accuracy after JPEG 75 on the worst content subset; lines join strength settings of one network, darker shades are stronger settings, and open markers are reference-only methods. The dashed line is the 0.95 gate. (b) GPU embedding time against FLIP. (c) Combined score of the qualifying configurations with equal weights (filled) and quality-weighted (open). The ringed configuration has the highest combined score. Values are in Table~\ref{tab:wm-image}.}
+\label{fig:wm-image}
+\end{figure*}
+
+\subsection{Images}
+\label{sec:wm-res-image}
+Table~\ref{tab:wm-image} and Fig.~\ref{fig:wm-image} summarise the image results. Of the \val{wm:image/n_configs} image configurations, \val{wm:image/n_qualify} qualify. PixelSeal at strength 0.15 has the highest combined score (\val{wm:image/PixelSeal@0.15/comb}). Its mean FLIP is \val{wm:image/PixelSeal@0.15/flip} (95\% CI \val{wm:image/PixelSeal@0.15/flip/lo} to \val{wm:image/PixelSeal@0.15/flip/hi}), PSNR \val{wm:image/PixelSeal@0.15/psnr}~dB and LPIPS \val{wm:image/PixelSeal@0.15/lpips}, and it keeps \val{wm:image/PixelSeal@0.15/gate} bit accuracy after JPEG 75 (\val{wm:image/PixelSeal@0.15/worst} on Kodak, its worst subset). Against TrustMark-Q at its default strength, it has \val{wm:ratio/ps_tq/flip} times the FLIP error (\val{wm:ps/flip} versus \val{wm:tq/flip}), an LPIPS of \val{wm:ps/lpips} versus \val{wm:tq/lpips}, and embeds \val{wm:ratio/ps_tq/gpu} times faster on the GPU.
+
+PixelSeal's operating range is narrow. At 0.125 it passes the pooled gate (\val{wm:image/PixelSeal@0.125/gate}) but not on Kodak (\val{wm:image/PixelSeal@0.125/worst}); at 0.1 it fails both (\val{wm:image/PixelSeal@0.1/gate}). Kodak was the worst subset for most learned methods. Its images are small (768$\times$512), so a watermark trained at 256$\times$256 is spread over fewer pixels per bit than on the larger DIV2K and CLIC images.
+
+The lowest FLIP among qualifying configurations belongs to TrustMark-P at strength 0.8 (\val{wm:image/trustmark-P@0.8/flip}). Its advantage over PixelSeal at 0.15 was not significant after correction (Table~\ref{tab:wm-tests}), and it passes the gate with little margin on Kodak (\val{wm:image/trustmark-P@0.8/worst}). It also embeds about five times more slowly. PixelSeal at 0.15 did have significantly lower FLIP than Video Seal at its default strength and than TrustMark-Q at 1.2 (both $p_{\mathrm{Holm}}<0.001$).
+
+Bit accuracy and payload recovery tell different stories at low strength (Table~\ref{tab:wm-exact}). PixelSeal at 0.15 keeps \val{wm:image/PixelSeal@0.15/gate} of its bits after JPEG 75, and every image passes the expected-payload test (\val{wm:image/PixelSeal@0.15/keymatch_gate}), but all 256 bits are correct in only \val{wm:image/PixelSeal@0.15/exact_gate} of images. A verifier that knows the expected payload needs only the threshold test, which PixelSeal passes with a wide margin; a reader that must recover an unknown identifier bit for bit would need the default strength or an error-correcting code. TrustMark, whose BCH layer corrects the residual errors, recovers the exact payload for \val{wm:image/trustmark-Q@1/exact_gate} of images at its default strength.
+
+\input{generated/tables/wm/exact.tex}
+
+\begin{figure*}[!t]
+\centering
+\includegraphics[width=\textwidth]{wm_fig3_image_robustness.pdf}
+\caption{Image robustness: mean bit accuracy of every configuration (rows) after every transformation (columns), from 0.5 (chance, white) to 1 (dark blue). \dag~Reference-only methods. The full values are in the aggregated results (Data and Code Availability).}
+\label{fig:wm-image-rob}
+\end{figure*}
+
+Fig.~\ref{fig:wm-image-rob} shows where the methods differ most: under geometric change. Retaining 50\% of each side (25\% of the area) reduced every TrustMark variant and Video Seal to chance (for example \val{wm:image/trustmark-Q@1.2/rob/crop50} for TrustMark-Q at 1.2 and \val{wm:image/VideoSeal-1.0@default/rob/crop50} for Video Seal). PixelSeal at 0.15 kept \val{wm:image/PixelSeal@0.15/rob/crop50}, and WAM, which predicts a per-pixel watermark map, kept \val{wm:image/WAM-MIT@default/rob/crop50}. A 70\% crop already defeated TrustMark (\val{wm:image/trustmark-Q@1.2/rob/crop70}). Compression, resizing, blur and brightness changes were survived by all qualifying configurations.
+
+Video Seal at 0.2 is the fastest and cheapest qualifying configuration, at \val{wm:image/VideoSeal-1.0@default/gpu}~ms per megapixel against \val{wm:image/PixelSeal@0.15/gpu} for PixelSeal. This 4\% difference is below the resolution of our timing (Section~\ref{sec:wm-cost}), so on speed and cost the two networks are equivalent. Among the other qualifying methods, WAM embeds at about twice the cost of these two and TrustMark at five to seven times. The classical DWT-DCT-SVD qualifies, but with lower quality (FLIP \val{wm:image/DWT-DCT-SVD/flip}). The plain DWT-DCT does not survive JPEG 75 (\val{wm:image/DWT-DCT/gate}).
+
+Three methods fail for different reasons. ChunkySeal carries 1{,}024 bits but loses too many of them on Kodak after JPEG 75 (\val{wm:image/ChunkySeal@default/worst}); it is also about five times slower than PixelSeal on the GPU and needs \val{wm:image/ChunkySeal@default/cpu}~ms per megapixel on the CPU. InvisMark, a reference-only method, has the highest ColorVideoVDP score (\val{wm:image/InvisMark/cvvdp}) but fails the gate (\val{wm:image/InvisMark/gate}). RivaGAN survives JPEG but embeds about 600 times more slowly than PixelSeal.
+
+Fig.~\ref{fig:wm-gallery} shows the residuals behind these numbers. PixelSeal and Video Seal add fine, texture-like patterns whose FLIP error stays low across the image. TrustMark-Q's residual has larger blobs, which produce concentrated FLIP error in flat regions. WAM's residual is strongly coloured.
+
+\begin{figure*}[!t]
+\centering
+\includegraphics[width=\textwidth]{wm_fig9_gallery.pdf}
+\caption{Visual comparison on a 256$\times$256 crop of Kodak image 5. Top: watermarked crop. Middle: residual (marked minus original) amplified 20 times around mid-grey. Bottom: FLIP error map (0 to 0.3). Strengths are those of Table~\ref{tab:wm-image}.}
+\label{fig:wm-gallery}
+\end{figure*}
+
+\input{generated/tables/wm/audio.tex}
+
+\begin{figure*}[!t]
+\centering
+\includegraphics[width=\textwidth]{wm_fig4_audio.pdf}
+\caption{Audio watermarking. (a) Wideband PESQ on the speech inputs against bit accuracy after MP3 at 128~kb/s on the worst subset (source and sample rate). (b) GPU embedding time against SI-SNR. (c) Combined score of qualifying configurations. (d) Mean bit accuracy after each transformation; Perth is omitted because it carries no payload. \dag~Reference only. Values are in Table~\ref{tab:wm-audio}.}
+\label{fig:wm-audio}
+\end{figure*}
+
+\subsection{Audio}
+\label{sec:wm-res-audio}
+AudioSeal leads the audio comparison (Table~\ref{tab:wm-audio}, Fig.~\ref{fig:wm-audio}). The base model has the highest combined score (\val{wm:audio/AudioSeal-base@1/comb}). It is also the fastest and cheapest qualifying model, at \val{wm:audio/AudioSeal-base@1/gpu}~ms of GPU time per second of audio. The streaming model at strength 0.5 has the best quality of any qualifying configuration, with PESQ on speech \val{wm:audio/AudioSeal-streaming@0.5/pesq} and SI-SNR \val{wm:audio/AudioSeal-streaming@0.5/si_snr}~dB, against \val{wm:audio/AudioSeal-base@1/pesq} and \val{wm:audio/AudioSeal-base@1/si_snr}~dB for the base model. The PESQ difference on speech is significant (Table~\ref{tab:wm-tests}). On the \val{wm:audio/n_music} music inputs, where PESQ is outside its design scope, the two score \val{wm:audio/AudioSeal-streaming@0.5/pesq_music} and \val{wm:audio/AudioSeal-base@1/pesq_music}. The quality-weighted score still favours the base model, because the streaming model was about 20\% slower in our measurements.
+
+Raising the streaming model's strength from 0.5 to 1.0 cost \val{wm:audio/AudioSeal-streaming@0.5/pesq}$\to$\val{wm:audio/AudioSeal-streaming@1/pesq} in PESQ and about 6~dB of SI-SNR, and brought no measurable gain in gate robustness (\val{wm:audio/AudioSeal-streaming@0.5/gate} against \val{wm:audio/AudioSeal-streaming@1/gate}). The two AudioSeal models differ in one respect that the gate does not capture: after a round trip through 8~kHz, the streaming model falls to chance (\val{wm:audio/AudioSeal-streaming@0.5/rob/resample_8k}), while the base model keeps \val{wm:audio/AudioSeal-base@1/rob/resample_8k}. Content that may pass through narrowband telephony therefore needs the base model.
+
+The codec results above use the benchmark's alignment of each round trip to the original, which a real verifier cannot perform. We therefore repeated the six MP3 and AAC round trips for the openly licensed payload models on a second host (\val{wm:noalign/host}) and decoded each output twice, aligned and unaligned (Table~\ref{tab:wm-noalign}). The aligned re-run reproduced the published bit accuracy to within 0.001. Without alignment, AudioSeal and WavMark decoded as well as with it: pooled over the six codecs, AudioSeal base kept \val{wm:noalign/AudioSeal-base@1/all/unaligned} bit accuracy unaligned against \val{wm:noalign/AudioSeal-base@1/all/aligned} aligned, and WavMark \val{wm:noalign/WavMark/all/unaligned} against \val{wm:noalign/WavMark/all/aligned}. Both models locate the mark themselves (AudioSeal decodes frame by frame, WavMark searches for its synchronisation pattern), so codec delay does not hurt them, and the alignment step does not inflate their reported robustness.
+
+\input{generated/tables/wm/noalign.tex}
+
+WavMark is the most robust model we tested, with bit accuracy \val{wm:audio/WavMark/worst} after MP3 on every subset. It has lower PESQ (\val{wm:audio/WavMark/pesq}) and embeds six to seven times more slowly than AudioSeal. SilentCipher, a reference-only model, has the highest quality of all (SI-SNR \val{wm:audio/SilentCipher-44.1k/si_snr}~dB). Perth carries no payload; its detector fires on \val{wm:audio/Perth/blindpct}\% of unmarked clips, and after MP3 it detects the mark in only \val{wm:audio/Perth/worst} of the clips in its worst subset.
+
+Fig.~\ref{fig:wm-audio-res} shows why the models respond differently to the same transformations. The AudioSeal base model concentrates its residual below about 2~kHz, which a round trip through 8~kHz preserves. The streaming model places most of its energy in a narrow band between about 4 and 6~kHz, above the 4~kHz Nyquist limit of that round trip, which is consistent with its failure there. WavMark spreads its residual across the band in one-second blocks, and Perth adds the strongest low-frequency residual of the four, in line with its low SI-SNR.
+
+
+\begin{figure*}[!t]
+\centering
+\includegraphics[width=\textwidth]{wm_fig10_audio_residuals.pdf}
+\caption{Where the audio watermarks put their energy. Top row: spectrograms of the first 6~s of one speech clip (LibriSpeech, band-limited to 8~kHz by its source) and one music clip, both at 44.1~kHz. Other rows: spectrogram of the residual (marked minus original) for each model at the strength of Table~\ref{tab:wm-audio}, on the same decibel scale relative to the original's peak. SilentCipher is omitted because its reference environment was not available when these clips were re-embedded.}
+\label{fig:wm-audio-res}
+\end{figure*}
+
+\input{generated/tables/wm/video.tex}
+
+\begin{figure*}[!t]
+\centering
+\includegraphics[width=\textwidth]{wm_fig5_video.pdf}
+\caption{Video watermarking. (a) VMAF against bit accuracy after H.264 at CRF 23 on the worst clip. (b) Bit accuracy after H.264 at CRF 23 for each clip (points) and the mean over clips (bars); defaults fail on one clip each. (c) Combined score of qualifying configurations. (d) Mean bit accuracy after each transformation. Values are in Table~\ref{tab:wm-video}.}
+\label{fig:wm-video}
+\end{figure*}
+
+\subsection{Video}
+\label{sec:wm-res-video}
+At their default strength of 0.2, PixelSeal and Video Seal both pass the pooled gate but each fails on one clip (Fig.~\ref{fig:wm-video}b): PixelSeal on \emph{crowd run} (\val{wm:video/PixelSeal@default/worst}) and Video Seal on \emph{aspen} (\val{wm:video/VideoSeal-1.0@default/worst}). Only strengths of 0.4 and above pass on every clip. PixelSeal at 0.4 has the highest combined score (\val{wm:video/PixelSeal@0.4/comb}), with VMAF \val{wm:video/PixelSeal@0.4/vmaf} against \val{wm:video/VideoSeal-1.0@0.4/vmaf} for Video Seal at the same strength. With six clips this difference is descriptive only (Table~\ref{tab:wm-tests}). It is also the fastest and cheapest qualifying configuration, at \val{wm:video/PixelSeal@0.4/fps} frames per second for 1080p on one A10G. That corresponds to about \$\val{wm:video/PixelSeal@0.4/costhour} of on-demand GPU time per hour of 1080p video at 30 frames per second.
+
+Strength does not increase robustness monotonically. Video Seal at 1.1 is less robust than at 0.4 after every transformation, with pooled bit accuracy after CRF 23 of \val{wm:video/VideoSeal-1.0@1.1/gate} against \val{wm:video/VideoSeal-1.0@0.4/gate}. Its quality is also much worse, with PSNR \val{wm:video/VideoSeal-1.0@1.1/psnr}~dB and VMAF \val{wm:video/VideoSeal-1.0@1.1/vmaf}. A strong residual is itself degraded by the codec, and the detector was not trained at that strength. ChunkySeal fails in video as it did in images (\val{wm:video/ChunkySeal@default/worst} on its worst clip).
+
+Fig.~\ref{fig:wm-video-res} shows the cost of the stronger setting on a single frame. Doubling the strength from 0.2 to 0.4 makes the residual of both models visibly coarser and raises the FLIP error across the frame. PixelSeal's residual is finer-grained than Video Seal's.
+
+
+\begin{figure*}[!t]
+\centering
+\includegraphics[width=\textwidth]{wm_fig11_video_residuals.pdf}
+\caption{Video residuals on one 1080p frame of \emph{aspen} after video-mode embedding (frame 12 of 24). Top: 320$\times$320 crop of the watermarked frame. Middle: residual amplified 20 times around mid-grey. Bottom: FLIP error map (0 to 0.3).}
+\label{fig:wm-video-res}
+\end{figure*}
+
+\input{generated/tables/wm/fpr.tex}
+
+\begin{figure*}[!t]
+\centering
+\includegraphics[width=\textwidth]{wm_fig6_false_positives.pdf}
+\caption{False positives on unmarked content. (a) Blind false-positive rate per network with the unmarked source as the unit (a source counts if the detector fired on any of its transforms or renderings) and exact two-sided 95\% intervals; networks with no false detection are shown by their upper bound. The dashed line is the $10^{-3}$ target. (b) TrustMark's blind false-positive rate per image subset, per image. (c) Number of bits in unmarked PixelSeal decodes that match an expected 256-bit payload, against the binomial distribution for independent fair bits and the decision threshold $k$.}
+\label{fig:wm-fpr}
+\end{figure*}
+
+\subsection{False Positives}
+\label{sec:wm-res-fpr}
+The blind detectors of all four TrustMark variants report a valid codeword on at least one of the four decodes of \val{wm:tm/blind/min} to \val{wm:tm/blind/max}\% of unmarked images (Table~\ref{tab:wm-fpr}, Fig.~\ref{fig:wm-fpr}a). The rate depends on content: on the 16-bit HDR subset it reached \val{wm:tm/blind/hdrk} of \val{wm:tm/blind/hdrn} images (Fig.~\ref{fig:wm-fpr}b), although the subset is small and the intervals are wide. BCH decoding corrects up to a fixed number of bit errors, so a random 100-bit word lies within the correction radius of some valid codeword with non-negligible probability. A decoder that reports ``found'' whenever correction succeeds cannot have a low false-positive rate.
+
+The same TrustMark decodes, tested against the expected payload with $k=74$ of the 100 transmitted bits, produced no false match on any unmarked image. For PixelSeal, the number of matching bits in unmarked decodes follows the binomial null closely (Fig.~\ref{fig:wm-fpr}c), and no trial came near the threshold. We saw the same for every network with a reachable threshold: the largest number of matching bits in any comparison stayed below $k$ (Table~\ref{tab:wm-fpr}), which is consistent with the independence assumption behind the analytic bound. Table~\ref{tab:wm-fpr} separates these observations from the theoretical rate. For every image network with a reachable threshold, no own-payload trial produced a false match on any of the \val{wm:fpr/image/PixelSeal/own_src_n} unmarked images (\val{wm:fpr/image/RivaGAN/own_src_n} for RivaGAN), and no random-payload comparison reached $k$ either. With the image as the unit, the observed upper bound is \val{wm:fpr/image/PixelSeal/own_src_upper}\%, so the observations show only that the rate is not large; the $10^{-6}$ per-key rate rests on the theoretical value. For the 16-bit audio models the expected-payload test is unavailable. Their blind detectors fired on none of the \val{wm:fpr/audio/WavMark/blind_src_n} unmarked clips (414 decodes), but the resulting upper bound, \val{wm:fpr/audio/WavMark/blind_src_upper}\%, is far above $10^{-3}$, so the target is not established for them; showing it with zero detections would take \val{wm:fpr/sources_for_1e-3} unmarked sources. For video, the six clips give an observed bound of \val{wm:fpr/video/PixelSeal/own_src_upper}\%; there the evidence is the theoretical rate alone.
+
+\input{generated/tables/wm/cost.tex}
+
+\begin{figure*}[!t]
+\centering
+\includegraphics[width=\textwidth]{wm_fig7_cost.pdf}
+\caption{Estimated embedding cost per network on GPU (filled circles) and CPU (open squares), at on-demand prices. (a) Images, USD per 1{,}000 megapixels. (b) Audio, USD per 1{,}000 hours. (c) Video, USD per 1{,}000 megapixels of 1080p frames (GPU only). Networks are sorted by their cheaper option. Values are in Table~\ref{tab:wm-cost}.}
+\label{fig:wm-cost}
+\end{figure*}
+
+\subsection{Cost and Speed}
+\label{sec:wm-res-cost}
+Table~\ref{tab:wm-cost} and Fig.~\ref{fig:wm-cost} compare networks rather than strength settings. For the neural image methods, the GPU is between one and two orders of magnitude cheaper than the CPU. The exception is TrustMark, whose small network is marginally cheaper on the CPU instance. The classical DWT-DCT methods run only on the CPU. For audio, the GPU is cheaper for every learned model. The cheapest qualifying image network costs about \$\val{wm:image/VideoSeal-1.0@default/cost} per 1{,}000 megapixels, and AudioSeal base about \$\val{wm:audio/AudioSeal-base@1/cost} per 1{,}000 hours of audio. At these prices, compute cost is rarely what decides between methods. The deciding factors are the gate and the false-positive behaviour.
+
+\input{generated/tables/wm/stability.tex}
+
+\begin{figure}[!t]
+\centering
+\includegraphics{wm_fig8_stability.pdf}
+\caption{Largest difference in detector logits between decodes of the same file on one host (open circles; CPU with one and four threads, and CUDA or MPS) and across an x86-64 and an arm64 host (filled circles). Crosses mark files for which at least one raw bit changed across hosts. Labels give the clip, Video Seal strength and H.264 CRF.}
+\label{fig:wm-stability}
+\end{figure}
+
+\subsection{Cross-Device Determinism}
+\label{sec:wm-res-stability}
+Decoding the same video file on one machine gave logits that agreed to within \val{wm:stab/maxsame} across CPU thread counts and the accelerator (Table~\ref{tab:wm-stability}, Fig.~\ref{fig:wm-stability}). The TrustMark-Q image behaves differently: its CPU decodes agreed to within \val{wm:stab/tm/cpu_dlogit} on both hosts, and only the CUDA decode departed from them, by up to \val{wm:stab/tm/maxsame}, which changed no bit. Its same-host and cross-host differences in Table~\ref{tab:wm-stability} are that one CUDA difference. Across the x86-64 and arm64 hosts, the logits differed by up to \val{wm:stab/maxcross}. In \val{wm:stab/nflipfiles} of \val{wm:stab/files} files this flipped raw payload bits, up to \val{wm:stab/maxflips} of 256. Both of those files were marked at strength 1.1, where some bits already had logits close to zero.
+
+The decoded YUV frames were byte-identical on the two hosts for every file. The RGB frames produced from them by the same library version were not. The 2$\times$2 follow-up isolates the two steps. Given the same saved RGB arrays, the two hosts produced logits that differed by at most \val{wm:rgb/model_dlogit}, and the backends of one host by at most \val{wm:rgb/backend_dlogit}. Given the other host's RGB conversion of the same files, one host's logits changed by up to \val{wm:rgb/conv_dlogit} and flipped up to \val{wm:rgb/maxflips} bits (in \val{wm:rgb/flippairs} of the 24 file--host combinations). The network is therefore reproducible across the two platforms to within floating-point noise, and the discrepancy comes from the platform-specific colour conversion. A verifier that must return the same bits everywhere should do the YUV-to-RGB conversion in a portable, fully specified implementation, or run the detector on YUV input.
+
+\input{generated/tables/wm/tests.tex}

@@ -1,0 +1,30 @@
+\begin{table}[!t]
+\centering
+\footnotesize
+\caption{Watermark and fingerprint on the same attacked copies of watermarked assets, pooled over all transformations. WM: the watermark yields the embedded key; FP: the fingerprint identifies the asset at its operating point (images pair-level $10^{-7}$, audio and video query-level 1\%); either: the cascade recovers the asset. Drift: share of watermarked assets whose own fingerprint falls below the threshold against the unmarked original.}
+\label{tab:wm}
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{llccccc}
+\toprule
+Watermark & Fingerprint & WM & FP & Both & Either & Drift \\
+\midrule
+TrustMark-Q & DINOv2-S & 0.62 & 0.61 & 0.55 & 0.69 & 0.06 \\
+ & DINOv2-S LSH-256 & 0.62 & 0.51 & 0.47 & 0.66 & 0.21 \\
+ & ISC21 1st\reftier & 0.62 & 0.76 & 0.60 & 0.78 & 0.09 \\
+ & ISCC Image-64 & 0.62 & 0.47 & 0.43 & 0.66 & 0.62 \\
+ & PDQ & 0.62 & 0.49 & 0.47 & 0.64 & 0.00 \\
+ & SSCD R50\reftier & 0.62 & 0.68 & 0.58 & 0.72 & 0.18 \\
+\addlinespace
+AudioSeal & CLAP & 0.24 & 0.37 & 0.12 & 0.49 & -- \\
+ & Chromaprint & 0.24 & 0.67 & 0.21 & 0.71 & -- \\
+ & ISCC Audio-64 & 0.24 & 0.40 & 0.16 & 0.48 & -- \\
+ & audfprint & 0.24 & 0.64 & 0.23 & 0.65 & -- \\
+\addlinespace
+Video Seal & ISCC Video-64 & 0.92 & 0.62 & 0.62 & 0.92 & -- \\
+ & SSCD frames\reftier & 0.92 & 0.54 & 0.54 & 0.92 & -- \\
+ & TMK+PDQF & 0.92 & 0.64 & 0.64 & 0.92 & -- \\
+ & vPDQ & 0.92 & 0.58 & 0.58 & 0.92 & -- \\
+\bottomrule
+\end{tabular}
+
+\end{table}

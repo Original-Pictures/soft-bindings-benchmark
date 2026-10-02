@@ -1,0 +1,194 @@
+{
+ "a": "x86_64-cuda.npz",
+ "b": "arm64-mps.npz",
+ "host_a": {
+  "cpu_model": "AMD EPYC 7R32",
+  "cuda": true,
+  "gpu": "NVIDIA A10G",
+  "machine": "x86_64",
+  "mps": false,
+  "platform": "Linux-7.0.0-1013-aws-x86_64-with-glibc2.39",
+  "processor": "x86_64",
+  "python": "3.11.16",
+  "torch": "2.14.0+cu130"
+ },
+ "host_b": {
+  "cpu_model": "Apple M5 Pro",
+  "cuda": false,
+  "machine": "arm64",
+  "mps": true,
+  "platform": "macOS-26.6.2-arm64-arm-64bit",
+  "processor": "arm",
+  "python": "3.11.16",
+  "torch": "2.14.0"
+ },
+ "methods": {
+  "BlockMean": {
+   "bits_differing_max": 0,
+   "bits_differing_mean": 0.0,
+   "identical_share": 1.0,
+   "n": 200,
+   "self_below_threshold": 0,
+   "self_score_min": 1.0
+  },
+  "Blockhash-256": {
+   "bits_differing_max": 0,
+   "bits_differing_mean": 0.0,
+   "identical_share": 1.0,
+   "n": 200,
+   "self_below_threshold": 200,
+   "self_score_min": 1.0
+  },
+  "ColorMoment": {
+   "identical_share": 0.06,
+   "l2_max": 0.0016086138784885406,
+   "n": 200,
+   "self_below_threshold": 200,
+   "self_score_min": -0.0016194457421079278
+  },
+  "DINOHash-96": {
+   "bits_differing_max": 1,
+   "bits_differing_mean": 0.005,
+   "identical_share": 0.995,
+   "n": 200,
+   "self_below_threshold": 0,
+   "self_score_min": 0.9895833134651184
+  },
+  "DINOv2-B": {
+   "identical_share": 0.0,
+   "n": 200,
+   "one_minus_cos_max": 1.1920928955078125e-07,
+   "one_minus_cos_median": 0.0,
+   "self_below_threshold": 0,
+   "self_score_min": 0.9999998211860657
+  },
+  "DINOv2-S": {
+   "identical_share": 0.0,
+   "n": 200,
+   "one_minus_cos_max": 1.1920928955078125e-07,
+   "one_minus_cos_median": 0.0,
+   "self_below_threshold": 0,
+   "self_score_min": 0.9999998211860657
+  },
+  "DINOv2-S-LSH256": {
+   "bits_differing_max": 0,
+   "bits_differing_mean": 0.0,
+   "identical_share": 1.0,
+   "n": 200,
+   "self_below_threshold": 0,
+   "self_score_min": 1.0
+  },
+  "ISC21-1st": {
+   "identical_share": 0.0,
+   "n": 200,
+   "one_minus_cos_max": 7.748603820800781e-07,
+   "one_minus_cos_median": 1.1920928955078125e-07,
+   "self_below_threshold": 0,
+   "self_score_min": 0.9999992847442627
+  },
+  "ISCC-Image-256": {
+   "bits_differing_max": 0,
+   "bits_differing_mean": 0.0,
+   "identical_share": 1.0,
+   "n": 200,
+   "self_below_threshold": 0,
+   "self_score_min": 1.0
+  },
+  "ISCC-Image-64": {
+   "bits_differing_max": 0,
+   "bits_differing_mean": 0.0,
+   "identical_share": 1.0,
+   "n": 200,
+   "self_below_threshold": 0,
+   "self_score_min": 1.0
+  },
+  "MarrHildreth": {
+   "bits_differing_max": 64,
+   "bits_differing_mean": 17.23,
+   "identical_share": 0.11,
+   "n": 200,
+   "self_below_threshold": 23,
+   "self_score_min": 0.8888888955116272
+  },
+  "OpenCLIP-B32": {
+   "identical_share": 0.0,
+   "n": 200,
+   "one_minus_cos_max": 4.762411117553711e-05,
+   "one_minus_cos_median": 4.202127456665039e-06,
+   "self_below_threshold": 0,
+   "self_score_min": 0.9999523162841797
+  },
+  "PDQ": {
+   "bits_differing_max": 0,
+   "bits_differing_mean": 0.0,
+   "identical_share": 1.0,
+   "n": 200,
+   "self_below_threshold": 0,
+   "self_score_min": 1.0
+  },
+  "PDQ-dihedral": {
+   "bits_differing_max": 0,
+   "bits_differing_mean": 0.0,
+   "identical_share": 1.0,
+   "n": 200,
+   "self_below_threshold": 0,
+   "self_score_min": 1.0
+  },
+  "SSCD-large": {
+   "identical_share": 0.0,
+   "n": 200,
+   "one_minus_cos_max": 0.00014358758926391602,
+   "one_minus_cos_median": 8.940696716308594e-07,
+   "self_below_threshold": 0,
+   "self_score_min": 0.9998564720153809
+  },
+  "SSCD-mixup": {
+   "identical_share": 0.0,
+   "n": 200,
+   "one_minus_cos_max": 7.68899917602539e-05,
+   "one_minus_cos_median": 2.562999725341797e-06,
+   "self_below_threshold": 0,
+   "self_score_min": 0.9999229907989502
+  },
+  "aHash-64": {
+   "bits_differing_max": 0,
+   "bits_differing_mean": 0.0,
+   "identical_share": 1.0,
+   "n": 200,
+   "self_below_threshold": 200,
+   "self_score_min": 1.0
+  },
+  "dHash-64": {
+   "bits_differing_max": 0,
+   "bits_differing_mean": 0.0,
+   "identical_share": 1.0,
+   "n": 200,
+   "self_below_threshold": 0,
+   "self_score_min": 1.0
+  },
+  "pHash-256": {
+   "bits_differing_max": 0,
+   "bits_differing_mean": 0.0,
+   "identical_share": 1.0,
+   "n": 200,
+   "self_below_threshold": 0,
+   "self_score_min": 1.0
+  },
+  "pHash-64": {
+   "bits_differing_max": 0,
+   "bits_differing_mean": 0.0,
+   "identical_share": 1.0,
+   "n": 200,
+   "self_below_threshold": 0,
+   "self_score_min": 1.0
+  },
+  "wHash-64": {
+   "bits_differing_max": 31,
+   "bits_differing_mean": 2.055,
+   "identical_share": 0.86,
+   "n": 200,
+   "self_below_threshold": 200,
+   "self_score_min": 0.515625
+  }
+ }
+}

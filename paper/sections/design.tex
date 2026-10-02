@@ -1,0 +1,23 @@
+\section{Benchmark Design}
+\label{sec:design}
+The benchmark has two tracks, one per family of soft binding, that share their principles, their hosts and, for the combination experiment, their media. This section states what they share and then describes each track's protocol.
+
+\subsection{Shared Principles}
+\label{sec:principles}
+\paragraph{Licence audit.} A provenance service can deploy only models whose code \emph{and} weights permit commercial use, and the two licences differ in several projects; the weights may also have been trained on data restricted to non-commercial use. We recorded all three for every method. Methods that fail the audit were measured as reference points and are marked \dag\ (watermarks) or \reftier\ (fingerprints) in every table; they are excluded from rankings and recommendations.
+
+\paragraph{Public, pinned media.} All media are public and were fetched from their distribution points; every file is pinned by SHA-256 in a manifest. No private or personal media were used. All randomness (payloads, transformations, splits) is seeded, so every method sees byte-identical inputs.
+
+\paragraph{False matches are controlled, not just reported.} A soft binding is useful only if it rarely points unmarked or unregistered content at someone else's manifest. Both tracks therefore fix the decision rule before measuring robustness. For watermarks, the rule is either the model's blind detector or an expected-payload test that requires $k$ of $n$ decoded bits to match the key the verifier expects, with $k$ chosen for a per-key false-match probability of at most $10^{-6}$ under independent fair bits. For fingerprints, thresholds are fixed on one half of the never-registered negatives, at query-level and at registry-size-independent pair-level false-match rates, and evaluated on the other half; a target is reported only if the calibration set resolves it. Detection is always reported at such an operating point, next to threshold-free measures.
+
+\paragraph{The source is the unit.} Every image, clip or track contributes one query per transformation, and the transformed copies of one source succeed or fail together far more often than independent queries would. Intervals therefore come from bootstraps over sources (for fingerprint retrieval rates and paired differences, with the threshold recomputed from the resampled calibration set in every replicate), exact intervals for watermark false positives count sources rather than trials, and paired comparisons pair by source. For audio watermarks, whose clips were rendered at three sample rates, the clip is the source.
+
+\paragraph{Hosts.} GPU work ran on NVIDIA A10G instances (AWS g5, AMD EPYC 7R32) and CPU work on the same processor family; latency is reported per network on an idle host. Because the watermarking track found host-dependent decoder outputs, both tracks were also run or decoded on an Apple M5 Pro (arm64) laptop to test determinism.
+
+\subsection{Watermarking Protocol}
+\label{sec:wm-method}
+\input{sections/wm_method.tex}
+
+\subsection{Fingerprinting Protocol}
+\label{sec:fp-method}
+\input{sections/fp_method.tex}

@@ -1,0 +1,31 @@
+cff-version: 1.2.0
+message: "If you use this benchmark, please cite the preprint."
+title: "Watermarks and Fingerprints as Soft Bindings for Content Provenance: An Open-Licence Benchmark for Images, Audio and Video"
+type: software
+version: "1.0"
+date-released: "2026-10-02"
+license: Apache-2.0
+repository-code: "https://github.com/Original-Pictures/soft-bindings-benchmark"
+authors:
+  - family-names: Kazempourradi
+    given-names: Seyedmahdi
+    email: mahdi@originalpictures.com
+    affiliation: "Original Pictures Technologies, Inc."
+  - family-names: Mojtahedi
+    given-names: Ramtin
+    affiliation: "Original Pictures Technologies, Inc."
+  - family-names: Mohseni
+    given-names: Behrang
+    affiliation: "Original Pictures Technologies, Inc."
+preferred-citation:
+  type: article
+  title: "Watermarks and Fingerprints as Soft Bindings for Content Provenance: An Open-Licence Benchmark for Images, Audio and Video"
+  year: 2026
+  month: 10
+  authors:
+    - family-names: Kazempourradi
+      given-names: Seyedmahdi
+    - family-names: Mojtahedi
+      given-names: Ramtin
+    - family-names: Mohseni
+      given-names: Behrang

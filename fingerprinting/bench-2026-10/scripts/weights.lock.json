@@ -1,0 +1,98 @@
+{
+  "audioseal_det_base": {
+    "bytes": 34667641,
+    "licence": "MIT",
+    "licence_source": "same",
+    "path": "audioseal/detector_base.pth",
+    "sha256": "8a78e8a83584113523e161fc599fcab10fd0e94c04d2eb9d2fa1e9ec91ab69d9",
+    "url": "https://huggingface.co/facebook/audioseal/resolve/3c19eba53390776cf2cc9ed5f6c9ac67ce72ecba/detector_base.pth"
+  },
+  "audioseal_gen_base": {
+    "bytes": 58805980,
+    "licence": "MIT",
+    "licence_source": "HF facebook/audioseal license: mit",
+    "path": "audioseal/generator_base.pth",
+    "sha256": "7a845b5fbe9364a63a3909d8ab3fe064d13a76ae4c2e983573e08c69b7b51748",
+    "url": "https://huggingface.co/facebook/audioseal/resolve/3c19eba53390776cf2cc9ed5f6c9ac67ce72ecba/generator_base.pth"
+  },
+  "clap_630k_audioset_best": {
+    "bytes": 1863587645,
+    "licence": "CC0-1.0",
+    "licence_source": "HF lukewys/laion_clap license: cc0-1.0",
+    "path": "clap/630k-audioset-best.pt",
+    "sha256": "8053c9775516af2f4902e1e8281e356cc1bf7a85e8b761908170767b77c3f037",
+    "url": "https://huggingface.co/lukewys/laion_clap/resolve/main/630k-audioset-best.pt"
+  },
+  "isc21_ft_v107": {
+    "bytes": 420418996,
+    "licence": "MIT (repo release asset)",
+    "licence_source": "lyakaap/ISC21-Descriptor-Track-1st; fine-tuned on DISC21",
+    "path": "isc21/isc_ft_v107.pth.tar",
+    "sha256": "512390a15ab52f8ab5adc14a315b157a5d6e732e3361c7a0dce5be6e95a86d30",
+    "url": "https://github.com/lyakaap/ISC21-Descriptor-Track-1st/releases/download/v1.0.1/isc_ft_v107.pth.tar"
+  },
+  "lama_big": {
+    "bytes": 205803670,
+    "licence": "Apache-2.0",
+    "licence_source": "advimman/lama (Apache-2.0) weights, TorchScript by simple-lama-inpainting (Apache-2.0)",
+    "path": "lama/big-lama.pt",
+    "sha256": "7ba7aa7ac37a4d41fdbbeba3a2af7ead18058552997e3a3cd1a3b2210c9e6b4c",
+    "url": "https://github.com/enesmsahin/simple-lama-inpainting/releases/download/v0.1.0/big-lama.pt"
+  },
+  "nmfp_triplet": {
+    "bytes": 172872470,
+    "licence": "GPL-3.0 (repo)",
+    "licence_source": "raraz15/neural-music-fp; Zenodo 15719945",
+    "path": "nmfp/nmfp-triplet.zip",
+    "sha256": "33e6059c0bf3ee3bc1df0479cefeb92dc85f4aa2a66833d430ce771aa0d7dceb",
+    "url": "https://zenodo.org/records/15719945/files/nmfp-triplet.zip?download=1"
+  },
+  "sscd_disc_large": {
+    "bytes": 178141104,
+    "licence": "NONE STATED (code MIT)",
+    "licence_source": "same",
+    "path": "sscd/sscd_disc_large.torchscript.pt",
+    "sha256": "16a196359f91e5fc4e774d5679244c8a661c182309ad4ede0c7e83f6a9861fa0",
+    "url": "https://dl.fbaipublicfiles.com/sscd-copy-detection/sscd_disc_large.torchscript.pt"
+  },
+  "sscd_disc_mixup": {
+    "bytes": 98791638,
+    "licence": "NONE STATED (code MIT)",
+    "licence_source": "facebookresearch/sscd-copy-detection: weights trained on DISC21 (CC BY-NC 4.0)",
+    "path": "sscd/sscd_disc_mixup.torchscript.pt",
+    "sha256": "9f26bd4c848cc19b73d2ae92eea6e04886f61a7b764ceb7a13aeee62e6a6db56",
+    "url": "https://dl.fbaipublicfiles.com/sscd-copy-detection/sscd_disc_mixup.torchscript.pt"
+  },
+  "trustmark_decoder_Q": {
+    "bytes": 47652460,
+    "licence": "MIT",
+    "licence_source": "adobe/trustmark README: MIT covers code and downloaded model files",
+    "path": "trustmark/decoder_Q.ckpt",
+    "sha256": "e3d9cea5406a26590735719f8f15cb10802b11852ae69047eaf4cf17214df781",
+    "url": "https://cai-watermark.adobe.net/watermarking/trustmark-models/decoder_Q.ckpt"
+  },
+  "trustmark_encoder_Q": {
+    "bytes": 17302074,
+    "licence": "MIT",
+    "licence_source": "adobe/trustmark README: MIT covers code and downloaded model files",
+    "path": "trustmark/encoder_Q.ckpt",
+    "sha256": "dc382c3f6b4fd568b27d6fbb763d6ffc2d2587126d84afe9d5ee95b4c5d99826",
+    "url": "https://cai-watermark.adobe.net/watermarking/trustmark-models/encoder_Q.ckpt"
+  },
+  "trustmark_yaml_Q": {
+    "bytes": 2009,
+    "licence": "MIT",
+    "licence_source": "same",
+    "path": "trustmark/trustmark_Q.yaml",
+    "sha256": "43f37103f92efa8bd6b1c5902bb537cc12a981dc699fca19d9bb7de8c62d03d9",
+    "url": "https://cai-watermark.adobe.net/watermarking/trustmark-models/trustmark_Q.yaml"
+  },
+  "videoseal_1.0_pth": {
+    "bytes": 228351471,
+    "licence": "MIT",
+    "licence_source": "facebookresearch/videoseal README: all models MIT",
+    "path": "videoseal/y_256b_img.pth",
+    "sha256": "3d2ff2523d2a89e3532c6dfdcf693098799326e9b3e74c185e815e9baa8340a3",
+    "url": "https://dl.fbaipublicfiles.com/videoseal/y_256b_img.pth"
+  }
+}

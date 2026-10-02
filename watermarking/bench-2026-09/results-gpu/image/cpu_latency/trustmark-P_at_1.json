@@ -1,0 +1,30 @@
+{
+ "decode_ms_median": 92.0573895018606,
+ "embed_ms_per_mp_median": 276.7126606959356,
+ "host": {
+  "cpu_model": "AMD EPYC 7R32",
+  "cuda": true,
+  "gpu": "NVIDIA A10G",
+  "machine": "x86_64",
+  "mps": false,
+  "platform": "Linux-7.0.0-1012-aws-x86_64-with-glibc2.39",
+  "processor": "x86_64",
+  "python": "3.11.16",
+  "torch": "2.14.0+cu130"
+ },
+ "meta": {
+  "code_licence": "MIT",
+  "deployable": true,
+  "family": "TrustMark",
+  "name": "trustmark-P@1",
+  "nbits": 100,
+  "note": "",
+  "params": {
+   "WM_STRENGTH": 1.0,
+   "encoding": "BCH_5",
+   "variant": "P"
+  },
+  "weights_licence": "MIT"
+ },
+ "threads": 4
+}

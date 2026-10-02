@@ -1,0 +1,5749 @@
+{
+ "clap_pgd": {
+  "20": {
+   "CLAP": {
+    "ci": [
+     0.9403705077138331,
+     1.0
+    ],
+    "n": 60,
+    "n_unmatched_clean": 0,
+    "rate": 1.0,
+    "success": 60
+   },
+   "Chromaprint": {
+    "ci": [
+     0.0,
+     0.05962949228616691
+    ],
+    "n": 60,
+    "n_unmatched_clean": 0,
+    "rate": 0.0,
+    "success": 0
+   },
+   "ISCC-Audio-64": {
+    "ci": [
+     0.1607464515904153,
+     0.39661034002549556
+    ],
+    "n": 60,
+    "n_unmatched_clean": 0,
+    "rate": 0.26666666666666666,
+    "success": 16
+   },
+   "audfprint": {
+    "ci": [
+     0.048214841871341924,
+     0.22571615314564827
+    ],
+    "n": 60,
+    "n_unmatched_clean": 0,
+    "rate": 0.11666666666666667,
+    "success": 7
+   },
+   "rows": [
+    {
+     "CLAP": {
+      "score_adv": -0.6460718512535095,
+      "score_clean": 1.0,
+      "success": true
+     },
+     "Chromaprint": {
+      "score_adv": 0.9984445701357466,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "ISCC-Audio-64": {
+      "score_adv": 1.0,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "audfprint": {
+      "score_adv": 24.0,
+      "score_clean": 591.0,
+      "success": true
+     },
+     "item": "m129650",
+     "snr_achieved": 24.017662048339844
+    },
+    {
+     "CLAP": {
+      "score_adv": -0.6880217790603638,
+      "score_clean": 1.0,
+      "success": true
+     },
+     "Chromaprint": {
+      "score_adv": 0.9980203619909502,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "ISCC-Audio-64": {
+      "score_adv": 0.984375,
+      "score_clean": 1.0,
+      "success": true
+     },
+     "audfprint": {
+      "score_adv": 43.0,
+      "score_clean": 280.0,
+      "success": false
+     },
+     "item": "m105045",
+     "snr_achieved": 23.91330337524414
+    },
+    {
+     "CLAP": {
+      "score_adv": -0.5950906276702881,
+      "score_clean": 0.9999998807907104,
+      "success": true
+     },
+     "Chromaprint": {
+      "score_adv": 0.9947680995475113,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "ISCC-Audio-64": {
+      "score_adv": 1.0,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "audfprint": {
+      "score_adv": 67.0,
+      "score_clean": 261.0,
+      "success": false
+     },
+     "item": "m140409",
+     "snr_achieved": 23.938465118408203
+    },
+    {
+     "CLAP": {
+      "score_adv": -0.6914064288139343,
+      "score_clean": 0.9999999403953552,
+      "success": true
+     },
+     "Chromaprint": {
+      "score_adv": 0.9973133484162896,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "ISCC-Audio-64": {
+      "score_adv": 1.0,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "audfprint": {
+      "score_adv": 201.0,
+      "score_clean": 624.0,
+      "success": false
+     },
+     "item": "m140214",
+     "snr_achieved": 23.74515151977539
+    },
+    {
+     "CLAP": {
+      "score_adv": -0.5407438278198242,
+      "score_clean": 1.0,
+      "success": true
+     },
+     "Chromaprint": {
+      "score_adv": 0.9968891402714932,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "ISCC-Audio-64": {
+      "score_adv": 1.0,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "audfprint": {
+      "score_adv": 631.0,
+      "score_clean": 1207.0,
+      "success": false
+     },
+     "item": "m063186",
+     "snr_achieved": 23.432167053222656
+    },
+    {
+     "CLAP": {
+      "score_adv": -0.6840081214904785,
+      "score_clean": 0.9999999403953552,
+      "success": true
+     },
+     "Chromaprint": {
+      "score_adv": 0.9980203619909502,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "ISCC-Audio-64": {
+      "score_adv": 0.984375,
+      "score_clean": 1.0,
+      "success": true
+     },
+     "audfprint": {
+      "score_adv": 10.0,
+      "score_clean": 292.0,
+      "success": true
+     },
+     "item": "m146770",
+     "snr_achieved": 24.011188507080078
+    },
+    {
+     "CLAP": {
+      "score_adv": -0.7397761344909668,
+      "score_clean": 1.0,
+      "success": true
+     },
+     "Chromaprint": {
+      "score_adv": 0.997737556561086,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "ISCC-Audio-64": {
+      "score_adv": 1.0,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "audfprint": {
+      "score_adv": 240.0,
+      "score_clean": 768.0,
+      "success": false
+     },
+     "item": "m088931",
+     "snr_achieved": 23.94647979736328
+    },
+    {
+     "CLAP": {
+      "score_adv": -0.682269811630249,
+      "score_clean": 1.0,
+      "success": true
+     },
+     "Chromaprint": {
+      "score_adv": 0.9980203619909502,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "ISCC-Audio-64": {
+      "score_adv": 1.0,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "audfprint": {
+      "score_adv": 287.0,
+      "score_clean": 553.0,
+      "success": false
+     },
+     "item": "m137294",
+     "snr_achieved": 23.686119079589844
+    },
+    {
+     "CLAP": {
+      "score_adv": -0.5863487720489502,
+      "score_clean": 0.9999998807907104,
+      "success": true
+     },
+     "Chromaprint": {
+      "score_adv": 0.9973133484162896,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "ISCC-Audio-64": {
+      "score_adv": 1.0,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "audfprint": {
+      "score_adv": 370.0,
+      "score_clean": 1010.0,
+      "success": false
+     },
+     "item": "m118983",
+     "snr_achieved": 23.614742279052734
+    },
+    {
+     "CLAP": {
+      "score_adv": -0.7028168439865112,
+      "score_clean": 1.0,
+      "success": true
+     },
+     "Chromaprint": {
+      "score_adv": 0.9970305429864253,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "ISCC-Audio-64": {
+      "score_adv": 1.0,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "audfprint": {
+      "score_adv": 110.0,
+      "score_clean": 669.0,
+      "success": false
+     },
+     "item": "m140217",
+     "snr_achieved": 23.95216941833496
+    },
+    {
+     "CLAP": {
+      "score_adv": -0.6629447937011719,
+      "score_clean": 1.0000001192092896,
+      "success": true
+     },
+     "Chromaprint": {
+      "score_adv": 0.9960407239819005,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "ISCC-Audio-64": {
+      "score_adv": 0.984375,
+      "score_clean": 1.0,
+      "success": true
+     },
+     "audfprint": {
+      "score_adv": 109.0,
+      "score_clean": 428.0,
+      "success": false
+     },
+     "item": "m129660",
+     "snr_achieved": 23.930469512939453
+    },
+    {
+     "CLAP": {
+      "score_adv": -0.5875488519668579,
+      "score_clean": 1.0,
+      "success": true
+     },
+     "Chromaprint": {
+      "score_adv": 0.9960407239819005,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "ISCC-Audio-64": {
+      "score_adv": 1.0,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "audfprint": {
+      "score_adv": 270.0,
+      "score_clean": 576.0,
+      "success": false
+     },
+     "item": "m136407",
+     "snr_achieved": 23.84747314453125
+    },
+    {
+     "CLAP": {
+      "score_adv": -0.5212762355804443,
+      "score_clean": 1.0,
+      "success": true
+     },
+     "Chromaprint": {
+      "score_adv": 0.9949095022624435,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "ISCC-Audio-64": {
+      "score_adv": 1.0,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "audfprint": {
+      "score_adv": 269.0,
+      "score_clean": 422.0,
+      "success": false
+     },
+     "item": "m136379",
+     "snr_achieved": 23.68065071105957
+    },
+    {
+     "CLAP": {
+      "score_adv": -0.42423853278160095,
+      "score_clean": 1.0,
+      "success": true
+     },
+     "Chromaprint": {
+      "score_adv": 0.9968891402714932,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "ISCC-Audio-64": {
+      "score_adv": 1.0,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "audfprint": {
+      "score_adv": 797.0,
+      "score_clean": 1613.0,
+      "success": false
+     },
+     "item": "m138688",
+     "snr_achieved": 23.480365753173828
+    },
+    {
+     "CLAP": {
+      "score_adv": -0.654739260673523,
+      "score_clean": 1.0,
+      "success": true
+     },
+     "Chromaprint": {
+      "score_adv": 0.9980203619909502,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "ISCC-Audio-64": {
+      "score_adv": 1.0,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "audfprint": {
+      "score_adv": 267.0,
+      "score_clean": 1212.0,
+      "success": false
+     },
+     "item": "m110511",
+     "snr_achieved": 23.917137145996094
+    },
+    {
+     "CLAP": {
+      "score_adv": -0.651843786239624,
+      "score_clean": 1.0,
+      "success": true
+     },
+     "Chromaprint": {
+      "score_adv": 0.996606334841629,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "ISCC-Audio-64": {
+      "score_adv": 1.0,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "audfprint": {
+      "score_adv": 344.0,
+      "score_clean": 761.0,
+      "success": false
+     },
+     "item": "m155181",
+     "snr_achieved": 23.72472381591797
+    },
+    {
+     "CLAP": {
+      "score_adv": -0.6873305439949036,
+      "score_clean": 1.0,
+      "success": true
+     },
+     "Chromaprint": {
+      "score_adv": 0.997737556561086,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "ISCC-Audio-64": {
+      "score_adv": 0.984375,
+      "score_clean": 1.0,
+      "success": true
+     },
+     "audfprint": {
+      "score_adv": 123.0,
+      "score_clean": 245.0,
+      "success": false
+     },
+     "item": "m122672",
+     "snr_achieved": 23.8737850189209
+    },
+    {
+     "CLAP": {
+      "score_adv": -0.6457027196884155,
+      "score_clean": 1.0,
+      "success": true
+     },
+     "Chromaprint": {
+      "score_adv": 0.9944852941176471,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "ISCC-Audio-64": {
+      "score_adv": 0.984375,
+      "score_clean": 1.0,
+      "success": true
+     },
+     "audfprint": {
+      "score_adv": 17.0,
+      "score_clean": 194.0,
+      "success": true
+     },
+     "item": "m096704",
+     "snr_achieved": 23.948734283447266
+    },
+    {
+     "CLAP": {
+      "score_adv": -0.6038411855697632,
+      "score_clean": 1.0,
+      "success": true
+     },
+     "Chromaprint": {
+      "score_adv": 0.9950509049773756,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "ISCC-Audio-64": {
+      "score_adv": 0.984375,
+      "score_clean": 1.0,
+      "success": true
+     },
+     "audfprint": {
+      "score_adv": 91.0,
+      "score_clean": 325.0,
+      "success": false
+     },
+     "item": "m147070",
+     "snr_achieved": 23.822460174560547
+    },
+    {
+     "CLAP": {
+      "score_adv": -0.6618025302886963,
+      "score_clean": 0.9999998807907104,
+      "success": true
+     },
+     "Chromaprint": {
+      "score_adv": 0.9960407239819005,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "ISCC-Audio-64": {
+      "score_adv": 1.0,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "audfprint": {
+      "score_adv": 169.0,
+      "score_clean": 441.0,
+      "success": false
+     },
+     "item": "m071299",
+     "snr_achieved": 23.896055221557617
+    },
+    {
+     "CLAP": {
+      "score_adv": -0.7761874198913574,
+      "score_clean": 1.0,
+      "success": true
+     },
+     "Chromaprint": {
+      "score_adv": 0.9640837104072398,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "ISCC-Audio-64": {
+      "score_adv": 0.96875,
+      "score_clean": 1.0,
+      "success": true
+     },
+     "audfprint": {
+      "score_adv": 98.0,
+      "score_clean": 357.0,
+      "success": false
+     },
+     "item": "m134229",
+     "snr_achieved": 23.96646499633789
+    },
+    {
+     "CLAP": {
+      "score_adv": -0.7296643257141113,
+      "score_clean": 0.9999999403953552,
+      "success": true
+     },
+     "Chromaprint": {
+      "score_adv": 0.9987273755656109,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "ISCC-Audio-64": {
+      "score_adv": 1.0,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "audfprint": {
+      "score_adv": 245.0,
+      "score_clean": 554.0,
+      "success": false
+     },
+     "item": "m003935",
+     "snr_achieved": 23.851213455200195
+    },
+    {
+     "CLAP": {
+      "score_adv": -0.7675463557243347,
+      "score_clean": 1.0,
+      "success": true
+     },
+     "Chromaprint": {
+      "score_adv": 0.9987273755656109,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "ISCC-Audio-64": {
+      "score_adv": 1.0,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "audfprint": {
+      "score_adv": 10.0,
+      "score_clean": 343.0,
+      "success": true
+     },
+     "item": "m052654",
+     "snr_achieved": 23.954700469970703
+    },
+    {
+     "CLAP": {
+      "score_adv": -0.6452146768569946,
+      "score_clean": 1.0,
+      "success": true
+     },
+     "Chromaprint": {
+      "score_adv": 0.9987273755656109,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "ISCC-Audio-64": {
+      "score_adv": 1.0,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "audfprint": {
+      "score_adv": 132.0,
+      "score_clean": 603.0,
+      "success": false
+     },
+     "item": "m075326",
+     "snr_achieved": 23.95416259765625
+    },
+    {
+     "CLAP": {
+      "score_adv": -0.685014009475708,
+      "score_clean": 1.0,
+      "success": true
+     },
+     "Chromaprint": {
+      "score_adv": 0.9957579185520362,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "ISCC-Audio-64": {
+      "score_adv": 1.0,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "audfprint": {
+      "score_adv": 471.0,
+      "score_clean": 704.0,
+      "success": false
+     },
+     "item": "m143781",
+     "snr_achieved": 23.458148956298828
+    },
+    {
+     "CLAP": {
+      "score_adv": -0.6044000387191772,
+      "score_clean": 1.0000001192092896,
+      "success": true
+     },
+     "Chromaprint": {
+      "score_adv": 0.9936368778280543,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "ISCC-Audio-64": {
+      "score_adv": 0.984375,
+      "score_clean": 1.0,
+      "success": true
+     },
+     "audfprint": {
+      "score_adv": 287.0,
+      "score_clean": 822.0,
+      "success": false
+     },
+     "item": "m012268",
+     "snr_achieved": 23.488338470458984
+    },
+    {
+     "CLAP": {
+      "score_adv": -0.7201511263847351,
+      "score_clean": 1.0000001192092896,
+      "success": true
+     },
+     "Chromaprint": {
+      "score_adv": 0.9970305429864253,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "ISCC-Audio-64": {
+      "score_adv": 1.0,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "audfprint": {
+      "score_adv": 48.0,
+      "score_clean": 185.0,
+      "success": false
+     },
+     "item": "m105052",
+     "snr_achieved": 23.952335357666016
+    },
+    {
+     "CLAP": {
+      "score_adv": -0.582522988319397,
+      "score_clean": 0.9999998807907104,
+      "success": true
+     },
+     "Chromaprint": {
+      "score_adv": 0.9971719457013575,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "ISCC-Audio-64": {
+      "score_adv": 1.0,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "audfprint": {
+      "score_adv": 388.0,
+      "score_clean": 607.0,
+      "success": false
+     },
+     "item": "m131082",
+     "snr_achieved": 23.704036712646484
+    },
+    {
+     "CLAP": {
+      "score_adv": -0.5898807048797607,
+      "score_clean": 1.0,
+      "success": true
+     },
+     "Chromaprint": {
+      "score_adv": 0.9980203619909502,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "ISCC-Audio-64": {
+      "score_adv": 1.0,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "audfprint": {
+      "score_adv": 87.0,
+      "score_clean": 381.0,
+      "success": false
+     },
+     "item": "m104649",
+     "snr_achieved": 23.85953712463379
+    },
+    {
+     "CLAP": {
+      "score_adv": -0.5591315627098083,
+      "score_clean": 0.9999998807907104,
+      "success": true
+     },
+     "Chromaprint": {
+      "score_adv": 0.9963235294117647,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "ISCC-Audio-64": {
+      "score_adv": 0.984375,
+      "score_clean": 1.0,
+      "success": true
+     },
+     "audfprint": {
+      "score_adv": 341.0,
+      "score_clean": 517.0,
+      "success": false
+     },
+     "item": "m131173",
+     "snr_achieved": 23.48455810546875
+    },
+    {
+     "CLAP": {
+      "score_adv": -0.5465718507766724,
+      "score_clean": 1.0,
+      "success": true
+     },
+     "Chromaprint": {
+      "score_adv": 0.9891119909502263,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "ISCC-Audio-64": {
+      "score_adv": 1.0,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "audfprint": {
+      "score_adv": 409.0,
+      "score_clean": 672.0,
+      "success": false
+     },
+     "item": "m134294",
+     "snr_achieved": 23.353824615478516
+    },
+    {
+     "CLAP": {
+      "score_adv": -0.4848502576351166,
+      "score_clean": 1.0,
+      "success": true
+     },
+     "Chromaprint": {
+      "score_adv": 0.9975961538461539,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "ISCC-Audio-64": {
+      "score_adv": 1.0,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "audfprint": {
+      "score_adv": 134.0,
+      "score_clean": 393.0,
+      "success": false
+     },
+     "item": "m136808",
+     "snr_achieved": 23.846202850341797
+    },
+    {
+     "CLAP": {
+      "score_adv": -0.6359392404556274,
+      "score_clean": 1.0,
+      "success": true
+     },
+     "Chromaprint": {
+      "score_adv": 0.9930712669683258,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "ISCC-Audio-64": {
+      "score_adv": 1.0,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "audfprint": {
+      "score_adv": 76.0,
+      "score_clean": 653.0,
+      "success": false
+     },
+     "item": "m126087",
+     "snr_achieved": 23.95879554748535
+    },
+    {
+     "CLAP": {
+      "score_adv": -0.5898470282554626,
+      "score_clean": 1.0,
+      "success": true
+     },
+     "Chromaprint": {
+      "score_adv": 0.9974547511312217,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "ISCC-Audio-64": {
+      "score_adv": 1.0,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "audfprint": {
+      "score_adv": 56.0,
+      "score_clean": 197.0,
+      "success": false
+     },
+     "item": "m117390",
+     "snr_achieved": 23.911951065063477
+    },
+    {
+     "CLAP": {
+      "score_adv": -0.5934770703315735,
+      "score_clean": 0.9999998807907104,
+      "success": true
+     },
+     "Chromaprint": {
+      "score_adv": 0.9983031674208145,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "ISCC-Audio-64": {
+      "score_adv": 1.0,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "audfprint": {
+      "score_adv": 495.0,
+      "score_clean": 798.0,
+      "success": false
+     },
+     "item": "m141599",
+     "snr_achieved": 23.678375244140625
+    },
+    {
+     "CLAP": {
+      "score_adv": -0.5817524194717407,
+      "score_clean": 1.0000001192092896,
+      "success": true
+     },
+     "Chromaprint": {
+      "score_adv": 0.9937782805429864,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "ISCC-Audio-64": {
+      "score_adv": 0.984375,
+      "score_clean": 1.0,
+      "success": true
+     },
+     "audfprint": {
+      "score_adv": 236.0,
+      "score_clean": 1240.0,
+      "success": false
+     },
+     "item": "m121615",
+     "snr_achieved": 23.847034454345703
+    },
+    {
+     "CLAP": {
+      "score_adv": -0.6612251996994019,
+      "score_clean": 1.0,
+      "success": true
+     },
+     "Chromaprint": {
+      "score_adv": 0.9857183257918553,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "ISCC-Audio-64": {
+      "score_adv": 1.0,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "audfprint": {
+      "score_adv": 218.0,
+      "score_clean": 587.0,
+      "success": false
+     },
+     "item": "m120032",
+     "snr_achieved": 23.940242767333984
+    },
+    {
+     "CLAP": {
+      "score_adv": -0.6465806365013123,
+      "score_clean": 1.0,
+      "success": true
+     },
+     "Chromaprint": {
+      "score_adv": 0.9968891402714932,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "ISCC-Audio-64": {
+      "score_adv": 0.984375,
+      "score_clean": 1.0,
+      "success": true
+     },
+     "audfprint": {
+      "score_adv": 149.0,
+      "score_clean": 308.0,
+      "success": false
+     },
+     "item": "m072491",
+     "snr_achieved": 23.804336547851562
+    },
+    {
+     "CLAP": {
+      "score_adv": -0.566767692565918,
+      "score_clean": 1.0,
+      "success": true
+     },
+     "Chromaprint": {
+      "score_adv": 0.9903846153846154,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "ISCC-Audio-64": {
+      "score_adv": 0.96875,
+      "score_clean": 1.0,
+      "success": true
+     },
+     "audfprint": {
+      "score_adv": 116.0,
+      "score_clean": 397.0,
+      "success": false
+     },
+     "item": "m118479",
+     "snr_achieved": 23.904312133789062
+    },
+    {
+     "CLAP": {
+      "score_adv": -0.6622899770736694,
+      "score_clean": 1.0,
+      "success": true
+     },
+     "Chromaprint": {
+      "score_adv": 0.9878393665158371,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "ISCC-Audio-64": {
+      "score_adv": 1.0,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "audfprint": {
+      "score_adv": 252.0,
+      "score_clean": 492.0,
+      "success": false
+     },
+     "item": "m022838",
+     "snr_achieved": 23.789134979248047
+    },
+    {
+     "CLAP": {
+      "score_adv": -0.6734804511070251,
+      "score_clean": 1.0,
+      "success": true
+     },
+     "Chromaprint": {
+      "score_adv": 0.9964649321266968,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "ISCC-Audio-64": {
+      "score_adv": 1.0,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "audfprint": {
+      "score_adv": 193.0,
+      "score_clean": 1411.0,
+      "success": false
+     },
+     "item": "m136772",
+     "snr_achieved": 23.89954376220703
+    },
+    {
+     "CLAP": {
+      "score_adv": -0.6760203838348389,
+      "score_clean": 1.0,
+      "success": true
+     },
+     "Chromaprint": {
+      "score_adv": 0.9980203619909502,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "ISCC-Audio-64": {
+      "score_adv": 1.0,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "audfprint": {
+      "score_adv": 190.0,
+      "score_clean": 374.0,
+      "success": false
+     },
+     "item": "m116537",
+     "snr_achieved": 23.726783752441406
+    },
+    {
+     "CLAP": {
+      "score_adv": -0.48926129937171936,
+      "score_clean": 1.0,
+      "success": true
+     },
+     "Chromaprint": {
+      "score_adv": 0.9875565610859729,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "ISCC-Audio-64": {
+      "score_adv": 1.0,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "audfprint": {
+      "score_adv": 34.0,
+      "score_clean": 154.0,
+      "success": true
+     },
+     "item": "m118512",
+     "snr_achieved": 23.953542709350586
+    },
+    {
+     "CLAP": {
+      "score_adv": -0.6391474008560181,
+      "score_clean": 0.9999998807907104,
+      "success": true
+     },
+     "Chromaprint": {
+      "score_adv": 0.9983031674208145,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "ISCC-Audio-64": {
+      "score_adv": 1.0,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "audfprint": {
+      "score_adv": 227.0,
+      "score_clean": 610.0,
+      "success": false
+     },
+     "item": "m061484",
+     "snr_achieved": 23.891077041625977
+    },
+    {
+     "CLAP": {
+      "score_adv": -0.6685894727706909,
+      "score_clean": 1.0,
+      "success": true
+     },
+     "Chromaprint": {
+      "score_adv": 0.9984445701357466,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "ISCC-Audio-64": {
+      "score_adv": 1.0,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "audfprint": {
+      "score_adv": 22.0,
+      "score_clean": 237.0,
+      "success": true
+     },
+     "item": "m052684",
+     "snr_achieved": 23.95443344116211
+    },
+    {
+     "CLAP": {
+      "score_adv": -0.6524134278297424,
+      "score_clean": 1.0,
+      "success": true
+     },
+     "Chromaprint": {
+      "score_adv": 0.997737556561086,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "ISCC-Audio-64": {
+      "score_adv": 0.984375,
+      "score_clean": 1.0,
+      "success": true
+     },
+     "audfprint": {
+      "score_adv": 398.0,
+      "score_clean": 887.0,
+      "success": false
+     },
+     "item": "m124270",
+     "snr_achieved": 23.767555236816406
+    },
+    {
+     "CLAP": {
+      "score_adv": -0.509763777256012,
+      "score_clean": 1.0,
+      "success": true
+     },
+     "Chromaprint": {
+      "score_adv": 0.9975961538461539,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "ISCC-Audio-64": {
+      "score_adv": 1.0,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "audfprint": {
+      "score_adv": 256.0,
+      "score_clean": 636.0,
+      "success": false
+     },
+     "item": "m123355",
+     "snr_achieved": 23.809467315673828
+    },
+    {
+     "CLAP": {
+      "score_adv": -0.5280787348747253,
+      "score_clean": 1.0,
+      "success": true
+     },
+     "Chromaprint": {
+      "score_adv": 0.9980203619909502,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "ISCC-Audio-64": {
+      "score_adv": 0.984375,
+      "score_clean": 1.0,
+      "success": true
+     },
+     "audfprint": {
+      "score_adv": 108.0,
+      "score_clean": 1143.0,
+      "success": false
+     },
+     "item": "m057109",
+     "snr_achieved": 23.94211196899414
+    },
+    {
+     "CLAP": {
+      "score_adv": -0.7136331796646118,
+      "score_clean": 1.000000238418579,
+      "success": true
+     },
+     "Chromaprint": {
+      "score_adv": 0.9970305429864253,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "ISCC-Audio-64": {
+      "score_adv": 1.0,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "audfprint": {
+      "score_adv": 582.0,
+      "score_clean": 974.0,
+      "success": false
+     },
+     "item": "m149681",
+     "snr_achieved": 23.61675262451172
+    },
+    {
+     "CLAP": {
+      "score_adv": -0.7397071719169617,
+      "score_clean": 1.0,
+      "success": true
+     },
+     "Chromaprint": {
+      "score_adv": 0.9983031674208145,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "ISCC-Audio-64": {
+      "score_adv": 0.984375,
+      "score_clean": 1.0,
+      "success": true
+     },
+     "audfprint": {
+      "score_adv": 11.0,
+      "score_clean": 418.0,
+      "success": true
+     },
+     "item": "m054308",
+     "snr_achieved": 24.01428985595703
+    },
+    {
+     "CLAP": {
+      "score_adv": -0.4970810115337372,
+      "score_clean": 1.0,
+      "success": true
+     },
+     "Chromaprint": {
+      "score_adv": 0.9942024886877828,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "ISCC-Audio-64": {
+      "score_adv": 1.0,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "audfprint": {
+      "score_adv": 797.0,
+      "score_clean": 1158.0,
+      "success": false
+     },
+     "item": "m008649",
+     "snr_achieved": 23.52952766418457
+    },
+    {
+     "CLAP": {
+      "score_adv": -0.5618574619293213,
+      "score_clean": 1.0,
+      "success": true
+     },
+     "Chromaprint": {
+      "score_adv": 0.9974547511312217,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "ISCC-Audio-64": {
+      "score_adv": 1.0,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "audfprint": {
+      "score_adv": 199.0,
+      "score_clean": 370.0,
+      "success": false
+     },
+     "item": "m083617",
+     "snr_achieved": 23.89482307434082
+    },
+    {
+     "CLAP": {
+      "score_adv": -0.5362740159034729,
+      "score_clean": 1.0000001192092896,
+      "success": true
+     },
+     "Chromaprint": {
+      "score_adv": 0.9960407239819005,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "ISCC-Audio-64": {
+      "score_adv": 1.0,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "audfprint": {
+      "score_adv": 132.0,
+      "score_clean": 414.0,
+      "success": false
+     },
+     "item": "m153186",
+     "snr_achieved": 23.73818588256836
+    },
+    {
+     "CLAP": {
+      "score_adv": -0.6774302124977112,
+      "score_clean": 1.0000001192092896,
+      "success": true
+     },
+     "Chromaprint": {
+      "score_adv": 0.9968891402714932,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "ISCC-Audio-64": {
+      "score_adv": 0.984375,
+      "score_clean": 1.0,
+      "success": true
+     },
+     "audfprint": {
+      "score_adv": 195.0,
+      "score_clean": 534.0,
+      "success": false
+     },
+     "item": "m072495",
+     "snr_achieved": 23.771381378173828
+    },
+    {
+     "CLAP": {
+      "score_adv": -0.5039919018745422,
+      "score_clean": 0.9999999403953552,
+      "success": true
+     },
+     "Chromaprint": {
+      "score_adv": 0.9947680995475113,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "ISCC-Audio-64": {
+      "score_adv": 1.0,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "audfprint": {
+      "score_adv": 421.0,
+      "score_clean": 988.0,
+      "success": false
+     },
+     "item": "m136386",
+     "snr_achieved": 23.84246063232422
+    },
+    {
+     "CLAP": {
+      "score_adv": -0.632401168346405,
+      "score_clean": 1.0,
+      "success": true
+     },
+     "Chromaprint": {
+      "score_adv": 0.997737556561086,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "ISCC-Audio-64": {
+      "score_adv": 1.0,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "audfprint": {
+      "score_adv": 273.0,
+      "score_clean": 557.0,
+      "success": false
+     },
+     "item": "m140029",
+     "snr_achieved": 23.624404907226562
+    },
+    {
+     "CLAP": {
+      "score_adv": -0.6239772439002991,
+      "score_clean": 1.0,
+      "success": true
+     },
+     "Chromaprint": {
+      "score_adv": 0.9974547511312217,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "ISCC-Audio-64": {
+      "score_adv": 1.0,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "audfprint": {
+      "score_adv": 446.0,
+      "score_clean": 790.0,
+      "success": false
+     },
+     "item": "m136853",
+     "snr_achieved": 23.663166046142578
+    },
+    {
+     "CLAP": {
+      "score_adv": -0.6719871163368225,
+      "score_clean": 1.0,
+      "success": true
+     },
+     "Chromaprint": {
+      "score_adv": 0.9974547511312217,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "ISCC-Audio-64": {
+      "score_adv": 1.0,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "audfprint": {
+      "score_adv": 169.0,
+      "score_clean": 466.0,
+      "success": false
+     },
+     "item": "m067476",
+     "snr_achieved": 23.8681697845459
+    },
+    {
+     "CLAP": {
+      "score_adv": -0.33006763458251953,
+      "score_clean": 1.0,
+      "success": true
+     },
+     "Chromaprint": {
+      "score_adv": 0.9985859728506787,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "ISCC-Audio-64": {
+      "score_adv": 1.0,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "audfprint": {
+      "score_adv": 245.0,
+      "score_clean": 711.0,
+      "success": false
+     },
+     "item": "m086471",
+     "snr_achieved": 23.824764251708984
+    },
+    {
+     "CLAP": {
+      "score_adv": -0.6217779517173767,
+      "score_clean": 1.0,
+      "success": true
+     },
+     "Chromaprint": {
+      "score_adv": 0.9973133484162896,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "ISCC-Audio-64": {
+      "score_adv": 1.0,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "audfprint": {
+      "score_adv": 253.0,
+      "score_clean": 952.0,
+      "success": false
+     },
+     "item": "m068387",
+     "snr_achieved": 23.888763427734375
+    }
+   ],
+   "snr_achieved_mean": 23.805136903127035
+  },
+  "30": {
+   "CLAP": {
+    "ci": [
+     0.9403705077138331,
+     1.0
+    ],
+    "n": 60,
+    "n_unmatched_clean": 0,
+    "rate": 1.0,
+    "success": 60
+   },
+   "Chromaprint": {
+    "ci": [
+     0.0,
+     0.05962949228616691
+    ],
+    "n": 60,
+    "n_unmatched_clean": 0,
+    "rate": 0.0,
+    "success": 0
+   },
+   "ISCC-Audio-64": {
+    "ci": [
+     0.048214841871341924,
+     0.22571615314564827
+    ],
+    "n": 60,
+    "n_unmatched_clean": 0,
+    "rate": 0.11666666666666667,
+    "success": 7
+   },
+   "audfprint": {
+    "ci": [
+     0.010432329644348225,
+     0.13924324672107277
+    ],
+    "n": 60,
+    "n_unmatched_clean": 0,
+    "rate": 0.05,
+    "success": 3
+   },
+   "rows": [
+    {
+     "CLAP": {
+      "score_adv": -0.49040868878364563,
+      "score_clean": 1.0,
+      "success": true
+     },
+     "Chromaprint": {
+      "score_adv": 0.9995757918552036,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "ISCC-Audio-64": {
+      "score_adv": 1.0,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "audfprint": {
+      "score_adv": 81.0,
+      "score_clean": 591.0,
+      "success": false
+     },
+     "item": "m129650",
+     "snr_achieved": 33.97188186645508
+    },
+    {
+     "CLAP": {
+      "score_adv": -0.4081653356552124,
+      "score_clean": 1.0,
+      "success": true
+     },
+     "Chromaprint": {
+      "score_adv": 1.0,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "ISCC-Audio-64": {
+      "score_adv": 1.0,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "audfprint": {
+      "score_adv": 124.0,
+      "score_clean": 280.0,
+      "success": false
+     },
+     "item": "m105045",
+     "snr_achieved": 33.615821838378906
+    },
+    {
+     "CLAP": {
+      "score_adv": -0.49618279933929443,
+      "score_clean": 0.9999998807907104,
+      "success": true
+     },
+     "Chromaprint": {
+      "score_adv": 0.998868778280543,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "ISCC-Audio-64": {
+      "score_adv": 1.0,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "audfprint": {
+      "score_adv": 87.0,
+      "score_clean": 261.0,
+      "success": false
+     },
+     "item": "m140409",
+     "snr_achieved": 33.71879959106445
+    },
+    {
+     "CLAP": {
+      "score_adv": -0.2287450134754181,
+      "score_clean": 0.9999999403953552,
+      "success": true
+     },
+     "Chromaprint": {
+      "score_adv": 0.9992929864253394,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "ISCC-Audio-64": {
+      "score_adv": 1.0,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "audfprint": {
+      "score_adv": 396.0,
+      "score_clean": 624.0,
+      "success": false
+     },
+     "item": "m140214",
+     "snr_achieved": 33.310997009277344
+    },
+    {
+     "CLAP": {
+      "score_adv": 0.12880705296993256,
+      "score_clean": 1.0,
+      "success": true
+     },
+     "Chromaprint": {
+      "score_adv": 0.9991515837104072,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "ISCC-Audio-64": {
+      "score_adv": 1.0,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "audfprint": {
+      "score_adv": 928.0,
+      "score_clean": 1207.0,
+      "success": false
+     },
+     "item": "m063186",
+     "snr_achieved": 32.60564041137695
+    },
+    {
+     "CLAP": {
+      "score_adv": -0.6891905665397644,
+      "score_clean": 0.9999999403953552,
+      "success": true
+     },
+     "Chromaprint": {
+      "score_adv": 0.9991515837104072,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "ISCC-Audio-64": {
+      "score_adv": 1.0,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "audfprint": {
+      "score_adv": 18.0,
+      "score_clean": 292.0,
+      "success": true
+     },
+     "item": "m146770",
+     "snr_achieved": 34.016845703125
+    },
+    {
+     "CLAP": {
+      "score_adv": -0.5456053018569946,
+      "score_clean": 1.0,
+      "success": true
+     },
+     "Chromaprint": {
+      "score_adv": 0.9995757918552036,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "ISCC-Audio-64": {
+      "score_adv": 1.0,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "audfprint": {
+      "score_adv": 402.0,
+      "score_clean": 768.0,
+      "success": false
+     },
+     "item": "m088931",
+     "snr_achieved": 33.65768051147461
+    },
+    {
+     "CLAP": {
+      "score_adv": -0.18364843726158142,
+      "score_clean": 1.0,
+      "success": true
+     },
+     "Chromaprint": {
+      "score_adv": 0.9991515837104072,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "ISCC-Audio-64": {
+      "score_adv": 0.984375,
+      "score_clean": 1.0,
+      "success": true
+     },
+     "audfprint": {
+      "score_adv": 398.0,
+      "score_clean": 553.0,
+      "success": false
+     },
+     "item": "m137294",
+     "snr_achieved": 33.02739715576172
+    },
+    {
+     "CLAP": {
+      "score_adv": 0.014143578708171844,
+      "score_clean": 0.9999998807907104,
+      "success": true
+     },
+     "Chromaprint": {
+      "score_adv": 0.998868778280543,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "ISCC-Audio-64": {
+      "score_adv": 1.0,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "audfprint": {
+      "score_adv": 588.0,
+      "score_clean": 1010.0,
+      "success": false
+     },
+     "item": "m118983",
+     "snr_achieved": 32.716026306152344
+    },
+    {
+     "CLAP": {
+      "score_adv": -0.6624637842178345,
+      "score_clean": 1.0,
+      "success": true
+     },
+     "Chromaprint": {
+      "score_adv": 0.9997171945701357,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "ISCC-Audio-64": {
+      "score_adv": 1.0,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "audfprint": {
+      "score_adv": 261.0,
+      "score_clean": 669.0,
+      "success": false
+     },
+     "item": "m140217",
+     "snr_achieved": 33.45569610595703
+    },
+    {
+     "CLAP": {
+      "score_adv": -0.5635207891464233,
+      "score_clean": 1.0000001192092896,
+      "success": true
+     },
+     "Chromaprint": {
+      "score_adv": 0.9991515837104072,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "ISCC-Audio-64": {
+      "score_adv": 1.0,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "audfprint": {
+      "score_adv": 189.0,
+      "score_clean": 428.0,
+      "success": false
+     },
+     "item": "m129660",
+     "snr_achieved": 33.821044921875
+    },
+    {
+     "CLAP": {
+      "score_adv": -0.36140817403793335,
+      "score_clean": 1.0,
+      "success": true
+     },
+     "Chromaprint": {
+      "score_adv": 0.9991515837104072,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "ISCC-Audio-64": {
+      "score_adv": 1.0,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "audfprint": {
+      "score_adv": 383.0,
+      "score_clean": 576.0,
+      "success": false
+     },
+     "item": "m136407",
+     "snr_achieved": 33.28868103027344
+    },
+    {
+     "CLAP": {
+      "score_adv": 0.001051727682352066,
+      "score_clean": 1.0,
+      "success": true
+     },
+     "Chromaprint": {
+      "score_adv": 0.9985859728506787,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "ISCC-Audio-64": {
+      "score_adv": 1.0,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "audfprint": {
+      "score_adv": 340.0,
+      "score_clean": 422.0,
+      "success": false
+     },
+     "item": "m136379",
+     "snr_achieved": 33.44845962524414
+    },
+    {
+     "CLAP": {
+      "score_adv": 0.5561599731445312,
+      "score_clean": 1.0,
+      "success": true
+     },
+     "Chromaprint": {
+      "score_adv": 0.9990101809954751,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "ISCC-Audio-64": {
+      "score_adv": 1.0,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "audfprint": {
+      "score_adv": 1057.0,
+      "score_clean": 1613.0,
+      "success": false
+     },
+     "item": "m138688",
+     "snr_achieved": 32.41920852661133
+    },
+    {
+     "CLAP": {
+      "score_adv": -0.3711242079734802,
+      "score_clean": 1.0,
+      "success": true
+     },
+     "Chromaprint": {
+      "score_adv": 0.9991515837104072,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "ISCC-Audio-64": {
+      "score_adv": 1.0,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "audfprint": {
+      "score_adv": 618.0,
+      "score_clean": 1212.0,
+      "success": false
+     },
+     "item": "m110511",
+     "snr_achieved": 33.7152099609375
+    },
+    {
+     "CLAP": {
+      "score_adv": -0.3585226535797119,
+      "score_clean": 1.0,
+      "success": true
+     },
+     "Chromaprint": {
+      "score_adv": 0.9984445701357466,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "ISCC-Audio-64": {
+      "score_adv": 1.0,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "audfprint": {
+      "score_adv": 511.0,
+      "score_clean": 761.0,
+      "success": false
+     },
+     "item": "m155181",
+     "snr_achieved": 33.142250061035156
+    },
+    {
+     "CLAP": {
+      "score_adv": -0.43184927105903625,
+      "score_clean": 1.0,
+      "success": true
+     },
+     "Chromaprint": {
+      "score_adv": 0.9994343891402715,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "ISCC-Audio-64": {
+      "score_adv": 0.984375,
+      "score_clean": 1.0,
+      "success": true
+     },
+     "audfprint": {
+      "score_adv": 176.0,
+      "score_clean": 245.0,
+      "success": false
+     },
+     "item": "m122672",
+     "snr_achieved": 33.406761169433594
+    },
+    {
+     "CLAP": {
+      "score_adv": -0.5110087394714355,
+      "score_clean": 1.0,
+      "success": true
+     },
+     "Chromaprint": {
+      "score_adv": 0.9990101809954751,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "ISCC-Audio-64": {
+      "score_adv": 0.984375,
+      "score_clean": 1.0,
+      "success": true
+     },
+     "audfprint": {
+      "score_adv": 28.0,
+      "score_clean": 194.0,
+      "success": true
+     },
+     "item": "m096704",
+     "snr_achieved": 33.922428131103516
+    },
+    {
+     "CLAP": {
+      "score_adv": -0.33668723702430725,
+      "score_clean": 1.0,
+      "success": true
+     },
+     "Chromaprint": {
+      "score_adv": 0.9987273755656109,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "ISCC-Audio-64": {
+      "score_adv": 1.0,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "audfprint": {
+      "score_adv": 158.0,
+      "score_clean": 325.0,
+      "success": false
+     },
+     "item": "m147070",
+     "snr_achieved": 33.278282165527344
+    },
+    {
+     "CLAP": {
+      "score_adv": -0.5325178503990173,
+      "score_clean": 0.9999998807907104,
+      "success": true
+     },
+     "Chromaprint": {
+      "score_adv": 0.9992929864253394,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "ISCC-Audio-64": {
+      "score_adv": 1.0,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "audfprint": {
+      "score_adv": 265.0,
+      "score_clean": 441.0,
+      "success": false
+     },
+     "item": "m071299",
+     "snr_achieved": 33.49293518066406
+    },
+    {
+     "CLAP": {
+      "score_adv": -0.6091214418411255,
+      "score_clean": 1.0,
+      "success": true
+     },
+     "Chromaprint": {
+      "score_adv": 0.9871323529411765,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "ISCC-Audio-64": {
+      "score_adv": 0.96875,
+      "score_clean": 1.0,
+      "success": true
+     },
+     "audfprint": {
+      "score_adv": 188.0,
+      "score_clean": 357.0,
+      "success": false
+     },
+     "item": "m134229",
+     "snr_achieved": 33.88054656982422
+    },
+    {
+     "CLAP": {
+      "score_adv": -0.5395403504371643,
+      "score_clean": 0.9999999403953552,
+      "success": true
+     },
+     "Chromaprint": {
+      "score_adv": 0.9997171945701357,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "ISCC-Audio-64": {
+      "score_adv": 1.0,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "audfprint": {
+      "score_adv": 401.0,
+      "score_clean": 554.0,
+      "success": false
+     },
+     "item": "m003935",
+     "snr_achieved": 33.346168518066406
+    },
+    {
+     "CLAP": {
+      "score_adv": -0.5677513480186462,
+      "score_clean": 1.0,
+      "success": true
+     },
+     "Chromaprint": {
+      "score_adv": 0.9992929864253394,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "ISCC-Audio-64": {
+      "score_adv": 1.0,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "audfprint": {
+      "score_adv": 44.0,
+      "score_clean": 343.0,
+      "success": false
+     },
+     "item": "m052654",
+     "snr_achieved": 33.814552307128906
+    },
+    {
+     "CLAP": {
+      "score_adv": -0.6511754393577576,
+      "score_clean": 1.0,
+      "success": true
+     },
+     "Chromaprint": {
+      "score_adv": 0.9997171945701357,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "ISCC-Audio-64": {
+      "score_adv": 1.0,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "audfprint": {
+      "score_adv": 275.0,
+      "score_clean": 603.0,
+      "success": false
+     },
+     "item": "m075326",
+     "snr_achieved": 33.67353057861328
+    },
+    {
+     "CLAP": {
+      "score_adv": -0.20133382081985474,
+      "score_clean": 1.0,
+      "success": true
+     },
+     "Chromaprint": {
+      "score_adv": 0.9991515837104072,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "ISCC-Audio-64": {
+      "score_adv": 1.0,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "audfprint": {
+      "score_adv": 566.0,
+      "score_clean": 704.0,
+      "success": false
+     },
+     "item": "m143781",
+     "snr_achieved": 32.30331039428711
+    },
+    {
+     "CLAP": {
+      "score_adv": -0.03097011148929596,
+      "score_clean": 1.0000001192092896,
+      "success": true
+     },
+     "Chromaprint": {
+      "score_adv": 0.9978789592760181,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "ISCC-Audio-64": {
+      "score_adv": 0.984375,
+      "score_clean": 1.0,
+      "success": true
+     },
+     "audfprint": {
+      "score_adv": 449.0,
+      "score_clean": 822.0,
+      "success": false
+     },
+     "item": "m012268",
+     "snr_achieved": 32.89114761352539
+    },
+    {
+     "CLAP": {
+      "score_adv": -0.6396711468696594,
+      "score_clean": 1.0000001192092896,
+      "success": true
+     },
+     "Chromaprint": {
+      "score_adv": 0.9994343891402715,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "ISCC-Audio-64": {
+      "score_adv": 1.0,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "audfprint": {
+      "score_adv": 83.0,
+      "score_clean": 185.0,
+      "success": false
+     },
+     "item": "m105052",
+     "snr_achieved": 33.810916900634766
+    },
+    {
+     "CLAP": {
+      "score_adv": 0.035123955458402634,
+      "score_clean": 0.9999998807907104,
+      "success": true
+     },
+     "Chromaprint": {
+      "score_adv": 0.9991515837104072,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "ISCC-Audio-64": {
+      "score_adv": 1.0,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "audfprint": {
+      "score_adv": 468.0,
+      "score_clean": 607.0,
+      "success": false
+     },
+     "item": "m131082",
+     "snr_achieved": 33.05185317993164
+    },
+    {
+     "CLAP": {
+      "score_adv": -0.4737984240055084,
+      "score_clean": 1.0,
+      "success": true
+     },
+     "Chromaprint": {
+      "score_adv": 0.9997171945701357,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "ISCC-Audio-64": {
+      "score_adv": 1.0,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "audfprint": {
+      "score_adv": 198.0,
+      "score_clean": 381.0,
+      "success": false
+     },
+     "item": "m104649",
+     "snr_achieved": 33.63104248046875
+    },
+    {
+     "CLAP": {
+      "score_adv": -0.11885179579257965,
+      "score_clean": 0.9999998807907104,
+      "success": true
+     },
+     "Chromaprint": {
+      "score_adv": 0.9987273755656109,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "ISCC-Audio-64": {
+      "score_adv": 1.0,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "audfprint": {
+      "score_adv": 440.0,
+      "score_clean": 517.0,
+      "success": false
+     },
+     "item": "m131173",
+     "snr_achieved": 32.64521408081055
+    },
+    {
+     "CLAP": {
+      "score_adv": -0.15055400133132935,
+      "score_clean": 1.0,
+      "success": true
+     },
+     "Chromaprint": {
+      "score_adv": 0.9968891402714932,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "ISCC-Audio-64": {
+      "score_adv": 1.0,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "audfprint": {
+      "score_adv": 589.0,
+      "score_clean": 672.0,
+      "success": false
+     },
+     "item": "m134294",
+     "snr_achieved": 32.427772521972656
+    },
+    {
+     "CLAP": {
+      "score_adv": -0.41784778237342834,
+      "score_clean": 1.0,
+      "success": true
+     },
+     "Chromaprint": {
+      "score_adv": 0.9997171945701357,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "ISCC-Audio-64": {
+      "score_adv": 1.0,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "audfprint": {
+      "score_adv": 265.0,
+      "score_clean": 393.0,
+      "success": false
+     },
+     "item": "m136808",
+     "snr_achieved": 33.622413635253906
+    },
+    {
+     "CLAP": {
+      "score_adv": -0.4751726984977722,
+      "score_clean": 1.0,
+      "success": true
+     },
+     "Chromaprint": {
+      "score_adv": 0.9992929864253394,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "ISCC-Audio-64": {
+      "score_adv": 1.0,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "audfprint": {
+      "score_adv": 159.0,
+      "score_clean": 653.0,
+      "success": false
+     },
+     "item": "m126087",
+     "snr_achieved": 33.823997497558594
+    },
+    {
+     "CLAP": {
+      "score_adv": -0.38692718744277954,
+      "score_clean": 1.0,
+      "success": true
+     },
+     "Chromaprint": {
+      "score_adv": 0.9994343891402715,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "ISCC-Audio-64": {
+      "score_adv": 1.0,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "audfprint": {
+      "score_adv": 105.0,
+      "score_clean": 197.0,
+      "success": false
+     },
+     "item": "m117390",
+     "snr_achieved": 33.589778900146484
+    },
+    {
+     "CLAP": {
+      "score_adv": -0.16667091846466064,
+      "score_clean": 0.9999998807907104,
+      "success": true
+     },
+     "Chromaprint": {
+      "score_adv": 0.9995757918552036,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "ISCC-Audio-64": {
+      "score_adv": 1.0,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "audfprint": {
+      "score_adv": 677.0,
+      "score_clean": 798.0,
+      "success": false
+     },
+     "item": "m141599",
+     "snr_achieved": 33.419254302978516
+    },
+    {
+     "CLAP": {
+      "score_adv": -0.37574484944343567,
+      "score_clean": 1.0000001192092896,
+      "success": true
+     },
+     "Chromaprint": {
+      "score_adv": 0.9984445701357466,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "ISCC-Audio-64": {
+      "score_adv": 1.0,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "audfprint": {
+      "score_adv": 476.0,
+      "score_clean": 1240.0,
+      "success": false
+     },
+     "item": "m121615",
+     "snr_achieved": 33.367671966552734
+    },
+    {
+     "CLAP": {
+      "score_adv": -0.6497941017150879,
+      "score_clean": 1.0,
+      "success": true
+     },
+     "Chromaprint": {
+      "score_adv": 0.9967477375565611,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "ISCC-Audio-64": {
+      "score_adv": 1.0,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "audfprint": {
+      "score_adv": 328.0,
+      "score_clean": 587.0,
+      "success": false
+     },
+     "item": "m120032",
+     "snr_achieved": 33.80430603027344
+    },
+    {
+     "CLAP": {
+      "score_adv": -0.2793104350566864,
+      "score_clean": 1.0,
+      "success": true
+     },
+     "Chromaprint": {
+      "score_adv": 0.9992929864253394,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "ISCC-Audio-64": {
+      "score_adv": 1.0,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "audfprint": {
+      "score_adv": 230.0,
+      "score_clean": 308.0,
+      "success": false
+     },
+     "item": "m072491",
+     "snr_achieved": 33.629302978515625
+    },
+    {
+     "CLAP": {
+      "score_adv": -0.5168039202690125,
+      "score_clean": 1.0,
+      "success": true
+     },
+     "Chromaprint": {
+      "score_adv": 0.9985859728506787,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "ISCC-Audio-64": {
+      "score_adv": 0.984375,
+      "score_clean": 1.0,
+      "success": true
+     },
+     "audfprint": {
+      "score_adv": 186.0,
+      "score_clean": 397.0,
+      "success": false
+     },
+     "item": "m118479",
+     "snr_achieved": 33.530906677246094
+    },
+    {
+     "CLAP": {
+      "score_adv": -0.4697796106338501,
+      "score_clean": 1.0,
+      "success": true
+     },
+     "Chromaprint": {
+      "score_adv": 0.997737556561086,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "ISCC-Audio-64": {
+      "score_adv": 1.0,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "audfprint": {
+      "score_adv": 323.0,
+      "score_clean": 492.0,
+      "success": false
+     },
+     "item": "m022838",
+     "snr_achieved": 33.34072494506836
+    },
+    {
+     "CLAP": {
+      "score_adv": -0.5670732855796814,
+      "score_clean": 1.0,
+      "success": true
+     },
+     "Chromaprint": {
+      "score_adv": 0.9984445701357466,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "ISCC-Audio-64": {
+      "score_adv": 1.0,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "audfprint": {
+      "score_adv": 565.0,
+      "score_clean": 1411.0,
+      "success": false
+     },
+     "item": "m136772",
+     "snr_achieved": 33.869014739990234
+    },
+    {
+     "CLAP": {
+      "score_adv": -0.34769362211227417,
+      "score_clean": 1.0,
+      "success": true
+     },
+     "Chromaprint": {
+      "score_adv": 0.9998585972850679,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "ISCC-Audio-64": {
+      "score_adv": 1.0,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "audfprint": {
+      "score_adv": 274.0,
+      "score_clean": 374.0,
+      "success": false
+     },
+     "item": "m116537",
+     "snr_achieved": 32.99440002441406
+    },
+    {
+     "CLAP": {
+      "score_adv": -0.49096769094467163,
+      "score_clean": 1.0,
+      "success": true
+     },
+     "Chromaprint": {
+      "score_adv": 0.997737556561086,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "ISCC-Audio-64": {
+      "score_adv": 1.0,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "audfprint": {
+      "score_adv": 65.0,
+      "score_clean": 154.0,
+      "success": false
+     },
+     "item": "m118512",
+     "snr_achieved": 33.96057891845703
+    },
+    {
+     "CLAP": {
+      "score_adv": -0.5929250717163086,
+      "score_clean": 0.9999998807907104,
+      "success": true
+     },
+     "Chromaprint": {
+      "score_adv": 0.9997171945701357,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "ISCC-Audio-64": {
+      "score_adv": 1.0,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "audfprint": {
+      "score_adv": 326.0,
+      "score_clean": 610.0,
+      "success": false
+     },
+     "item": "m061484",
+     "snr_achieved": 33.46551513671875
+    },
+    {
+     "CLAP": {
+      "score_adv": -0.5634225606918335,
+      "score_clean": 1.0,
+      "success": true
+     },
+     "Chromaprint": {
+      "score_adv": 0.9994343891402715,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "ISCC-Audio-64": {
+      "score_adv": 1.0,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "audfprint": {
+      "score_adv": 85.0,
+      "score_clean": 237.0,
+      "success": false
+     },
+     "item": "m052684",
+     "snr_achieved": 33.822608947753906
+    },
+    {
+     "CLAP": {
+      "score_adv": -0.3120517432689667,
+      "score_clean": 1.0,
+      "success": true
+     },
+     "Chromaprint": {
+      "score_adv": 0.9992929864253394,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "ISCC-Audio-64": {
+      "score_adv": 0.984375,
+      "score_clean": 1.0,
+      "success": true
+     },
+     "audfprint": {
+      "score_adv": 587.0,
+      "score_clean": 887.0,
+      "success": false
+     },
+     "item": "m124270",
+     "snr_achieved": 33.34919357299805
+    },
+    {
+     "CLAP": {
+      "score_adv": 0.02561604231595993,
+      "score_clean": 1.0,
+      "success": true
+     },
+     "Chromaprint": {
+      "score_adv": 0.9995757918552036,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "ISCC-Audio-64": {
+      "score_adv": 1.0,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "audfprint": {
+      "score_adv": 444.0,
+      "score_clean": 636.0,
+      "success": false
+     },
+     "item": "m123355",
+     "snr_achieved": 33.515621185302734
+    },
+    {
+     "CLAP": {
+      "score_adv": -0.4883720576763153,
+      "score_clean": 1.0,
+      "success": true
+     },
+     "Chromaprint": {
+      "score_adv": 0.9995757918552036,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "ISCC-Audio-64": {
+      "score_adv": 1.0,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "audfprint": {
+      "score_adv": 225.0,
+      "score_clean": 1143.0,
+      "success": false
+     },
+     "item": "m057109",
+     "snr_achieved": 33.892112731933594
+    },
+    {
+     "CLAP": {
+      "score_adv": -0.37668663263320923,
+      "score_clean": 1.000000238418579,
+      "success": true
+     },
+     "Chromaprint": {
+      "score_adv": 0.9991515837104072,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "ISCC-Audio-64": {
+      "score_adv": 1.0,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "audfprint": {
+      "score_adv": 724.0,
+      "score_clean": 974.0,
+      "success": false
+     },
+     "item": "m149681",
+     "snr_achieved": 32.79934310913086
+    },
+    {
+     "CLAP": {
+      "score_adv": -0.7188625335693359,
+      "score_clean": 1.0,
+      "success": true
+     },
+     "Chromaprint": {
+      "score_adv": 0.9997171945701357,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "ISCC-Audio-64": {
+      "score_adv": 1.0,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "audfprint": {
+      "score_adv": 30.0,
+      "score_clean": 418.0,
+      "success": true
+     },
+     "item": "m054308",
+     "snr_achieved": 33.98028564453125
+    },
+    {
+     "CLAP": {
+      "score_adv": 0.35600927472114563,
+      "score_clean": 1.0,
+      "success": true
+     },
+     "Chromaprint": {
+      "score_adv": 0.9981617647058824,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "ISCC-Audio-64": {
+      "score_adv": 1.0,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "audfprint": {
+      "score_adv": 1011.0,
+      "score_clean": 1158.0,
+      "success": false
+     },
+     "item": "m008649",
+     "snr_achieved": 32.89194869995117
+    },
+    {
+     "CLAP": {
+      "score_adv": -0.4444688558578491,
+      "score_clean": 1.0,
+      "success": true
+     },
+     "Chromaprint": {
+      "score_adv": 0.9990101809954751,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "ISCC-Audio-64": {
+      "score_adv": 1.0,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "audfprint": {
+      "score_adv": 254.0,
+      "score_clean": 370.0,
+      "success": false
+     },
+     "item": "m083617",
+     "snr_achieved": 33.879730224609375
+    },
+    {
+     "CLAP": {
+      "score_adv": 0.06433501839637756,
+      "score_clean": 1.0000001192092896,
+      "success": true
+     },
+     "Chromaprint": {
+      "score_adv": 0.9985859728506787,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "ISCC-Audio-64": {
+      "score_adv": 1.0,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "audfprint": {
+      "score_adv": 270.0,
+      "score_clean": 414.0,
+      "success": false
+     },
+     "item": "m153186",
+     "snr_achieved": 33.610774993896484
+    },
+    {
+     "CLAP": {
+      "score_adv": -0.5334243178367615,
+      "score_clean": 1.0000001192092896,
+      "success": true
+     },
+     "Chromaprint": {
+      "score_adv": 0.9992929864253394,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "ISCC-Audio-64": {
+      "score_adv": 1.0,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "audfprint": {
+      "score_adv": 341.0,
+      "score_clean": 534.0,
+      "success": false
+     },
+     "item": "m072495",
+     "snr_achieved": 33.269378662109375
+    },
+    {
+     "CLAP": {
+      "score_adv": -0.21661187708377838,
+      "score_clean": 0.9999999403953552,
+      "success": true
+     },
+     "Chromaprint": {
+      "score_adv": 0.9985859728506787,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "ISCC-Audio-64": {
+      "score_adv": 1.0,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "audfprint": {
+      "score_adv": 725.0,
+      "score_clean": 988.0,
+      "success": false
+     },
+     "item": "m136386",
+     "snr_achieved": 33.86233901977539
+    },
+    {
+     "CLAP": {
+      "score_adv": -0.2286878526210785,
+      "score_clean": 1.0,
+      "success": true
+     },
+     "Chromaprint": {
+      "score_adv": 0.9995757918552036,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "ISCC-Audio-64": {
+      "score_adv": 1.0,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "audfprint": {
+      "score_adv": 448.0,
+      "score_clean": 557.0,
+      "success": false
+     },
+     "item": "m140029",
+     "snr_achieved": 33.039737701416016
+    },
+    {
+     "CLAP": {
+      "score_adv": -0.21858803927898407,
+      "score_clean": 1.0,
+      "success": true
+     },
+     "Chromaprint": {
+      "score_adv": 0.9994343891402715,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "ISCC-Audio-64": {
+      "score_adv": 1.0,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "audfprint": {
+      "score_adv": 638.0,
+      "score_clean": 790.0,
+      "success": false
+     },
+     "item": "m136853",
+     "snr_achieved": 33.19387435913086
+    },
+    {
+     "CLAP": {
+      "score_adv": -0.5797301530838013,
+      "score_clean": 1.0,
+      "success": true
+     },
+     "Chromaprint": {
+      "score_adv": 0.9992929864253394,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "ISCC-Audio-64": {
+      "score_adv": 1.0,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "audfprint": {
+      "score_adv": 275.0,
+      "score_clean": 466.0,
+      "success": false
+     },
+     "item": "m067476",
+     "snr_achieved": 33.72890090942383
+    },
+    {
+     "CLAP": {
+      "score_adv": -0.09715192019939423,
+      "score_clean": 1.0,
+      "success": true
+     },
+     "Chromaprint": {
+      "score_adv": 0.9997171945701357,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "ISCC-Audio-64": {
+      "score_adv": 1.0,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "audfprint": {
+      "score_adv": 447.0,
+      "score_clean": 711.0,
+      "success": false
+     },
+     "item": "m086471",
+     "snr_achieved": 33.853973388671875
+    },
+    {
+     "CLAP": {
+      "score_adv": -0.5398821234703064,
+      "score_clean": 1.0,
+      "success": true
+     },
+     "Chromaprint": {
+      "score_adv": 0.9991515837104072,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "ISCC-Audio-64": {
+      "score_adv": 1.0,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "audfprint": {
+      "score_adv": 481.0,
+      "score_clean": 952.0,
+      "success": false
+     },
+     "item": "m068387",
+     "snr_achieved": 33.40837860107422
+    }
+   ],
+   "snr_achieved_mean": 33.433736165364586
+  },
+  "40": {
+   "CLAP": {
+    "ci": [
+     0.9403705077138331,
+     1.0
+    ],
+    "n": 60,
+    "n_unmatched_clean": 0,
+    "rate": 1.0,
+    "success": 60
+   },
+   "Chromaprint": {
+    "ci": [
+     0.0,
+     0.05962949228616691
+    ],
+    "n": 60,
+    "n_unmatched_clean": 0,
+    "rate": 0.0,
+    "success": 0
+   },
+   "ISCC-Audio-64": {
+    "ci": [
+     0.004062624642093496,
+     0.1152810444192517
+    ],
+    "n": 60,
+    "n_unmatched_clean": 0,
+    "rate": 0.03333333333333333,
+    "success": 2
+   },
+   "audfprint": {
+    "ci": [
+     0.0,
+     0.05962949228616691
+    ],
+    "n": 60,
+    "n_unmatched_clean": 0,
+    "rate": 0.0,
+    "success": 0
+   },
+   "rows": [
+    {
+     "CLAP": {
+      "score_adv": -0.5932483077049255,
+      "score_clean": 1.0,
+      "success": true
+     },
+     "Chromaprint": {
+      "score_adv": 1.0,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "ISCC-Audio-64": {
+      "score_adv": 1.0,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "audfprint": {
+      "score_adv": 201.0,
+      "score_clean": 591.0,
+      "success": false
+     },
+     "item": "m129650",
+     "snr_achieved": 43.87769317626953
+    },
+    {
+     "CLAP": {
+      "score_adv": 0.08344509452581406,
+      "score_clean": 1.0,
+      "success": true
+     },
+     "Chromaprint": {
+      "score_adv": 0.9995757918552036,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "ISCC-Audio-64": {
+      "score_adv": 1.0,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "audfprint": {
+      "score_adv": 219.0,
+      "score_clean": 280.0,
+      "success": false
+     },
+     "item": "m105045",
+     "snr_achieved": 42.916255950927734
+    },
+    {
+     "CLAP": {
+      "score_adv": -0.3688308894634247,
+      "score_clean": 0.9999998807907104,
+      "success": true
+     },
+     "Chromaprint": {
+      "score_adv": 0.9995757918552036,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "ISCC-Audio-64": {
+      "score_adv": 1.0,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "audfprint": {
+      "score_adv": 172.0,
+      "score_clean": 261.0,
+      "success": false
+     },
+     "item": "m140409",
+     "snr_achieved": 43.18244552612305
+    },
+    {
+     "CLAP": {
+      "score_adv": 0.6912437677383423,
+      "score_clean": 0.9999999403953552,
+      "success": true
+     },
+     "Chromaprint": {
+      "score_adv": 0.9997171945701357,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "ISCC-Audio-64": {
+      "score_adv": 1.0,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "audfprint": {
+      "score_adv": 554.0,
+      "score_clean": 624.0,
+      "success": false
+     },
+     "item": "m140214",
+     "snr_achieved": 42.394569396972656
+    },
+    {
+     "CLAP": {
+      "score_adv": 0.8180346488952637,
+      "score_clean": 1.0,
+      "success": true
+     },
+     "Chromaprint": {
+      "score_adv": 0.9997171945701357,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "ISCC-Audio-64": {
+      "score_adv": 1.0,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "audfprint": {
+      "score_adv": 1102.0,
+      "score_clean": 1207.0,
+      "success": false
+     },
+     "item": "m063186",
+     "snr_achieved": 41.33818817138672
+    },
+    {
+     "CLAP": {
+      "score_adv": -0.5658187866210938,
+      "score_clean": 0.9999999403953552,
+      "success": true
+     },
+     "Chromaprint": {
+      "score_adv": 1.0,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "ISCC-Audio-64": {
+      "score_adv": 1.0,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "audfprint": {
+      "score_adv": 41.0,
+      "score_clean": 292.0,
+      "success": false
+     },
+     "item": "m146770",
+     "snr_achieved": 44.01759719848633
+    },
+    {
+     "CLAP": {
+      "score_adv": -0.23480316996574402,
+      "score_clean": 1.0,
+      "success": true
+     },
+     "Chromaprint": {
+      "score_adv": 1.0,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "ISCC-Audio-64": {
+      "score_adv": 1.0,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "audfprint": {
+      "score_adv": 577.0,
+      "score_clean": 768.0,
+      "success": false
+     },
+     "item": "m088931",
+     "snr_achieved": 42.92206573486328
+    },
+    {
+     "CLAP": {
+      "score_adv": 0.7483911514282227,
+      "score_clean": 1.0,
+      "success": true
+     },
+     "Chromaprint": {
+      "score_adv": 0.9997171945701357,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "ISCC-Audio-64": {
+      "score_adv": 1.0,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "audfprint": {
+      "score_adv": 468.0,
+      "score_clean": 553.0,
+      "success": false
+     },
+     "item": "m137294",
+     "snr_achieved": 41.85138702392578
+    },
+    {
+     "CLAP": {
+      "score_adv": 0.4424964189529419,
+      "score_clean": 0.9999998807907104,
+      "success": true
+     },
+     "Chromaprint": {
+      "score_adv": 0.9994343891402715,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "ISCC-Audio-64": {
+      "score_adv": 1.0,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "audfprint": {
+      "score_adv": 683.0,
+      "score_clean": 1010.0,
+      "success": false
+     },
+     "item": "m118983",
+     "snr_achieved": 41.478294372558594
+    },
+    {
+     "CLAP": {
+      "score_adv": -0.4288099706172943,
+      "score_clean": 1.0,
+      "success": true
+     },
+     "Chromaprint": {
+      "score_adv": 1.0,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "ISCC-Audio-64": {
+      "score_adv": 1.0,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "audfprint": {
+      "score_adv": 450.0,
+      "score_clean": 669.0,
+      "success": false
+     },
+     "item": "m140217",
+     "snr_achieved": 42.48947525024414
+    },
+    {
+     "CLAP": {
+      "score_adv": -0.29473745822906494,
+      "score_clean": 1.0000001192092896,
+      "success": true
+     },
+     "Chromaprint": {
+      "score_adv": 0.9998585972850679,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "ISCC-Audio-64": {
+      "score_adv": 1.0,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "audfprint": {
+      "score_adv": 273.0,
+      "score_clean": 428.0,
+      "success": false
+     },
+     "item": "m129660",
+     "snr_achieved": 43.77527618408203
+    },
+    {
+     "CLAP": {
+      "score_adv": 0.19109030067920685,
+      "score_clean": 1.0,
+      "success": true
+     },
+     "Chromaprint": {
+      "score_adv": 1.0,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "ISCC-Audio-64": {
+      "score_adv": 1.0,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "audfprint": {
+      "score_adv": 479.0,
+      "score_clean": 576.0,
+      "success": false
+     },
+     "item": "m136407",
+     "snr_achieved": 42.11385726928711
+    },
+    {
+     "CLAP": {
+      "score_adv": 0.5026966333389282,
+      "score_clean": 1.0,
+      "success": true
+     },
+     "Chromaprint": {
+      "score_adv": 0.9998585972850679,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "ISCC-Audio-64": {
+      "score_adv": 1.0,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "audfprint": {
+      "score_adv": 389.0,
+      "score_clean": 422.0,
+      "success": false
+     },
+     "item": "m136379",
+     "snr_achieved": 43.24726486206055
+    },
+    {
+     "CLAP": {
+      "score_adv": 0.9183053970336914,
+      "score_clean": 1.0,
+      "success": true
+     },
+     "Chromaprint": {
+      "score_adv": 0.9997171945701357,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "ISCC-Audio-64": {
+      "score_adv": 1.0,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "audfprint": {
+      "score_adv": 1313.0,
+      "score_clean": 1613.0,
+      "success": false
+     },
+     "item": "m138688",
+     "snr_achieved": 40.91697692871094
+    },
+    {
+     "CLAP": {
+      "score_adv": 0.22873196005821228,
+      "score_clean": 1.0,
+      "success": true
+     },
+     "Chromaprint": {
+      "score_adv": 0.9998585972850679,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "ISCC-Audio-64": {
+      "score_adv": 1.0,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "audfprint": {
+      "score_adv": 946.0,
+      "score_clean": 1212.0,
+      "success": false
+     },
+     "item": "m110511",
+     "snr_achieved": 42.88282775878906
+    },
+    {
+     "CLAP": {
+      "score_adv": 0.24082212150096893,
+      "score_clean": 1.0,
+      "success": true
+     },
+     "Chromaprint": {
+      "score_adv": 0.9992929864253394,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "ISCC-Audio-64": {
+      "score_adv": 1.0,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "audfprint": {
+      "score_adv": 640.0,
+      "score_clean": 761.0,
+      "success": false
+     },
+     "item": "m155181",
+     "snr_achieved": 42.08351135253906
+    },
+    {
+     "CLAP": {
+      "score_adv": 0.5244066119194031,
+      "score_clean": 1.0,
+      "success": true
+     },
+     "Chromaprint": {
+      "score_adv": 1.0,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "ISCC-Audio-64": {
+      "score_adv": 1.0,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "audfprint": {
+      "score_adv": 220.0,
+      "score_clean": 245.0,
+      "success": false
+     },
+     "item": "m122672",
+     "snr_achieved": 42.49494171142578
+    },
+    {
+     "CLAP": {
+      "score_adv": -0.1875048279762268,
+      "score_clean": 1.0,
+      "success": true
+     },
+     "Chromaprint": {
+      "score_adv": 0.9998585972850679,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "ISCC-Audio-64": {
+      "score_adv": 1.0,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "audfprint": {
+      "score_adv": 77.0,
+      "score_clean": 194.0,
+      "success": false
+     },
+     "item": "m096704",
+     "snr_achieved": 43.82942581176758
+    },
+    {
+     "CLAP": {
+      "score_adv": 0.4721531867980957,
+      "score_clean": 1.0,
+      "success": true
+     },
+     "Chromaprint": {
+      "score_adv": 0.9997171945701357,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "ISCC-Audio-64": {
+      "score_adv": 1.0,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "audfprint": {
+      "score_adv": 237.0,
+      "score_clean": 325.0,
+      "success": false
+     },
+     "item": "m147070",
+     "snr_achieved": 42.27101135253906
+    },
+    {
+     "CLAP": {
+      "score_adv": 0.030999232083559036,
+      "score_clean": 0.9999998807907104,
+      "success": true
+     },
+     "Chromaprint": {
+      "score_adv": 0.9995757918552036,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "ISCC-Audio-64": {
+      "score_adv": 1.0,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "audfprint": {
+      "score_adv": 365.0,
+      "score_clean": 441.0,
+      "success": false
+     },
+     "item": "m071299",
+     "snr_achieved": 42.76646423339844
+    },
+    {
+     "CLAP": {
+      "score_adv": -0.5940889120101929,
+      "score_clean": 1.0,
+      "success": true
+     },
+     "Chromaprint": {
+      "score_adv": 0.9968891402714932,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "ISCC-Audio-64": {
+      "score_adv": 0.984375,
+      "score_clean": 1.0,
+      "success": true
+     },
+     "audfprint": {
+      "score_adv": 258.0,
+      "score_clean": 357.0,
+      "success": false
+     },
+     "item": "m134229",
+     "snr_achieved": 43.54889678955078
+    },
+    {
+     "CLAP": {
+      "score_adv": -0.09219260513782501,
+      "score_clean": 0.9999999403953552,
+      "success": true
+     },
+     "Chromaprint": {
+      "score_adv": 0.9997171945701357,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "ISCC-Audio-64": {
+      "score_adv": 1.0,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "audfprint": {
+      "score_adv": 474.0,
+      "score_clean": 554.0,
+      "success": false
+     },
+     "item": "m003935",
+     "snr_achieved": 42.039337158203125
+    },
+    {
+     "CLAP": {
+      "score_adv": -0.15270093083381653,
+      "score_clean": 1.0,
+      "success": true
+     },
+     "Chromaprint": {
+      "score_adv": 1.0,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "ISCC-Audio-64": {
+      "score_adv": 1.0,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "audfprint": {
+      "score_adv": 135.0,
+      "score_clean": 343.0,
+      "success": false
+     },
+     "item": "m052654",
+     "snr_achieved": 43.56269073486328
+    },
+    {
+     "CLAP": {
+      "score_adv": -0.2821195125579834,
+      "score_clean": 1.0,
+      "success": true
+     },
+     "Chromaprint": {
+      "score_adv": 1.0,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "ISCC-Audio-64": {
+      "score_adv": 1.0,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "audfprint": {
+      "score_adv": 388.0,
+      "score_clean": 603.0,
+      "success": false
+     },
+     "item": "m075326",
+     "snr_achieved": 42.947235107421875
+    },
+    {
+     "CLAP": {
+      "score_adv": 0.7585218548774719,
+      "score_clean": 1.0,
+      "success": true
+     },
+     "Chromaprint": {
+      "score_adv": 0.9995757918552036,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "ISCC-Audio-64": {
+      "score_adv": 1.0,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "audfprint": {
+      "score_adv": 628.0,
+      "score_clean": 704.0,
+      "success": false
+     },
+     "item": "m143781",
+     "snr_achieved": 41.1207389831543
+    },
+    {
+     "CLAP": {
+      "score_adv": 0.3219883441925049,
+      "score_clean": 1.0000001192092896,
+      "success": true
+     },
+     "Chromaprint": {
+      "score_adv": 0.998868778280543,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "ISCC-Audio-64": {
+      "score_adv": 0.984375,
+      "score_clean": 1.0,
+      "success": true
+     },
+     "audfprint": {
+      "score_adv": 566.0,
+      "score_clean": 822.0,
+      "success": false
+     },
+     "item": "m012268",
+     "snr_achieved": 42.093177795410156
+    },
+    {
+     "CLAP": {
+      "score_adv": -0.34581413865089417,
+      "score_clean": 1.0000001192092896,
+      "success": true
+     },
+     "Chromaprint": {
+      "score_adv": 0.9994343891402715,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "ISCC-Audio-64": {
+      "score_adv": 1.0,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "audfprint": {
+      "score_adv": 118.0,
+      "score_clean": 185.0,
+      "success": false
+     },
+     "item": "m105052",
+     "snr_achieved": 43.30093765258789
+    },
+    {
+     "CLAP": {
+      "score_adv": 0.7114729285240173,
+      "score_clean": 0.9999998807907104,
+      "success": true
+     },
+     "Chromaprint": {
+      "score_adv": 0.9998585972850679,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "ISCC-Audio-64": {
+      "score_adv": 1.0,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "audfprint": {
+      "score_adv": 558.0,
+      "score_clean": 607.0,
+      "success": false
+     },
+     "item": "m131082",
+     "snr_achieved": 42.218650817871094
+    },
+    {
+     "CLAP": {
+      "score_adv": -0.05400963872671127,
+      "score_clean": 1.0,
+      "success": true
+     },
+     "Chromaprint": {
+      "score_adv": 1.0,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "ISCC-Audio-64": {
+      "score_adv": 1.0,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "audfprint": {
+      "score_adv": 252.0,
+      "score_clean": 381.0,
+      "success": false
+     },
+     "item": "m104649",
+     "snr_achieved": 43.224178314208984
+    },
+    {
+     "CLAP": {
+      "score_adv": 0.7756122350692749,
+      "score_clean": 0.9999998807907104,
+      "success": true
+     },
+     "Chromaprint": {
+      "score_adv": 1.0,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "ISCC-Audio-64": {
+      "score_adv": 1.0,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "audfprint": {
+      "score_adv": 502.0,
+      "score_clean": 517.0,
+      "success": false
+     },
+     "item": "m131173",
+     "snr_achieved": 41.60521697998047
+    },
+    {
+     "CLAP": {
+      "score_adv": 0.6849706172943115,
+      "score_clean": 1.0,
+      "success": true
+     },
+     "Chromaprint": {
+      "score_adv": 0.998868778280543,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "ISCC-Audio-64": {
+      "score_adv": 1.0,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "audfprint": {
+      "score_adv": 647.0,
+      "score_clean": 672.0,
+      "success": false
+     },
+     "item": "m134294",
+     "snr_achieved": 41.376380920410156
+    },
+    {
+     "CLAP": {
+      "score_adv": 0.34087783098220825,
+      "score_clean": 1.0,
+      "success": true
+     },
+     "Chromaprint": {
+      "score_adv": 0.9998585972850679,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "ISCC-Audio-64": {
+      "score_adv": 1.0,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "audfprint": {
+      "score_adv": 336.0,
+      "score_clean": 393.0,
+      "success": false
+     },
+     "item": "m136808",
+     "snr_achieved": 42.90365219116211
+    },
+    {
+     "CLAP": {
+      "score_adv": -0.2237219214439392,
+      "score_clean": 1.0,
+      "success": true
+     },
+     "Chromaprint": {
+      "score_adv": 0.9997171945701357,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "ISCC-Audio-64": {
+      "score_adv": 1.0,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "audfprint": {
+      "score_adv": 312.0,
+      "score_clean": 653.0,
+      "success": false
+     },
+     "item": "m126087",
+     "snr_achieved": 43.25241470336914
+    },
+    {
+     "CLAP": {
+      "score_adv": -0.06567497551441193,
+      "score_clean": 1.0,
+      "success": true
+     },
+     "Chromaprint": {
+      "score_adv": 0.9997171945701357,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "ISCC-Audio-64": {
+      "score_adv": 1.0,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "audfprint": {
+      "score_adv": 149.0,
+      "score_clean": 197.0,
+      "success": false
+     },
+     "item": "m117390",
+     "snr_achieved": 43.24848937988281
+    },
+    {
+     "CLAP": {
+      "score_adv": 0.48607805371284485,
+      "score_clean": 0.9999998807907104,
+      "success": true
+     },
+     "Chromaprint": {
+      "score_adv": 1.0,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "ISCC-Audio-64": {
+      "score_adv": 1.0,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "audfprint": {
+      "score_adv": 744.0,
+      "score_clean": 798.0,
+      "success": false
+     },
+     "item": "m141599",
+     "snr_achieved": 42.98982238769531
+    },
+    {
+     "CLAP": {
+      "score_adv": -0.16390939056873322,
+      "score_clean": 1.0000001192092896,
+      "success": true
+     },
+     "Chromaprint": {
+      "score_adv": 1.0,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "ISCC-Audio-64": {
+      "score_adv": 1.0,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "audfprint": {
+      "score_adv": 570.0,
+      "score_clean": 1240.0,
+      "success": false
+     },
+     "item": "m121615",
+     "snr_achieved": 42.4946174621582
+    },
+    {
+     "CLAP": {
+      "score_adv": -0.45067182183265686,
+      "score_clean": 1.0,
+      "success": true
+     },
+     "Chromaprint": {
+      "score_adv": 0.9992929864253394,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "ISCC-Audio-64": {
+      "score_adv": 1.0,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "audfprint": {
+      "score_adv": 428.0,
+      "score_clean": 587.0,
+      "success": false
+     },
+     "item": "m120032",
+     "snr_achieved": 43.625492095947266
+    },
+    {
+     "CLAP": {
+      "score_adv": -0.020737875252962112,
+      "score_clean": 1.0,
+      "success": true
+     },
+     "Chromaprint": {
+      "score_adv": 0.9997171945701357,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "ISCC-Audio-64": {
+      "score_adv": 1.0,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "audfprint": {
+      "score_adv": 285.0,
+      "score_clean": 308.0,
+      "success": false
+     },
+     "item": "m072491",
+     "snr_achieved": 43.41636276245117
+    },
+    {
+     "CLAP": {
+      "score_adv": -0.2838008999824524,
+      "score_clean": 1.0,
+      "success": true
+     },
+     "Chromaprint": {
+      "score_adv": 1.0,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "ISCC-Audio-64": {
+      "score_adv": 1.0,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "audfprint": {
+      "score_adv": 276.0,
+      "score_clean": 397.0,
+      "success": false
+     },
+     "item": "m118479",
+     "snr_achieved": 42.73378372192383
+    },
+    {
+     "CLAP": {
+      "score_adv": 0.23243948817253113,
+      "score_clean": 1.0,
+      "success": true
+     },
+     "Chromaprint": {
+      "score_adv": 0.9998585972850679,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "ISCC-Audio-64": {
+      "score_adv": 1.0,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "audfprint": {
+      "score_adv": 374.0,
+      "score_clean": 492.0,
+      "success": false
+     },
+     "item": "m022838",
+     "snr_achieved": 42.27138900756836
+    },
+    {
+     "CLAP": {
+      "score_adv": -0.0470106340944767,
+      "score_clean": 1.0,
+      "success": true
+     },
+     "Chromaprint": {
+      "score_adv": 1.0,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "ISCC-Audio-64": {
+      "score_adv": 1.0,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "audfprint": {
+      "score_adv": 1021.0,
+      "score_clean": 1411.0,
+      "success": false
+     },
+     "item": "m136772",
+     "snr_achieved": 43.562984466552734
+    },
+    {
+     "CLAP": {
+      "score_adv": 0.3868519067764282,
+      "score_clean": 1.0,
+      "success": true
+     },
+     "Chromaprint": {
+      "score_adv": 1.0,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "ISCC-Audio-64": {
+      "score_adv": 1.0,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "audfprint": {
+      "score_adv": 314.0,
+      "score_clean": 374.0,
+      "success": false
+     },
+     "item": "m116537",
+     "snr_achieved": 41.56267166137695
+    },
+    {
+     "CLAP": {
+      "score_adv": -0.2777828276157379,
+      "score_clean": 1.0,
+      "success": true
+     },
+     "Chromaprint": {
+      "score_adv": 0.9997171945701357,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "ISCC-Audio-64": {
+      "score_adv": 1.0,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "audfprint": {
+      "score_adv": 99.0,
+      "score_clean": 154.0,
+      "success": false
+     },
+     "item": "m118512",
+     "snr_achieved": 43.859779357910156
+    },
+    {
+     "CLAP": {
+      "score_adv": -0.21641460061073303,
+      "score_clean": 0.9999998807907104,
+      "success": true
+     },
+     "Chromaprint": {
+      "score_adv": 1.0,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "ISCC-Audio-64": {
+      "score_adv": 1.0,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "audfprint": {
+      "score_adv": 436.0,
+      "score_clean": 610.0,
+      "success": false
+     },
+     "item": "m061484",
+     "snr_achieved": 42.502559661865234
+    },
+    {
+     "CLAP": {
+      "score_adv": -0.2352478802204132,
+      "score_clean": 1.0,
+      "success": true
+     },
+     "Chromaprint": {
+      "score_adv": 0.9995757918552036,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "ISCC-Audio-64": {
+      "score_adv": 1.0,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "audfprint": {
+      "score_adv": 157.0,
+      "score_clean": 237.0,
+      "success": false
+     },
+     "item": "m052684",
+     "snr_achieved": 43.523681640625
+    },
+    {
+     "CLAP": {
+      "score_adv": 0.17293503880500793,
+      "score_clean": 1.0,
+      "success": true
+     },
+     "Chromaprint": {
+      "score_adv": 1.0,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "ISCC-Audio-64": {
+      "score_adv": 1.0,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "audfprint": {
+      "score_adv": 726.0,
+      "score_clean": 887.0,
+      "success": false
+     },
+     "item": "m124270",
+     "snr_achieved": 42.219730377197266
+    },
+    {
+     "CLAP": {
+      "score_adv": 0.7239777445793152,
+      "score_clean": 1.0,
+      "success": true
+     },
+     "Chromaprint": {
+      "score_adv": 0.9997171945701357,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "ISCC-Audio-64": {
+      "score_adv": 1.0,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "audfprint": {
+      "score_adv": 530.0,
+      "score_clean": 636.0,
+      "success": false
+     },
+     "item": "m123355",
+     "snr_achieved": 42.843875885009766
+    },
+    {
+     "CLAP": {
+      "score_adv": -0.4205351173877716,
+      "score_clean": 1.0,
+      "success": true
+     },
+     "Chromaprint": {
+      "score_adv": 0.9998585972850679,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "ISCC-Audio-64": {
+      "score_adv": 1.0,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "audfprint": {
+      "score_adv": 488.0,
+      "score_clean": 1143.0,
+      "success": false
+     },
+     "item": "m057109",
+     "snr_achieved": 43.694759368896484
+    },
+    {
+     "CLAP": {
+      "score_adv": 0.6006160974502563,
+      "score_clean": 1.000000238418579,
+      "success": true
+     },
+     "Chromaprint": {
+      "score_adv": 0.9997171945701357,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "ISCC-Audio-64": {
+      "score_adv": 1.0,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "audfprint": {
+      "score_adv": 843.0,
+      "score_clean": 974.0,
+      "success": false
+     },
+     "item": "m149681",
+     "snr_achieved": 42.14826583862305
+    },
+    {
+     "CLAP": {
+      "score_adv": -0.6282132863998413,
+      "score_clean": 1.0,
+      "success": true
+     },
+     "Chromaprint": {
+      "score_adv": 0.9997171945701357,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "ISCC-Audio-64": {
+      "score_adv": 1.0,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "audfprint": {
+      "score_adv": 47.0,
+      "score_clean": 418.0,
+      "success": false
+     },
+     "item": "m054308",
+     "snr_achieved": 43.96282196044922
+    },
+    {
+     "CLAP": {
+      "score_adv": 0.8843716382980347,
+      "score_clean": 1.0,
+      "success": true
+     },
+     "Chromaprint": {
+      "score_adv": 0.9995757918552036,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "ISCC-Audio-64": {
+      "score_adv": 1.0,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "audfprint": {
+      "score_adv": 1091.0,
+      "score_clean": 1158.0,
+      "success": false
+     },
+     "item": "m008649",
+     "snr_achieved": 41.86662673950195
+    },
+    {
+     "CLAP": {
+      "score_adv": 0.025117170065641403,
+      "score_clean": 1.0,
+      "success": true
+     },
+     "Chromaprint": {
+      "score_adv": 0.9997171945701357,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "ISCC-Audio-64": {
+      "score_adv": 1.0,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "audfprint": {
+      "score_adv": 302.0,
+      "score_clean": 370.0,
+      "success": false
+     },
+     "item": "m083617",
+     "snr_achieved": 43.83885955810547
+    },
+    {
+     "CLAP": {
+      "score_adv": 0.6464755535125732,
+      "score_clean": 1.0000001192092896,
+      "success": true
+     },
+     "Chromaprint": {
+      "score_adv": 0.9995757918552036,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "ISCC-Audio-64": {
+      "score_adv": 1.0,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "audfprint": {
+      "score_adv": 369.0,
+      "score_clean": 414.0,
+      "success": false
+     },
+     "item": "m153186",
+     "snr_achieved": 43.276371002197266
+    },
+    {
+     "CLAP": {
+      "score_adv": -0.15046365559101105,
+      "score_clean": 1.0000001192092896,
+      "success": true
+     },
+     "Chromaprint": {
+      "score_adv": 0.9995757918552036,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "ISCC-Audio-64": {
+      "score_adv": 1.0,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "audfprint": {
+      "score_adv": 432.0,
+      "score_clean": 534.0,
+      "success": false
+     },
+     "item": "m072495",
+     "snr_achieved": 42.134185791015625
+    },
+    {
+     "CLAP": {
+      "score_adv": 0.3059329390525818,
+      "score_clean": 0.9999999403953552,
+      "success": true
+     },
+     "Chromaprint": {
+      "score_adv": 0.9997171945701357,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "ISCC-Audio-64": {
+      "score_adv": 1.0,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "audfprint": {
+      "score_adv": 918.0,
+      "score_clean": 988.0,
+      "success": false
+     },
+     "item": "m136386",
+     "snr_achieved": 43.69984436035156
+    },
+    {
+     "CLAP": {
+      "score_adv": 0.4323228895664215,
+      "score_clean": 1.0,
+      "success": true
+     },
+     "Chromaprint": {
+      "score_adv": 0.9995757918552036,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "ISCC-Audio-64": {
+      "score_adv": 1.0,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "audfprint": {
+      "score_adv": 470.0,
+      "score_clean": 557.0,
+      "success": false
+     },
+     "item": "m140029",
+     "snr_achieved": 42.16367721557617
+    },
+    {
+     "CLAP": {
+      "score_adv": 0.6828658580780029,
+      "score_clean": 1.0,
+      "success": true
+     },
+     "Chromaprint": {
+      "score_adv": 0.9998585972850679,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "ISCC-Audio-64": {
+      "score_adv": 1.0,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "audfprint": {
+      "score_adv": 733.0,
+      "score_clean": 790.0,
+      "success": false
+     },
+     "item": "m136853",
+     "snr_achieved": 42.205448150634766
+    },
+    {
+     "CLAP": {
+      "score_adv": -0.27794787287712097,
+      "score_clean": 1.0,
+      "success": true
+     },
+     "Chromaprint": {
+      "score_adv": 0.9998585972850679,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "ISCC-Audio-64": {
+      "score_adv": 1.0,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "audfprint": {
+      "score_adv": 365.0,
+      "score_clean": 466.0,
+      "success": false
+     },
+     "item": "m067476",
+     "snr_achieved": 43.42533493041992
+    },
+    {
+     "CLAP": {
+      "score_adv": 0.3588216006755829,
+      "score_clean": 1.0,
+      "success": true
+     },
+     "Chromaprint": {
+      "score_adv": 0.9995757918552036,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "ISCC-Audio-64": {
+      "score_adv": 1.0,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "audfprint": {
+      "score_adv": 598.0,
+      "score_clean": 711.0,
+      "success": false
+     },
+     "item": "m086471",
+     "snr_achieved": 43.76142501831055
+    },
+    {
+     "CLAP": {
+      "score_adv": 0.33213770389556885,
+      "score_clean": 1.0,
+      "success": true
+     },
+     "Chromaprint": {
+      "score_adv": 0.9998585972850679,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "ISCC-Audio-64": {
+      "score_adv": 1.0,
+      "score_clean": 1.0,
+      "success": false
+     },
+     "audfprint": {
+      "score_adv": 738.0,
+      "score_clean": 952.0,
+      "success": false
+     },
+     "item": "m068387",
+     "snr_achieved": 42.4404296875
+    }
+   ],
+   "snr_achieved_mean": 42.75860544840495
+  }
+ },
+ "device": "cuda",
+ "estimate_default_n_hours": 0.17848389241430496,
+ "experiment": "audio",
+ "host": {
+  "cpu_model": "AMD EPYC 7R32",
+  "cuda": true,
+  "gpu": "NVIDIA A10G",
+  "machine": "x86_64",
+  "mps": false,
+  "platform": "Linux-7.0.0-1013-aws-x86_64-with-glibc2.39",
+  "processor": "x86_64",
+  "python": "3.11.16",
+  "torch": "2.14.0+cu130"
+ },
+ "magnitude": {
+  "CLAP": {
+   "pitch_semitones_median": 2.0,
+   "rows": [
+    {
+     "item": "m129650",
+     "pitch_semitones": 0.25,
+     "tempo_factor": 1.02
+    },
+    {
+     "item": "m105045",
+     "pitch_semitones": 6,
+     "tempo_factor": 1.05
+    },
+    {
+     "item": "m140409",
+     "pitch_semitones": 1.5,
+     "tempo_factor": 1.02
+    },
+    {
+     "item": "m140214",
+     "pitch_semitones": 0.5,
+     "tempo_factor": 1.1
+    },
+    {
+     "item": "m063186",
+     "pitch_semitones": 4,
+     "tempo_factor": 1.2
+    },
+    {
+     "item": "m146770",
+     "pitch_semitones": 4,
+     "tempo_factor": 1.2
+    },
+    {
+     "item": "m088931",
+     "pitch_semitones": 6,
+     "tempo_factor": 1.05
+    },
+    {
+     "item": "m137294",
+     "pitch_semitones": 6,
+     "tempo_factor": 1.05
+    },
+    {
+     "item": "m118983",
+     "pitch_semitones": null,
+     "tempo_factor": null
+    },
+    {
+     "item": "m140217",
+     "pitch_semitones": 3,
+     "tempo_factor": 1.2
+    },
+    {
+     "item": "m129660",
+     "pitch_semitones": 1,
+     "tempo_factor": 1.02
+    },
+    {
+     "item": "m136407",
+     "pitch_semitones": 3,
+     "tempo_factor": 1.2
+    },
+    {
+     "item": "m136379",
+     "pitch_semitones": 1,
+     "tempo_factor": 1.05
+    },
+    {
+     "item": "m138688",
+     "pitch_semitones": null,
+     "tempo_factor": 1.5
+    },
+    {
+     "item": "m110511",
+     "pitch_semitones": 1.5,
+     "tempo_factor": 1.2
+    },
+    {
+     "item": "m155181",
+     "pitch_semitones": 2,
+     "tempo_factor": 1.02
+    },
+    {
+     "item": "m122672",
+     "pitch_semitones": 0.5,
+     "tempo_factor": 1.02
+    },
+    {
+     "item": "m096704",
+     "pitch_semitones": 1.5,
+     "tempo_factor": 1.2
+    },
+    {
+     "item": "m147070",
+     "pitch_semitones": 3,
+     "tempo_factor": 1.5
+    },
+    {
+     "item": "m071299",
+     "pitch_semitones": 1.5,
+     "tempo_factor": 1.2
+    },
+    {
+     "item": "m134229",
+     "pitch_semitones": 2,
+     "tempo_factor": 1.5
+    },
+    {
+     "item": "m003935",
+     "pitch_semitones": 3,
+     "tempo_factor": 1.02
+    },
+    {
+     "item": "m052654",
+     "pitch_semitones": 3,
+     "tempo_factor": 1.2
+    },
+    {
+     "item": "m075326",
+     "pitch_semitones": 2,
+     "tempo_factor": null
+    },
+    {
+     "item": "m143781",
+     "pitch_semitones": 1.5,
+     "tempo_factor": 1.02
+    },
+    {
+     "item": "m012268",
+     "pitch_semitones": 1,
+     "tempo_factor": 1.02
+    },
+    {
+     "item": "m105052",
+     "pitch_semitones": 6,
+     "tempo_factor": 1.1
+    },
+    {
+     "item": "m131082",
+     "pitch_semitones": 1.5,
+     "tempo_factor": 1.1
+    },
+    {
+     "item": "m104649",
+     "pitch_semitones": 2,
+     "tempo_factor": 1.02
+    },
+    {
+     "item": "m131173",
+     "pitch_semitones": 1.5,
+     "tempo_factor": 1.05
+    },
+    {
+     "item": "m134294",
+     "pitch_semitones": 1.5,
+     "tempo_factor": 1.02
+    },
+    {
+     "item": "m136808",
+     "pitch_semitones": 0.25,
+     "tempo_factor": 1.02
+    },
+    {
+     "item": "m126087",
+     "pitch_semitones": 0.5,
+     "tempo_factor": 1.05
+    },
+    {
+     "item": "m117390",
+     "pitch_semitones": 1,
+     "tempo_factor": 1.2
+    },
+    {
+     "item": "m141599",
+     "pitch_semitones": 3,
+     "tempo_factor": 1.05
+    },
+    {
+     "item": "m121615",
+     "pitch_semitones": 3,
+     "tempo_factor": 1.02
+    },
+    {
+     "item": "m120032",
+     "pitch_semitones": 3,
+     "tempo_factor": 1.5
+    },
+    {
+     "item": "m072491",
+     "pitch_semitones": 4,
+     "tempo_factor": 1.2
+    },
+    {
+     "item": "m118479",
+     "pitch_semitones": 1.5,
+     "tempo_factor": 1.02
+    },
+    {
+     "item": "m022838",
+     "pitch_semitones": 3,
+     "tempo_factor": 1.05
+    },
+    {
+     "item": "m136772",
+     "pitch_semitones": 1,
+     "tempo_factor": 1.05
+    },
+    {
+     "item": "m116537",
+     "pitch_semitones": 3,
+     "tempo_factor": 1.02
+    },
+    {
+     "item": "m118512",
+     "pitch_semitones": 1,
+     "tempo_factor": 1.05
+    },
+    {
+     "item": "m061484",
+     "pitch_semitones": 3,
+     "tempo_factor": 1.1
+    },
+    {
+     "item": "m052684",
+     "pitch_semitones": 1.5,
+     "tempo_factor": 1.05
+    },
+    {
+     "item": "m124270",
+     "pitch_semitones": 3,
+     "tempo_factor": 1.02
+    },
+    {
+     "item": "m123355",
+     "pitch_semitones": 1,
+     "tempo_factor": 1.02
+    },
+    {
+     "item": "m057109",
+     "pitch_semitones": 3,
+     "tempo_factor": 1.02
+    },
+    {
+     "item": "m149681",
+     "pitch_semitones": 4,
+     "tempo_factor": 1.5
+    },
+    {
+     "item": "m054308",
+     "pitch_semitones": 3,
+     "tempo_factor": 1.1
+    },
+    {
+     "item": "m008649",
+     "pitch_semitones": 1,
+     "tempo_factor": 1.2
+    },
+    {
+     "item": "m083617",
+     "pitch_semitones": 1.5,
+     "tempo_factor": 1.2
+    },
+    {
+     "item": "m153186",
+     "pitch_semitones": 2,
+     "tempo_factor": 1.1
+    },
+    {
+     "item": "m072495",
+     "pitch_semitones": 1,
+     "tempo_factor": 1.02
+    },
+    {
+     "item": "m136386",
+     "pitch_semitones": 1,
+     "tempo_factor": 1.1
+    },
+    {
+     "item": "m140029",
+     "pitch_semitones": 3,
+     "tempo_factor": 1.2
+    },
+    {
+     "item": "m136853",
+     "pitch_semitones": 1.5,
+     "tempo_factor": 1.1
+    },
+    {
+     "item": "m067476",
+     "pitch_semitones": 3,
+     "tempo_factor": 1.05
+    },
+    {
+     "item": "m086471",
+     "pitch_semitones": 1.5,
+     "tempo_factor": 1.2
+    },
+    {
+     "item": "m068387",
+     "pitch_semitones": 2,
+     "tempo_factor": 1.2
+    }
+   ],
+   "tempo_factor_median": 1.1
+  },
+  "Chromaprint": {
+   "pitch_semitones_median": 0.25,
+   "rows": [
+    {
+     "item": "m129650",
+     "pitch_semitones": 0.5,
+     "tempo_factor": 1.05
+    },
+    {
+     "item": "m105045",
+     "pitch_semitones": 0.25,
+     "tempo_factor": 1.05
+    },
+    {
+     "item": "m140409",
+     "pitch_semitones": 1,
+     "tempo_factor": 1.05
+    },
+    {
+     "item": "m140214",
+     "pitch_semitones": 0.5,
+     "tempo_factor": 1.1
+    },
+    {
+     "item": "m063186",
+     "pitch_semitones": 0.5,
+     "tempo_factor": 1.02
+    },
+    {
+     "item": "m146770",
+     "pitch_semitones": 0.25,
+     "tempo_factor": 1.05
+    },
+    {
+     "item": "m088931",
+     "pitch_semitones": 0.25,
+     "tempo_factor": 1.2
+    },
+    {
+     "item": "m137294",
+     "pitch_semitones": 0.5,
+     "tempo_factor": 1.05
+    },
+    {
+     "item": "m118983",
+     "pitch_semitones": 0.25,
+     "tempo_factor": 1.05
+    },
+    {
+     "item": "m140217",
+     "pitch_semitones": 0.5,
+     "tempo_factor": 1.02
+    },
+    {
+     "item": "m129660",
+     "pitch_semitones": 0.25,
+     "tempo_factor": 1.05
+    },
+    {
+     "item": "m136407",
+     "pitch_semitones": 0.25,
+     "tempo_factor": 1.05
+    },
+    {
+     "item": "m136379",
+     "pitch_semitones": 0.25,
+     "tempo_factor": 1.05
+    },
+    {
+     "item": "m138688",
+     "pitch_semitones": 0.25,
+     "tempo_factor": 1.05
+    },
+    {
+     "item": "m110511",
+     "pitch_semitones": 3,
+     "tempo_factor": null
+    },
+    {
+     "item": "m155181",
+     "pitch_semitones": 0.25,
+     "tempo_factor": 1.05
+    },
+    {
+     "item": "m122672",
+     "pitch_semitones": 0.25,
+     "tempo_factor": 1.05
+    },
+    {
+     "item": "m096704",
+     "pitch_semitones": 0.25,
+     "tempo_factor": 1.05
+    },
+    {
+     "item": "m147070",
+     "pitch_semitones": 0.25,
+     "tempo_factor": 1.05
+    },
+    {
+     "item": "m071299",
+     "pitch_semitones": 0.25,
+     "tempo_factor": 1.02
+    },
+    {
+     "item": "m134229",
+     "pitch_semitones": 0.25,
+     "tempo_factor": 1.05
+    },
+    {
+     "item": "m003935",
+     "pitch_semitones": 0.25,
+     "tempo_factor": 1.05
+    },
+    {
+     "item": "m052654",
+     "pitch_semitones": 0.25,
+     "tempo_factor": 1.05
+    },
+    {
+     "item": "m075326",
+     "pitch_semitones": 0.25,
+     "tempo_factor": 1.05
+    },
+    {
+     "item": "m143781",
+     "pitch_semitones": 0.25,
+     "tempo_factor": 1.05
+    },
+    {
+     "item": "m012268",
+     "pitch_semitones": 0.25,
+     "tempo_factor": 1.05
+    },
+    {
+     "item": "m105052",
+     "pitch_semitones": 0.25,
+     "tempo_factor": 1.05
+    },
+    {
+     "item": "m131082",
+     "pitch_semitones": 0.25,
+     "tempo_factor": 1.05
+    },
+    {
+     "item": "m104649",
+     "pitch_semitones": 0.25,
+     "tempo_factor": 1.05
+    },
+    {
+     "item": "m131173",
+     "pitch_semitones": 0.5,
+     "tempo_factor": 1.05
+    },
+    {
+     "item": "m134294",
+     "pitch_semitones": 0.5,
+     "tempo_factor": 1.05
+    },
+    {
+     "item": "m136808",
+     "pitch_semitones": 0.5,
+     "tempo_factor": 1.02
+    },
+    {
+     "item": "m126087",
+     "pitch_semitones": 0.5,
+     "tempo_factor": 1.1
+    },
+    {
+     "item": "m117390",
+     "pitch_semitones": 0.5,
+     "tempo_factor": 1.1
+    },
+    {
+     "item": "m141599",
+     "pitch_semitones": 1,
+     "tempo_factor": 1.02
+    },
+    {
+     "item": "m121615",
+     "pitch_semitones": 1,
+     "tempo_factor": 1.05
+    },
+    {
+     "item": "m120032",
+     "pitch_semitones": 0.5,
+     "tempo_factor": 1.05
+    },
+    {
+     "item": "m072491",
+     "pitch_semitones": 0.25,
+     "tempo_factor": 1.02
+    },
+    {
+     "item": "m118479",
+     "pitch_semitones": 0.5,
+     "tempo_factor": 1.05
+    },
+    {
+     "item": "m022838",
+     "pitch_semitones": 0.5,
+     "tempo_factor": 1.05
+    },
+    {
+     "item": "m136772",
+     "pitch_semitones": 0.25,
+     "tempo_factor": 1.2
+    },
+    {
+     "item": "m116537",
+     "pitch_semitones": 0.25,
+     "tempo_factor": 1.05
+    },
+    {
+     "item": "m118512",
+     "pitch_semitones": 0.5,
+     "tempo_factor": 1.05
+    },
+    {
+     "item": "m061484",
+     "pitch_semitones": 0.25,
+     "tempo_factor": 1.05
+    },
+    {
+     "item": "m052684",
+     "pitch_semitones": 0.25,
+     "tempo_factor": 1.05
+    },
+    {
+     "item": "m124270",
+     "pitch_semitones": 0.25,
+     "tempo_factor": 1.05
+    },
+    {
+     "item": "m123355",
+     "pitch_semitones": 0.25,
+     "tempo_factor": 1.05
+    },
+    {
+     "item": "m057109",
+     "pitch_semitones": 0.5,
+     "tempo_factor": 1.05
+    },
+    {
+     "item": "m149681",
+     "pitch_semitones": 0.5,
+     "tempo_factor": 1.05
+    },
+    {
+     "item": "m054308",
+     "pitch_semitones": 0.25,
+     "tempo_factor": 1.05
+    },
+    {
+     "item": "m008649",
+     "pitch_semitones": 0.5,
+     "tempo_factor": 1.05
+    },
+    {
+     "item": "m083617",
+     "pitch_semitones": 0.25,
+     "tempo_factor": 1.05
+    },
+    {
+     "item": "m153186",
+     "pitch_semitones": 0.25,
+     "tempo_factor": 1.05
+    },
+    {
+     "item": "m072495",
+     "pitch_semitones": 0.25,
+     "tempo_factor": 1.05
+    },
+    {
+     "item": "m136386",
+     "pitch_semitones": 0.25,
+     "tempo_factor": 1.05
+    },
+    {
+     "item": "m140029",
+     "pitch_semitones": 0.25,
+     "tempo_factor": 1.05
+    },
+    {
+     "item": "m136853",
+     "pitch_semitones": 1,
+     "tempo_factor": 1.05
+    },
+    {
+     "item": "m067476",
+     "pitch_semitones": 0.5,
+     "tempo_factor": 1.05
+    },
+    {
+     "item": "m086471",
+     "pitch_semitones": 0.25,
+     "tempo_factor": 1.05
+    },
+    {
+     "item": "m068387",
+     "pitch_semitones": 0.25,
+     "tempo_factor": 1.05
+    }
+   ],
+   "tempo_factor_median": 1.05
+  },
+  "ISCC-Audio-64": {
+   "pitch_semitones_median": 0.25,
+   "rows": [
+    {
+     "item": "m129650",
+     "pitch_semitones": 0.25,
+     "tempo_factor": 1.02
+    },
+    {
+     "item": "m105045",
+     "pitch_semitones": 0.25,
+     "tempo_factor": 1.02
+    },
+    {
+     "item": "m140409",
+     "pitch_semitones": 0.25,
+     "tempo_factor": 1.02
+    },
+    {
+     "item": "m140214",
+     "pitch_semitones": 0.25,
+     "tempo_factor": 1.05
+    },
+    {
+     "item": "m063186",
+     "pitch_semitones": 0.25,
+     "tempo_factor": 1.02
+    },
+    {
+     "item": "m146770",
+     "pitch_semitones": 0.25,
+     "tempo_factor": 1.05
+    },
+    {
+     "item": "m088931",
+     "pitch_semitones": 0.25,
+     "tempo_factor": 1.02
+    },
+    {
+     "item": "m137294",
+     "pitch_semitones": 0.25,
+     "tempo_factor": 1.02
+    },
+    {
+     "item": "m118983",
+     "pitch_semitones": 0.25,
+     "tempo_factor": 1.02
+    },
+    {
+     "item": "m140217",
+     "pitch_semitones": 0.25,
+     "tempo_factor": 1.02
+    },
+    {
+     "item": "m129660",
+     "pitch_semitones": 0.25,
+     "tempo_factor": 1.02
+    },
+    {
+     "item": "m136407",
+     "pitch_semitones": 0.25,
+     "tempo_factor": 1.02
+    },
+    {
+     "item": "m136379",
+     "pitch_semitones": 0.25,
+     "tempo_factor": 1.05
+    },
+    {
+     "item": "m138688",
+     "pitch_semitones": 0.25,
+     "tempo_factor": 1.02
+    },
+    {
+     "item": "m110511",
+     "pitch_semitones": 0.25,
+     "tempo_factor": null
+    },
+    {
+     "item": "m155181",
+     "pitch_semitones": 0.25,
+     "tempo_factor": 1.02
+    },
+    {
+     "item": "m122672",
+     "pitch_semitones": 0.25,
+     "tempo_factor": 1.02
+    },
+    {
+     "item": "m096704",
+     "pitch_semitones": 0.25,
+     "tempo_factor": 1.02
+    },
+    {
+     "item": "m147070",
+     "pitch_semitones": 0.25,
+     "tempo_factor": 1.02
+    },
+    {
+     "item": "m071299",
+     "pitch_semitones": 0.25,
+     "tempo_factor": 1.02
+    },
+    {
+     "item": "m134229",
+     "pitch_semitones": 0.25,
+     "tempo_factor": 1.02
+    },
+    {
+     "item": "m003935",
+     "pitch_semitones": 0.25,
+     "tempo_factor": 1.02
+    },
+    {
+     "item": "m052654",
+     "pitch_semitones": 0.25,
+     "tempo_factor": 1.02
+    },
+    {
+     "item": "m075326",
+     "pitch_semitones": 0.25,
+     "tempo_factor": 1.02
+    },
+    {
+     "item": "m143781",
+     "pitch_semitones": 0.25,
+     "tempo_factor": 1.02
+    },
+    {
+     "item": "m012268",
+     "pitch_semitones": 0.25,
+     "tempo_factor": 1.02
+    },
+    {
+     "item": "m105052",
+     "pitch_semitones": 0.25,
+     "tempo_factor": 1.02
+    },
+    {
+     "item": "m131082",
+     "pitch_semitones": 0.25,
+     "tempo_factor": 1.02
+    },
+    {
+     "item": "m104649",
+     "pitch_semitones": 0.25,
+     "tempo_factor": 1.05
+    },
+    {
+     "item": "m131173",
+     "pitch_semitones": 0.25,
+     "tempo_factor": 1.02
+    },
+    {
+     "item": "m134294",
+     "pitch_semitones": 0.25,
+     "tempo_factor": 1.05
+    },
+    {
+     "item": "m136808",
+     "pitch_semitones": 0.25,
+     "tempo_factor": 1.02
+    },
+    {
+     "item": "m126087",
+     "pitch_semitones": 0.25,
+     "tempo_factor": 1.02
+    },
+    {
+     "item": "m117390",
+     "pitch_semitones": 0.25,
+     "tempo_factor": 1.1
+    },
+    {
+     "item": "m141599",
+     "pitch_semitones": 0.25,
+     "tempo_factor": 1.02
+    },
+    {
+     "item": "m121615",
+     "pitch_semitones": 0.25,
+     "tempo_factor": 1.02
+    },
+    {
+     "item": "m120032",
+     "pitch_semitones": 0.25,
+     "tempo_factor": 1.02
+    },
+    {
+     "item": "m072491",
+     "pitch_semitones": 0.25,
+     "tempo_factor": 1.02
+    },
+    {
+     "item": "m118479",
+     "pitch_semitones": 0.25,
+     "tempo_factor": 1.02
+    },
+    {
+     "item": "m022838",
+     "pitch_semitones": 0.25,
+     "tempo_factor": 1.02
+    },
+    {
+     "item": "m136772",
+     "pitch_semitones": 0.25,
+     "tempo_factor": 1.1
+    },
+    {
+     "item": "m116537",
+     "pitch_semitones": 0.25,
+     "tempo_factor": 1.05
+    },
+    {
+     "item": "m118512",
+     "pitch_semitones": 0.25,
+     "tempo_factor": 1.02
+    },
+    {
+     "item": "m061484",
+     "pitch_semitones": 0.25,
+     "tempo_factor": 1.02
+    },
+    {
+     "item": "m052684",
+     "pitch_semitones": 0.25,
+     "tempo_factor": 1.02
+    },
+    {
+     "item": "m124270",
+     "pitch_semitones": 0.25,
+     "tempo_factor": 1.02
+    },
+    {
+     "item": "m123355",
+     "pitch_semitones": 0.25,
+     "tempo_factor": 1.02
+    },
+    {
+     "item": "m057109",
+     "pitch_semitones": 0.25,
+     "tempo_factor": 1.02
+    },
+    {
+     "item": "m149681",
+     "pitch_semitones": 0.25,
+     "tempo_factor": 1.02
+    },
+    {
+     "item": "m054308",
+     "pitch_semitones": 0.25,
+     "tempo_factor": 1.02
+    },
+    {
+     "item": "m008649",
+     "pitch_semitones": 0.25,
+     "tempo_factor": 1.02
+    },
+    {
+     "item": "m083617",
+     "pitch_semitones": 0.25,
+     "tempo_factor": 1.02
+    },
+    {
+     "item": "m153186",
+     "pitch_semitones": 0.25,
+     "tempo_factor": 1.02
+    },
+    {
+     "item": "m072495",
+     "pitch_semitones": 0.25,
+     "tempo_factor": 1.02
+    },
+    {
+     "item": "m136386",
+     "pitch_semitones": 0.25,
+     "tempo_factor": 1.02
+    },
+    {
+     "item": "m140029",
+     "pitch_semitones": 0.25,
+     "tempo_factor": 1.05
+    },
+    {
+     "item": "m136853",
+     "pitch_semitones": 0.25,
+     "tempo_factor": 1.02
+    },
+    {
+     "item": "m067476",
+     "pitch_semitones": 0.25,
+     "tempo_factor": 1.02
+    },
+    {
+     "item": "m086471",
+     "pitch_semitones": 0.25,
+     "tempo_factor": 1.02
+    },
+    {
+     "item": "m068387",
+     "pitch_semitones": 0.25,
+     "tempo_factor": 1.02
+    }
+   ],
+   "tempo_factor_median": 1.02
+  },
+  "audfprint": {
+   "pitch_semitones_median": 0.25,
+   "rows": [
+    {
+     "item": "m129650",
+     "pitch_semitones": 0.25,
+     "tempo_factor": 1.02
+    },
+    {
+     "item": "m105045",
+     "pitch_semitones": 0.25,
+     "tempo_factor": 1.02
+    },
+    {
+     "item": "m140409",
+     "pitch_semitones": 0.25,
+     "tempo_factor": 1.02
+    },
+    {
+     "item": "m140214",
+     "pitch_semitones": 0.25,
+     "tempo_factor": 1.02
+    },
+    {
+     "item": "m063186",
+     "pitch_semitones": 0.25,
+     "tempo_factor": 1.02
+    },
+    {
+     "item": "m146770",
+     "pitch_semitones": 0.25,
+     "tempo_factor": 1.02
+    },
+    {
+     "item": "m088931",
+     "pitch_semitones": 0.25,
+     "tempo_factor": 1.02
+    },
+    {
+     "item": "m137294",
+     "pitch_semitones": 0.25,
+     "tempo_factor": 1.02
+    },
+    {
+     "item": "m118983",
+     "pitch_semitones": 0.5,
+     "tempo_factor": 1.02
+    },
+    {
+     "item": "m140217",
+     "pitch_semitones": 0.25,
+     "tempo_factor": 1.02
+    },
+    {
+     "item": "m129660",
+     "pitch_semitones": 0.25,
+     "tempo_factor": 1.02
+    },
+    {
+     "item": "m136407",
+     "pitch_semitones": 0.25,
+     "tempo_factor": 1.05
+    },
+    {
+     "item": "m136379",
+     "pitch_semitones": 0.25,
+     "tempo_factor": 1.02
+    },
+    {
+     "item": "m138688",
+     "pitch_semitones": 0.25,
+     "tempo_factor": 1.05
+    },
+    {
+     "item": "m110511",
+     "pitch_semitones": 0.25,
+     "tempo_factor": 1.02
+    },
+    {
+     "item": "m155181",
+     "pitch_semitones": 0.25,
+     "tempo_factor": 1.05
+    },
+    {
+     "item": "m122672",
+     "pitch_semitones": 0.25,
+     "tempo_factor": 1.02
+    },
+    {
+     "item": "m096704",
+     "pitch_semitones": 0.25,
+     "tempo_factor": 1.02
+    },
+    {
+     "item": "m147070",
+     "pitch_semitones": 0.25,
+     "tempo_factor": 1.02
+    },
+    {
+     "item": "m071299",
+     "pitch_semitones": 0.25,
+     "tempo_factor": 1.02
+    },
+    {
+     "item": "m134229",
+     "pitch_semitones": 0.25,
+     "tempo_factor": 1.02
+    },
+    {
+     "item": "m003935",
+     "pitch_semitones": 0.25,
+     "tempo_factor": 1.02
+    },
+    {
+     "item": "m052654",
+     "pitch_semitones": 0.25,
+     "tempo_factor": 1.02
+    },
+    {
+     "item": "m075326",
+     "pitch_semitones": 0.25,
+     "tempo_factor": 1.02
+    },
+    {
+     "item": "m143781",
+     "pitch_semitones": 0.25,
+     "tempo_factor": 1.02
+    },
+    {
+     "item": "m012268",
+     "pitch_semitones": 0.25,
+     "tempo_factor": 1.02
+    },
+    {
+     "item": "m105052",
+     "pitch_semitones": 0.25,
+     "tempo_factor": 1.02
+    },
+    {
+     "item": "m131082",
+     "pitch_semitones": 0.25,
+     "tempo_factor": 1.02
+    },
+    {
+     "item": "m104649",
+     "pitch_semitones": 0.25,
+     "tempo_factor": 1.05
+    },
+    {
+     "item": "m131173",
+     "pitch_semitones": 0.25,
+     "tempo_factor": 1.02
+    },
+    {
+     "item": "m134294",
+     "pitch_semitones": 0.25,
+     "tempo_factor": 1.02
+    },
+    {
+     "item": "m136808",
+     "pitch_semitones": 0.25,
+     "tempo_factor": 1.02
+    },
+    {
+     "item": "m126087",
+     "pitch_semitones": 0.25,
+     "tempo_factor": 1.02
+    },
+    {
+     "item": "m117390",
+     "pitch_semitones": 0.25,
+     "tempo_factor": 1.02
+    },
+    {
+     "item": "m141599",
+     "pitch_semitones": 0.25,
+     "tempo_factor": 1.02
+    },
+    {
+     "item": "m121615",
+     "pitch_semitones": 0.25,
+     "tempo_factor": 1.02
+    },
+    {
+     "item": "m120032",
+     "pitch_semitones": 0.25,
+     "tempo_factor": 1.02
+    },
+    {
+     "item": "m072491",
+     "pitch_semitones": 0.25,
+     "tempo_factor": 1.02
+    },
+    {
+     "item": "m118479",
+     "pitch_semitones": 0.25,
+     "tempo_factor": 1.02
+    },
+    {
+     "item": "m022838",
+     "pitch_semitones": 0.25,
+     "tempo_factor": 1.02
+    },
+    {
+     "item": "m136772",
+     "pitch_semitones": 0.25,
+     "tempo_factor": 1.02
+    },
+    {
+     "item": "m116537",
+     "pitch_semitones": 0.25,
+     "tempo_factor": 1.02
+    },
+    {
+     "item": "m118512",
+     "pitch_semitones": 0.25,
+     "tempo_factor": 1.02
+    },
+    {
+     "item": "m061484",
+     "pitch_semitones": 0.25,
+     "tempo_factor": 1.02
+    },
+    {
+     "item": "m052684",
+     "pitch_semitones": 0.25,
+     "tempo_factor": 1.02
+    },
+    {
+     "item": "m124270",
+     "pitch_semitones": 0.25,
+     "tempo_factor": 1.02
+    },
+    {
+     "item": "m123355",
+     "pitch_semitones": 0.25,
+     "tempo_factor": 1.02
+    },
+    {
+     "item": "m057109",
+     "pitch_semitones": 0.25,
+     "tempo_factor": 1.02
+    },
+    {
+     "item": "m149681",
+     "pitch_semitones": 0.25,
+     "tempo_factor": 1.02
+    },
+    {
+     "item": "m054308",
+     "pitch_semitones": 0.25,
+     "tempo_factor": 1.02
+    },
+    {
+     "item": "m008649",
+     "pitch_semitones": 0.25,
+     "tempo_factor": 1.02
+    },
+    {
+     "item": "m083617",
+     "pitch_semitones": 0.25,
+     "tempo_factor": 1.02
+    },
+    {
+     "item": "m153186",
+     "pitch_semitones": 0.25,
+     "tempo_factor": 1.02
+    },
+    {
+     "item": "m072495",
+     "pitch_semitones": 0.25,
+     "tempo_factor": 1.02
+    },
+    {
+     "item": "m136386",
+     "pitch_semitones": 0.25,
+     "tempo_factor": 1.02
+    },
+    {
+     "item": "m140029",
+     "pitch_semitones": 0.25,
+     "tempo_factor": 1.02
+    },
+    {
+     "item": "m136853",
+     "pitch_semitones": 0.25,
+     "tempo_factor": 1.02
+    },
+    {
+     "item": "m067476",
+     "pitch_semitones": 0.25,
+     "tempo_factor": 1.02
+    },
+    {
+     "item": "m086471",
+     "pitch_semitones": 0.25,
+     "tempo_factor": 1.02
+    },
+    {
+     "item": "m068387",
+     "pitch_semitones": 0.25,
+     "tempo_factor": 1.02
+    }
+   ],
+   "tempo_factor_median": 1.02
+  }
+ },
+ "params": {
+  "n": 60,
+  "pitch_grid": [
+   0.25,
+   0.5,
+   1,
+   1.5,
+   2,
+   3,
+   4,
+   6
+  ],
+  "snr_db": [
+   40,
+   30,
+   20
+  ],
+  "steps": 40,
+  "tempo_grid": [
+   1.02,
+   1.05,
+   1.1,
+   1.2,
+   1.3,
+   1.5
+  ]
+ },
+ "seconds_per_item": {
+  "clap_pgd_per_snr": 2.797022732098897,
+  "magnitude_all_methods": 2.317965348561605
+ },
+ "thresholds": {
+  "CLAP": [
+   0.966262625289917,
+   "pair@1e-06"
+  ],
+  "Chromaprint": [
+   0.8309669361839295,
+   "pair@1e-06"
+  ],
+  "ISCC-Audio-64": [
+   0.984376,
+   "pair@1e-06"
+  ],
+  "audfprint": [
+   34.000001,
+   "pair@1e-06"
+  ]
+ },
+ "wall_seconds": 663.5852944850922
+}
