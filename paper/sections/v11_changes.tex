@@ -1,0 +1,27 @@
+\section{Changes in Version 1.1}
+\label{sec:v11}
+
+Version 1.1 responds to two pieces of feedback on version 1.0 (arXiv:2610.04151v1). Every v1.1 number below comes from a rerun by the authors, on an Apple M5 Pro rather than the cloud hosts of version 1.0, with the scripts and records in the \texttt{rerun-2026-11} directories of the release.
+
+\paragraph{ISCC.} The ISCC Foundation reproduced our ISCC results and traced the watermark drift and the transfer-attack failures to two implementation issues, which it fixed: up to iscc-sdk 0.9.6 the border trim removed only borders of exactly one colour, and up to iscc-core 1.4.0 bits 65 to 256 of the Image-Code came from shifted copies of the first DCT block instead of the quadrants ISO 24138 specifies. We reran the drift measurement of Section~\ref{sec:together} with both versions on the same \val{v11:iscc/0.9.5/n} product photos, marked again with TrustMark-Q at strength 1. With the versions of version 1.0 (iscc-sdk 0.9.5, iscc-core 1.4.0) the rerun reproduces the recorded drift (64-bit \val{v11:iscc/0.9.5/ISCC-Image-64/drift/pct}\% against \val{fp:wm/image/ISCC-Image-64/drift/pct}\% recorded; 256-bit \val{v11:iscc/0.9.5/ISCC-Image-256/drift/pct}\% against \val{fp:wm/image/ISCC-Image-256/drift/pct}\%). With iscc-sdk 0.9.7, iscc-core 1.5.0 and iscc-lib 0.7.0 the drift falls to \val{v11:iscc/0.9.7/ISCC-Image-64/drift/pct}\% (\val{v11:iscc/0.9.7/ISCC-Image-64/drift/k} of \val{v11:iscc/0.9.7/n}) and \val{v11:iscc/0.9.7/ISCC-Image-256/drift/pct}\% (\val{v11:iscc/0.9.7/ISCC-Image-256/drift/k} of \val{v11:iscc/0.9.7/n}). The 64-bit threshold is the same score (\val{v11:iscc/0.9.7/ISCC-Image-64/threshold}) in both versions, so its drop is a property of the code and not of recalibration. The other ISCC image results in this paper (image track, duplicate-rule sensitivity, security track, the unmarked-registry experiment) were measured with iscc-sdk 0.9.5 and describe that version; Table~\ref{tab:v11} lists them as not yet rerun.
+
+\paragraph{TrustMark.} Adobe pointed out that version 1.0 decoded TrustMark with its decoder alone and never ran the watermark-region detector that the trustmark package ships for its Q and P models. Every TrustMark number in version 1.0, including the blind false-positive rates of Section~\ref{sec:wm-res-fpr}, is therefore a decoder-only number. Version 1.1 adds the detect-first path as a separate configuration and keeps decoder-only for reproducibility; its results are listed in Table~\ref{tab:v11} as they become available.
+
+\begin{table}[t]
+\centering
+\caption{Version 1.1 changelog. ``Rerun'': measured again by the authors for this version; ``recorded'': the version 1.0 record; ``not yet rerun'': the version 1.0 value stands for the version it names.}
+\label{tab:v11}
+\small
+\begin{tabular}{@{}p{0.43\linewidth}p{0.17\linewidth}p{0.15\linewidth}p{0.17\linewidth}@{}}
+\toprule
+Result & Version 1.0 & Version 1.1 & Status \\
+\midrule
+ISCC-Image-64 watermark drift & \val{fp:wm/image/ISCC-Image-64/drift/pct}\% (0.9.5) & \val{v11:iscc/0.9.7/ISCC-Image-64/drift/pct}\% (0.9.7) & rerun, both versions \\
+ISCC-Image-256 watermark drift & \val{fp:wm/image/ISCC-Image-256/drift/pct}\% (0.9.5) & \val{v11:iscc/0.9.7/ISCC-Image-256/drift/pct}\% (0.9.7) & rerun, both versions \\
+ISCC image track (detection at $10^{-7}$, per-transformation Recall@1) & Table~\ref{tab:fp-image} (0.9.5) & -- & not yet rerun at full scale \\
+ISCC unmarked-registry detection & \val{fp:wm/image/ISCC-Image-64/unmarkedreg/fp/pct}\% (0.9.5) & -- & not yet rerun \\
+ISCC transfer and surrogate evasion, forgery & Section~\ref{sec:fp-res-security} (0.9.5) & -- & not yet rerun \\
+TrustMark robustness and blind false positives & decoder only & -- & detect-first rerun pending \\
+\bottomrule
+\end{tabular}
+\end{table}

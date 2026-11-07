@@ -1,0 +1,24 @@
+{
+ "iscc_sdk": "0.9.5",
+ "iscc_core": "1.4.0",
+ "n": 300,
+ "threshold_name": "pair@1e-07",
+ "methods": {
+  "ISCC-Image-64": {
+   "threshold": 0.937501,
+   "threshold_source": "results-gpu/image/ISCC-Image-64.json",
+   "drift_below_threshold": 0.6233333333333333,
+   "n_below": 187,
+   "drift_score_median": 0.875,
+   "extract_ms_per_image": 86.73841062545155
+  },
+  "ISCC-Image-256": {
+   "threshold": 0.9296885,
+   "threshold_source": "results-gpu/image/ISCC-Image-256.json",
+   "drift_below_threshold": 0.5666666666666667,
+   "n_below": 170,
+   "drift_score_median": 0.85546875,
+   "extract_ms_per_image": 157.40382993205762
+  }
+ }
+}

@@ -1,0 +1,17 @@
+{
+ "operating_point": "pair@1e-07",
+ "rows": [
+  {
+   "a": "ISCC-Image-64",
+   "b": "ISCC-Image-256",
+   "n": 72000,
+   "only_a": 219,
+   "only_b": 2489,
+   "p": 0.0,
+   "p_holm": 0.0,
+   "tpr_a": 0.4266388888888889,
+   "tpr_b": 0.45816666666666667
+  }
+ ],
+ "test": "exact McNemar"
+}

@@ -63,6 +63,38 @@
     "sha256": "cd2beaa9824102c4bae5fe9de7b737cda2682b109ab5f2375a72f3303172af78",
     "url": "https://github.com/sony/silentcipher/releases/download/release/Models.tar.gz"
   },
+  "trustmark_bbox_ckpt_P": {
+    "bytes": 82933264,
+    "licence": "MIT",
+    "licence_source": "same",
+    "path": "trustmark/trustmark_bbox_P.ckpt",
+    "sha256": "6bca434ba6b624330299e56842471349a8fc98bf8ae845da9bc0a77ddf59900a",
+    "url": "https://cai-watermark.adobe.net/watermarking/trustmark-models/trustmark_bbox_P.ckpt"
+  },
+  "trustmark_bbox_ckpt_Q": {
+    "bytes": 82933264,
+    "licence": "MIT",
+    "licence_source": "same",
+    "path": "trustmark/trustmark_bbox_Q.ckpt",
+    "sha256": "7e1da5667a4da070573d71bbf5a03d586f8836397bbcdf2c2044865ec37df0a5",
+    "url": "https://cai-watermark.adobe.net/watermarking/trustmark-models/trustmark_bbox_Q.ckpt"
+  },
+  "trustmark_bbox_yaml_P": {
+    "bytes": 2154,
+    "licence": "MIT",
+    "licence_source": "same",
+    "path": "trustmark/trustmark_bbox_P.yaml",
+    "sha256": "ece16973942447c68c0ac418ba87147f80c0946d5cd794b5451a95d9d848da0b",
+    "url": "https://cai-watermark.adobe.net/watermarking/trustmark-models/trustmark_bbox_P.yaml"
+  },
+  "trustmark_bbox_yaml_Q": {
+    "bytes": 2154,
+    "licence": "MIT",
+    "licence_source": "same",
+    "path": "trustmark/trustmark_bbox_Q.yaml",
+    "sha256": "ece16973942447c68c0ac418ba87147f80c0946d5cd794b5451a95d9d848da0b",
+    "url": "https://cai-watermark.adobe.net/watermarking/trustmark-models/trustmark_bbox_Q.yaml"
+  },
   "trustmark_decoder_B": {
     "bytes": 47649788,
     "licence": "MIT",

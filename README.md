@@ -8,6 +8,15 @@ C2PA soft bindings recover a stripped provenance manifest from the content itsel
 
 The compiled paper is [`soft-bindings-preprint.pdf`](soft-bindings-preprint.pdf).
 
+## Version 1.1 (in progress)
+
+Version 1.0 is arXiv:2610.04151v1 and release v1.0 of this repository. Version 1.1 responds to two pieces of feedback:
+
+- **ISCC.** Titusz Pan (ISCC Foundation) reproduced the ISCC results and fixed two implementation issues they exposed (iscc-sdk 0.9.7, iscc-core 1.5.0, iscc-lib 0.7.0). His rerun scripts and records from [iscc/soft-bindings-benchmark](https://github.com/iscc/soft-bindings-benchmark) are included, with his authorship, in `fingerprinting/bench-2026-10/iscc/` and `results-iscc/`. Our own reruns are in `fingerprinting/bench-2026-10/rerun-2026-11/`.
+- **TrustMark.** John Collomosse (Adobe) noted that version 1.0 decoded TrustMark without its watermark-region detector. `TrustMarkAdapter(..., detect_first=True)` adds that path; decoder-only remains the default, so version 1.0 records are unchanged. The paired rerun is `watermarking/bench-2026-09/rerun-2026-11/`.
+
+The paper's Section "Changes in Version 1.1" lists what has been rerun and what has not. Only numbers the authors reproduced themselves enter the paper.
+
 ## Layout
 
 | Path | Contents |
