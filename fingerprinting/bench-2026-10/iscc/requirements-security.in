@@ -1,0 +1,7 @@
+# Packages the security rerun adds to requirements-cpu.in, at the pins of scripts/requirements.in: the attack
+# ensemble (DINOv2-S, SSCD-mixup, OpenCLIP-B32), LPIPS, and PDQ as a reference point.
+transformers==5.17.0
+open_clip_torch==3.3.0
+timm==1.0.30
+lpips==0.1.4
+pdqhash==0.2.8

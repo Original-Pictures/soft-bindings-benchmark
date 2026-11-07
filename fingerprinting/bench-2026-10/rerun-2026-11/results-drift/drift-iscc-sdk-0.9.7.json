@@ -1,0 +1,24 @@
+{
+ "iscc_sdk": "0.9.7",
+ "iscc_core": "1.5.0",
+ "n": 300,
+ "threshold_name": "pair@1e-07",
+ "methods": {
+  "ISCC-Image-64": {
+   "threshold": 0.937501,
+   "threshold_source": "results-iscc/iscc-sdk-0.9.7/image/ISCC-Image-64.json",
+   "drift_below_threshold": 0.03666666666666667,
+   "n_below": 11,
+   "drift_score_median": 1.0,
+   "extract_ms_per_image": 132.77203312531734
+  },
+  "ISCC-Image-256": {
+   "threshold": 0.8671885,
+   "threshold_source": "results-iscc/iscc-sdk-0.9.7/image/ISCC-Image-256.json",
+   "drift_below_threshold": 0.013333333333333334,
+   "n_below": 4,
+   "drift_score_median": 0.9921875,
+   "extract_ms_per_image": 206.2676615966484
+  }
+ }
+}

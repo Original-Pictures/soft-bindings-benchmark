@@ -13,10 +13,13 @@ ROOT=..
 IMAGE=texlive/texlive:latest-medium
 # tlmgr's mirror sometimes refuses a request that follows another closely; retry, and stop with a clear
 # message rather than letting pdflatex fail silently on a missing newtx.
-TEX_SETUP='for i in 1 2 3 4 5; do kpsewhich newtxmath.sty >/dev/null && break; tlmgr install newtx fontaxes >/dev/null 2>&1 || sleep 10; done; kpsewhich newtxmath.sty >/dev/null || { echo "newtx could not be installed" >&2; exit 1; }'
+# The image's tlmgr refuses to install anything once CTAN has a newer tlmgr ("tlmgr itself needs to be updated"),
+# so update it first.
+TEX_SETUP='for i in 1 2 3 4 5; do kpsewhich newtxmath.sty >/dev/null && break; tlmgr update --self >/dev/null 2>&1; tlmgr install newtx fontaxes >/dev/null 2>&1 || sleep 10; done; kpsewhich newtxmath.sty >/dev/null || { echo "newtx could not be installed" >&2; exit 1; }'
 
 (cd "$ROOT/watermarking/bench-2026-09/paper/scripts" && uv run -q --with numpy --with scipy python build_numbers.py)
 (cd "$ROOT/fingerprinting/bench-2026-10/paper/scripts" && uv run -q --with numpy --with scipy python build_numbers.py)
+python3 scripts/v11_numbers.py
 python3 scripts/assemble.py
 
 docker run --rm -v "$PWD":/work -w /work "$IMAGE" sh -c "$TEX_SETUP;

@@ -34,6 +34,12 @@ WEIGHTS_TABLE: dict[str, tuple[str, str, str, str]] = {
         f"trustmark_yaml_{v}": (f"{TM}trustmark_{v}.yaml", f"trustmark/trustmark_{v}.yaml", "MIT", "same")
         for v in "BCQP"
     },
+    # Watermark-region detector (trustmark>=0.9, loadBBoxDetector=True / decode(DETECTFIRST=True)); Adobe ships one
+    # for Q and P only. Added for v1.1 after John Collomosse (Adobe) noted the v1.0 run used the decoder alone.
+    **{
+        f"trustmark_bbox_{x}_{v}": (f"{TM}trustmark_bbox_{v}.{x}", f"trustmark/trustmark_bbox_{v}.{x}", "MIT", "same")
+        for v in "QP" for x in ("ckpt", "yaml")
+    },
     "videoseal_1.0_pth": (f"{FB}videoseal/y_256b_img.pth", "videoseal/y_256b_img.pth", "MIT",
                           "facebookresearch/videoseal README: all models MIT"),
     "videoseal_1.0_jit": (f"{FB}videoseal/y_256b_img.jit", "videoseal/y_256b_img.jit", "MIT",

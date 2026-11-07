@@ -58,12 +58,29 @@ def _pil(x: np.ndarray) -> Image.Image:
 
 # ------------------------------------------------------------------ TrustMark
 class TrustMarkAdapter(Adapter):
-    def __init__(self, variant: str, strength: float) -> None:
-        super().__init__(name=f"trustmark-{variant}@{strength:g}", family="TrustMark", nbits=100,
-                         code_licence="MIT", weights_licence="MIT", deployable=True,
-                         params={"variant": variant, "WM_STRENGTH": strength, "encoding": "BCH_5"},
+    """TrustMark with BCH_5. Two decode paths:
+
+    * decoder only (detect_first=False, the v1.0 runs): the whole image, centre-processed as
+      TrustMark.decode(DETECTFIRST=False) does, goes to the decoder.
+    * detect first (detect_first=True, added in v1.1): TrustMark's watermark-region detector proposes
+      boxes, and each box is decoded in the detector's order until the BCH layer accepts one, as
+      TrustMark.decode(DETECTFIRST=True) does in trustmark 0.9.2. No box means no detection. Adobe ships a
+      detector for Q and P only. Config names get a "+detect" suffix so v1.0 names and records are unchanged.
+    """
+
+    DETECTORS = ("Q", "P")
+
+    def __init__(self, variant: str, strength: float, detect_first: bool = False) -> None:
+        if detect_first and variant not in self.DETECTORS:
+            raise ValueError(f"TrustMark {variant} has no released region detector")
+        params = {"variant": variant, "WM_STRENGTH": strength, "encoding": "BCH_5"}
+        if detect_first:
+            params["DETECTFIRST"] = True
+        super().__init__(name=f"trustmark-{variant}@{strength:g}" + ("+detect" if detect_first else ""),
+                         family="TrustMark", nbits=100,
+                         code_licence="MIT", weights_licence="MIT", deployable=True, params=params,
                          note="TrustMark Q, strengths 1.0-1.5" if variant == "Q" else "")
-        self.variant, self.strength = variant, strength
+        self.variant, self.strength, self.detect_first = variant, strength, detect_first
 
     def load(self, device: str) -> None:
         super().load(device)
@@ -77,7 +94,9 @@ class TrustMarkAdapter(Adapter):
             if not (pkg_models / f.name).exists():
                 shutil.copy(f, pkg_models / f.name)
         self.tm = TrustMark(verbose=False, model_type=self.variant, encoding_type=TrustMark.Encoding.BCH_5,
-                            device=device, loadRemover=False)
+                            device=device, loadRemover=False, loadBBoxDetector=self.detect_first)
+        if self.detect_first and self.tm.detector is None:
+            raise RuntimeError("TrustMark region detector did not load")
         self.capacity = self.tm.schemaCapacity()
 
     def _codeword(self, bits: np.ndarray) -> tuple[str, np.ndarray]:
@@ -92,18 +111,48 @@ class TrustMarkAdapter(Adapter):
         out = self.tm.encode(_pil(img), data, MODE="binary", WM_STRENGTH=self.strength)
         return np.asarray(out, dtype=np.float32) / 255.0
 
-    def decode(self, img: np.ndarray) -> dict[str, Any]:
+    def _decode_region(self, sub: Image.Image) -> tuple[np.ndarray, bool, str]:
+        """Raw decoder bits, BCH verdict and payload of one region (TrustMark.subimage_decode, keeping the raw
+        bits so bit accuracy can be reported)."""
         import torch
         from torchvision import transforms
 
-        pil = _pil(img)
-        sub = self.tm.get_the_image_for_processing(pil).resize(
-            (self.tm.model_resolution_dec, self.tm.model_resolution_dec), Image.BILINEAR)
+        sub = sub.resize((self.tm.model_resolution_dec, self.tm.model_resolution_dec), Image.BILINEAR)
         t = transforms.ToTensor()(sub).unsqueeze(0).to(self.tm.decoder.device) * 2.0 - 1.0
         with torch.no_grad():
             raw = (self.tm.decoder.decoder(t) > 0).cpu().numpy().astype(np.uint8)
         secret, present, _ = self.tm.ecc.decode_bitstream(raw.astype(bool), "binary")[0]
-        return {"bits": raw.reshape(-1), "native_detect": bool(present), "native_payload": secret}
+        return raw.reshape(-1), bool(present), secret
+
+    def _regions(self, pil: Image.Image) -> list[Image.Image]:
+        """Detector boxes as crops, in TrustMark.decode(DETECTFIRST=True)'s order and pixel rounding."""
+        import torch
+
+        with torch.no_grad():
+            boxes = self.tm.localize(pil, return_all=True) or []
+        w, h = pil.size
+        out = []
+        for b in boxes:
+            x1, y1 = max(0, min(int(b[0] * w), w - 1)), max(0, min(int(b[1] * h), h - 1))
+            x2, y2 = max(x1 + 1, min(int(b[2] * w), w)), max(y1 + 1, min(int(b[3] * h), h))
+            out.append(pil.crop((x1, y1, x2, y2)))
+        return out
+
+    def decode(self, img: np.ndarray) -> dict[str, Any]:
+        pil = _pil(img)
+        if not self.detect_first:
+            raw, present, secret = self._decode_region(self.tm.get_the_image_for_processing(pil))
+            return {"bits": raw, "native_detect": present, "native_payload": secret}
+        regions = self._regions(pil)
+        first = None
+        for sub in regions:
+            raw, present, secret = self._decode_region(sub)
+            first = first or (raw, secret)
+            if present:
+                return {"bits": raw, "native_detect": True, "native_payload": secret, "n_regions": len(regions)}
+        # No region passed the BCH check: report the top box's bits for bit accuracy (None if no box at all).
+        return {"bits": None if first is None else first[0], "native_detect": False,
+                "native_payload": "" if first is None else first[1], "n_regions": len(regions)}
 
 
 # ------------------------------------------------------------------ Meta Seal family
@@ -338,6 +387,10 @@ def image_configs(profile: str = "full") -> list[Adapter]:
     # Added after the first pass: PixelSeal 0.1 missed the JPEG-75 gate (0.907) and the
     # default 0.2 passed with margin, so the knee lies between them.
     cfgs += [MetaSealAdapter("pixelseal", 0.15), MetaSealAdapter("pixelseal", 0.125)]
+    # v1.1: TrustMark decoded through its watermark-region detector (Q and P ship one). Appended so that the
+    # v1.0 configs keep their names, order and shard assignment.
+    cfgs += [TrustMarkAdapter("Q", s, detect_first=True) for s in (1.0, 1.2, 1.3, 1.4, 1.5)]
+    cfgs += [TrustMarkAdapter("P", s, detect_first=True) for s in (0.8, 1.0, 1.5)]
     if profile == "smoke":
         keep = {"trustmark-Q@1.2", "trustmark-P@1", "PixelSeal@default", "VideoSeal-1.0@default", "WAM-MIT@default",
                 "DWT-DCT", "DWT-DCT-SVD", "RivaGAN", "trustmark-B@1", "trustmark-C@1"}

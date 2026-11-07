@@ -13,7 +13,7 @@ tests/test_security.py):
     single antialiased (triangle) resize; the DCT is PDQ's 16x64 matrix with rows 1..16
     (no DC), threshold at the median of the 256 coefficients.
   * pHash/aHash/dHash: PIL's Lanczos resize is replaced by an antialiased bicubic resize.
-  * ISCC-Image-64: the SDK's uniform-border trim box is passed in (see trim_box).
+  * ISCC-Image-64: the SDK's border trim box is passed in (see trim_box).
 Bit order follows each library's output order (row-major over the coefficient grid).
 """
 
@@ -84,18 +84,42 @@ def dhash(x: torch.Tensor, k: float = 4.0) -> torch.Tensor:
 
 
 def trim_box(x) -> tuple[int, int, int, int] | None:
-    """ISCC SDK uniform-border trim box (left, top, right, bottom) of one image, or None.
+    """ISCC SDK border trim box (left, top, right, bottom) of one image, or None.
     Not differentiable; recomputed on the current image at each attack step, because a
-    perturbation that touches the border switches trimming off in the real extractor."""
+    perturbation that touches the border can switch trimming on or off in the real extractor.
+    Follows the installed SDK: iscc-sdk 0.9.7 and later trim near-uniform borders repeatedly
+    (see tolerant_trim_box), earlier versions only exactly uniform ones."""
+    import iscc_sdk as idk
     import numpy as np
     from PIL import Image, ImageChops
 
     a = x.detach()[0].permute(1, 2, 0).clamp(0, 1).mul(255).round().byte().cpu().numpy() if torch.is_tensor(x) else x
     img = Image.fromarray(np.asarray(a))
+    if getattr(idk.sdk_opts, "image_trim_tolerant", False):
+        return tolerant_trim_box(img)
     bg = Image.new(img.mode, img.size, img.getpixel((0, 0)))
     d = ImageChops.difference(img, bg)
     bbox = ImageChops.add(d, d).getbbox()
     return None if bbox is None or bbox == (0, 0) + img.size else bbox
+
+
+def tolerant_trim_box(img, tolerance: int = 16) -> tuple[int, int, int, int] | None:
+    """Overall crop box of iscc_sdk.image_trim_tolerant (same passes and stop rules, with the
+    default tolerance that image_normalize uses), or None if it crops nothing."""
+    from iscc_sdk.image import TRIM_MAX_PASSES, image_border_bbox
+
+    left, top, size = 0, 0, img.size
+    for _ in range(TRIM_MAX_PASSES):
+        bbox = image_border_bbox(img, tolerance)
+        if bbox is None or bbox == (0, 0) + img.size:
+            break
+        w, h = img.size
+        sides = (bbox[0] > 0) + (bbox[1] > 0) + (bbox[2] < w) + (bbox[3] < h)
+        if sides == 1 and image_border_bbox(img, tolerance // 2) != bbox:
+            break
+        img, left, top = img.crop(bbox), left + bbox[0], top + bbox[1]
+    box = (left, top, left + img.width, top + img.height)
+    return None if box == (0, 0) + size else box
 
 
 def iscc64(x: torch.Tensor, k: float = 4.0, box=None) -> torch.Tensor:

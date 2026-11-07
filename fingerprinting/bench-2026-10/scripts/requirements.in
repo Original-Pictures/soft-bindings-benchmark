@@ -13,9 +13,10 @@ pillow==12.3.0
 imagehash==4.3.2
 pdqhash==0.2.8
 PyWavelets==1.9.0
-iscc-core==1.4.0
-iscc-sdk==0.9.5
-iscc-sci==0.3.0  # onnxruntime-gpu below provides its runtime
+iscc-core==1.5.0
+iscc-lib==0.7.0
+iscc-sdk==0.9.7
+iscc-sci==0.4.1  # onnxruntime-gpu below provides its runtime
 faiss-cpu==1.15.1
 kornia==0.8.3
 transformers==5.17.0

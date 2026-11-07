@@ -66,6 +66,16 @@ def main() -> int:
         for f in sorted((src / "figures").glob("*.tex")):
             (HERE / "figures" / f"{p}_{f.name}").write_text(prefix_values(prefix_labels(f.read_text(), p), p))
         print(f"{p}: {n} values, tables and figures copied")
+    # v1.1 rerun values (scripts/v11_numbers.py), prefixed v11: like the tracks' values.
+    v11 = HERE / "generated" / "v11" / "numbers.tex"
+    if v11.exists():
+        n = 0
+        for line in v11.read_text().splitlines():
+            m = VAL.match(line)
+            if m:
+                out.append(rf"\expandafter\def\csname val@v11:{m.group(1)}\endcsname{{{m.group(2)}}}")
+                n += 1
+        print(f"v11: {n} values")
     # One bibliography: the union of both papers' entries (shared keys are identical entries).
     bib, seen = [], set()
     for src in SOURCES.values():
